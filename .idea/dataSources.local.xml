@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="@ln" uuid="f886330f-0f81-4544-bc09-e11e6b8768da">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
+      <secret-storage>master_key</secret-storage>
+      <schema-mapping />
+      <ssh-properties>
+        <enabled>true</enabled>
+        <use-password>true</use-password>
+        <auth-type>PASSWORD</auth-type>
+      </ssh-properties>
+    </data-source>
+    <data-source name="@server.database.windows.net" uuid="b9991c84-0f99-40ac-b158-8db2f0c52bf0">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="AZURE" exact-version="0" />
+      <secret-storage>master_key</secret-storage>
+      <domain-auth>true</domain-auth>
+      <schema-mapping />
+    </data-source>
+  </component>
+</project>

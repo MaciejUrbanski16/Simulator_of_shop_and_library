@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Admin/Desktop/CLionProjects/machineOfState/Book.h
+string
+-
+utility
+-
+vector
+-
+fstream
+-
+conio.h
+-
+accesories.h
+C:/Users/Admin/Desktop/CLionProjects/machineOfState/accesories.h
+map
+-
+
+C:/Users/Admin/Desktop/CLionProjects/machineOfState/accesories.cpp
+Book.h
+C:/Users/Admin/Desktop/CLionProjects/machineOfState/Book.h
+iostream
+-
+
+C:/Users/Admin/Desktop/CLionProjects/machineOfState/accesories.h
+iostream
+-
+string
+-
+vector
+-
+map
+-
+

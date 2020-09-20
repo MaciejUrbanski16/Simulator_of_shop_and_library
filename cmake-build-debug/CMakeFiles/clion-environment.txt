@@ -1,0 +1,4 @@
+ToolSet: w64 6.0 (local)@C:\Users\Admin\Desktop\Maciek pliki\mingw64
+Options: 
+
+Options:
