@@ -324,6 +324,12 @@
 		<Unit filename="C:/Users/Admin/Desktop/CLionProjects/machineOfState/Bagpack.h">
 			<Option target="machineOfState"/>
 		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/CLionProjects/machineOfState/Bill.cpp">
+			<Option target="machineOfState"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/CLionProjects/machineOfState/Bill.h">
+			<Option target="machineOfState"/>
+		</Unit>
 		<Unit filename="C:/Users/Admin/Desktop/CLionProjects/machineOfState/Book.cpp">
 			<Option target="machineOfState"/>
 		</Unit>

@@ -1,17 +1,10 @@
 109.99 Red 4 Olg k
+209.99 Green 0 Puma k
+109.991 Red 1 Nike k
+109.99 Red 0 Olg k
 209.99 Green 4 Puma k
-109.991 Red 2 Nike _
-
-/*Linijka 1.99 10 _
-  Ekierka 2.98 20 _
-  Katomierz 1.69 30 _
-  Cyrkiel 1.00 15 _
-  Kredki_bambino 5.99 10 _
-  Kredki_woskowe 7.98 35 _
-  Kredki_olowkowe 4.79 45 _
-  Olowek 1 105 _
-  Bibula 3.99 205 _
-  Blok_techniczny 3.59 45 _
-  Blok_kolorowy 5.68 10 _
-  Blok_rysunkowy 3.97 90 _
-  Papier_samoprzylepny 7.90 40 _*/
+109.991 Red 2 Nike k
+109.99 Red 4 Olg k
+209.99 Green 4 Puma k
+109.991 Red 2 Nike k
+109.99 Red 4 Olg _

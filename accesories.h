@@ -40,9 +40,7 @@ enum
 
 namespace shop
 {
-
-
-    typedef float towar_int_t ;
+    typedef double towar_int_t ;
     class Towar                     //ogolna klasa towaru sklepu
     {
     public:

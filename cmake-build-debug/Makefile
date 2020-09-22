@@ -247,6 +247,33 @@ Bagpack.cpp.s:
 	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Bagpack.cpp.s
 .PHONY : Bagpack.cpp.s
 
+Bill.obj: Bill.cpp.obj
+
+.PHONY : Bill.obj
+
+# target to build an object file
+Bill.cpp.obj:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Bill.cpp.obj
+.PHONY : Bill.cpp.obj
+
+Bill.i: Bill.cpp.i
+
+.PHONY : Bill.i
+
+# target to preprocess a source file
+Bill.cpp.i:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Bill.cpp.i
+.PHONY : Bill.cpp.i
+
+Bill.s: Bill.cpp.s
+
+.PHONY : Bill.s
+
+# target to generate assembly for a file
+Bill.cpp.s:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Bill.cpp.s
+.PHONY : Bill.cpp.s
+
 Book.obj: Book.cpp.obj
 
 .PHONY : Book.obj
@@ -483,6 +510,9 @@ help:
 	@echo ... Bagpack.obj
 	@echo ... Bagpack.i
 	@echo ... Bagpack.s
+	@echo ... Bill.obj
+	@echo ... Bill.i
+	@echo ... Bill.s
 	@echo ... Book.obj
 	@echo ... Book.i
 	@echo ... Book.s

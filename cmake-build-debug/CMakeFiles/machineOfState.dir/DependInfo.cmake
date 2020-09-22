@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Admin/Desktop/CLionProjects/machineOfState/Bagpack.cpp" "C:/Users/Admin/Desktop/CLionProjects/machineOfState/cmake-build-debug/CMakeFiles/machineOfState.dir/Bagpack.cpp.obj"
+  "C:/Users/Admin/Desktop/CLionProjects/machineOfState/Bill.cpp" "C:/Users/Admin/Desktop/CLionProjects/machineOfState/cmake-build-debug/CMakeFiles/machineOfState.dir/Bill.cpp.obj"
   "C:/Users/Admin/Desktop/CLionProjects/machineOfState/Book.cpp" "C:/Users/Admin/Desktop/CLionProjects/machineOfState/cmake-build-debug/CMakeFiles/machineOfState.dir/Book.cpp.obj"
   "C:/Users/Admin/Desktop/CLionProjects/machineOfState/Notepad.cpp" "C:/Users/Admin/Desktop/CLionProjects/machineOfState/cmake-build-debug/CMakeFiles/machineOfState.dir/Notepad.cpp.obj"
   "C:/Users/Admin/Desktop/CLionProjects/machineOfState/SchoolSupplies.cpp" "C:/Users/Admin/Desktop/CLionProjects/machineOfState/cmake-build-debug/CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.obj"

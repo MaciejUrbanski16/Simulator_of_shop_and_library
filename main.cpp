@@ -13,6 +13,8 @@
 #include "Bagpack.h"
 #include "SchoolSupplies.h"
 
+#include "Bill.h"
+
 #include <gtest/gtest.h>
 
 #include <map>
@@ -47,7 +49,7 @@ int main(int argc, char *argv[]) {
 
     purchases.presentationOfServices();
 
-    shop::Towar zakup;
+   // shop::Towar zakup;
     //zakup.readItemsFromFile();
     //zakup.changeModeToSellerMode(mode,"12trempki");
 
@@ -74,7 +76,7 @@ int main(int argc, char *argv[]) {
     assert(purchases.etap==shop::Towar::START);
     if(purchases.enterToShop())
     {
-        zakup.etap = shop::Towar::INTRODUCTION;
+        purchases.etap = shop::Towar::INTRODUCTION;
        // zakup.presentationOfServices();
     }
 
@@ -295,12 +297,6 @@ int main(int argc, char *argv[]) {
             {
                 cout<<"Tu"<<endl;
                 purchases.etap = shop::Towar::CONFIRM; // na obecnym etapie zakonczenie wykonnywania programu natomiast musi dalej nastapis jeszcze rozliczneie
-                //class Rachunek : public Towar
-                //oblicz(|)
-                //drukuj()
-                //zzaplac()
-                //wydajReszte()
-                //break;
             }
 
             else
@@ -381,6 +377,11 @@ int main(int argc, char *argv[]) {
 
     }
    // placenie
+
+    Bill bill;
+    shop::towar_int_t toPay = bill.calculate(purchases);
+    int c = 10;
+   // bill.printBill(purchases);
 
     return 0;
 

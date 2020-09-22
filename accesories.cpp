@@ -250,7 +250,7 @@ void Towar::readRemoveFromFile()
 
 
 
-template<typename Type>
+/*template<typename Type>
 void Towar::removeThing(Type *obj) {
     int choose;
 }
@@ -259,7 +259,7 @@ template<typename Type>
 void Towar::removeThing(Type *obj, vector<Type> &things) {
     int choose = enteringTheNumber(1, things.size());
     things.erase(things.begin() + choose -1);
-}
+}*/
 
 /*template<class type>
 void Towar::remove<type>(type el) {

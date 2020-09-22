@@ -5,10 +5,10 @@
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="machineOfState" targetName="gmock_main" />
       <config projectName="machineOfState" targetName="gtest" />
-      <config projectName="machineOfState" targetName="gtest_main" />
       <config projectName="machineOfState" targetName="machineOfState" />
+      <config projectName="machineOfState" targetName="gmock_main" />
+      <config projectName="machineOfState" targetName="gtest_main" />
       <config projectName="machineOfState" targetName="gmock" />
     </generated>
   </component>
@@ -18,7 +18,42 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a417d592-79c6-4910-a3f3-8b98fcb03eae" name="Default Changelist" comment="" />
+    <list default="true" id="a417d592-79c6-4910-a3f3-8b98fcb03eae" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Bill.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bill.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolSupplies.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SchoolSupplies.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolSupplies.h" beforeDir="false" afterPath="$PROJECT_DIR$/SchoolSupplies.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accesories.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/accesories.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accesories.h" beforeDir="false" afterPath="$PROJECT_DIR$/accesories.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/Bagpack.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/Bagpack.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/Book.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/Book.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/Notepad.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/Notepad.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/accesories.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/accesories.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/objects1.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/tests/NotepadTests.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/tests/NotepadTests.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/amountOfBooks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/amountOfBooks.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/amountsOfNotes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/amountsOfNotes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/machineOfState.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/machineOfState.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/machineOfState.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/machineOfState.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/pricesOfBags.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/pricesOfBags.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/supplies.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/supplies.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,6 +91,9 @@
         <option value="CMakeLists.txt" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1fDN7JmW0CaKxSMQCLwt6tfSgFo" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -134,14 +172,14 @@
     </configuration>
     <list>
       <item itemvalue="Catch.Catch_tests" />
-      <item itemvalue="Google Test.BookTests" />
-      <item itemvalue="Google Test.NotepadTests.Test1" />
-      <item itemvalue="Google Test.NotepadTests.TestReadDateFromFile" />
       <item itemvalue="CMake Application.gmock" />
       <item itemvalue="CMake Application.gmock_main" />
       <item itemvalue="CMake Application.gtest" />
       <item itemvalue="CMake Application.gtest_main" />
       <item itemvalue="CMake Application.machineOfState" />
+      <item itemvalue="Google Test.BookTests" />
+      <item itemvalue="Google Test.NotepadTests.Test1" />
+      <item itemvalue="Google Test.NotepadTests.TestReadDateFromFile" />
     </list>
     <recent_temporary>
       <list>
@@ -207,11 +245,24 @@
       <workItem from="1600280351915" duration="3855000" />
       <workItem from="1600332614052" duration="798000" />
       <workItem from="1600354342597" duration="2932000" />
+      <workItem from="1600358362580" duration="798000" />
+      <workItem from="1600626851093" duration="5521000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="679" y="246" width="561" height="555" key="#NotepadTests.Test1" timestamp="1599417467261">
@@ -238,6 +289,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="820" y="273" key="#xdebugger.XInspectDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600280543663" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1600632497109">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600632497109" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1599417162979">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -246,42 +301,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="606" y="349" key="FileDocumentManager.FileCacheConflict/0.0.1920.1040@0.0.1920.1040" timestamp="1596972897845" />
-    <state width="1877" height="199" key="GridCell.Tab.0.bottom" timestamp="1600284979879">
+    <state width="1877" height="215" key="GridCell.Tab.0.bottom" timestamp="1600632658597">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="96" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596549572381" />
-    <state width="1877" height="199" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600284979879" />
-    <state width="1877" height="199" key="GridCell.Tab.0.center" timestamp="1600284979879">
+    <state width="1877" height="215" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600632658597" />
+    <state width="1877" height="215" key="GridCell.Tab.0.center" timestamp="1600632658597">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="96" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1596549572380" />
-    <state width="1877" height="199" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600284979879" />
-    <state width="1877" height="199" key="GridCell.Tab.0.left" timestamp="1600284979879">
+    <state width="1877" height="215" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600632658597" />
+    <state width="1877" height="215" key="GridCell.Tab.0.left" timestamp="1600632658597">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="96" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1596549572380" />
-    <state width="1877" height="199" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600284979879" />
-    <state width="1877" height="199" key="GridCell.Tab.0.right" timestamp="1600284979879">
+    <state width="1877" height="215" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600632658597" />
+    <state width="1877" height="215" key="GridCell.Tab.0.right" timestamp="1600632658597">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="96" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1596549572381" />
-    <state width="1877" height="199" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600284979879" />
-    <state width="1877" height="215" key="GridCell.Tab.1.bottom" timestamp="1600284979879">
+    <state width="1877" height="215" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600632658597" />
+    <state width="1877" height="215" key="GridCell.Tab.1.bottom" timestamp="1600632658598">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="215" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600284979879" />
-    <state width="1877" height="215" key="GridCell.Tab.1.center" timestamp="1600284979879">
+    <state width="1877" height="215" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600632658598" />
+    <state width="1877" height="215" key="GridCell.Tab.1.center" timestamp="1600632658597">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="215" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600284979879" />
-    <state width="1877" height="215" key="GridCell.Tab.1.left" timestamp="1600284979879">
+    <state width="1877" height="215" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600632658597" />
+    <state width="1877" height="215" key="GridCell.Tab.1.left" timestamp="1600632658597">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="215" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600284979879" />
-    <state width="1877" height="215" key="GridCell.Tab.1.right" timestamp="1600284979879">
+    <state width="1877" height="215" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600632658597" />
+    <state width="1877" height="215" key="GridCell.Tab.1.right" timestamp="1600632658597">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="215" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600284979879" />
+    <state width="1877" height="215" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600632658597" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1596985961793">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -298,19 +353,19 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1600022271104" />
-    <state x="533" y="269" key="com.intellij.ide.util.TipDialog" timestamp="1600355053080">
+    <state x="533" y="269" key="com.intellij.ide.util.TipDialog" timestamp="1600626858954">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1596528637720" />
-    <state x="533" y="269" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600355053080" />
+    <state x="533" y="269" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600626858954" />
     <state x="736" y="208" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1599566232720">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="736" y="208" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1599566232720" />
-    <state x="958" y="180" key="refactoring.ChangeSignatureDialog" timestamp="1600282891011">
+    <state x="958" y="180" key="refactoring.ChangeSignatureDialog" timestamp="1600627477689">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="958" y="180" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600282891011" />
+    <state x="958" y="180" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600627477689" />
     <state x="486" y="70" width="945" height="969" key="search.everywhere.popup" timestamp="1600283359174">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -328,6 +383,11 @@
           <url>file://$PROJECT_DIR$/../../Maciek pliki/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h</url>
           <line>68</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.cpp</url>
+          <line>380</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
