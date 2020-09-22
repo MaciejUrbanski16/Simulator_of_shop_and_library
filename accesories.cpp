@@ -252,7 +252,7 @@ towar_int_t Towar::roundFloatToSecond(towar_int_t d)
 {
     towar_int_t temp = d;
     int temp2 = temp*1000;
-    if(temp2 % 100 > 500)
+    if(temp2 % 1000 > 500)
     {
         //zaokraglenie w gore
         temp2 = temp2 - temp2 % 1000 + 1;
