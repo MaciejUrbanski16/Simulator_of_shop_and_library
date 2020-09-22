@@ -380,6 +380,9 @@ int main(int argc, char *argv[]) {
 
     Bill bill;
     shop::towar_int_t toPay = bill.calculate(purchases);
+    shop::towar_int_t zaok = purchases.roundFloatToSecond(toPay);
+
+
     int c = 10;
    // bill.printBill(purchases);
 

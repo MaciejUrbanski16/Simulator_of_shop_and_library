@@ -107,3 +107,26 @@ CMakeFiles/machineOfState.dir/tests/NotepadTests.cpp.obj: ../Tests/NotepadTests.
 CMakeFiles/machineOfState.dir/tests/NotepadTests.cpp.obj: ../accesories.h
 CMakeFiles/machineOfState.dir/tests/NotepadTests.cpp.obj: ../tests.h
 
+CMakeFiles/machineOfState.dir/tests/TowarTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/gtest-death-test.h
+CMakeFiles/machineOfState.dir/tests/TowarTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/gtest-matchers.h
+CMakeFiles/machineOfState.dir/tests/TowarTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/gtest-message.h
+CMakeFiles/machineOfState.dir/tests/TowarTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/gtest-param-test.h
+CMakeFiles/machineOfState.dir/tests/TowarTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/gtest-printers.h
+CMakeFiles/machineOfState.dir/tests/TowarTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/gtest-test-part.h
+CMakeFiles/machineOfState.dir/tests/TowarTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/gtest-typed-test.h
+CMakeFiles/machineOfState.dir/tests/TowarTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/gtest.h
+CMakeFiles/machineOfState.dir/tests/TowarTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/gtest_pred_impl.h
+CMakeFiles/machineOfState.dir/tests/TowarTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/gtest_prod.h
+CMakeFiles/machineOfState.dir/tests/TowarTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/internal/custom/gtest-port.h
+CMakeFiles/machineOfState.dir/tests/TowarTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/internal/custom/gtest-printers.h
+CMakeFiles/machineOfState.dir/tests/TowarTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/internal/gtest-death-test-internal.h
+CMakeFiles/machineOfState.dir/tests/TowarTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/internal/gtest-filepath.h
+CMakeFiles/machineOfState.dir/tests/TowarTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/internal/gtest-internal.h
+CMakeFiles/machineOfState.dir/tests/TowarTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/internal/gtest-param-util.h
+CMakeFiles/machineOfState.dir/tests/TowarTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/internal/gtest-port-arch.h
+CMakeFiles/machineOfState.dir/tests/TowarTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/internal/gtest-port.h
+CMakeFiles/machineOfState.dir/tests/TowarTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
+CMakeFiles/machineOfState.dir/tests/TowarTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
+CMakeFiles/machineOfState.dir/tests/TowarTests.cpp.obj: ../Tests/TowarTests.cpp
+CMakeFiles/machineOfState.dir/tests/TowarTests.cpp.obj: ../accesories.h
+

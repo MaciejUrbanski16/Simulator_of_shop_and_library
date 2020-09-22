@@ -118,6 +118,8 @@ namespace shop
 
         template<typename Type>
         void removeThing(Type *obj,std::vector<Type> &things);
+
+        towar_int_t roundFloatToSecond(towar_int_t d);
     };
 
     //std::vector<Towar> towaryZakupione;

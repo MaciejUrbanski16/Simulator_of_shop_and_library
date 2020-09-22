@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Admin/Desktop/CLionProjects/machineOfState/main.cpp" "C:/Users/Admin/Desktop/CLionProjects/machineOfState/cmake-build-debug/CMakeFiles/machineOfState.dir/main.cpp.obj"
   "C:/Users/Admin/Desktop/CLionProjects/machineOfState/tests.cpp" "C:/Users/Admin/Desktop/CLionProjects/machineOfState/cmake-build-debug/CMakeFiles/machineOfState.dir/tests.cpp.obj"
   "C:/Users/Admin/Desktop/CLionProjects/machineOfState/Tests/NotepadTests.cpp" "C:/Users/Admin/Desktop/CLionProjects/machineOfState/cmake-build-debug/CMakeFiles/machineOfState.dir/tests/NotepadTests.cpp.obj"
+  "C:/Users/Admin/Desktop/CLionProjects/machineOfState/Tests/TowarTests.cpp" "C:/Users/Admin/Desktop/CLionProjects/machineOfState/cmake-build-debug/CMakeFiles/machineOfState.dir/tests/TowarTests.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
