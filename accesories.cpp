@@ -250,22 +250,14 @@ void Towar::readRemoveFromFile()
 
 towar_int_t Towar::roundFloatToSecond(towar_int_t d)
 {
-    towar_int_t temp = d;
-    int temp2 = temp*1000;
-    if(temp2 % 1000 > 500)
+
+    int y = d * 1000; // przesuwamy przecinek o 4 miejsca i pozbywamy sie reszty za przecinkiem - y jest calkowite
+    if (y % 10 >= 5)
     {
-        //zaokraglenie w gore
-        temp2 = temp2 - temp2 % 1000 + 1;
-        d = temp2 / 100;
-        return d;
+        y += 10; // jezeli cyfra jednosci >= 5
     }
-    else if(temp2 % 1000 <= 500)
-    {
-        //zaokraglenie w dol
-        temp2 = temp2 - temp2 % 1000;
-        d = temp2 /100;
-        return d;
-    }
+    return (y / 10) * 0.01; // usuwamy ostatnia cyfre i zamieniamy na liczbe zmiennoprzecinkowa
+
 }
 
 
