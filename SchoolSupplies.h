@@ -54,6 +54,13 @@ namespace shop
         std::string priceOfSup;
         std::string amountOfSup;
 
+        void addSuplies();
+
+        void remSuplies();
+
+        std::string name_ADD;
+        towar_int_t price_ADD;
+        int amount_ADD;
     };
 
 }

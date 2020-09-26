@@ -247,6 +247,33 @@ Bagpack.cpp.s:
 	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Bagpack.cpp.s
 .PHONY : Bagpack.cpp.s
 
+Bill.obj: Bill.cpp.obj
+
+.PHONY : Bill.obj
+
+# target to build an object file
+Bill.cpp.obj:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Bill.cpp.obj
+.PHONY : Bill.cpp.obj
+
+Bill.i: Bill.cpp.i
+
+.PHONY : Bill.i
+
+# target to preprocess a source file
+Bill.cpp.i:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Bill.cpp.i
+.PHONY : Bill.cpp.i
+
+Bill.s: Bill.cpp.s
+
+.PHONY : Bill.s
+
+# target to generate assembly for a file
+Bill.cpp.s:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Bill.cpp.s
+.PHONY : Bill.cpp.s
+
 Book.obj: Book.cpp.obj
 
 .PHONY : Book.obj
@@ -354,6 +381,33 @@ Tests/NotepadTests.s: Tests/NotepadTests.cpp.s
 Tests/NotepadTests.cpp.s:
 	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Tests/NotepadTests.cpp.s
 .PHONY : Tests/NotepadTests.cpp.s
+
+Tests/TowarTests.obj: Tests/TowarTests.cpp.obj
+
+.PHONY : Tests/TowarTests.obj
+
+# target to build an object file
+Tests/TowarTests.cpp.obj:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Tests/TowarTests.cpp.obj
+.PHONY : Tests/TowarTests.cpp.obj
+
+Tests/TowarTests.i: Tests/TowarTests.cpp.i
+
+.PHONY : Tests/TowarTests.i
+
+# target to preprocess a source file
+Tests/TowarTests.cpp.i:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Tests/TowarTests.cpp.i
+.PHONY : Tests/TowarTests.cpp.i
+
+Tests/TowarTests.s: Tests/TowarTests.cpp.s
+
+.PHONY : Tests/TowarTests.s
+
+# target to generate assembly for a file
+Tests/TowarTests.cpp.s:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Tests/TowarTests.cpp.s
+.PHONY : Tests/TowarTests.cpp.s
 
 accesories.obj: accesories.cpp.obj
 
@@ -483,6 +537,9 @@ help:
 	@echo ... Bagpack.obj
 	@echo ... Bagpack.i
 	@echo ... Bagpack.s
+	@echo ... Bill.obj
+	@echo ... Bill.i
+	@echo ... Bill.s
 	@echo ... Book.obj
 	@echo ... Book.i
 	@echo ... Book.s
@@ -495,6 +552,9 @@ help:
 	@echo ... Tests/NotepadTests.obj
 	@echo ... Tests/NotepadTests.i
 	@echo ... Tests/NotepadTests.s
+	@echo ... Tests/TowarTests.obj
+	@echo ... Tests/TowarTests.i
+	@echo ... Tests/TowarTests.s
 	@echo ... accesories.obj
 	@echo ... accesories.i
 	@echo ... accesories.s

@@ -10,8 +10,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-
-
+#include <iomanip>
 
 #include <map>
 //#include "Book.h"
@@ -40,9 +39,7 @@ enum
 
 namespace shop
 {
-
-
-    typedef float towar_int_t ;
+    typedef double towar_int_t ;
     class Towar                     //ogolna klasa towaru sklepu
     {
     public:
@@ -120,6 +117,8 @@ namespace shop
 
         template<typename Type>
         void removeThing(Type *obj,std::vector<Type> &things);
+
+        towar_int_t roundFloatToSecond(towar_int_t d);
     };
 
     //std::vector<Towar> towaryZakupione;

@@ -13,6 +13,8 @@
 #include "Bagpack.h"
 #include "SchoolSupplies.h"
 
+#include "Bill.h"
+
 #include <gtest/gtest.h>
 
 #include <map>
@@ -47,7 +49,7 @@ int main(int argc, char *argv[]) {
 
     purchases.presentationOfServices();
 
-    shop::Towar zakup;
+   // shop::Towar zakup;
     //zakup.readItemsFromFile();
     //zakup.changeModeToSellerMode(mode,"12trempki");
 
@@ -74,7 +76,7 @@ int main(int argc, char *argv[]) {
     assert(purchases.etap==shop::Towar::START);
     if(purchases.enterToShop())
     {
-        zakup.etap = shop::Towar::INTRODUCTION;
+        purchases.etap = shop::Towar::INTRODUCTION;
        // zakup.presentationOfServices();
     }
 
@@ -295,12 +297,6 @@ int main(int argc, char *argv[]) {
             {
                 cout<<"Tu"<<endl;
                 purchases.etap = shop::Towar::CONFIRM; // na obecnym etapie zakonczenie wykonnywania programu natomiast musi dalej nastapis jeszcze rozliczneie
-                //class Rachunek : public Towar
-                //oblicz(|)
-                //drukuj()
-                //zzaplac()
-                //wydajReszte()
-                //break;
             }
 
             else
@@ -382,8 +378,40 @@ int main(int argc, char *argv[]) {
     }
    // placenie
 
-    return 0;
+    Bill bill;
+    shop::towar_int_t toPay = bill.calculate(purchases);
+    shop::towar_int_t wynik_x =( shop::towar_int_t )(( int )( toPay * 100 ) ) / 100;
+    wynik_x = purchases.roundFloatToSecond(wynik_x);
+    assert(purchases.orderedPurchasesName.size() == purchases.orderedPurchasesPrice.size());
 
+    bill.printBill(purchases, toPay);
+   /* shop::towar_int_t zaok2 = zaok*10000000;
+    //dynamic_cast<long long unsigned int>zaok2;
+
+    int zaok3 = 0;
+    zaok3 = static_cast<long long int>(zaok2);
+
+    if(zaok3%1000 == 0)
+    {
+        std::cout<<"oooo"<<std::endl;
+        zaok2 = static_cast<shop::towar_int_t >(zaok3);
+        zaok2 =zaok2/10000000;
+    }*/
+
+
+
+        // bill.printBill(purchases); //???
+
+    int c1 = 10;
+
+        return 0;
+    //else {
+
+        // bill.printBill(purchases);
+
+        return 0;
+
+   // }
 }
 
 

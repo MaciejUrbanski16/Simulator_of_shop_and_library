@@ -182,6 +182,34 @@ CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.s"
 	C:\Users\Admin\Desktop\MACIEK~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Admin\Desktop\CLionProjects\machineOfState\SchoolSupplies.cpp -o CMakeFiles\machineOfState.dir\SchoolSupplies.cpp.s
 
+CMakeFiles/machineOfState.dir/Bill.cpp.obj: CMakeFiles/machineOfState.dir/flags.make
+CMakeFiles/machineOfState.dir/Bill.cpp.obj: CMakeFiles/machineOfState.dir/includes_CXX.rsp
+CMakeFiles/machineOfState.dir/Bill.cpp.obj: ../Bill.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Desktop\CLionProjects\machineOfState\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/machineOfState.dir/Bill.cpp.obj"
+	C:\Users\Admin\Desktop\MACIEK~1\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\machineOfState.dir\Bill.cpp.obj -c C:\Users\Admin\Desktop\CLionProjects\machineOfState\Bill.cpp
+
+CMakeFiles/machineOfState.dir/Bill.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/machineOfState.dir/Bill.cpp.i"
+	C:\Users\Admin\Desktop\MACIEK~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Admin\Desktop\CLionProjects\machineOfState\Bill.cpp > CMakeFiles\machineOfState.dir\Bill.cpp.i
+
+CMakeFiles/machineOfState.dir/Bill.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/machineOfState.dir/Bill.cpp.s"
+	C:\Users\Admin\Desktop\MACIEK~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Admin\Desktop\CLionProjects\machineOfState\Bill.cpp -o CMakeFiles\machineOfState.dir\Bill.cpp.s
+
+CMakeFiles/machineOfState.dir/Tests/TowarTests.cpp.obj: CMakeFiles/machineOfState.dir/flags.make
+CMakeFiles/machineOfState.dir/Tests/TowarTests.cpp.obj: CMakeFiles/machineOfState.dir/includes_CXX.rsp
+CMakeFiles/machineOfState.dir/Tests/TowarTests.cpp.obj: ../Tests/TowarTests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Desktop\CLionProjects\machineOfState\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/machineOfState.dir/Tests/TowarTests.cpp.obj"
+	C:\Users\Admin\Desktop\MACIEK~1\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\machineOfState.dir\Tests\TowarTests.cpp.obj -c C:\Users\Admin\Desktop\CLionProjects\machineOfState\Tests\TowarTests.cpp
+
+CMakeFiles/machineOfState.dir/Tests/TowarTests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/machineOfState.dir/Tests/TowarTests.cpp.i"
+	C:\Users\Admin\Desktop\MACIEK~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Admin\Desktop\CLionProjects\machineOfState\Tests\TowarTests.cpp > CMakeFiles\machineOfState.dir\Tests\TowarTests.cpp.i
+
+CMakeFiles/machineOfState.dir/Tests/TowarTests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/machineOfState.dir/Tests/TowarTests.cpp.s"
+	C:\Users\Admin\Desktop\MACIEK~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Admin\Desktop\CLionProjects\machineOfState\Tests\TowarTests.cpp -o CMakeFiles\machineOfState.dir\Tests\TowarTests.cpp.s
+
 # Object files for target machineOfState
 machineOfState_OBJECTS = \
 "CMakeFiles/machineOfState.dir/main.cpp.obj" \
@@ -192,7 +220,9 @@ machineOfState_OBJECTS = \
 "CMakeFiles/machineOfState.dir/tests.cpp.obj" \
 "CMakeFiles/machineOfState.dir/Bagpack.cpp.obj" \
 "CMakeFiles/machineOfState.dir/generalFunctions.cpp.obj" \
-"CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.obj"
+"CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.obj" \
+"CMakeFiles/machineOfState.dir/Bill.cpp.obj" \
+"CMakeFiles/machineOfState.dir/Tests/TowarTests.cpp.obj"
 
 # External object files for target machineOfState
 machineOfState_EXTERNAL_OBJECTS =
@@ -206,6 +236,8 @@ machineOfState.exe: CMakeFiles/machineOfState.dir/tests.cpp.obj
 machineOfState.exe: CMakeFiles/machineOfState.dir/Bagpack.cpp.obj
 machineOfState.exe: CMakeFiles/machineOfState.dir/generalFunctions.cpp.obj
 machineOfState.exe: CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.obj
+machineOfState.exe: CMakeFiles/machineOfState.dir/Bill.cpp.obj
+machineOfState.exe: CMakeFiles/machineOfState.dir/Tests/TowarTests.cpp.obj
 machineOfState.exe: CMakeFiles/machineOfState.dir/build.make
 machineOfState.exe: lib/libgtestd.a
 machineOfState.exe: lib/libgtest_maind.a
@@ -213,7 +245,7 @@ machineOfState.exe: lib/libgtestd.a
 machineOfState.exe: CMakeFiles/machineOfState.dir/linklibs.rsp
 machineOfState.exe: CMakeFiles/machineOfState.dir/objects1.rsp
 machineOfState.exe: CMakeFiles/machineOfState.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Admin\Desktop\CLionProjects\machineOfState\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable machineOfState.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Admin\Desktop\CLionProjects\machineOfState\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable machineOfState.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\machineOfState.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

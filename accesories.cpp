@@ -248,9 +248,21 @@ void Towar::readRemoveFromFile()
         f.close();
 }
 
+towar_int_t Towar::roundFloatToSecond(towar_int_t d)
+{
+
+    int y = d * 1000; // przesuwamy przecinek o 4 miejsca i pozbywamy sie reszty za przecinkiem - y jest calkowite
+    //if (y % 10 >= 5)
+    {
+     //   y += 10; // jezeli cyfra jednosci >= 5
+    }
+    return (y / 10) * 0.01; // usuwamy ostatnia cyfre i zamieniamy na liczbe zmiennoprzecinkowa
+
+}
 
 
-template<typename Type>
+
+/*template<typename Type>
 void Towar::removeThing(Type *obj) {
     int choose;
 }
@@ -259,7 +271,7 @@ template<typename Type>
 void Towar::removeThing(Type *obj, vector<Type> &things) {
     int choose = enteringTheNumber(1, things.size());
     things.erase(things.begin() + choose -1);
-}
+}*/
 
 /*template<class type>
 void Towar::remove<type>(type el) {

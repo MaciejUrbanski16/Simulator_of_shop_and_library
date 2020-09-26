@@ -3,6 +3,7 @@
 //
 
 #include "SchoolSupplies.h"
+#include "tests.h"
 
 #include <utility>
 
@@ -33,7 +34,7 @@ void shop::SchoolSupplies::saveItemsToFile()
 
         for(int i=0;i<schoolSupplies.size();i++)
         {
-            if(i+1 == schoolSupplies.max_size())
+            if(i+1 == schoolSupplies.size())
             {
                 saveDate<< schoolSupplies[i].name <<' '<<schoolSupplies[i].price<<' '<<schoolSupplies[i].amount<<" _";
             }
@@ -132,6 +133,32 @@ void shop::SchoolSupplies::refreshAmount(std::vector<SchoolSupplies> &schoolSupp
 void shop::SchoolSupplies::editionState()
 {
    //shop::Towar::removeThing<SchoolSupplies>(suppliesEdition,suppliesEdition->schoolSupplies);
+   int choose = enteringTheNumber(1,2);
+   switch(choose)
+   {
+       case 1:
+           addSuplies();
+           break;
+       case 2:
+           remSuplies();
+   }
+}
+
+void shop::SchoolSupplies::remSuplies()
+{
+    std::cout<<"Wybierz ktora rzecz usunac"<<std::endl;
+    int c = enteringTheNumber(1,schoolSupplies.size());
+    schoolSupplies.erase(schoolSupplies.begin()+c -1);
+}
+
+void shop::SchoolSupplies::addSuplies()
+{
+    std::cout<<"Podaj kolejno nazwe, cene i ilosc rzeczy"<<std::endl;
+    cin>>name_ADD;
+    cin>>price_ADD;
+    cin>>amount_ADD;
+
+    schoolSupplies.emplace_back(name_ADD,price_ADD,amount_ADD);
 }
 
 /*void shop::SchoolSupplies::refreshAmount() {
