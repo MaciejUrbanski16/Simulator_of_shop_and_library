@@ -380,15 +380,38 @@ int main(int argc, char *argv[]) {
 
     Bill bill;
     shop::towar_int_t toPay = bill.calculate(purchases);
-    shop::towar_int_t zaok = purchases.roundFloatToSecond(toPay);
+    shop::towar_int_t wynik_x =( shop::towar_int_t )(( int )( toPay * 100 ) ) / 100;
+    wynik_x = purchases.roundFloatToSecond(wynik_x);
+    assert(purchases.orderedPurchasesName.size() == purchases.orderedPurchasesPrice.size());
+
+    bill.printBill(purchases, toPay);
+   /* shop::towar_int_t zaok2 = zaok*10000000;
+    //dynamic_cast<long long unsigned int>zaok2;
+
+    int zaok3 = 0;
+    zaok3 = static_cast<long long int>(zaok2);
+
+    if(zaok3%1000 == 0)
+    {
+        std::cout<<"oooo"<<std::endl;
+        zaok2 = static_cast<shop::towar_int_t >(zaok3);
+        zaok2 =zaok2/10000000;
+    }*/
 
 
 
-    int c = 10;
-   // bill.printBill(purchases);
+        // bill.printBill(purchases); //???
 
-    return 0;
+    int c1 = 10;
 
+        return 0;
+    //else {
+
+        // bill.printBill(purchases);
+
+        return 0;
+
+   // }
 }
 
 

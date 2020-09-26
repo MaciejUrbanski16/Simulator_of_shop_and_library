@@ -252,9 +252,9 @@ towar_int_t Towar::roundFloatToSecond(towar_int_t d)
 {
 
     int y = d * 1000; // przesuwamy przecinek o 4 miejsca i pozbywamy sie reszty za przecinkiem - y jest calkowite
-    if (y % 10 >= 5)
+    //if (y % 10 >= 5)
     {
-        y += 10; // jezeli cyfra jednosci >= 5
+     //   y += 10; // jezeli cyfra jednosci >= 5
     }
     return (y / 10) * 0.01; // usuwamy ostatnia cyfre i zamieniamy na liczbe zmiennoprzecinkowa
 
