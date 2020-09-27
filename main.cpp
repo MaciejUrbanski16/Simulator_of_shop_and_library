@@ -204,7 +204,7 @@ int main(int argc, char *argv[]) {
 
                 //zeszyt->amount = incrementAmountOfNoteAfterReturnedItToShop(purchases.removedThings, zeszyt->dimensions,
                 //                                                            zeszyt->amount);
-                remove(purchases.removedThings,zeszyt->dimensions,zeszyt->amount);
+                purchases.remove(purchases.removedThings,zeszyt->dimensions,zeszyt->amount);
 
                 //purchases.pairOfRemovedAndItsPosition = remove(purchases.removedThings,zeszyt->dimensions,zeszyt->amount); //TO jest to
                 //zeszyt->addThingFromRemovedToShop(purchases.pairOfRemovedAndItsPosition)
@@ -237,7 +237,7 @@ int main(int argc, char *argv[]) {
                 b1.presentationOfBags();
 
                 b1.getMarksAndAmounts();
-                remove(purchases.removedThings,b1.allMarks,b1.allAmounts);
+                purchases.remove(purchases.removedThings,b1.allMarks,b1.allAmounts);
                 b1.refreshObjectsAfterRemoving(b1.bags);
 
                 b1.chooseBag(purchases);             //przekazanie całego obiektu przez referencje aby była mozliwosc jego modyfikacji w funkcji
@@ -268,7 +268,7 @@ int main(int argc, char *argv[]) {
                 purchases.showOrderedPurchases();
 
                 supplies.getNamesAndAmounts();
-                remove(purchases.removedThings,supplies.names,supplies.amounts); // cos tutaj sie wywala na tym remove
+                purchases.remove(purchases.removedThings,supplies.names,supplies.amounts); // cos tutaj sie wywala na tym remove
                 supplies.refreshAmount(supplies.schoolSupplies);
 
                 supplies.saveItemsToFile();
@@ -383,6 +383,7 @@ int main(int argc, char *argv[]) {
     shop::towar_int_t wynik_x =( shop::towar_int_t )(( int )( toPay * 100 ) ) / 100;
     wynik_x = purchases.roundFloatToSecond(wynik_x);
     assert(purchases.orderedPurchasesName.size() == purchases.orderedPurchasesPrice.size());
+
 
     bill.printBill(purchases, toPay);
    /* shop::towar_int_t zaok2 = zaok*10000000;

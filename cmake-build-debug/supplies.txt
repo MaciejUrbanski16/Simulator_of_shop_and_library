@@ -2,11 +2,11 @@ Linijka 1.99 7 _
 Ekierka 2.98 5 _
 Cyrkiel 1 0 _
 Kredki_bambino 5.99 0 _
-Kredki_woskowe 7.98 14 _
+Kredki_woskowe 7.98 13 _
 Kredki_olowkowe 4.79 26 _
-Olowek 1 95 _
+Olowek 1 94 _
 Bibula 3.99 198 _
 Blok_kolorowy 5.68 5 _
 Blok_rysunkowy 3.97 85 _
-Papier_samoprzylepny 7.9 36 _
+Papier_samoprzylepny 7.9 35 _
 Cyrkiel 3.89 322 _

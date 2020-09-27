@@ -89,6 +89,8 @@ namespace shop
 
         static bool enterToShop();          //wejscie do sklepu jedynie po potweirzdzeniu checi wejscia
 
+        void remove(std::vector<std::string> &removedThings, std::vector<std::string> &dimensions,std::vector<int>&amount);
+
         void showOrderedPurchases();        //wyswietla wszystkie rzeczy dodane do koszyka
 
         std::string removeThingFromPurchases();    //usuwa rzecz dodana do koszyka

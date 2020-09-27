@@ -260,6 +260,24 @@ towar_int_t Towar::roundFloatToSecond(towar_int_t d)
 
 }
 
+void  Towar::remove(std::vector<std::string> &removedThings, std::vector<std::string> &dimensions,std::vector<int>&amount)
+{
+    //std::map<std::string, int> pairOfRemovedThingAndPosition;
+    for(int i=0;i<removedThings.size();i++)
+    {
+        for(int j=0;j<dimensions.size();j++)
+        {
+            if(removedThings[i] == dimensions[j])
+            {
+                removedThings.erase(removedThings.begin() + i);
+                amount[j]++;
+                //pairOfRemovedThingAndPosition[removedThings[i]] = j;
+            }
+        }
+    }
+
+}
+
 
 
 /*template<typename Type>
