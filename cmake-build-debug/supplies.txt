@@ -8,5 +8,7 @@ Olowek 1 94 _
 Bibula 3.99 198 _
 Blok_kolorowy 5.68 5 _
 Blok_rysunkowy 3.97 85 _
-Papier_samoprzylepny 7.9 35 _
+Papier_samoprzylepny 7.9 34 _
 Cyrkiel 3.89 322 _
+Gumka 3.91 1500 _
+Strugiwaczka 1.98 450 _

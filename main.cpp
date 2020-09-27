@@ -80,7 +80,7 @@ int main(int argc, char *argv[]) {
        // zakup.presentationOfServices();
     }
 
-    std::vector<shop::Book> ksiazki;
+    //std::vector<shop::Book> ksiazki;
 
     //shop::Towar t1(std::vector<shop::Towar>);
 
@@ -268,19 +268,18 @@ int main(int argc, char *argv[]) {
                 purchases.showOrderedPurchases();
 
                 supplies.getNamesAndAmounts();
-                purchases.remove(purchases.removedThings,supplies.names,supplies.amounts); // cos tutaj sie wywala na tym remove
+                purchases.remove(purchases.removedThings,supplies.names,supplies.amounts);
                 supplies.refreshAmount(supplies.schoolSupplies);
 
                 supplies.saveItemsToFile();
                 purchases.saveRemovedToFile();
             }
 
-            else if(choose == 8)
+            else if(choose == 5)
             {
                 ///logika usuniecia przedmiiotu z koszyka uzytkownika
                 purchases.readRemoveFromFile();
-               purchases.removedThings.push_back(purchases.removeThingFromPurchases()) ; // opracowac ten algorytm oddawa
-                                                                                            // nia rzeczy DO sklepu z koszyka
+               purchases.removedThings.push_back(purchases.removeThingFromPurchases()) ;
 
                for(int i=0;i<purchases.removedThings.size();i++)
                {
@@ -289,11 +288,11 @@ int main(int argc, char *argv[]) {
                purchases.saveRemovedToFile();
             }
 
-            else if(choose == 9)
+            else if(choose == 6)
             {
                 purchases.mode = purchases.changeModeToSellerMode("12trempki",purchases.mode);
             }
-            else if(choose == 10)
+            else if(choose == 7)
             {
                 cout<<"Tu"<<endl;
                 purchases.etap = shop::Towar::CONFIRM; // na obecnym etapie zakonczenie wykonnywania programu natomiast musi dalej nastapis jeszcze rozliczneie
@@ -336,6 +335,7 @@ int main(int argc, char *argv[]) {
                         delete bookEdition;
 
                         break;
+
                     case 2:
                         noteEdition->readItemsFromFile();
                         noteEdition->editionStateOfNotes();
@@ -344,6 +344,7 @@ int main(int argc, char *argv[]) {
                         delete noteEdition;
 
                         break;
+
                     case 3:
                         bagEdition->readItemsFromFile();
                         bagEdition->editionStateOfBags();
@@ -351,6 +352,7 @@ int main(int argc, char *argv[]) {
 
                         delete bagEdition;
                         break;
+
                     case 4:
                         suppliesEdition->readItemsFromFile(suppliesEdition->schoolSupplies);
                         suppliesEdition->editionState();
@@ -358,11 +360,8 @@ int main(int argc, char *argv[]) {
 
                         delete suppliesEdition;
                         break;
+
                     case 5:
-                        break;
-                    case 6:
-                        break;
-                    case 7:
                         purchases.mode = purchases.changeModeToSellerMode("12trempki",purchases.mode);
                         break;
 

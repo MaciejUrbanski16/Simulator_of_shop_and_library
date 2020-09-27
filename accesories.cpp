@@ -77,23 +77,23 @@ void Towar :: presentationOfServices()
         cout<<"1. Ksiazki"<<endl;
         cout<<"2. Zeszyty"<<endl;
         cout<<"3. Tornistry"<<endl;
-        cout<<"4. Plecaki"<<endl;
-        cout<<"5. Piorniki"<<endl;
-        cout<<"6. Przybory"<<endl;
-        cout<<"7. Zabawki"<<endl;
-        cout<<"8. USUNIECIE PRZEDMIOTU Z KOSZYKA"<<endl;
-        cout<<"9. ZMIANA TRYBU - Obecny tryb CUSTOMER_MODE "<<endl;
-        cout<<"10. Wyjscie"<<endl;
+        cout<<"4. Przybory"<<endl;
+        cout<<"5. USUNIECIE PRZEDMIOTU Z KOSZYKA"<<endl;
+        cout<<"6. ZMIANA TRYBU - Obecny tryb CUSTOMER_MODE "<<endl;
+        cout<<"7. Wyjscie"<<endl;
+        //cout<<"8. USUNIECIE PRZEDMIOTU Z KOSZYKA"<<endl;
+        //cout<<"9. ZMIANA TRYBU - Obecny tryb CUSTOMER_MODE "<<endl;
+        //cout<<"10. Wyjscie"<<endl;
     }
     else if(mode == SELLER_MODE)
     {
         cout<<"1. Edycja ksiazek"<<endl;
         cout<<"2. Edycja zeszytow"<<endl;
         cout<<"3. Edycja tornistrow"<<endl;
-        cout<<"4. Edycja plecakow"<<endl;
-        cout<<"5. Edycja piornikow"<<endl;
-        cout<<"6. Edycja przyborow"<<endl;
-        cout<<"7. ZMIANA TRYBU - Obecny tryb SELLER_MODE "<<endl;
+        cout<<"4. Edycja przyborow"<<endl;
+        cout<<"5. ZMIANA TRYBU - Obecny tryb SELLER_MODE "<<endl;
+        //cout<<"6. Edycja przyborow"<<endl;
+        //cout<<"7. ZMIANA TRYBU - Obecny tryb SELLER_MODE "<<endl;
     }
 }
 
@@ -102,19 +102,19 @@ int Towar :: chooseOfService()
     int choose = 0;
     if(mode == CUSTOMER_MODE)
     {
-        cout<<"Podaj cyfre 1-9, aby wybrac usługe"<<endl;
+        cout<<"Podaj cyfre 1-7, aby wybrac usługe"<<endl;
         cout<<"------------------"<<endl;
 
 
-        choose = enteringTheNumber(1,10);
+        choose = enteringTheNumber(1,7);
     }
 
     else if(mode == SELLER_MODE)
     {
-        cout<<"Podaj cyfre 1-7 aby wybrac usługe"<<endl;
+        cout<<"Podaj cyfre 1-5 aby wybrac usługe"<<endl;
         cout<<"------------------"<<endl;
 
-        choose  = enteringTheNumber(1,7);
+        choose  = enteringTheNumber(1,5);
 
     }
     return choose;
