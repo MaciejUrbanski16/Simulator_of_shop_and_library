@@ -1,5 +1,7 @@
 #include <iostream>
 
+#include <memory>
+
 #include "generalFunctions.h"
 
 //#include "accesories.h
@@ -48,6 +50,8 @@ int main(int argc, char *argv[]) {
     purchases.mode = CUSTOMER_MODE;
 
     purchases.presentationOfServices();
+    std::unique_ptr<shop::Towar>purch_ptr;
+    //purch_ptr->presentationOfServices();
 
    // shop::Towar zakup;
     //zakup.readItemsFromFile();
