@@ -5,7 +5,7 @@
 209.99 Green 0 Puma k
 109.99 Red 0 Nike k
 109.99 Red 0 Olg k
-209.99 Green 2 Puma k
+209.99 Green 1 Puma k
 109.99 Red 2 Nike k
 109.99 Red 3 Olg k
 254.99 Green 1000 Bob k

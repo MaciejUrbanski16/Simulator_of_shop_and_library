@@ -42,17 +42,17 @@ namespace shop {
         void addSearchedBooks();
 
         //funkcja dodawania ksiazek komunikujaca sie z sprzedawca
-        static void addThingToShop(int mode, Book *ks);
+        void addThingToShop(int mode);
 
         //usuniecie przedmiotu ze sklepu (dostepne jedynie w trybie sprzedawcy)
-        void removeThingFromShop(int mode, Book *ks);
+        void removeThingFromShop(int mode);
 
 
 
 
 
         //funkcja dodajaca ksiazke w systemie
-        static void addBookToShop(Book *k,
+        void addBookToShop(
                                   std::string titleOfNewBook,
                                   towar_int_t praisesOfNewBook,
                                   int amountOfNewBook);
@@ -89,21 +89,21 @@ namespace shop {
 
         int getSizeOfCurrentSearchings();           //zwraca rozmiar prywatnego vectora currentSearchings
 
-        bool checkAmountofBookInShop(Towar, Book*); //sprawdza czy w sklepie jest pozycja o zadanym tytlue
+        bool checkAmountofBookInShop(const Towar &t); //sprawdza czy w sklepie jest pozycja o zadanym tytlue
 
 
-        static int checkIfBookExist(Book *k, std::string title); //zwraca pozycje ksiazki o zadanym tytule
+        int checkIfBookExist(std::string title); //zwraca pozycje ksiazki o zadanym tytule
 
-        void editionStateOfBooks(int mode, Book *ks);   //usuwanie badz dodawanie zasobow sklaepu ksiazke
+        void editionStateOfBooks(int mode);   //usuwanie badz dodawanie zasobow sklaepu ksiazke
 
         std::string getSearchedBook(int t);     //zwraca tytul szuaknej ksiazki
 
         int chooseOfSearchedBook();     //zwraca nr wybranej ksizki z proponowanej listy
 
-        int searchingBook(Book *ks);        //wyszukiwanie tytulu po zadanej pierwszej literze(uwzglednia duze i male litery
+        int searchingBook();        //wyszukiwanie tytulu po zadanej pierwszej literze(uwzglednia duze i male litery
 
         //pokazuje tytuly wyszukanych ksiazek po zadanej pierwszej literze, zwraca parametr FOUND badz NOT_FOUND
-        int showSearchedBooks(Book *ks, std::vector<std::string> searchedBooks);
+        int showSearchedBooks(std::vector<std::string> searchedBooks);
 
         //zapisanie wszystkich ksiazek ze sklepu przed wyjsciem z uslugi
         void saveItemsToFile();

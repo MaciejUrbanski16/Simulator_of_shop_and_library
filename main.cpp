@@ -108,7 +108,7 @@ int main(int argc, char *argv[]) {
                 purchases.readRemoveFromFile();
                 ksiega->searchInRemoved();                      //sprawdza czy element z kontenera jest w ogolnym spisie elementow tytulow ksiazek
                                                                 //i oddaje ten element na swoje miejsce "polke"
-                if (ksiega->searchingBook(ksiega) == shop::Book::FOUND)
+                if (ksiega->searchingBook() == shop::Book::FOUND)
                 {
                     purchases.paramOfChoosenThing = ksiega->chooseOfSearchedBook();    //t - parametr okreslajacy wybrana pozycje ks w currentSearching
                     if (purchases.paramOfChoosenThing == ksiega->getSizeOfCurrentSearchings())
@@ -121,10 +121,10 @@ int main(int argc, char *argv[]) {
                         ksiega->choosenTitle = ksiega->getSearchedBook(purchases.paramOfChoosenThing - 1);
                         //int t = ksiega->checkIfBookExist(ksiega,ksiega->choosenTitle);
                         cout << "Tytul: " << ksiega->choosenTitle << endl;
-                        purchases.position = ksiega->checkIfBookExist(ksiega, ksiega->choosenTitle);
+                        purchases.position = ksiega->checkIfBookExist(ksiega->choosenTitle);
 
                         cout << "Ilosc; " << ksiega->amountOfBooksInShop[purchases.paramOfChoosenThing - 1] << endl;
-                        if (ksiega->checkAmountofBookInShop(purchases, ksiega))
+                        if (ksiega->checkAmountofBookInShop(purchases))
                         {
 
                             purchases.name = ksiega->titleOfBooksInShop[purchases.position];        //zapisanie nazwy biezacej ksiazki do zmiennej titleOfBooksInShop klasy Towar
@@ -333,7 +333,7 @@ int main(int argc, char *argv[]) {
                     case 1:
                         bookEdition->readItemsFromFile();
                         //cout << "L: " << bookEdition->titleOfBooksInShop.size() << endl;
-                        bookEdition->editionStateOfBooks(purchases.mode,bookEdition);
+                        bookEdition->editionStateOfBooks(purchases.mode);
                         bookEdition->saveItemsToFile();
 
                         delete bookEdition;

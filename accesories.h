@@ -101,7 +101,7 @@ namespace shop
 
         int chooseOfService();              //wybor kategorii
 
-        void addThingToShop(int mode);      //dodanie przedmiotu do sklepu -mozliwe jedynie w trybie sprzedawcy
+        //virtual void addThingToShop(int mode);      //dodanie przedmiotu do sklepu -mozliwe jedynie w trybie sprzedawcy
 
         int choosingFromList(int, int);
 

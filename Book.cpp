@@ -77,7 +77,7 @@ void Book:: saveItemsToFile()
 
 ///----------------------------------------------------------------------------------------------------------------------
 
-void Book::editionStateOfBooks(int mode, Book *ks)
+void Book::editionStateOfBooks(int mode)
 {
 
     cout<<"1. Dodanie nowej ksiazki do sklepu"<<endl;
@@ -86,17 +86,17 @@ void Book::editionStateOfBooks(int mode, Book *ks)
     switch(choose)
     {
         case 1:
-            addThingToShop(mode,ks);
+            addThingToShop(mode);
             break;
         case 2:
-            removeThingFromShop(mode,ks);
+            removeThingFromShop(mode);
             break;
         default:
             break;
     }
 
 }
-int Book::searchingBook(Book *ks)
+int Book::searchingBook()
 {
 
     cout<<"Podaj litere: "<<endl;
@@ -117,7 +117,7 @@ int Book::searchingBook(Book *ks)
 
     currentSearchings.push_back("ZADNA_Z_POWYZSZYCH");
 
-    if(showSearchedBooks(ks,currentSearchings)==NOT_FOUND)//wyswietlenie wyszukanych pozycji
+    if(showSearchedBooks(currentSearchings)==NOT_FOUND)//wyswietlenie wyszukanych pozycji
     {
         return NOT_FOUND;
     } else
@@ -163,7 +163,7 @@ void Book::addSearchedBooks()
 
     }
 }
-int Book :: showSearchedBooks(Book *ks,std::vector<std::string>searchedBooks)
+int Book :: showSearchedBooks(std::vector<std::string>searchedBooks)
 {
     if(searchedBooks.empty()||searchedBooks[0]=="ZADNA_Z_POWYZSZYCH")
     {
@@ -183,22 +183,22 @@ int Book :: showSearchedBooks(Book *ks,std::vector<std::string>searchedBooks)
     }
 }
 
-bool Book ::checkAmountofBookInShop(Towar purchases, Book *ksiega)
+bool Book ::checkAmountofBookInShop(const Towar& purchases)
 {
     //ksiega->amountOfBooksInShop[purchases.position] = ksiega->amountOfBooksInShop[purchases.position] - 1;
    // int j = ksiega->amountOfBooksInShop[purchases.position];
 
     bool p;
-    ksiega->amountOfBooksInShop[purchases.position]--;
+    this->amountOfBooksInShop[purchases.position]--;
     int checker = 1;//ksiega->amountOfBooksInShop[purchases.position];
 
-    if(ksiega->amountOfBooksInShop[purchases.position]>0)
+    if(this->amountOfBooksInShop[purchases.position]>0)
     {
         p = true;
     }
     else
     {
-        cout << "Obecnie brak pozycji o tytule: " << ksiega->titleOfBooksInShop[purchases.position] << endl;
+        cout << "Obecnie brak pozycji o tytule: " << this->titleOfBooksInShop[purchases.position] << endl;
         p = false;
     }
 
@@ -208,12 +208,12 @@ bool Book ::checkAmountofBookInShop(Towar purchases, Book *ksiega)
 
 //----------------------------------------------------------------------------------------------------------------------
 
-int Book ::checkIfBookExist(Book *k, std::string title)
+ int Book ::checkIfBookExist(std::string title)
 {
     int position = -1;
-    for(int i =0; i<k->titleOfBooksInShop.size(); i++)
+    for(int i =0; i<this->titleOfBooksInShop.size(); i++)
     {
-        if(k->titleOfBooksInShop[i] == title)
+        if(this->titleOfBooksInShop[i] == title)
         {
             position = i;
             break;
@@ -230,17 +230,17 @@ std::string Book::getSearchedBook(int t)
 
 //----------------------------------------------------------------------------------------------------------------------
 
-void Book::addBookToShop(Book *k, std::string titleOfNewBook, towar_int_t praisesOfNewBook, int amountOfNewBook)
+void Book::addBookToShop( std::string titleOfNewBook, towar_int_t praisesOfNewBook, int amountOfNewBook)
 {
     //automatyzacja uzupelniania zapasow sklepu
-    k->titleOfBooksInShop.push_back(titleOfNewBook);
-    k->praisesOfBooksInShop.push_back(praisesOfNewBook);
-    k->amountOfBooksInShop.push_back(amountOfNewBook);
+    this->titleOfBooksInShop.push_back(titleOfNewBook);
+    this->praisesOfBooksInShop.push_back(praisesOfNewBook);
+    this->amountOfBooksInShop.push_back(amountOfNewBook);
 }
 
 //----------------------------------------------------------------------------------------------------------------------
 
-void Book:: addThingToShop(int mode, Book *ks)
+void Book:: addThingToShop(int mode)
 {
     if(mode==CUSTOMER_MODE)
     {
@@ -255,7 +255,7 @@ void Book:: addThingToShop(int mode, Book *ks)
         cin>>title_a;
         cin>>pricesToAdd;
         cin>>amountToAdd;
-        ks->addBookToShop(ks,title_a,pricesToAdd,amountToAdd);
+        this->addBookToShop(title_a,pricesToAdd,amountToAdd);
         //ks->addBookToShop(ks,"mt2",1222,1111);
         //cout<<"Rozmiar: "<<ks->titleOfBooksInShop.size()<<endl;
 
@@ -264,7 +264,7 @@ void Book:: addThingToShop(int mode, Book *ks)
 
 ///----------------------------------------------------------------------------------------------------------------------
 
-void Book ::removeThingFromShop(int mode, shop::Book *ks)
+void Book ::removeThingFromShop(int mode)
 {
 
     if(mode==CUSTOMER_MODE)
@@ -275,13 +275,13 @@ void Book ::removeThingFromShop(int mode, shop::Book *ks)
     {
         cout<<"Podaj tytul ksiazki ktora zamierzasz usunac ze sklepu"<<endl;
         cin>>titleToRemove;
-        position_b = checkIfBookExist(ks,titleToRemove);
+        position_b = checkIfBookExist(titleToRemove);
 
         if(position_b>=0)
         {
-            ks->titleOfBooksInShop.erase(ks->titleOfBooksInShop.begin() + position_b);
-            ks->praisesOfBooksInShop.erase(ks->praisesOfBooksInShop.begin() + position_b);
-            ks->amountOfBooksInShop.erase(ks->amountOfBooksInShop.begin() + position_b);
+            this->titleOfBooksInShop.erase(this->titleOfBooksInShop.begin() + position_b);
+            this->praisesOfBooksInShop.erase(this->praisesOfBooksInShop.begin() + position_b);
+            this->amountOfBooksInShop.erase(this->amountOfBooksInShop.begin() + position_b);
         }
         else
         {
