@@ -11,6 +11,7 @@ shop::towar_int_t Bill::calculate(shop::Towar &towar)
     {
         allGain  = allGain + towar.orderedPurchasesPrice[i];
     }
+    
     return allGain;
 }
 
@@ -18,7 +19,7 @@ void Bill::printBill(shop::Towar &towar, shop::towar_int_t toPay)
 {
     std::cout<<std::endl<<std::endl<<std::endl;
     //int longer = 0;
-    int space = 50;
+    //int space = 50;
     //std::vector<char>spaces;
     std::string sp;
     int longer = 0 ;
