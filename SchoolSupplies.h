@@ -21,7 +21,7 @@ namespace shop
 
         std::vector<SchoolSupplies> schoolSupplies;
 
-        void readItemsFromFile(std::vector<SchoolSupplies> &supplies);
+        void readItemsFromFile();
         void saveItemsToFile();
 
         void presentationOfSupplies();
@@ -37,7 +37,7 @@ namespace shop
 
         //void refreshAmount();
 
-        void refreshAmount(std::vector<SchoolSupplies> &schoolSupplies1);
+        void refreshAmount();
 
         void editionState();
 

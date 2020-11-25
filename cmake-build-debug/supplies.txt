@@ -1,5 +1,5 @@
 Linijka 1.99 7 _
-Ekierka 2.98 5 _
+Ekierka 2.98 3 _
 Cyrkiel 1 0 _
 Kredki_bambino 5.99 0 _
 Kredki_woskowe 7.98 13 _

@@ -14,7 +14,7 @@ shop::SchoolSupplies::SchoolSupplies(std::string name, towar_int_t price, int am
     this->amount = amount;
 }
 
-void shop::SchoolSupplies::readItemsFromFile(std::vector<SchoolSupplies> &supplies)
+void shop::SchoolSupplies::readItemsFromFile()
 {
     fileWithSupplies.open("supplies.txt");
 
@@ -22,7 +22,7 @@ void shop::SchoolSupplies::readItemsFromFile(std::vector<SchoolSupplies> &suppli
     {
         while(getline(fileWithSupplies,line))
         {
-            createObjectsFromDates(supplies, line);
+            createObjectsFromDates(this->schoolSupplies, line);
         }
     }
 
@@ -122,11 +122,11 @@ void shop::SchoolSupplies::getNamesAndAmounts()
 
 }
 
-void shop::SchoolSupplies::refreshAmount(std::vector<SchoolSupplies> &schoolSupplies1)
+void shop::SchoolSupplies::refreshAmount()
 {
     for(int i=0;i<names.size();i++)
     {
-        schoolSupplies1[i].amount = amounts[i];
+        this->schoolSupplies[i].amount = amounts[i];
     }
 }
 

@@ -101,7 +101,7 @@ int main(int argc, char *argv[]) {
             int choose;
             choose = purchases.chooseOfService();
 
-            if(choose ==1)
+            if(choose == 1)
             {
                 shop::Book *ksiega = new shop::Book(title);
                 ksiega->readItemsFromFile();                      //odczyt musi nastąpić zaraz po deklaracji
@@ -261,7 +261,7 @@ int main(int argc, char *argv[]) {
                 shop::SchoolSupplies supplies;
 
 
-                supplies.readItemsFromFile(supplies.schoolSupplies);
+                supplies.readItemsFromFile();
                 purchases.readRemoveFromFile();
 
                 supplies.presentationOfSupplies();
@@ -273,7 +273,7 @@ int main(int argc, char *argv[]) {
 
                 supplies.getNamesAndAmounts();
                 purchases.remove(purchases.removedThings,supplies.names,supplies.amounts);
-                supplies.refreshAmount(supplies.schoolSupplies);
+                supplies.refreshAmount();
 
                 supplies.saveItemsToFile();
                 purchases.saveRemovedToFile();
@@ -358,7 +358,7 @@ int main(int argc, char *argv[]) {
                         break;
 
                     case 4:
-                        suppliesEdition->readItemsFromFile(suppliesEdition->schoolSupplies);
+                        suppliesEdition->readItemsFromFile();
                         suppliesEdition->editionState();
                         suppliesEdition->saveItemsToFile();
 
