@@ -220,6 +220,33 @@ gtest_main/fast:
 	$(MAKE) -f lib\googletest-master\googletest\CMakeFiles\gtest_main.dir\build.make lib/googletest-master/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
+AccessoriesFactory.obj: AccessoriesFactory.cpp.obj
+
+.PHONY : AccessoriesFactory.obj
+
+# target to build an object file
+AccessoriesFactory.cpp.obj:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/AccessoriesFactory.cpp.obj
+.PHONY : AccessoriesFactory.cpp.obj
+
+AccessoriesFactory.i: AccessoriesFactory.cpp.i
+
+.PHONY : AccessoriesFactory.i
+
+# target to preprocess a source file
+AccessoriesFactory.cpp.i:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/AccessoriesFactory.cpp.i
+.PHONY : AccessoriesFactory.cpp.i
+
+AccessoriesFactory.s: AccessoriesFactory.cpp.s
+
+.PHONY : AccessoriesFactory.s
+
+# target to generate assembly for a file
+AccessoriesFactory.cpp.s:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/AccessoriesFactory.cpp.s
+.PHONY : AccessoriesFactory.cpp.s
+
 Bagpack.obj: Bagpack.cpp.obj
 
 .PHONY : Bagpack.obj
@@ -534,6 +561,9 @@ help:
 	@echo ... gmock
 	@echo ... gtest
 	@echo ... gtest_main
+	@echo ... AccessoriesFactory.obj
+	@echo ... AccessoriesFactory.i
+	@echo ... AccessoriesFactory.s
 	@echo ... Bagpack.obj
 	@echo ... Bagpack.i
 	@echo ... Bagpack.s

@@ -3,6 +3,7 @@
 #include <memory>
 
 #include "generalFunctions.h"
+#include "AccessoriesFactory.h"
 
 //#include "accesories.h
 
@@ -34,6 +35,7 @@ using namespace std;
 
 int main(int argc, char *argv[]) {
 
+    AccessoriesFactory *factory = new SchoolSupliesFactory;
     //test();
     testREMOVE();
     //fun<double,8>(4.78905);

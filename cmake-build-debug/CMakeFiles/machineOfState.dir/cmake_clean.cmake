@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/machineOfState.dir/AccessoriesFactory.cpp.obj"
   "CMakeFiles/machineOfState.dir/Bagpack.cpp.obj"
   "CMakeFiles/machineOfState.dir/Bill.cpp.obj"
   "CMakeFiles/machineOfState.dir/Book.cpp.obj"

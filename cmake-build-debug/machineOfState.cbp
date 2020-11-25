@@ -318,6 +318,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Admin/Desktop/CLionProjects/machineOfState/AccessoriesFactory.cpp">
+			<Option target="machineOfState"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/CLionProjects/machineOfState/AccessoriesFactory.h">
+			<Option target="machineOfState"/>
+		</Unit>
 		<Unit filename="C:/Users/Admin/Desktop/CLionProjects/machineOfState/Bagpack.cpp">
 			<Option target="machineOfState"/>
 		</Unit>

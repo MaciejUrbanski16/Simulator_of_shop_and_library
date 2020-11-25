@@ -12,6 +12,8 @@
 #include <vector>
 #include <iomanip>
 
+#include <memory>
+
 #include <map>
 //#include "Book.h"
 //#include "Book.h"
@@ -37,9 +39,9 @@ enum
     NOTESY
 };
 
-namespace shop
-{
-    typedef double towar_int_t ;
+namespace shop {
+    typedef double towar_int_t;
+
     class Towar                     //ogolna klasa towaru sklepu
     {
     public:
@@ -53,15 +55,16 @@ namespace shop
         int mode;
         int paramOfChoosenThing;
 
-        virtual void readItemsFromFile() ;
-        virtual void saveItemsToFile() ;
+        virtual void readItemsFromFile();
 
-        std::vector<std::string>orderedPurchasesName;
-        std::vector<towar_int_t>orderedPurchasesPrice;
+        virtual void saveItemsToFile();
 
-        std::vector<std::string>removedThings;              //kontener do przechowywania rzeczy usunietych przez
-                                                            //kupujacego z koszyka jeszcze w trakcie zakupow
-        std::map<std::string, int> pairOfRemovedAndItsPosition ;
+        std::vector<std::string> orderedPurchasesName;
+        std::vector<towar_int_t> orderedPurchasesPrice;
+
+        std::vector<std::string> removedThings;              //kontener do przechowywania rzeczy usunietych przez
+        //kupujacego z koszyka jeszcze w trakcie zakupow
+        std::map<std::string, int> pairOfRemovedAndItsPosition;
 
         enum                        //enumeracja do poruszania sie w procesie zakupu
         {
@@ -72,24 +75,27 @@ namespace shop
             END
         };
 
-        template <typename T> void  addThing(T *obj, std::vector<std::string> names,std::vector<towar_int_t> prices, std::vector<int> amounts);
+        template<typename T>
+        void
+        addThing(T *obj, std::vector<std::string> names, std::vector<towar_int_t> prices, std::vector<int> amounts);
 
         //template <typename Type> void removeThing(Type *obj, std::vector<Type> &things);
 
     public:
-        Towar()
-        {
+        Towar() {
             praise = 0;
             amount = 0;
             available = true;
 
         }
+
         int position;
 
 
         static bool enterToShop();          //wejscie do sklepu jedynie po potweirzdzeniu checi wejscia
 
-        void remove(std::vector<std::string> &removedThings, std::vector<std::string> &dimensions,std::vector<int>&amount);
+        void
+        remove(std::vector<std::string> &removedThings, std::vector<std::string> &dimensions, std::vector<int> &amount);
 
         void showOrderedPurchases();        //wyswietla wszystkie rzeczy dodane do koszyka
 
@@ -107,7 +113,8 @@ namespace shop
 
         int enteringTheNumber(int minValue, int maxValue);
 
-        int changeModeToSellerMode(std::string password,int mode); //zmienia treyb z klienta na sprzedawce i z spr na klienta
+        int changeModeToSellerMode(std::string password,
+                                   int mode); //zmienia treyb z klienta na sprzedawce i z spr na klienta
 
         void saveRemovedToFile();
 
@@ -118,47 +125,8 @@ namespace shop
         void remove1(type el);
 
         template<typename Type>
-        void removeThing(Type *obj,std::vector<Type> &things);
+        void removeThing(Type *obj, std::vector<Type> &things);
 
         towar_int_t roundFloatToSecond(towar_int_t d);
     };
-
-    //std::vector<Towar> towaryZakupione;
-
-
-
-
-/*
-    class Tornister : public Towar
-    {
-    public:
-        towar_int_t rozmiar;
-        std::vector<Tornister> bookedBagpack;
-
-    };
-
-    class Piornik : public Towar
-    {
-    public:
-        bool pencilCase;
-        std::vector<Piornik> bookedPencilCases;
-        template<typename T > func(T wyrazwnie){return wyrazenie;}
-    };*/
-
- /*   class Przybory : public Towar
-    {
-    public:
-        std::string type;
-        towar_int_t amount;
-        std::string possibleTypes[7] = {"linijka","ekierka","cyrkiel","katomierz","olowek","dlugopis","gumka"};
-        int ilosci[7] =                 {1,          5,       4,         12,         32,     23,         17};
-        float cena[7]   =               {1.12,      2.79,    1.90,      2.09,     1.12,     4.79,      3.59};
-        Przybory(std::string type, towar_int_t amount)
-        {
-            this->type = type;
-            this->amount = amount;
-        }
-        std::vector<Przybory> bookedPrzybory;            //kontener  na wykonane zakupy
-    };*/
-
 }

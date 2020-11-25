@@ -520,6 +520,16 @@ cxxabi.h
 acxx_demangle.h
 -
 
+C:/Users/Admin/Desktop/CLionProjects/machineOfState/AccessoriesFactory.cpp
+AccessoriesFactory.h
+C:/Users/Admin/Desktop/CLionProjects/machineOfState/AccessoriesFactory.h
+
+C:/Users/Admin/Desktop/CLionProjects/machineOfState/AccessoriesFactory.h
+SchoolSupplies.h
+C:/Users/Admin/Desktop/CLionProjects/machineOfState/SchoolSupplies.h
+Bagpack.h
+C:/Users/Admin/Desktop/CLionProjects/machineOfState/Bagpack.h
+
 C:/Users/Admin/Desktop/CLionProjects/machineOfState/Bagpack.cpp
 Bagpack.h
 C:/Users/Admin/Desktop/CLionProjects/machineOfState/Bagpack.h
@@ -600,6 +610,12 @@ C:/Users/Admin/Desktop/CLionProjects/machineOfState/Notepad.h
 ../tests.h
 C:/Users/Admin/Desktop/CLionProjects/machineOfState/tests.h
 
+C:/Users/Admin/Desktop/CLionProjects/machineOfState/Tests/TowarTests.cpp
+gtest/gtest.h
+-
+../accesories.h
+C:/Users/Admin/Desktop/CLionProjects/machineOfState/accesories.h
+
 C:/Users/Admin/Desktop/CLionProjects/machineOfState/accesories.cpp
 Book.h
 C:/Users/Admin/Desktop/CLionProjects/machineOfState/Book.h
@@ -614,6 +630,8 @@ string
 vector
 -
 iomanip
+-
+memory
 -
 map
 -
@@ -631,6 +649,8 @@ memory
 -
 generalFunctions.h
 C:/Users/Admin/Desktop/CLionProjects/machineOfState/generalFunctions.h
+AccessoriesFactory.h
+C:/Users/Admin/Desktop/CLionProjects/machineOfState/AccessoriesFactory.h
 cassert
 -
 vector
