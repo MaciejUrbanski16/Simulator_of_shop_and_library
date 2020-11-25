@@ -299,7 +299,7 @@ int main(int argc, char *argv[]) {
             else if(choose == 7)
             {
                 cout<<"Tu"<<endl;
-                purchases.etap = shop::Towar::CONFIRM; // na obecnym etapie zakonczenie wykonnywania programu natomiast musi dalej nastapis jeszcze rozliczneie
+                purchases.etap = shop::Towar::CONFIRM;
             }
 
             else
