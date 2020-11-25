@@ -332,8 +332,7 @@ int main(int argc, char *argv[]) {
                 {
                     case 1:
                         bookEdition->readItemsFromFile();
-                        //cout << "L: " << bookEdition->titleOfBooksInShop.size() << endl;
-                        bookEdition->editionStateOfBooks(purchases.mode);
+                        bookEdition->editionStateOfBooks();
                         bookEdition->saveItemsToFile();
 
                         delete bookEdition;

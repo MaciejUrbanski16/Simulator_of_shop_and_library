@@ -42,18 +42,17 @@ namespace shop {
         void addSearchedBooks();
 
         //funkcja dodawania ksiazek komunikujaca sie z sprzedawca
-        void addThingToShop(int mode);
+        void addThingToShop();
 
         //usuniecie przedmiotu ze sklepu (dostepne jedynie w trybie sprzedawcy)
-        void removeThingFromShop(int mode);
+        void removeThingFromShop();
 
 
 
 
 
         //funkcja dodajaca ksiazke w systemie
-        void addBookToShop(
-                                  std::string titleOfNewBook,
+        void addBookToShop(       std::string titleOfNewBook,
                                   towar_int_t praisesOfNewBook,
                                   int amountOfNewBook);
 
@@ -94,7 +93,7 @@ namespace shop {
 
         int checkIfBookExist(std::string title); //zwraca pozycje ksiazki o zadanym tytule
 
-        void editionStateOfBooks(int mode);   //usuwanie badz dodawanie zasobow sklaepu ksiazke
+        void editionStateOfBooks();   //usuwanie badz dodawanie zasobow sklaepu ksiazke
 
         std::string getSearchedBook(int t);     //zwraca tytul szuaknej ksiazki
 

@@ -77,7 +77,7 @@ void Book:: saveItemsToFile()
 
 ///----------------------------------------------------------------------------------------------------------------------
 
-void Book::editionStateOfBooks(int mode)
+void Book::editionStateOfBooks()
 {
 
     cout<<"1. Dodanie nowej ksiazki do sklepu"<<endl;
@@ -86,10 +86,10 @@ void Book::editionStateOfBooks(int mode)
     switch(choose)
     {
         case 1:
-            addThingToShop(mode);
+            addThingToShop();
             break;
         case 2:
-            removeThingFromShop(mode);
+            removeThingFromShop();
             break;
         default:
             break;
@@ -240,7 +240,7 @@ void Book::addBookToShop( std::string titleOfNewBook, towar_int_t praisesOfNewBo
 
 //----------------------------------------------------------------------------------------------------------------------
 
-void Book:: addThingToShop(int mode)
+void Book:: addThingToShop()
 {
     if(mode==CUSTOMER_MODE)
     {
@@ -264,7 +264,7 @@ void Book:: addThingToShop(int mode)
 
 ///----------------------------------------------------------------------------------------------------------------------
 
-void Book ::removeThingFromShop(int mode)
+void Book ::removeThingFromShop()
 {
 
     if(mode==CUSTOMER_MODE)
