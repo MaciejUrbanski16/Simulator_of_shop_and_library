@@ -51,11 +51,11 @@ namespace shop {
         towar_int_t praise;
         int amount;
         std::string name;
-        int etap;
-        int mode;
+        static int etap;
+        static int mode;
         int paramOfChoosenThing;
 
-        virtual void readItemsFromFile();
+        virtual void readItemsFromFile() =0;
 
         virtual void saveItemsToFile();
 
@@ -103,7 +103,7 @@ namespace shop {
 
         void addToPurchases();              //dodaje do koszyka wybrana rzecz
 
-        void presentationOfServices();      //przedstawuienie uslug
+        static void presentationOfServices();      //przedstawuienie uslug
 
         int chooseOfService();              //wybor kategorii
 

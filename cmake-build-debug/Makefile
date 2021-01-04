@@ -247,6 +247,33 @@ AccessoriesFactory.cpp.s:
 	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/AccessoriesFactory.cpp.s
 .PHONY : AccessoriesFactory.cpp.s
 
+Application.obj: Application.cpp.obj
+
+.PHONY : Application.obj
+
+# target to build an object file
+Application.cpp.obj:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Application.cpp.obj
+.PHONY : Application.cpp.obj
+
+Application.i: Application.cpp.i
+
+.PHONY : Application.i
+
+# target to preprocess a source file
+Application.cpp.i:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Application.cpp.i
+.PHONY : Application.cpp.i
+
+Application.s: Application.cpp.s
+
+.PHONY : Application.s
+
+# target to generate assembly for a file
+Application.cpp.s:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Application.cpp.s
+.PHONY : Application.cpp.s
+
 Bagpack.obj: Bagpack.cpp.obj
 
 .PHONY : Bagpack.obj
@@ -564,6 +591,9 @@ help:
 	@echo ... AccessoriesFactory.obj
 	@echo ... AccessoriesFactory.i
 	@echo ... AccessoriesFactory.s
+	@echo ... Application.obj
+	@echo ... Application.i
+	@echo ... Application.s
 	@echo ... Bagpack.obj
 	@echo ... Bagpack.i
 	@echo ... Bagpack.s

@@ -35,23 +35,20 @@ using namespace std;
 
 int main(int argc, char *argv[]) {
 
-    AccessoriesFactory *factory = new SchoolSupliesFactory;
-    //test();
+
     testREMOVE();
-    //fun<double,8>(4.78905);
-    //shop::Bagpack bag1("red","blue",21.5,89);
 
     testing::InitGoogleTest(&argc,argv);
     int  p = RUN_ALL_TESTS();
 
     //testConio();
     //int c = 0;
-    shop::Towar purchases;
+    //shop::Towar purchases;
     //purchases.readItemsFromFile();
     //int mode;
-    purchases.mode = CUSTOMER_MODE;
+    Towar::mode = CUSTOMER_MODE;
 
-    purchases.presentationOfServices();
+    Towar::presentationOfServices();
     std::unique_ptr<shop::Towar>purch_ptr;
     //purch_ptr->presentationOfServices();
 
@@ -78,8 +75,8 @@ int main(int argc, char *argv[]) {
 
 
 
-   purchases.etap = shop::Towar::START;                //odwołania do enuma z deklaracji klasy Towar
-    assert(purchases.etap==shop::Towar::START);
+   Towar::etap = shop::Towar::START;                //odwołania do enuma z deklaracji klasy Towar
+    assert(Towar::etap==shop::Towar::START);
     if(purchases.enterToShop())
     {
         purchases.etap = shop::Towar::INTRODUCTION;

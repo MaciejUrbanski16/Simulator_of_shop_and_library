@@ -6,8 +6,8 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="machineOfState" targetName="gmock_main" />
-      <config projectName="machineOfState" targetName="gtest_main" />
       <config projectName="machineOfState" targetName="gtest" />
+      <config projectName="machineOfState" targetName="gtest_main" />
       <config projectName="machineOfState" targetName="machineOfState" />
       <config projectName="machineOfState" targetName="gmock" />
     </generated>
@@ -19,8 +19,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a417d592-79c6-4910-a3f3-8b98fcb03eae" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Application.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AccessoriesFactory.h" beforeDir="false" afterPath="$PROJECT_DIR$/AccessoriesFactory.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accesories.h" beforeDir="false" afterPath="$PROJECT_DIR$/accesories.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/amountsOfNotes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/amountsOfNotes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/machineOfState.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/machineOfState.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,14 +147,14 @@
     </configuration>
     <list>
       <item itemvalue="Catch.Catch_tests" />
-      <item itemvalue="Google Test.BookTests" />
-      <item itemvalue="Google Test.NotepadTests.Test1" />
-      <item itemvalue="Google Test.NotepadTests.TestReadDateFromFile" />
       <item itemvalue="CMake Application.gmock" />
       <item itemvalue="CMake Application.gmock_main" />
       <item itemvalue="CMake Application.gtest" />
       <item itemvalue="CMake Application.gtest_main" />
       <item itemvalue="CMake Application.machineOfState" />
+      <item itemvalue="Google Test.BookTests" />
+      <item itemvalue="Google Test.NotepadTests.Test1" />
+      <item itemvalue="Google Test.NotepadTests.TestReadDateFromFile" />
     </list>
     <recent_temporary>
       <list>
@@ -229,6 +235,7 @@
       <workItem from="1606246213984" duration="3046000" />
       <workItem from="1606335880539" duration="3289000" />
       <workItem from="1606417879003" duration="49000" />
+      <workItem from="1609790402136" duration="1130000" />
     </task>
     <task id="LOCAL-00001" summary="All features of special things work properly">
       <created>1606246468089</created>
@@ -300,7 +307,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>409</line>
+          <line>406</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
