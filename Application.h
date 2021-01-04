@@ -8,6 +8,18 @@
 
 class Application {
 
+protected:
+    Application(){}
+    static Application *app;
+public:
+
+    //to ensure only one instance of this class
+    Application(Application &other) = delete;
+    void operator=(const Application &other) = delete;
+
+    static Application *getInstance();
+
+
 };
 
 

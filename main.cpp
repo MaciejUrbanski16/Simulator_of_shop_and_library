@@ -11,6 +11,7 @@
 #include <vector>
 #include "tests.h"
 
+#include "Application.h"
 #include "Book.h"
 #include "Notepad.h"
 #include "Bagpack.h"
@@ -31,7 +32,7 @@
 
 using namespace std;
 
-
+Application* Application::app = nullptr;
 
 int main(int argc, char *argv[]) {
 

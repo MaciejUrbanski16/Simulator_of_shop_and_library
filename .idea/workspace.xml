@@ -5,10 +5,10 @@
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="machineOfState" targetName="gmock_main" />
       <config projectName="machineOfState" targetName="gtest" />
-      <config projectName="machineOfState" targetName="gtest_main" />
       <config projectName="machineOfState" targetName="machineOfState" />
+      <config projectName="machineOfState" targetName="gmock_main" />
+      <config projectName="machineOfState" targetName="gtest_main" />
       <config projectName="machineOfState" targetName="gmock" />
     </generated>
   </component>
@@ -19,13 +19,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a417d592-79c6-4910-a3f3-8b98fcb03eae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Application.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accesories.h" beforeDir="false" afterPath="$PROJECT_DIR$/accesories.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/amountsOfNotes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/amountsOfNotes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/machineOfState.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/machineOfState.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Application.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application.h" beforeDir="false" afterPath="$PROJECT_DIR$/Application.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/accesories.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/accesories.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -235,7 +233,7 @@
       <workItem from="1606246213984" duration="3046000" />
       <workItem from="1606335880539" duration="3289000" />
       <workItem from="1606417879003" duration="49000" />
-      <workItem from="1609790402136" duration="1130000" />
+      <workItem from="1609790402136" duration="1924000" />
     </task>
     <task id="LOCAL-00001" summary="All features of special things work properly">
       <created>1606246468089</created>
@@ -272,22 +270,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="585" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1606246465638" />
-    <state width="938" height="295" key="GridCell.Tab.0.bottom" timestamp="1606339183825">
+    <state width="938" height="295" key="GridCell.Tab.0.bottom" timestamp="1609792823525">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606339183825" />
-    <state width="938" height="295" key="GridCell.Tab.0.center" timestamp="1606339183825">
+    <state width="938" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609792823525" />
+    <state width="938" height="295" key="GridCell.Tab.0.center" timestamp="1609792823524">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="295" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606339183825" />
-    <state width="938" height="295" key="GridCell.Tab.0.left" timestamp="1606339183825">
+    <state width="938" height="295" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609792823524" />
+    <state width="938" height="295" key="GridCell.Tab.0.left" timestamp="1609792823524">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="295" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606339183825" />
-    <state width="938" height="295" key="GridCell.Tab.0.right" timestamp="1606339183825">
+    <state width="938" height="295" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609792823524" />
+    <state width="938" height="295" key="GridCell.Tab.0.right" timestamp="1609792823525">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="295" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606339183825" />
+    <state width="938" height="295" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609792823525" />
     <state x="533" y="269" key="com.intellij.ide.util.TipDialog" timestamp="1609790402860">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -307,7 +305,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>406</line>
+          <line>407</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>

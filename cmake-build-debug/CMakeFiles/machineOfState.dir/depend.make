@@ -8,6 +8,9 @@ CMakeFiles/machineOfState.dir/AccessoriesFactory.cpp.obj: ../Book.h
 CMakeFiles/machineOfState.dir/AccessoriesFactory.cpp.obj: ../SchoolSupplies.h
 CMakeFiles/machineOfState.dir/AccessoriesFactory.cpp.obj: ../accesories.h
 
+CMakeFiles/machineOfState.dir/Application.cpp.obj: ../Application.cpp
+CMakeFiles/machineOfState.dir/Application.cpp.obj: ../Application.h
+
 CMakeFiles/machineOfState.dir/Bagpack.cpp.obj: ../Bagpack.cpp
 CMakeFiles/machineOfState.dir/Bagpack.cpp.obj: ../Bagpack.h
 CMakeFiles/machineOfState.dir/Bagpack.cpp.obj: ../Book.h
@@ -76,6 +79,7 @@ CMakeFiles/machineOfState.dir/main.cpp.obj: ../lib/googletest-master/googletest/
 CMakeFiles/machineOfState.dir/main.cpp.obj: ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
 CMakeFiles/machineOfState.dir/main.cpp.obj: ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
 CMakeFiles/machineOfState.dir/main.cpp.obj: ../AccessoriesFactory.h
+CMakeFiles/machineOfState.dir/main.cpp.obj: ../Application.h
 CMakeFiles/machineOfState.dir/main.cpp.obj: ../Bagpack.h
 CMakeFiles/machineOfState.dir/main.cpp.obj: ../Bill.h
 CMakeFiles/machineOfState.dir/main.cpp.obj: ../Book.h
