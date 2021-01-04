@@ -21,7 +21,7 @@ public:
     shop::Towar *getConcreteTowar() const override  {
         shop::SchoolSupplies *s;
         s = new shop::SchoolSupplies;
-        return nullptr; //TODO trzeba zmienic cały interface klasy Towar!!!
+        return nullptr; //TODO trzeba zmienic cały interface klasy Towar!!!zrobic ją klasą abstrakcyjną
     }
 };
 
