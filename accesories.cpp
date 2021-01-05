@@ -269,9 +269,13 @@ void  Towar::remove(std::vector<std::string> &removedThings, std::vector<std::st
         {
             if(removedThings[i] == dimensions[j])
             {
-                removedThings.erase(removedThings.begin() + i);
-                amount[j]++;
-                //pairOfRemovedThingAndPosition[removedThings[i]] = j;
+                if(!removedThings.empty())
+                {
+                    removedThings.erase(removedThings.begin() + i);
+                    amount[j]++;
+                    //pairOfRemovedThingAndPosition[removedThings[i]] = j;
+                }
+
             }
         }
     }

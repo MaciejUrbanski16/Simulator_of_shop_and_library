@@ -20,7 +20,14 @@
 
 //class Towar;
 
-
+enum                        //enumeracja do poruszania sie w procesie zakupu
+{
+    START,
+    CHOOSE,
+    INTRODUCTION,
+    CONFIRM,
+    END
+};
 
 enum
 {
@@ -66,14 +73,7 @@ namespace shop {
         //kupujacego z koszyka jeszcze w trakcie zakupow
         std::map<std::string, int> pairOfRemovedAndItsPosition;
 
-        enum                        //enumeracja do poruszania sie w procesie zakupu
-        {
-            START,
-            CHOOSE,
-            INTRODUCTION,
-            CONFIRM,
-            END
-        };
+
 
         template<typename T>
         void

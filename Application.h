@@ -6,6 +6,7 @@
 #define MACHINEOFSTATE_APPLICATION_H
 
 //singleton pattern
+//this class storages configuration of simulator
 class Application {
 
 protected:

@@ -37,8 +37,6 @@ Application* Application::app = nullptr;
 int main(int argc, char *argv[]) {
 
     Application::getInstance()->mode = CUSTOMER_MODE;
-    Application::getInstance()->mode = 1;    Application::getInstance()->mode = CUSTOMER_MODE;
-    Application::getInstance()->mode = 1;
 
     testREMOVE();
 
@@ -79,11 +77,11 @@ int main(int argc, char *argv[]) {
 
 
 
-   purchases.etap = shop::Towar::START;                //odwołania do enuma z deklaracji klasy Towar
-    assert(purchases.etap==shop::Towar::START);
+   purchases.etap = START;                //odwołania do enuma z deklaracji klasy Towar
+    assert(purchases.etap==START);
     if(purchases.enterToShop())
     {
-        purchases.etap = shop::Towar::INTRODUCTION;
+        purchases.etap = INTRODUCTION;
        // zakup.presentationOfServices();
     }
 
@@ -92,7 +90,7 @@ int main(int argc, char *argv[]) {
     //shop::Towar t1(std::vector<shop::Towar>);
 
     purchases.readRemoveFromFile();
-    while(purchases.etap!=shop::Towar::CONFIRM)
+    while(purchases.etap!=CONFIRM)
     {
         //mode = SELLER_MODE;
 
@@ -302,7 +300,7 @@ int main(int argc, char *argv[]) {
             else if(choose == 7)
             {
                 cout<<"Tu"<<endl;
-                purchases.etap = shop::Towar::CONFIRM;
+                purchases.etap = CONFIRM;
             }
 
             else
