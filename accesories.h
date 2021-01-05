@@ -55,7 +55,7 @@ namespace shop {
         static int mode;
         int paramOfChoosenThing;
 
-        virtual void readItemsFromFile() =0;
+        virtual void readItemsFromFile();
 
         virtual void saveItemsToFile();
 

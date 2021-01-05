@@ -44,7 +44,7 @@ int main(int argc, char *argv[]) {
 
     //testConio();
     //int c = 0;
-    //shop::Towar purchases;
+    shop::Towar purchases;
     //purchases.readItemsFromFile();
     //int mode;
     Towar::mode = CUSTOMER_MODE;
@@ -76,8 +76,8 @@ int main(int argc, char *argv[]) {
 
 
 
-   Towar::etap = shop::Towar::START;                //odwołania do enuma z deklaracji klasy Towar
-    assert(Towar::etap==shop::Towar::START);
+   purchases.etap = shop::Towar::START;                //odwołania do enuma z deklaracji klasy Towar
+    assert(purchases.etap==shop::Towar::START);
     if(purchases.enterToShop())
     {
         purchases.etap = shop::Towar::INTRODUCTION;
