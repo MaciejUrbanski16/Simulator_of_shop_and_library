@@ -19,6 +19,8 @@ public:
 
     static Application *getInstance();
 
+    int mode;
+
 
 };
 

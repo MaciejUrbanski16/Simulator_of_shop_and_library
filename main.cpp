@@ -36,7 +36,7 @@ Application* Application::app = nullptr;
 
 int main(int argc, char *argv[]) {
 
-
+   // Application::getInstance()->mode = CUSTOMER_MODE;
     testREMOVE();
 
     testing::InitGoogleTest(&argc,argv);
@@ -47,9 +47,9 @@ int main(int argc, char *argv[]) {
     shop::Towar purchases;
     //purchases.readItemsFromFile();
     //int mode;
-    Towar::mode = CUSTOMER_MODE;
+    purchases.mode = CUSTOMER_MODE;
 
-    Towar::presentationOfServices();
+    purchases.presentationOfServices();
     std::unique_ptr<shop::Towar>purch_ptr;
     //purch_ptr->presentationOfServices();
 
