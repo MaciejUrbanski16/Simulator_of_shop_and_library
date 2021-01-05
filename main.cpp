@@ -36,7 +36,7 @@ Application* Application::app = nullptr;
 
 int main(int argc, char *argv[]) {
 
-
+   // Application::getInstance()->mode = CUSTOMER_MODE;
     testREMOVE();
 
     testing::InitGoogleTest(&argc,argv);
@@ -44,12 +44,12 @@ int main(int argc, char *argv[]) {
 
     //testConio();
     //int c = 0;
-    //shop::Towar purchases;
+    shop::Towar purchases;
     //purchases.readItemsFromFile();
     //int mode;
-    Towar::mode = CUSTOMER_MODE;
+    purchases.mode = CUSTOMER_MODE;
 
-    Towar::presentationOfServices();
+    purchases.presentationOfServices();
     std::unique_ptr<shop::Towar>purch_ptr;
     //purch_ptr->presentationOfServices();
 
@@ -76,8 +76,8 @@ int main(int argc, char *argv[]) {
 
 
 
-   Towar::etap = shop::Towar::START;                //odwołania do enuma z deklaracji klasy Towar
-    assert(Towar::etap==shop::Towar::START);
+   purchases.etap = shop::Towar::START;                //odwołania do enuma z deklaracji klasy Towar
+    assert(purchases.etap==shop::Towar::START);
     if(purchases.enterToShop())
     {
         purchases.etap = shop::Towar::INTRODUCTION;

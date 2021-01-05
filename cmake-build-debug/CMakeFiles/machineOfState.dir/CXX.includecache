@@ -520,27 +520,13 @@ cxxabi.h
 acxx_demangle.h
 -
 
-C:/Users/Admin/Desktop/CLionProjects/machineOfState/AccessoriesFactory.cpp
-AccessoriesFactory.h
-C:/Users/Admin/Desktop/CLionProjects/machineOfState/AccessoriesFactory.h
-
 C:/Users/Admin/Desktop/CLionProjects/machineOfState/AccessoriesFactory.h
 SchoolSupplies.h
 C:/Users/Admin/Desktop/CLionProjects/machineOfState/SchoolSupplies.h
 Bagpack.h
 C:/Users/Admin/Desktop/CLionProjects/machineOfState/Bagpack.h
 
-C:/Users/Admin/Desktop/CLionProjects/machineOfState/Application.cpp
-Application.h
 C:/Users/Admin/Desktop/CLionProjects/machineOfState/Application.h
-
-C:/Users/Admin/Desktop/CLionProjects/machineOfState/Application.h
-
-C:/Users/Admin/Desktop/CLionProjects/machineOfState/Bagpack.cpp
-Bagpack.h
-C:/Users/Admin/Desktop/CLionProjects/machineOfState/Bagpack.h
-utility
--
 
 C:/Users/Admin/Desktop/CLionProjects/machineOfState/Bagpack.h
 string
@@ -550,19 +536,11 @@ C:/Users/Admin/Desktop/CLionProjects/machineOfState/Book.h
 fstream
 -
 
-C:/Users/Admin/Desktop/CLionProjects/machineOfState/Bill.cpp
-Bill.h
-C:/Users/Admin/Desktop/CLionProjects/machineOfState/Bill.h
-
 C:/Users/Admin/Desktop/CLionProjects/machineOfState/Bill.h
 Book.h
 C:/Users/Admin/Desktop/CLionProjects/machineOfState/Book.h
 ctime
 C:/Users/Admin/Desktop/CLionProjects/machineOfState/ctime
-
-C:/Users/Admin/Desktop/CLionProjects/machineOfState/Book.cpp
-Book.h
-C:/Users/Admin/Desktop/CLionProjects/machineOfState/Book.h
 
 C:/Users/Admin/Desktop/CLionProjects/machineOfState/Book.h
 string
@@ -580,10 +558,6 @@ C:/Users/Admin/Desktop/CLionProjects/machineOfState/accesories.h
 map
 -
 
-C:/Users/Admin/Desktop/CLionProjects/machineOfState/Notepad.cpp
-Notepad.h
-C:/Users/Admin/Desktop/CLionProjects/machineOfState/Notepad.h
-
 C:/Users/Admin/Desktop/CLionProjects/machineOfState/Notepad.h
 iostream
 -
@@ -596,37 +570,9 @@ fstream
 Book.h
 C:/Users/Admin/Desktop/CLionProjects/machineOfState/Book.h
 
-C:/Users/Admin/Desktop/CLionProjects/machineOfState/SchoolSupplies.cpp
-SchoolSupplies.h
-C:/Users/Admin/Desktop/CLionProjects/machineOfState/SchoolSupplies.h
-tests.h
-C:/Users/Admin/Desktop/CLionProjects/machineOfState/tests.h
-utility
--
-
 C:/Users/Admin/Desktop/CLionProjects/machineOfState/SchoolSupplies.h
 Book.h
 C:/Users/Admin/Desktop/CLionProjects/machineOfState/Book.h
-
-C:/Users/Admin/Desktop/CLionProjects/machineOfState/Tests/NotepadTests.cpp
-gtest/gtest.h
--
-../Notepad.h
-C:/Users/Admin/Desktop/CLionProjects/machineOfState/Notepad.h
-../tests.h
-C:/Users/Admin/Desktop/CLionProjects/machineOfState/tests.h
-
-C:/Users/Admin/Desktop/CLionProjects/machineOfState/Tests/TowarTests.cpp
-gtest/gtest.h
--
-../accesories.h
-C:/Users/Admin/Desktop/CLionProjects/machineOfState/accesories.h
-
-C:/Users/Admin/Desktop/CLionProjects/machineOfState/accesories.cpp
-Book.h
-C:/Users/Admin/Desktop/CLionProjects/machineOfState/Book.h
-iostream
--
 
 C:/Users/Admin/Desktop/CLionProjects/machineOfState/accesories.h
 iostream

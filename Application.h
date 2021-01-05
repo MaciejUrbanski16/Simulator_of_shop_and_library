@@ -5,11 +5,11 @@
 #ifndef MACHINEOFSTATE_APPLICATION_H
 #define MACHINEOFSTATE_APPLICATION_H
 
-
+//singleton pattern
 class Application {
 
 protected:
-    Application(){}
+    Application() = default;
     static Application *app;
 public:
 
@@ -18,6 +18,8 @@ public:
     void operator=(const Application &other) = delete;
 
     static Application *getInstance();
+
+    int mode;
 
 
 };
