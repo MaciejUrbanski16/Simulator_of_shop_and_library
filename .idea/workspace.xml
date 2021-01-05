@@ -18,19 +18,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a417d592-79c6-4910-a3f3-8b98fcb03eae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application.h" beforeDir="false" afterPath="$PROJECT_DIR$/Application.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accesories.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/accesories.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accesories.h" beforeDir="false" afterPath="$PROJECT_DIR$/accesories.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/amountOfBooks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/amountOfBooks.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/amountsOfNotes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/amountsOfNotes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/machineOfState.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/machineOfState.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/pricesOfBags.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/pricesOfBags.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/removedFromBasket.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/removedFromBasket.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/supplies.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/supplies.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="a417d592-79c6-4910-a3f3-8b98fcb03eae" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -239,7 +227,7 @@
       <workItem from="1606335880539" duration="3289000" />
       <workItem from="1606417879003" duration="49000" />
       <workItem from="1609790402136" duration="2235000" />
-      <workItem from="1609874811835" duration="3721000" />
+      <workItem from="1609874811835" duration="4098000" />
     </task>
     <task id="LOCAL-00001" summary="All features of special things work properly">
       <created>1606246468089</created>
