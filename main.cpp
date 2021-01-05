@@ -37,6 +37,7 @@ Application* Application::app = nullptr;
 int main(int argc, char *argv[]) {
 
     Application::getInstance()->mode = CUSTOMER_MODE;
+    Application::getInstance()->mode = 1;
     testREMOVE();
 
     testing::InitGoogleTest(&argc,argv);
