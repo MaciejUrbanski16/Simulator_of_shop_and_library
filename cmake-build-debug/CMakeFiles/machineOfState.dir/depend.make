@@ -3,6 +3,7 @@
 
 CMakeFiles/machineOfState.dir/AccessoriesFactory.cpp.obj: ../AccessoriesFactory.cpp
 CMakeFiles/machineOfState.dir/AccessoriesFactory.cpp.obj: ../AccessoriesFactory.h
+CMakeFiles/machineOfState.dir/AccessoriesFactory.cpp.obj: ../Application.h
 CMakeFiles/machineOfState.dir/AccessoriesFactory.cpp.obj: ../Bagpack.h
 CMakeFiles/machineOfState.dir/AccessoriesFactory.cpp.obj: ../Book.h
 CMakeFiles/machineOfState.dir/AccessoriesFactory.cpp.obj: ../SchoolSupplies.h
@@ -10,32 +11,40 @@ CMakeFiles/machineOfState.dir/AccessoriesFactory.cpp.obj: ../accesories.h
 
 CMakeFiles/machineOfState.dir/Application.cpp.obj: ../Application.cpp
 CMakeFiles/machineOfState.dir/Application.cpp.obj: ../Application.h
+CMakeFiles/machineOfState.dir/Application.cpp.obj: ../accesories.h
+CMakeFiles/machineOfState.dir/Application.cpp.obj: ../tests.h
 
+CMakeFiles/machineOfState.dir/Bagpack.cpp.obj: ../Application.h
 CMakeFiles/machineOfState.dir/Bagpack.cpp.obj: ../Bagpack.cpp
 CMakeFiles/machineOfState.dir/Bagpack.cpp.obj: ../Bagpack.h
 CMakeFiles/machineOfState.dir/Bagpack.cpp.obj: ../Book.h
 CMakeFiles/machineOfState.dir/Bagpack.cpp.obj: ../accesories.h
 
+CMakeFiles/machineOfState.dir/Bill.cpp.obj: ../Application.h
 CMakeFiles/machineOfState.dir/Bill.cpp.obj: ../Bill.cpp
 CMakeFiles/machineOfState.dir/Bill.cpp.obj: ../Bill.h
 CMakeFiles/machineOfState.dir/Bill.cpp.obj: ../Book.h
 CMakeFiles/machineOfState.dir/Bill.cpp.obj: ../accesories.h
 
+CMakeFiles/machineOfState.dir/Book.cpp.obj: ../Application.h
 CMakeFiles/machineOfState.dir/Book.cpp.obj: ../Book.cpp
 CMakeFiles/machineOfState.dir/Book.cpp.obj: ../Book.h
 CMakeFiles/machineOfState.dir/Book.cpp.obj: ../accesories.h
 
+CMakeFiles/machineOfState.dir/Notepad.cpp.obj: ../Application.h
 CMakeFiles/machineOfState.dir/Notepad.cpp.obj: ../Book.h
 CMakeFiles/machineOfState.dir/Notepad.cpp.obj: ../Notepad.cpp
 CMakeFiles/machineOfState.dir/Notepad.cpp.obj: ../Notepad.h
 CMakeFiles/machineOfState.dir/Notepad.cpp.obj: ../accesories.h
 
+CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.obj: ../Application.h
 CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.obj: ../Book.h
 CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.obj: ../SchoolSupplies.cpp
 CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.obj: ../SchoolSupplies.h
 CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.obj: ../accesories.h
 CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.obj: ../tests.h
 
+CMakeFiles/machineOfState.dir/accesories.cpp.obj: ../Application.h
 CMakeFiles/machineOfState.dir/accesories.cpp.obj: ../Book.h
 CMakeFiles/machineOfState.dir/accesories.cpp.obj: ../accesories.cpp
 CMakeFiles/machineOfState.dir/accesories.cpp.obj: ../accesories.h
@@ -113,6 +122,7 @@ CMakeFiles/machineOfState.dir/tests/NotepadTests.cpp.obj: ../lib/googletest-mast
 CMakeFiles/machineOfState.dir/tests/NotepadTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/internal/gtest-port.h
 CMakeFiles/machineOfState.dir/tests/NotepadTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
 CMakeFiles/machineOfState.dir/tests/NotepadTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
+CMakeFiles/machineOfState.dir/tests/NotepadTests.cpp.obj: ../Application.h
 CMakeFiles/machineOfState.dir/tests/NotepadTests.cpp.obj: ../Book.h
 CMakeFiles/machineOfState.dir/tests/NotepadTests.cpp.obj: ../Notepad.h
 CMakeFiles/machineOfState.dir/tests/NotepadTests.cpp.obj: ../Tests/NotepadTests.cpp

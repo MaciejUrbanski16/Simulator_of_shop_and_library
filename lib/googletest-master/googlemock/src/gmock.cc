@@ -193,7 +193,7 @@ GTEST_API_ void InitGoogleMock(int* argc, char** argv) {
 }
 
 // This overloaded version can be used in Windows programs compiled in
-// UNICODE mode.
+// UNICODE stage.
 GTEST_API_ void InitGoogleMock(int* argc, wchar_t** argv) {
   internal::InitGoogleMockImpl(argc, argv);
 }

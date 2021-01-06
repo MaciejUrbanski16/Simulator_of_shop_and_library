@@ -12,16 +12,16 @@
 
 class AccessoriesFactory {
 public:
-    virtual shop::Towar * getConcreteTowar() const  = 0 ;
+    virtual shop::Ware * getConcreteTowar() const  = 0 ;
     virtual ~AccessoriesFactory() = default;
 };
 
 class SchoolSupliesFactory : public AccessoriesFactory{
 public:
-    shop::Towar *getConcreteTowar() const override  {
+    shop::Ware *getConcreteTowar() const override  {
         shop::SchoolSupplies *s;
         s = new shop::SchoolSupplies;
-        return nullptr; //TODO trzeba zmienic cały interface klasy Towar!!!zrobic ją klasą abstrakcyjną
+        return nullptr; //TODO trzeba zmienic cały interface klasy Ware!!!zrobic ją klasą abstrakcyjną
     }
 };
 

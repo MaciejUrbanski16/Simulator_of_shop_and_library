@@ -183,7 +183,7 @@ int Book :: showSearchedBooks(std::vector<std::string>searchedBooks)
     }
 }
 
-bool Book ::checkAmountofBookInShop(const Towar& purchases)
+bool Book ::checkAmountofBookInShop(const Ware& purchases)
 {
     //ksiega->amountOfBooksInShop[purchases.position] = ksiega->amountOfBooksInShop[purchases.position] - 1;
    // int j = ksiega->amountOfBooksInShop[purchases.position];
@@ -309,17 +309,17 @@ void Book::toLower()
     }
 }
 
-void Book::searchInRemoved()
+void Book::searchInRemoved(Application &app)
 {
-    for(int i=0;i<removedThings.size();i++)
+    for(int i=0;i<app.removedThings.size();i++)
     {
         for(int j=0; j < titleOfBooksInShop.size(); j++)
         {
-            if(removedThings[i] == titleOfBooksInShop[j])
+            if(app.removedThings[i] == titleOfBooksInShop[j])
             {
                 amountOfBooksInShop[j]++;
                 //delete removedThings;
-                removedThings.erase(removedThings.begin()+i);
+                app.removedThings.erase(app.removedThings.begin()+i);
                 break;
             }
         }

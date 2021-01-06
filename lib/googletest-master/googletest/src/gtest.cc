@@ -5216,7 +5216,7 @@ void UnitTest::AddTestPartResult(
 #if GTEST_HAS_EXCEPTIONS
       throw internal::GoogleTestFailureException(result);
 #else
-      // We cannot call abort() as it generates a pop-up in debug mode
+      // We cannot call abort() as it generates a pop-up in debug stage
       // that cannot be suppressed in VC 7.1 or below.
       exit(1);
 #endif
@@ -5303,7 +5303,7 @@ int UnitTest::Run() {
           0x0,                                    // Clear the following flags:
           _WRITE_ABORT_MSG | _CALL_REPORTFAULT);  // pop-up window, core dump.
 
-    // In debug mode, the Windows CRT can crash with an assertion over invalid
+    // In debug stage, the Windows CRT can crash with an assertion over invalid
     // input (e.g. passing an invalid file descriptor).  The default handling
     // for these assertions is to pop up a dialog and wait for user input.
     // Instead ask the CRT to dump such assertions to stderr non-interactively.
@@ -6539,7 +6539,7 @@ void InitGoogleTest(int* argc, char** argv) {
 }
 
 // This overloaded version can be used in Windows programs compiled in
-// UNICODE mode.
+// UNICODE stage.
 void InitGoogleTest(int* argc, wchar_t** argv) {
 #if defined(GTEST_CUSTOM_INIT_GOOGLE_TEST_FUNCTION_)
   GTEST_CUSTOM_INIT_GOOGLE_TEST_FUNCTION_(argc, argv);

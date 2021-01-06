@@ -11,4 +11,4 @@ Blok_rysunkowy 3.97 85 _
 Papier_samoprzylepny 7.9 34 _
 Cyrkiel 3.89 321 _
 Gumka 3.91 1500 _
-Strugiwaczka 1.98 449 _
+Strugiwaczka 1.98 448 _

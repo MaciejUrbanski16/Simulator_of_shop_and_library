@@ -1505,7 +1505,7 @@ inline Environment* AddGlobalTestEnvironment(Environment* env) {
 GTEST_API_ void InitGoogleTest(int* argc, char** argv);
 
 // This overloaded version can be used in Windows programs compiled in
-// UNICODE mode.
+// UNICODE stage.
 GTEST_API_ void InitGoogleTest(int* argc, wchar_t** argv);
 
 // This overloaded version can be used on Arduino/embedded platforms where

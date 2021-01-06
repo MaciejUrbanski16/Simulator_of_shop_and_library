@@ -4,7 +4,7 @@
 
 #include "Bill.h"
 
-shop::towar_int_t Bill::calculate(shop::Towar &towar)
+shop::towar_int_t Bill::calculate(shop::Ware &towar)
 {
     allGain = 0;
     for(int i=0;i<towar.orderedPurchasesPrice.size(); i++)
@@ -15,7 +15,7 @@ shop::towar_int_t Bill::calculate(shop::Towar &towar)
     return allGain;
 }
 
-void Bill::printBill(shop::Towar &towar, shop::towar_int_t toPay)
+void Bill::printBill(shop::Ware &towar, shop::towar_int_t toPay)
 {
     std::cout<<std::endl<<std::endl<<std::endl;
     //int longer = 0;
@@ -24,7 +24,7 @@ void Bill::printBill(shop::Towar &towar, shop::towar_int_t toPay)
     std::string sp;
     int longer = 0 ;
 
-    time_t timeO; // pobranie aktualnej daty i godziny
+    time_t timeO; //give actual time
     time(&timeO);
 
     std::cout<<"PARAGON FISKALNY       "<<ctime(&timeO)<<std::endl;
