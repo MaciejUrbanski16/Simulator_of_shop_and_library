@@ -133,7 +133,7 @@ for (int i = 0; i < x.size(); ++i) {
 
 Anything that can be streamed to an `ostream` can be streamed to an assertion
 macro--in particular, C strings and `string` objects. If a wide string
-(`wchar_t*`, `TCHAR*` in `UNICODE` mode on Windows, or `std::wstring`) is
+(`wchar_t*`, `TCHAR*` in `UNICODE` stage on Windows, or `std::wstring`) is
 streamed to an assertion, it will be translated to UTF-8 when printed.
 
 ### Basic Assertions
@@ -561,7 +561,7 @@ the [AdvancedGuide](advanced.md). You **must** call this function before calling
 `RUN_ALL_TESTS()`, or the flags won't be properly initialized.
 
 On Windows, `InitGoogleTest()` also works with wide strings, so it can be used
-in programs compiled in `UNICODE` mode as well.
+in programs compiled in `UNICODE` stage as well.
 
 But maybe you think that writing all those `main` functions is too much work? We
 agree with you completely, and that's why Google Test provides a basic

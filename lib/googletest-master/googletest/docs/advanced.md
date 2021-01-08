@@ -640,7 +640,7 @@ Fatal assertion                                  | Nonfatal assertion           
 ------------------------------------------------ | ------------------------------------------------ | --------
 `ASSERT_DEATH(statement, matcher);`              | `EXPECT_DEATH(statement, matcher);`              | `statement` crashes with the given error
 `ASSERT_DEATH_IF_SUPPORTED(statement, matcher);` | `EXPECT_DEATH_IF_SUPPORTED(statement, matcher);` | if death tests are supported, verifies that `statement` crashes with the given error; otherwise verifies nothing
-`ASSERT_DEBUG_DEATH(statement, matcher);`        | `EXPECT_DEBUG_DEATH(statement, matcher);`        | `statement` crashes with the given error **in debug mode**. When not in debug (i.e. `NDEBUG` is defined), this just executes `statement`
+`ASSERT_DEBUG_DEATH(statement, matcher);`        | `EXPECT_DEBUG_DEATH(statement, matcher);`        | `statement` crashes with the given error **in debug stage**. When not in debug (i.e. `NDEBUG` is defined), this just executes `statement`
 `ASSERT_EXIT(statement, predicate, matcher);`    | `EXPECT_EXIT(statement, predicate, matcher);`    | `statement` exits with the given error, and its exit code matches `predicate`
 
 where `statement` is a statement that is expected to cause the process to die,
@@ -813,7 +813,7 @@ initialized from the command-line flag `--gtest_death_test_style`).
         be run.
 *   On Windows, the child is spawned using the `CreateProcess()` API, and
     re-executes the binary to cause just the single death test under
-    consideration to be run - much like the `threadsafe` mode on POSIX.
+    consideration to be run - much like the `threadsafe` stage on POSIX.
 
 Other values for the variable are illegal and will cause the death test to fail.
 Currently, the flag's default value is **"fast"**
@@ -2587,7 +2587,7 @@ variable has been set.
 
 When running test programs under a debugger, it's very convenient if the
 debugger can catch an assertion failure and automatically drop into interactive
-mode. googletest's *break-on-failure* mode supports this behavior.
+stage. googletest's *break-on-failure* stage supports this behavior.
 
 To enable it, set the `GTEST_BREAK_ON_FAILURE` environment variable to a value
 other than `0`. Alternatively, you can use the `--gtest_break_on_failure`

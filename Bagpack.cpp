@@ -120,7 +120,7 @@ void shop::Bagpack::presentationOfBags()
 
 }
 
-void shop::Bagpack::chooseBag(Towar &purchases)
+void shop::Bagpack::chooseBag(Ware &purchases)
 {
     std::cout<<"Wybierz sposrod dostepnych plecakow "<<std::endl;
     int chooseB = enteringTheNumber(1,bags.size());

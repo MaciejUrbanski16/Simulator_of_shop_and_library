@@ -27,7 +27,7 @@ a simple meta-programming tool for C++. The idea is that a programmer writes a
 code. The meta code can handle iterations over a range, nested iterations, local
 meta variable definitions, simple arithmetic, and conditional expressions. You
 can view it as a small Domain-Specific Language. The meta language is designed
-to be non-intrusive (s.t. it won't confuse Emacs' C++ mode, for example) and
+to be non-intrusive (s.t. it won't confuse Emacs' C++ stage, for example) and
 concise, making Pump code intuitive and easy to maintain.
 
 ## Highlights
@@ -39,7 +39,7 @@ concise, making Pump code intuitive and easy to maintain.
     lines (easy to have when they are generated) at acceptable places to fit
     within 80 columns and indent the continuation lines correctly.
 *   The format is human-readable and more concise than XML.
-*   The format works relatively well with Emacs' C++ mode.
+*   The format works relatively well with Emacs' C++ stage.
 
 ## Examples
 

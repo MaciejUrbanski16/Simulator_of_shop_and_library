@@ -91,7 +91,7 @@ void shop::SchoolSupplies::getSize()
 
 }
 
-void shop::SchoolSupplies::chooseSup(shop::Towar &towar)
+void shop::SchoolSupplies::chooseSup(shop::Ware &towar)
 {
     int c = towar.enteringTheNumber(1,schoolSupplies.size());
 
@@ -132,7 +132,7 @@ void shop::SchoolSupplies::refreshAmount()
 
 void shop::SchoolSupplies::editionState()
 {
-   //shop::Towar::removeThing<SchoolSupplies>(suppliesEdition,suppliesEdition->schoolSupplies);
+   //shop::Ware::removeThing<SchoolSupplies>(suppliesEdition,suppliesEdition->schoolSupplies);
    int choose = enteringTheNumber(1,2);
    switch(choose)
    {

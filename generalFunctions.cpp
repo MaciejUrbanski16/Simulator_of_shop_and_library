@@ -50,7 +50,7 @@ std::vector<int> incrementAmountOfNoteAfterReturnedItToShop(std::vector<std::str
 }
 
 
-/*template <typename T> void getBackToShop(T *k,shop::Towar t)
+/*template <typename T> void getBackToShop(T *k,shop::Ware t)
 {
     for(int i=0;i<t.removedThings.size();i++)
     {
@@ -68,4 +68,4 @@ std::vector<int> incrementAmountOfNoteAfterReturnedItToShop(std::vector<std::str
 
 //int presentationOfServices(int);
 
-//std::vector<shop::Towar>towary;
+//std::vector<shop::Ware>towary;

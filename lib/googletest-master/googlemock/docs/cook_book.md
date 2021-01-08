@@ -258,14 +258,14 @@ interface for it and have a concrete subclass that calls the free function:
 class FileInterface {
  public:
   ...
-  virtual bool Open(const char* path, const char* mode) = 0;
+  virtual bool Open(const char* path, const char* stage) = 0;
 };
 
 class File : public FileInterface {
  public:
   ...
-  virtual bool Open(const char* path, const char* mode) {
-     return OpenFile(path, mode);
+  virtual bool Open(const char* path, const char* stage) {
+     return OpenFile(path, stage);
   }
 };
 ```
