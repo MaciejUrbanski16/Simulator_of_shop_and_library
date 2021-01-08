@@ -909,7 +909,7 @@ struct IsAProtocolMessage
 // a container class by checking the type of IsContainerTest<C>(0).
 // The value of the expression is insignificant.
 //
-// In C++11 mode we check the existence of a const_iterator and that an
+// In C++11 stage we check the existence of a const_iterator and that an
 // iterator is properly implemented for the container.
 //
 // For pre-C++11 that we look for both C::iterator and C::const_iterator.

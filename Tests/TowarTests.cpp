@@ -10,7 +10,7 @@ using testing::Eq;
 class TowarTests :public  ::testing::Test
 {
 public:
-    shop::Towar t1;
+    shop::Ware t1;
     TowarTests()
     {
         t1;

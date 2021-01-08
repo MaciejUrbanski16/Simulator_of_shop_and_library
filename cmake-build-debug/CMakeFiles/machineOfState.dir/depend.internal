@@ -4,6 +4,7 @@
 CMakeFiles/machineOfState.dir/AccessoriesFactory.cpp.obj
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/AccessoriesFactory.cpp
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/AccessoriesFactory.h
+ C:/Users/Admin/Desktop/CLionProjects/machineOfState/Application.h
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/Bagpack.h
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/Book.h
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/SchoolSupplies.h
@@ -11,32 +12,40 @@ CMakeFiles/machineOfState.dir/AccessoriesFactory.cpp.obj
 CMakeFiles/machineOfState.dir/Application.cpp.obj
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/Application.cpp
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/Application.h
+ C:/Users/Admin/Desktop/CLionProjects/machineOfState/accesories.h
+ C:/Users/Admin/Desktop/CLionProjects/machineOfState/tests.h
 CMakeFiles/machineOfState.dir/Bagpack.cpp.obj
+ C:/Users/Admin/Desktop/CLionProjects/machineOfState/Application.h
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/Bagpack.cpp
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/Bagpack.h
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/Book.h
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/accesories.h
 CMakeFiles/machineOfState.dir/Bill.cpp.obj
+ C:/Users/Admin/Desktop/CLionProjects/machineOfState/Application.h
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/Bill.cpp
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/Bill.h
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/Book.h
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/accesories.h
 CMakeFiles/machineOfState.dir/Book.cpp.obj
+ C:/Users/Admin/Desktop/CLionProjects/machineOfState/Application.h
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/Book.cpp
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/Book.h
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/accesories.h
 CMakeFiles/machineOfState.dir/Notepad.cpp.obj
+ C:/Users/Admin/Desktop/CLionProjects/machineOfState/Application.h
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/Book.h
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/Notepad.cpp
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/Notepad.h
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/accesories.h
 CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.obj
+ C:/Users/Admin/Desktop/CLionProjects/machineOfState/Application.h
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/Book.h
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/SchoolSupplies.cpp
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/SchoolSupplies.h
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/accesories.h
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/tests.h
 CMakeFiles/machineOfState.dir/accesories.cpp.obj
+ C:/Users/Admin/Desktop/CLionProjects/machineOfState/Application.h
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/Book.h
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/accesories.cpp
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/accesories.h
@@ -114,6 +123,7 @@ CMakeFiles/machineOfState.dir/tests/NotepadTests.cpp.obj
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-port.h
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
+ C:/Users/Admin/Desktop/CLionProjects/machineOfState/Application.h
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/Book.h
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/Notepad.h
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/Tests/NotepadTests.cpp

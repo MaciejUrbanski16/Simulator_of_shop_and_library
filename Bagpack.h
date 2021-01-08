@@ -14,7 +14,7 @@
 
 namespace shop
 {
-    class Bagpack : public Towar {    //atrybuty: marka kolor cena
+    class Bagpack : public Ware {    //atrybuty: marka kolor cena
     public:
         std::string mark;
         std::string color;
@@ -50,7 +50,7 @@ namespace shop
 
         void presentationOfBags();
 
-        void chooseBag(Towar &purchases);
+        void chooseBag(Ware &purchases);
 
         void refreshObjectsAfterRemoving(std::vector<shop::Bagpack> &bags);
 

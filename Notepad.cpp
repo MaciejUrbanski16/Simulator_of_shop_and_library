@@ -196,7 +196,7 @@ void Notepad ::addingByOwnerNewNote()
         cout<<"W trybie klienta nie mozna modyfikowac zasobow sklepu "<<endl;
         cout<<"Jesli chcesz mozesz zmienic teraz tryb z trybu CUSTOMER_MODE na tryb SELLER_MODE"<<endl;
         changeModeToSellerMode("12trempki",mode);
-        presentationOfServices();
+        //presentationOfServices();
     }
 
 }
@@ -213,12 +213,12 @@ Notepad::incrementAmountofRemovedThing(std::map<std::string, int> incrementAmoun
 }
 
 vector<int>
-Notepad::incrementAmountOfNotesAfterReturnedToShop() {
-     for(int i=0;i<removedThings.size();i++) //co to jest??? czemu nie daje rady tego oddzielic do osobnej funkcji??
+Notepad::incrementAmountOfNotesAfterReturnedToShop(Application &app) {
+     for(int i=0;i<app.removedThings.size();i++) //co to jest??? czemu nie daje rady tego oddzielic do osobnej funkcji??
  {
      for(int j=0;j<dimensions.size();j++)
      {
-         if(removedThings[i] == dimensions[j])
+         if(app.removedThings[i] == dimensions[j])
          {
              //removedThings.erase(removedThings.begin() + i);
              amount[j]++;

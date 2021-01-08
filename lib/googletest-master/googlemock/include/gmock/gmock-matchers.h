@@ -3352,7 +3352,7 @@ class BoundSecondMatcher {
   }
 
   // We have to define this for UnorderedPointwise() to compile in
-  // C++98 mode, as it puts BoundSecondMatcher instances in a vector,
+  // C++98 stage, as it puts BoundSecondMatcher instances in a vector,
   // which requires the elements to be assignable in C++98.  The
   // compiler cannot generate the operator= for us, as Tuple2Matcher
   // and Second may not be assignable.

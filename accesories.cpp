@@ -15,17 +15,17 @@ using namespace shop;
 using  namespace std;
 
 
-void Towar::readItemsFromFile()
+void Ware::readItemsFromFile()
 {
 
 }
 
-void Towar::saveItemsToFile()
+void Ware::saveItemsToFile()
 {
 
 }
 
-bool Towar::enterToShop()
+bool Ware::enterToShop()
 {
     bool pushButton;
     cout<<"Jesli chcesz wejsc do sklepu wcisnij znak 'y'"<<endl;
@@ -36,7 +36,7 @@ bool Towar::enterToShop()
     return pushButton;
 }
 
-int Towar::changeModeToSellerMode( std::string password,int mode)
+int Ware::changeModeToSellerMode(std::string password, int mode)
 {
     std::string givenPassword;
     int attemp = 3;
@@ -64,63 +64,14 @@ int Towar::changeModeToSellerMode( std::string password,int mode)
     else {
         mode = CUSTOMER_MODE;
         cout << "Zmieniono tryb na tryb klienta" << endl;
-        //return mode;
+        //return stage;
     }
     return  mode;
 }
 
-void Towar :: presentationOfServices()
-{
-
-    if(mode == CUSTOMER_MODE)
-    {
-        cout<<"1. Ksiazki"<<endl;
-        cout<<"2. Zeszyty"<<endl;
-        cout<<"3. Tornistry"<<endl;
-        cout<<"4. Przybory"<<endl;
-        cout<<"5. USUNIECIE PRZEDMIOTU Z KOSZYKA"<<endl;
-        cout<<"6. ZMIANA TRYBU - Obecny tryb CUSTOMER_MODE "<<endl;
-        cout<<"7. Wyjscie"<<endl;
-        //cout<<"8. USUNIECIE PRZEDMIOTU Z KOSZYKA"<<endl;
-        //cout<<"9. ZMIANA TRYBU - Obecny tryb CUSTOMER_MODE "<<endl;
-        //cout<<"10. Wyjscie"<<endl;
-    }
-    else if(mode == SELLER_MODE)
-    {
-        cout<<"1. Edycja ksiazek"<<endl;
-        cout<<"2. Edycja zeszytow"<<endl;
-        cout<<"3. Edycja tornistrow"<<endl;
-        cout<<"4. Edycja przyborow"<<endl;
-        cout<<"5. ZMIANA TRYBU - Obecny tryb SELLER_MODE "<<endl;
-        //cout<<"6. Edycja przyborow"<<endl;
-        //cout<<"7. ZMIANA TRYBU - Obecny tryb SELLER_MODE "<<endl;
-    }
-}
-
-int Towar :: chooseOfService()
-{
-    int choose = 0;
-    if(mode == CUSTOMER_MODE)
-    {
-        cout<<"Podaj cyfre 1-7, aby wybrac usługe"<<endl;
-        cout<<"------------------"<<endl;
 
 
-        choose = enteringTheNumber(1,7);
-    }
-
-    else if(mode == SELLER_MODE)
-    {
-        cout<<"Podaj cyfre 1-5 aby wybrac usługe"<<endl;
-        cout<<"------------------"<<endl;
-
-        choose  = enteringTheNumber(1,5);
-
-    }
-    return choose;
-}
-
-int Towar ::choosingFromList(int minRange, int maxRange)
+int Ware ::choosingFromList(int minRange, int maxRange)
 {
     int choose1 = -1;
         cout<<"Podaj cyfre 1-3 aby wybrac usługe"<<endl;
@@ -142,7 +93,7 @@ int Towar ::choosingFromList(int minRange, int maxRange)
     return choose1;
 }
 
-int Towar :: enteringTheNumber(int minValue, int maxValue)
+int Ware :: enteringTheNumber(int minValue, int maxValue)
 {
     //int howMuch = 0;
 
@@ -162,7 +113,7 @@ int Towar :: enteringTheNumber(int minValue, int maxValue)
     return where;
 }
 
-std::string Towar::removeThingFromPurchases()
+std::string Ware::removeThingFromPurchases()
 {
     showOrderedPurchases();
     int choose=-1;
@@ -192,7 +143,7 @@ std::string Towar::removeThingFromPurchases()
     }
 }
 
-void Towar :: addToPurchases()
+void Ware :: addToPurchases()
 {
 
     orderedPurchasesName.push_back(name);
@@ -201,7 +152,7 @@ void Towar :: addToPurchases()
     cout<<"Pomyslnie dodano "<<name<<" do koszyka, w cenie "<<praise<<endl;
 }
 
-void Towar::showOrderedPurchases()
+void Ware::showOrderedPurchases()
 {
     for(int i =0;i<orderedPurchasesName.size();i++)
     {
@@ -210,45 +161,13 @@ void Towar::showOrderedPurchases()
     }
 }
 
-Towar::Towar(std::vector<shop::Towar>::iterator iterator) {
+Ware::Ware(std::vector<shop::Ware>::iterator iterator) {
     iterator.base();
 }
 
-void Towar::saveRemovedToFile()
-{
 
-    fstream fileToSaveTitle("removedFromBasket.txt",ios::out);
 
-    for(int i=0;i<removedThings.size();i++)
-    {
-        if(i+1==removedThings.size())
-        {
-            fileToSaveTitle << removedThings[i];
-        }
-        else
-        {
-            fileToSaveTitle << removedThings[i]<<endl;
-        }
-    }
-
-}
-
-void Towar::readRemoveFromFile()
-{
-        removedThings.clear();
-        fstream f;
-        f.open("removedFromBasket.txt");
-        std::string str;
-
-        while(getline(f,str))
-        {
-            removedThings.push_back(str);
-        }
-
-        f.close();
-}
-
-towar_int_t Towar::roundFloatToSecond(towar_int_t d)
+towar_int_t Ware::roundFloatToSecond(towar_int_t d)
 {
 
     int y = d * 1000; // przesuwamy przecinek o 4 miejsca i pozbywamy sie reszty za przecinkiem - y jest calkowite
@@ -260,7 +179,7 @@ towar_int_t Towar::roundFloatToSecond(towar_int_t d)
 
 }
 
-void  Towar::remove(std::vector<std::string> &removedThings, std::vector<std::string> &dimensions,std::vector<int>&amount)
+void  Ware::remove(std::vector<std::string> &removedThings, std::vector<std::string> &dimensions, std::vector<int>&amount)
 {
     //std::map<std::string, int> pairOfRemovedThingAndPosition;
     for(int i=0;i<removedThings.size();i++)
@@ -269,9 +188,13 @@ void  Towar::remove(std::vector<std::string> &removedThings, std::vector<std::st
         {
             if(removedThings[i] == dimensions[j])
             {
-                removedThings.erase(removedThings.begin() + i);
-                amount[j]++;
-                //pairOfRemovedThingAndPosition[removedThings[i]] = j;
+                if(!removedThings.empty())
+                {
+                    removedThings.erase(removedThings.begin() + i);
+                    amount[j]++;
+                    //pairOfRemovedThingAndPosition[removedThings[i]] = j;
+                }
+
             }
         }
     }
@@ -281,18 +204,18 @@ void  Towar::remove(std::vector<std::string> &removedThings, std::vector<std::st
 
 
 /*template<typename Type>
-void Towar::removeThing(Type *obj) {
+void Ware::removeThing(Type *obj) {
     int choose;
 }
 
 template<typename Type>
-void Towar::removeThing(Type *obj, vector<Type> &things) {
+void Ware::removeThing(Type *obj, vector<Type> &things) {
     int choose = enteringTheNumber(1, things.size());
     things.erase(things.begin() + choose -1);
 }*/
 
 /*template<class type>
-void Towar::remove<type>(type el) {
+void Ware::remove<type>(type el) {
     //type el;
     el->titleOfBooksInShop;
 

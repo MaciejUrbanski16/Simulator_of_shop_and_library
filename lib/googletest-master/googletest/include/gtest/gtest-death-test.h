@@ -210,10 +210,10 @@ class GTEST_API_ KilledBySignal {
 };
 # endif  // !GTEST_OS_WINDOWS
 
-// EXPECT_DEBUG_DEATH asserts that the given statements die in debug mode.
+// EXPECT_DEBUG_DEATH asserts that the given statements die in debug stage.
 // The death testing framework causes this to have interesting semantics,
-// since the sideeffects of the call are only visible in opt mode, and not
-// in debug mode.
+// since the sideeffects of the call are only visible in opt stage, and not
+// in debug stage.
 //
 // In practice, this can be used to test functions that utilize the
 // LOG(DFATAL) macro using the following style:
@@ -232,24 +232,24 @@ class GTEST_API_ KilledBySignal {
 //   EXPECT_DEBUG_DEATH(DieInDebugOr12(&sideeffect), "death");
 //
 // #ifdef NDEBUG
-//   // opt-mode has sideeffect visible.
+//   // opt-stage has sideeffect visible.
 //   EXPECT_EQ(12, sideeffect);
 // #else
-//   // dbg-mode no visible sideeffect.
+//   // dbg-stage no visible sideeffect.
 //   EXPECT_EQ(0, sideeffect);
 // #endif
 // }
 //
 // This will assert that DieInDebugReturn12InOpt() crashes in debug
-// mode, usually due to a DCHECK or LOG(DFATAL), but returns the
-// appropriate fallback value (12 in this case) in opt mode. If you
+// stage, usually due to a DCHECK or LOG(DFATAL), but returns the
+// appropriate fallback value (12 in this case) in opt stage. If you
 // need to test that a function has appropriate side-effects in opt
-// mode, include assertions against the side-effects.  A general
+// stage, include assertions against the side-effects.  A general
 // pattern for this is:
 //
 // EXPECT_DEBUG_DEATH({
 //   // Side-effects here will have an effect after this statement in
-//   // opt mode, but none in debug mode.
+//   // opt stage, but none in debug stage.
 //   EXPECT_EQ(12, DieInDebugOr12(&sideeffect));
 // }, "death");
 //

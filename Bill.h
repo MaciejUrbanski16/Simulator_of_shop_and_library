@@ -11,13 +11,13 @@
 using namespace shop;
 
 
-class Bill : public shop::Towar {
+class Bill : public shop::Ware {
 public:
     Bill() = default;
 
-    shop::towar_int_t calculate(Towar &towar);
+    shop::towar_int_t calculate(Ware &towar);
 
-    void printBill(shop::Towar &towar, shop::towar_int_t toPay);
+    void printBill(shop::Ware &towar, shop::towar_int_t toPay);
 
     void payForPurchases();
 

@@ -28,7 +28,7 @@ namespace shop
 
         void getSize();
 
-        void chooseSup(Towar &towar);
+        void chooseSup(Ware &towar);
 
         void getNamesAndAmounts();
 

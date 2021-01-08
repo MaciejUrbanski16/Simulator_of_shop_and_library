@@ -15,12 +15,18 @@
 #include <memory>
 
 #include <map>
-//#include "Book.h"
-//#include "Book.h"
-
-//class Towar;
 
 
+//class Ware;
+
+enum                        //enumeracja do poruszania sie w procesie zakupu
+{
+    START,
+    CHOOSE,
+    INTRODUCTION,
+    CONFIRM,
+    END
+};
 
 enum
 {
@@ -39,20 +45,24 @@ enum
     NOTESY
 };
 
+
+extern int stage;
+extern int mode;
+
 namespace shop {
     typedef double towar_int_t;
 
-    class Towar                     //ogolna klasa towaru sklepu
+    class Ware                     //ogolna klasa towaru sklepu
     {
     public:
-        Towar(std::vector<shop::Towar>::iterator iterator);
+        Ware(std::vector<shop::Ware>::iterator iterator);
 
         bool available;
         towar_int_t praise;
         int amount;
         std::string name;
-        int etap;
-        int mode;
+
+
         int paramOfChoosenThing;
 
         virtual void readItemsFromFile();
@@ -62,27 +72,10 @@ namespace shop {
         std::vector<std::string> orderedPurchasesName;
         std::vector<towar_int_t> orderedPurchasesPrice;
 
-        std::vector<std::string> removedThings;              //kontener do przechowywania rzeczy usunietych przez
-        //kupujacego z koszyka jeszcze w trakcie zakupow
-        std::map<std::string, int> pairOfRemovedAndItsPosition;
 
-        enum                        //enumeracja do poruszania sie w procesie zakupu
-        {
-            START,
-            CHOOSE,
-            INTRODUCTION,
-            CONFIRM,
-            END
-        };
-
-        template<typename T>
-        void
-        addThing(T *obj, std::vector<std::string> names, std::vector<towar_int_t> prices, std::vector<int> amounts);
-
-        //template <typename Type> void removeThing(Type *obj, std::vector<Type> &things);
 
     public:
-        Towar() {
+        Ware() {
             praise = 0;
             amount = 0;
             available = true;
@@ -105,9 +98,9 @@ namespace shop {
 
         void presentationOfServices();      //przedstawuienie uslug
 
-        int chooseOfService();              //wybor kategorii
 
-        //virtual void addThingToShop(int mode);      //dodanie przedmiotu do sklepu -mozliwe jedynie w trybie sprzedawcy
+
+        //virtual void addThingToShop(int stage);      //dodanie przedmiotu do sklepu -mozliwe jedynie w trybie sprzedawcy
 
         int choosingFromList(int, int);
 
@@ -116,9 +109,7 @@ namespace shop {
         int changeModeToSellerMode(std::string password,
                                    int mode); //zmienia treyb z klienta na sprzedawce i z spr na klienta
 
-        void saveRemovedToFile();
 
-        void readRemoveFromFile();
 
 
         template<class type>

@@ -12,12 +12,14 @@
 #include <conio.h>
 #include "accesories.h"
 #include <map>
+
+#include "Application.h"
 //#include "Catch_tests/AbsoluteDateTest.cpp"
 
 
 namespace shop {
 
-    class Book : public shop::Towar    //klasa jako przedstawiciel książki
+    class Book : public shop::Ware    //klasa jako przedstawiciel książki
     {
     private:
         char letter;
@@ -88,7 +90,7 @@ namespace shop {
 
         int getSizeOfCurrentSearchings();           //zwraca rozmiar prywatnego vectora currentSearchings
 
-        bool checkAmountofBookInShop(const Towar &t); //sprawdza czy w sklepie jest pozycja o zadanym tytlue
+        bool checkAmountofBookInShop(const Ware &t); //sprawdza czy w sklepie jest pozycja o zadanym tytlue
 
 
         int checkIfBookExist(std::string title); //zwraca pozycje ksiazki o zadanym tytule
@@ -110,7 +112,7 @@ namespace shop {
         //odczytanie z pliku ksiazek obecnie posiadanych prze sklep
         void readItemsFromFile();
 
-        void searchInRemoved();
+        void searchInRemoved(Application &app);
 
         std::vector<std::string> returnBookFromBasketToShop(std::vector<std::string> removed);
     };

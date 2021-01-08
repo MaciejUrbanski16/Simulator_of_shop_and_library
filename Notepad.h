@@ -11,13 +11,14 @@
 #include <fstream>
 //#include "accesories.h"
 #include "Book.h"
+#include "Application.h"
 //#include <map>
 
 
 
 namespace shop
 {
-    class Notepad : public shop::Towar
+    class Notepad : public shop::Ware
     {
     public:
         std::string color;
@@ -48,8 +49,7 @@ namespace shop
         std::vector<int>
         incrementAmountofRemovedThing(std::map<std::string, int> incrementAmountOfNotesAfterRemovingFromBaskte);
 
-        std::vector<int>
-        incrementAmountOfNotesAfterReturnedToShop();
+        std::vector<int>incrementAmountOfNotesAfterReturnedToShop(Application &app);
 
         void editionStateOfNotes();
 
