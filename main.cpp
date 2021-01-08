@@ -17,6 +17,8 @@
 #include "Bagpack.h"
 #include "SchoolSupplies.h"
 
+#include "ServiceCsvTsv.h"
+
 #include "Bill.h"
 
 #include <gtest/gtest.h>
@@ -39,6 +41,10 @@ int main(int argc, char *argv[]) {
     Application::getInstance()->mode = CUSTOMER_MODE;
 
     testREMOVE();
+
+    std::vector<std::string> t{"a","b","c"};
+    ServiceCsvTsv s;
+    std::string p1 = s.join(t,",");
 
     testing::InitGoogleTest(&argc,argv);
     int  p = RUN_ALL_TESTS();

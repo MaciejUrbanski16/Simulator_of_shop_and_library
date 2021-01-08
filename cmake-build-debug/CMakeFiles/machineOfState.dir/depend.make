@@ -36,6 +36,9 @@ CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.obj: ../SchoolSupplies.h
 CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.obj: ../accesories.h
 CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.obj: ../tests.h
 
+CMakeFiles/machineOfState.dir/ServiceCsvTsv.cpp.obj: ../ServiceCsvTsv.cpp
+CMakeFiles/machineOfState.dir/ServiceCsvTsv.cpp.obj: ../ServiceCsvTsv.h
+
 CMakeFiles/machineOfState.dir/accesories.cpp.obj: ../Book.h
 CMakeFiles/machineOfState.dir/accesories.cpp.obj: ../accesories.cpp
 CMakeFiles/machineOfState.dir/accesories.cpp.obj: ../accesories.h
@@ -85,6 +88,7 @@ CMakeFiles/machineOfState.dir/main.cpp.obj: ../Bill.h
 CMakeFiles/machineOfState.dir/main.cpp.obj: ../Book.h
 CMakeFiles/machineOfState.dir/main.cpp.obj: ../Notepad.h
 CMakeFiles/machineOfState.dir/main.cpp.obj: ../SchoolSupplies.h
+CMakeFiles/machineOfState.dir/main.cpp.obj: ../ServiceCsvTsv.h
 CMakeFiles/machineOfState.dir/main.cpp.obj: ../accesories.h
 CMakeFiles/machineOfState.dir/main.cpp.obj: ../generalFunctions.h
 CMakeFiles/machineOfState.dir/main.cpp.obj: ../main.cpp

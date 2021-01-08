@@ -15,8 +15,9 @@ public:
     ServiceCsvTsv() = default;
 
 
-protected:
     std::string join(const std::vector<std::string> &data, const std::string &delimiter);
+
+protected:
 
     std::string extensionOfFile;
     bool csvFormat;
