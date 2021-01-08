@@ -409,6 +409,33 @@ SchoolSupplies.cpp.s:
 	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.s
 .PHONY : SchoolSupplies.cpp.s
 
+ServiceCsvTsv.obj: ServiceCsvTsv.cpp.obj
+
+.PHONY : ServiceCsvTsv.obj
+
+# target to build an object file
+ServiceCsvTsv.cpp.obj:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ServiceCsvTsv.cpp.obj
+.PHONY : ServiceCsvTsv.cpp.obj
+
+ServiceCsvTsv.i: ServiceCsvTsv.cpp.i
+
+.PHONY : ServiceCsvTsv.i
+
+# target to preprocess a source file
+ServiceCsvTsv.cpp.i:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ServiceCsvTsv.cpp.i
+.PHONY : ServiceCsvTsv.cpp.i
+
+ServiceCsvTsv.s: ServiceCsvTsv.cpp.s
+
+.PHONY : ServiceCsvTsv.s
+
+# target to generate assembly for a file
+ServiceCsvTsv.cpp.s:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ServiceCsvTsv.cpp.s
+.PHONY : ServiceCsvTsv.cpp.s
+
 Tests/NotepadTests.obj: Tests/NotepadTests.cpp.obj
 
 .PHONY : Tests/NotepadTests.obj
@@ -609,6 +636,9 @@ help:
 	@echo ... SchoolSupplies.obj
 	@echo ... SchoolSupplies.i
 	@echo ... SchoolSupplies.s
+	@echo ... ServiceCsvTsv.obj
+	@echo ... ServiceCsvTsv.i
+	@echo ... ServiceCsvTsv.s
 	@echo ... Tests/NotepadTests.obj
 	@echo ... Tests/NotepadTests.i
 	@echo ... Tests/NotepadTests.s

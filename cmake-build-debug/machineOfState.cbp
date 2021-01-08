@@ -360,6 +360,12 @@
 		<Unit filename="C:/Users/Admin/Desktop/CLionProjects/machineOfState/SchoolSupplies.h">
 			<Option target="machineOfState"/>
 		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/CLionProjects/machineOfState/ServiceCsvTsv.cpp">
+			<Option target="machineOfState"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/CLionProjects/machineOfState/ServiceCsvTsv.h">
+			<Option target="machineOfState"/>
+		</Unit>
 		<Unit filename="C:/Users/Admin/Desktop/CLionProjects/machineOfState/Tests/NotepadTests.cpp">
 			<Option target="machineOfState"/>
 		</Unit>

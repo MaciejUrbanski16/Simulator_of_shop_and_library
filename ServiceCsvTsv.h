@@ -1,0 +1,14 @@
+//
+// Created by Admin on 08.01.2021.
+//
+
+#ifndef MACHINEOFSTATE_SERVICECSVTSV_H
+#define MACHINEOFSTATE_SERVICECSVTSV_H
+
+
+class ServiceCsvTsv {
+
+};
+
+
+#endif //MACHINEOFSTATE_SERVICECSVTSV_H

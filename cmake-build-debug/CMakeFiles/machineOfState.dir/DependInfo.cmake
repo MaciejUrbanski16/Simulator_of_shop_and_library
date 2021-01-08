@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Admin/Desktop/CLionProjects/machineOfState/Book.cpp" "C:/Users/Admin/Desktop/CLionProjects/machineOfState/cmake-build-debug/CMakeFiles/machineOfState.dir/Book.cpp.obj"
   "C:/Users/Admin/Desktop/CLionProjects/machineOfState/Notepad.cpp" "C:/Users/Admin/Desktop/CLionProjects/machineOfState/cmake-build-debug/CMakeFiles/machineOfState.dir/Notepad.cpp.obj"
   "C:/Users/Admin/Desktop/CLionProjects/machineOfState/SchoolSupplies.cpp" "C:/Users/Admin/Desktop/CLionProjects/machineOfState/cmake-build-debug/CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.obj"
+  "C:/Users/Admin/Desktop/CLionProjects/machineOfState/ServiceCsvTsv.cpp" "C:/Users/Admin/Desktop/CLionProjects/machineOfState/cmake-build-debug/CMakeFiles/machineOfState.dir/ServiceCsvTsv.cpp.obj"
   "C:/Users/Admin/Desktop/CLionProjects/machineOfState/accesories.cpp" "C:/Users/Admin/Desktop/CLionProjects/machineOfState/cmake-build-debug/CMakeFiles/machineOfState.dir/accesories.cpp.obj"
   "C:/Users/Admin/Desktop/CLionProjects/machineOfState/generalFunctions.cpp" "C:/Users/Admin/Desktop/CLionProjects/machineOfState/cmake-build-debug/CMakeFiles/machineOfState.dir/generalFunctions.cpp.obj"
   "C:/Users/Admin/Desktop/CLionProjects/machineOfState/main.cpp" "C:/Users/Admin/Desktop/CLionProjects/machineOfState/cmake-build-debug/CMakeFiles/machineOfState.dir/main.cpp.obj"
