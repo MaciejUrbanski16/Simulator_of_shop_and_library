@@ -6,7 +6,22 @@
 #define MACHINEOFSTATE_SERVICECSVTSV_H
 
 
-class ServiceCsvTsv {
+#include <vector>
+#include <string>
+#include <fstream>
+
+class ServiceCsvTsv{
+public:
+    ServiceCsvTsv() = default;
+
+
+protected:
+    std::string join(const std::vector<std::string> &data, const std::string &delimiter);
+
+    std::string extensionOfFile;
+    bool csvFormat;
+
+private:
 
 };
 
