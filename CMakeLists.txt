@@ -9,5 +9,5 @@ add_subdirectory(lib/googletest-master)
 include_directories(lib/googletest-master/googletest/include)
 include_directories(lib/googletest-master/googlemock/include)
 
-add_executable(machineOfState main.cpp accesories.h accesories.cpp Book.cpp Book.h Notepad.cpp Notepad.h Tests/NotepadTests.cpp tests.cpp Bagpack.cpp Bagpack.h generalFunctions.cpp generalFunctions.h SchoolSupplies.cpp SchoolSupplies.h Bill.cpp Bill.h Tests/TowarTests.cpp AccessoriesFactory.cpp AccessoriesFactory.h Application.cpp Application.h ServiceCsvTsv.cpp ServiceCsvTsv.h)
+add_executable(machineOfState main.cpp accesories.h accesories.cpp Book.cpp Book.h Notepad.cpp Notepad.h Tests/NotepadTests.cpp tests.cpp Bagpack.cpp Bagpack.h generalFunctions.cpp generalFunctions.h SchoolSupplies.cpp SchoolSupplies.h Bill.cpp Bill.h Tests/TowarTests.cpp AccessoriesFactory.cpp AccessoriesFactory.h Application.cpp Application.h ServiceCsvTsv.cpp ServiceCsvTsv.h Tests/WritingReadingCsvTsv.cpp)
 target_link_libraries(machineOfState gtest gtest_main)

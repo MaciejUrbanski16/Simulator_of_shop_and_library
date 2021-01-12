@@ -574,6 +574,14 @@ C:/Users/Admin/Desktop/CLionProjects/machineOfState/SchoolSupplies.h
 Book.h
 C:/Users/Admin/Desktop/CLionProjects/machineOfState/Book.h
 
+C:/Users/Admin/Desktop/CLionProjects/machineOfState/ServiceCsvTsv.cpp
+ServiceCsvTsv.h
+C:/Users/Admin/Desktop/CLionProjects/machineOfState/ServiceCsvTsv.h
+vector
+-
+string
+-
+
 C:/Users/Admin/Desktop/CLionProjects/machineOfState/ServiceCsvTsv.h
 vector
 -
@@ -581,6 +589,14 @@ string
 -
 fstream
 -
+
+C:/Users/Admin/Desktop/CLionProjects/machineOfState/Tests/WritingReadingCsvTsv.cpp
+gtest/gtest.h
+-
+../ServiceCsvTsv.h
+C:/Users/Admin/Desktop/CLionProjects/machineOfState/ServiceCsvTsv.h
+../tests.h
+C:/Users/Admin/Desktop/CLionProjects/machineOfState/tests.h
 
 C:/Users/Admin/Desktop/CLionProjects/machineOfState/accesories.h
 iostream
