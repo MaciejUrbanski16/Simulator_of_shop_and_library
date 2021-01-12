@@ -19,20 +19,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a417d592-79c6-4910-a3f3-8b98fcb03eae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Tests/WritingReadingCsvTsv.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceCsvTsv.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceCsvTsv.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceCsvTsv.h" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceCsvTsv.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/objects1.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/machineOfState.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/machineOfState.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/WritingReadingCsvTsv.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/WritingReadingCsvTsv.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/machineOfState.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/machineOfState.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,12 +96,6 @@
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookTests" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="machineOfState" TARGET_NAME="machineOfState" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="machineOfState" RUN_TARGET_NAME="machineOfState" TEST_MODE="SUITE_TEST">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-        <option name="BeforeTestRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="NotepadTests.Test1" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="machineOfState" TARGET_NAME="machineOfState" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="machineOfState" RUN_TARGET_NAME="machineOfState" TEST_CLASS="NotepadTests" TEST_METHOD="Test1" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -128,6 +109,18 @@
       </method>
     </configuration>
     <configuration name="TsvCsvTest.joinString" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="machineOfState" TARGET_NAME="machineOfState" RUN_TARGET_PROJECT_NAME="machineOfState" RUN_TARGET_NAME="machineOfState" TEST_CLASS="TsvCsvTest" TEST_METHOD="joinString" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TsvCsvTest.splitString" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="machineOfState" TARGET_NAME="machineOfState" RUN_TARGET_PROJECT_NAME="machineOfState" RUN_TARGET_NAME="machineOfState" TEST_CLASS="TsvCsvTest" TEST_METHOD="splitString" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TsvCsvTest.splitString2" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="machineOfState" TARGET_NAME="machineOfState" RUN_TARGET_PROJECT_NAME="machineOfState" RUN_TARGET_NAME="machineOfState" TEST_CLASS="TsvCsvTest" TEST_METHOD="splitString2" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
@@ -165,17 +158,19 @@
       <item itemvalue="CMake Application.gtest" />
       <item itemvalue="CMake Application.gtest_main" />
       <item itemvalue="CMake Application.machineOfState" />
-      <item itemvalue="Google Test.BookTests" />
       <item itemvalue="Google Test.NotepadTests.Test1" />
       <item itemvalue="Google Test.NotepadTests.TestReadDateFromFile" />
       <item itemvalue="Google Test.TsvCsvTest.joinString" />
+      <item itemvalue="Google Test.TsvCsvTest.splitString" />
+      <item itemvalue="Google Test.TsvCsvTest.splitString2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Google Test.TsvCsvTest.splitString2" />
+        <item itemvalue="Google Test.TsvCsvTest.splitString" />
         <item itemvalue="Google Test.TsvCsvTest.joinString" />
         <item itemvalue="Google Test.NotepadTests.Test1" />
         <item itemvalue="Google Test.NotepadTests.TestReadDateFromFile" />
-        <item itemvalue="Google Test.BookTests" />
       </list>
     </recent_temporary>
   </component>
@@ -253,7 +248,7 @@
       <workItem from="1609790402136" duration="2235000" />
       <workItem from="1609874811835" duration="4098000" />
       <workItem from="1610189654797" duration="90000" />
-      <workItem from="1610465789849" duration="765000" />
+      <workItem from="1610465789849" duration="1634000" />
     </task>
     <task id="LOCAL-00001" summary="All features of special things work properly">
       <created>1606246468089</created>
@@ -290,22 +285,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="585" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1606246465638" />
-    <state width="938" height="295" key="GridCell.Tab.0.bottom" timestamp="1610466517813">
+    <state width="938" height="295" key="GridCell.Tab.0.bottom" timestamp="1610467475094">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610466517813" />
-    <state width="938" height="295" key="GridCell.Tab.0.center" timestamp="1610466517813">
+    <state width="938" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610467475094" />
+    <state width="938" height="295" key="GridCell.Tab.0.center" timestamp="1610467475094">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="295" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610466517813" />
-    <state width="938" height="295" key="GridCell.Tab.0.left" timestamp="1610466517813">
+    <state width="938" height="295" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610467475094" />
+    <state width="938" height="295" key="GridCell.Tab.0.left" timestamp="1610467475094">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="295" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610466517813" />
-    <state width="938" height="295" key="GridCell.Tab.0.right" timestamp="1610466517813">
+    <state width="938" height="295" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610467475094" />
+    <state width="938" height="295" key="GridCell.Tab.0.right" timestamp="1610467475094">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="295" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610466517813" />
+    <state width="938" height="295" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610467475094" />
     <state width="938" height="259" key="GridCell.Tab.1.bottom" timestamp="1610132366449">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

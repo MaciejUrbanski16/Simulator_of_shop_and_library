@@ -30,3 +30,23 @@ TEST_F(TsvCsvTest,joinString)
 
     EXPECT_EQ("MojAABBCCstringAABBCCktoryAABBCCjestAABBCClaczony",out);
 }
+
+TEST_F(TsvCsvTest, splitString)
+{
+    std::string inp = "Ciag,81znakow,81do,81rozdzielenia,81na,8,inne,,81,";
+    std::string delimiter = ",81";
+    std::vector<std::string>out = s1.split(inp,delimiter);
+    std::vector<std::string>refOut = {"Ciag","znakow","do","rozdzielenia","na,8,inne,",","};
+
+    EXPECT_EQ(refOut,out);
+}
+
+TEST_F(TsvCsvTest, splitString2)
+{
+    std::string inp = ",81Ciag,81znakow,81do,81rozdzielenia,81na,8,inne,,81,,81";
+    std::string delimiter = ",81";
+    std::vector<std::string>out = s1.split(inp,delimiter);
+    std::vector<std::string>refOut = {"Ciag","znakow","do","rozdzielenia","na,8,inne,",","};
+
+    EXPECT_EQ(refOut,out);
+}
