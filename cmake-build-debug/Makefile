@@ -517,6 +517,33 @@ Tests/WritingReadingCsvTsv.cpp.s:
 	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsv.cpp.s
 .PHONY : Tests/WritingReadingCsvTsv.cpp.s
 
+WriteCsvTsv.obj: WriteCsvTsv.cpp.obj
+
+.PHONY : WriteCsvTsv.obj
+
+# target to build an object file
+WriteCsvTsv.cpp.obj:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/WriteCsvTsv.cpp.obj
+.PHONY : WriteCsvTsv.cpp.obj
+
+WriteCsvTsv.i: WriteCsvTsv.cpp.i
+
+.PHONY : WriteCsvTsv.i
+
+# target to preprocess a source file
+WriteCsvTsv.cpp.i:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/WriteCsvTsv.cpp.i
+.PHONY : WriteCsvTsv.cpp.i
+
+WriteCsvTsv.s: WriteCsvTsv.cpp.s
+
+.PHONY : WriteCsvTsv.s
+
+# target to generate assembly for a file
+WriteCsvTsv.cpp.s:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/WriteCsvTsv.cpp.s
+.PHONY : WriteCsvTsv.cpp.s
+
 accesories.obj: accesories.cpp.obj
 
 .PHONY : accesories.obj
@@ -675,6 +702,9 @@ help:
 	@echo ... Tests/WritingReadingCsvTsv.obj
 	@echo ... Tests/WritingReadingCsvTsv.i
 	@echo ... Tests/WritingReadingCsvTsv.s
+	@echo ... WriteCsvTsv.obj
+	@echo ... WriteCsvTsv.i
+	@echo ... WriteCsvTsv.s
 	@echo ... accesories.obj
 	@echo ... accesories.i
 	@echo ... accesories.s

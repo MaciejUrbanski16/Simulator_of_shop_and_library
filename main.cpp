@@ -17,7 +17,7 @@
 #include "Bagpack.h"
 #include "SchoolSupplies.h"
 
-#include "ServiceCsvTsv.h"
+#include "WriteCsvTsv.h"
 
 #include "Bill.h"
 
@@ -42,9 +42,12 @@ int main(int argc, char *argv[]) {
 
     testREMOVE();
 
-    std::vector<std::string> t{"a","b","c"};
-    ServiceCsvTsv s;
-    std::string p1 = s.join(t,",");
+
+    WriteCsvTsv w("dane.tsv");
+    std::vector<std::string>header = {"Dane1", "Dane2", "Dane3"};
+    w.addHeader(header);
+    std::vector<std::string> data = {"1","2","3"};
+    w.writeToFile(data);
 
     testing::InitGoogleTest(&argc,argv);
     int  p = RUN_ALL_TESTS();

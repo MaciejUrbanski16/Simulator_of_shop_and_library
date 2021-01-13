@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/machineOfState.dir/Tests/NotepadTests.cpp.obj"
   "CMakeFiles/machineOfState.dir/Tests/TowarTests.cpp.obj"
   "CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsv.cpp.obj"
+  "CMakeFiles/machineOfState.dir/WriteCsvTsv.cpp.obj"
   "CMakeFiles/machineOfState.dir/accesories.cpp.obj"
   "CMakeFiles/machineOfState.dir/generalFunctions.cpp.obj"
   "CMakeFiles/machineOfState.dir/main.cpp.obj"

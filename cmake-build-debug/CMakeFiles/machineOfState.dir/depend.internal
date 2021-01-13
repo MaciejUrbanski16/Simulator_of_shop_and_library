@@ -39,6 +39,10 @@ CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.obj
 CMakeFiles/machineOfState.dir/ServiceCsvTsv.cpp.obj
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/ServiceCsvTsv.cpp
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/ServiceCsvTsv.h
+CMakeFiles/machineOfState.dir/WriteCsvTsv.cpp.obj
+ C:/Users/Admin/Desktop/CLionProjects/machineOfState/ServiceCsvTsv.h
+ C:/Users/Admin/Desktop/CLionProjects/machineOfState/WriteCsvTsv.cpp
+ C:/Users/Admin/Desktop/CLionProjects/machineOfState/WriteCsvTsv.h
 CMakeFiles/machineOfState.dir/accesories.cpp.obj
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/Book.h
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/accesories.cpp
@@ -90,6 +94,7 @@ CMakeFiles/machineOfState.dir/main.cpp.obj
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/Notepad.h
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/SchoolSupplies.h
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/ServiceCsvTsv.h
+ C:/Users/Admin/Desktop/CLionProjects/machineOfState/WriteCsvTsv.h
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/accesories.h
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/generalFunctions.h
  C:/Users/Admin/Desktop/CLionProjects/machineOfState/main.cpp

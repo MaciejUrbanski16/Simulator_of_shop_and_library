@@ -375,6 +375,12 @@
 		<Unit filename="C:/Users/Admin/Desktop/CLionProjects/machineOfState/Tests/WritingReadingCsvTsv.cpp">
 			<Option target="machineOfState"/>
 		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/CLionProjects/machineOfState/WriteCsvTsv.cpp">
+			<Option target="machineOfState"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/CLionProjects/machineOfState/WriteCsvTsv.h">
+			<Option target="machineOfState"/>
+		</Unit>
 		<Unit filename="C:/Users/Admin/Desktop/CLionProjects/machineOfState/accesories.cpp">
 			<Option target="machineOfState"/>
 		</Unit>
