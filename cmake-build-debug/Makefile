@@ -355,6 +355,33 @@ Book.cpp.s:
 	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Book.cpp.s
 .PHONY : Book.cpp.s
 
+ConcreteBook.obj: ConcreteBook.cpp.obj
+
+.PHONY : ConcreteBook.obj
+
+# target to build an object file
+ConcreteBook.cpp.obj:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteBook.cpp.obj
+.PHONY : ConcreteBook.cpp.obj
+
+ConcreteBook.i: ConcreteBook.cpp.i
+
+.PHONY : ConcreteBook.i
+
+# target to preprocess a source file
+ConcreteBook.cpp.i:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteBook.cpp.i
+.PHONY : ConcreteBook.cpp.i
+
+ConcreteBook.s: ConcreteBook.cpp.s
+
+.PHONY : ConcreteBook.s
+
+# target to generate assembly for a file
+ConcreteBook.cpp.s:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteBook.cpp.s
+.PHONY : ConcreteBook.cpp.s
+
 Notepad.obj: Notepad.cpp.obj
 
 .PHONY : Notepad.obj
@@ -603,6 +630,9 @@ help:
 	@echo ... Book.obj
 	@echo ... Book.i
 	@echo ... Book.s
+	@echo ... ConcreteBook.obj
+	@echo ... ConcreteBook.i
+	@echo ... ConcreteBook.s
 	@echo ... Notepad.obj
 	@echo ... Notepad.i
 	@echo ... Notepad.s

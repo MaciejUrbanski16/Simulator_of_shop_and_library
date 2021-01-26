@@ -348,6 +348,12 @@
 		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Book.h">
 			<Option target="machineOfState"/>
 		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBook.cpp">
+			<Option target="machineOfState"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBook.h">
+			<Option target="machineOfState"/>
+		</Unit>
 		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Notepad.cpp">
 			<Option target="machineOfState"/>
 		</Unit>

@@ -31,6 +31,12 @@ CMakeFiles/machineOfState.dir/Book.cpp.obj: ../Book.cpp
 CMakeFiles/machineOfState.dir/Book.cpp.obj: ../Book.h
 CMakeFiles/machineOfState.dir/Book.cpp.obj: ../accesories.h
 
+CMakeFiles/machineOfState.dir/ConcreteBook.cpp.obj: ../Application.h
+CMakeFiles/machineOfState.dir/ConcreteBook.cpp.obj: ../Book.h
+CMakeFiles/machineOfState.dir/ConcreteBook.cpp.obj: ../ConcreteBook.cpp
+CMakeFiles/machineOfState.dir/ConcreteBook.cpp.obj: ../ConcreteBook.h
+CMakeFiles/machineOfState.dir/ConcreteBook.cpp.obj: ../accesories.h
+
 CMakeFiles/machineOfState.dir/Notepad.cpp.obj: ../Application.h
 CMakeFiles/machineOfState.dir/Notepad.cpp.obj: ../Book.h
 CMakeFiles/machineOfState.dir/Notepad.cpp.obj: ../Notepad.cpp

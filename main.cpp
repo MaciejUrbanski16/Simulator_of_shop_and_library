@@ -45,23 +45,13 @@ int main(int argc, char *argv[]) {
     testing::InitGoogleTest(&argc,argv);
     int  p = RUN_ALL_TESTS();
 
-    //testConio();
-    //int c = 0;
+
     shop::Ware purchases;
-    //purchases.readItemsFromFile();
-    //int stage;
+
     application.mode = CUSTOMER_MODE;
 
     application.presentationOfServices();
     std::unique_ptr<shop::Ware>purch_ptr;
-
-   shop:: Book k1;
-    for(int i =0;i<k1.titleOfBooksInShop.size(); i++)
-    {
-        cout << "Tytuly: " << k1.titleOfBooksInShop[i] << endl;
-        cout<<k1.praisesOfBooksInShop[i]<<endl;
-    }
-
 
 
     application.stage = START;                //odwołania do enuma z deklaracji klasy Ware
@@ -72,7 +62,7 @@ int main(int argc, char *argv[]) {
     }
 
 
-    application.readRemoveFromFile();
+    application.readRemoveFromFile(); //wczytanie usunietych przedmiotow z bufora
     while(application.stage != CONFIRM)
     {
         //stage = SELLER_MODE;
@@ -87,7 +77,7 @@ int main(int argc, char *argv[]) {
 
             if(choose == 1)
             {
-                shop::Book *ksiega = new shop::Book(title);
+                unique_ptr<shop::Book> ksiega;
                 ksiega->readItemsFromFile();                      //odczyt musi nastąpić zaraz po deklaracji
                 application.readRemoveFromFile();
                 ksiega->searchInRemoved(application);                      //sprawdza czy element z kontenera jest w ogolnym spisie elementow tytulow ksiazek
@@ -129,44 +119,41 @@ int main(int argc, char *argv[]) {
 
                 ///oddaje pozycje umieszczone w buforze zwrotnym, w którym umieszczone są rzeczy zwrocone przez kupujacego
                 ///spowrotem do sklepu, do odpowiednich rodzajów rzeczy zwiekszając przy tym liczebność danej rzeczy o jeden
-                //ksiega->amountOfBooksInShop = incrementAmountOfNoteAfterReturnedItToShop(purchases.removedThings,
-                //                                                                         ksiega->titleOfBooksInShop,
-                //                                                                         ksiega->amountOfBooksInShop);
+
 
                 remove(application.removedThings,
                                                  ksiega->titleOfBooksInShop,
                                                  ksiega->amountOfBooksInShop); // zwrot niechcianych ksiazek z koszyka powrotemo do sklepu
-                //getBackToShop<shop::Book>(ksiega,purchases);
 
                 ///zapisuje vector - ze zwróconymi nazwami rzeczy przez kupującego jeszcze w trakcie wykonywania zakupów - do pliku .txt
                 application.saveRemovedToFile();
 
                 ///zapisuje aktualny stan - nazwy wszystkich rzeczy, ich aktualną liczebnosc i ceny do plików .txt
                 ksiega->saveItemsToFile();  //zapisanie biezacego stanu sklepu
-                delete ksiega;
+
             }
 
             else if(choose==2)
             {
-                shop::Notepad *zeszyt = new shop::Notepad();
-               // zeszyt->dimensions.clear();
-                zeszyt->readItemsFromFile(); // wczytanie danych
+                unique_ptr<shop::Notepad> notes;
+               // notes->dimensions.clear();
+                notes->readItemsFromFile(); // wczytanie danych
                 application.readRemoveFromFile();
 
-                cout<<"Size dimension notes: "<<zeszyt->dimensions.size()<<endl;
+                cout << "Size dimension notes: " << notes->dimensions.size() << endl;
                 //y
-                // assert(zeszyt->dimensions.size()==3);
-                //zeszyt->setDimensionsOfNote();
+                // assert(notes->dimensions.size()==3);
+                //notes->setDimensionsOfNote();
                 int c;
-                c=zeszyt->chooseOfDimension();
+                c=notes->chooseOfDimension();
                 cout<<"c: "<<c<<endl;
 
-                //zeszyt->chooseOfColor();
-                purchases.name = zeszyt->dimensions[c-1];
-                purchases.praise = zeszyt->price[c-1];
-                if(zeszyt->checkIfNoteIsAvailable(c)) // sprawdfzenie czy zeszyt o wybranej pozycji jest nadal dostepny
+                //notes->chooseOfColor();
+                purchases.name = notes->dimensions[c - 1];
+                purchases.praise = notes->price[c - 1];
+                if(notes->checkIfNoteIsAvailable(c)) // sprawdfzenie czy notes o wybranej pozycji jest nadal dostepny
                 {
-                    zeszyt->amount[c-1]--;    //sprawdzenie czy jest jeszcze dostepny towar danego rodzaju
+                    notes->amount[c - 1]--;    //sprawdzenie czy jest jeszcze dostepny towar danego rodzaju
 
                     purchases.addToPurchases();
                     purchases.showOrderedPurchases();
@@ -180,33 +167,31 @@ int main(int argc, char *argv[]) {
 
                /* for(int i=0;i<purchases.removedThings.size();i++) //co to jest??? czemu nie daje rady tego oddzielic do osobnej funkcji??
                 {
-                    for(int j=0;j<zeszyt->dimensions.size();j++)
+                    for(int j=0;j<notes->dimensions.size();j++)
                     {
-                        if(purchases.removedThings[i] == zeszyt->dimensions[j])
+                        if(purchases.removedThings[i] == notes->dimensions[j])
                         {
                             purchases.removedThings.erase(purchases.removedThings.begin() + i);
-                            //zeszyt->amount[j]++;
+                            //notes->amount[j]++;
                         }
                     }
                 }*/
 
-                //zeszyt->amount = incrementAmountOfNoteAfterReturnedItToShop(purchases.removedThings, zeszyt->dimensions,
-                //                                                            zeszyt->amount);
-                purchases.remove(application.removedThings,zeszyt->dimensions,zeszyt->amount);
+                //notes->amount = incrementAmountOfNoteAfterReturnedItToShop(purchases.removedThings, notes->dimensions,
+                //                                                            notes->amount);
+                purchases.remove(application.removedThings, notes->dimensions, notes->amount);
 
-                //purchases.pairOfRemovedAndItsPosition = remove(purchases.removedThings,zeszyt->dimensions,zeszyt->amount); //TO jest to
-                //zeszyt->addThingFromRemovedToShop(purchases.pairOfRemovedAndItsPosition)
-                //zeszyt->amount = zeszyt->incrementAmountofRemovedThing(purchases.pairOfRemovedAndItsPosition);
-                //getBackToShop<shop::Notepad>(zeszyt,purchases);
+                //purchases.pairOfRemovedAndItsPosition = remove(purchases.removedThings,notes->dimensions,notes->amount); //TO jest to
+                //notes->addThingFromRemovedToShop(purchases.pairOfRemovedAndItsPosition)
+                //notes->amount = notes->incrementAmountofRemovedThing(purchases.pairOfRemovedAndItsPosition);
+                //getBackToShop<shop::Notepad>(notes,purchases);
                 //purchases.removedThings.erase(purchases.removedThings.begin());
 
-                //zeszyt->returnNoteFromBasketToShop(purchases.removedThings, zeszyt->dimensions, zeszyt->amount); //zwraca rzecxz do sklepu(nie wiem dlaczego
+                //notes->returnNoteFromBasketToShop(purchases.removedThings, notes->dimensions, notes->amount); //zwraca rzecxz do sklepu(nie wiem dlaczego
                 // musiałem tu jeszcze raz przekazywac
                 // obiekt tego samego typu co klasa z której pochodzi ta funkcja
-                zeszyt->saveItemsToFile(); //zapis na koncu!!!
+                notes->saveItemsToFile(); //zapis na koncu!!!
                 application.saveRemovedToFile();
-
-                delete zeszyt;
 
             }
 
@@ -215,26 +200,24 @@ int main(int argc, char *argv[]) {
             else if(choose == 3)
             {
 
-                shop::Bagpack b1;
+                unique_ptr<shop::Bagpack> bags;
 
                 //b1.bags.emplace_back("Pumaa","Blue",10,6);//zrobic tak: robic odczyty z plikow i na tej podstawie tworzyc obiekty i zapisywac je do vectora bags
                 //b1.bags.emplace_back("Nike","Black",24,3);
                                                             //i z danych w vectorze przeprowadzac operacje obsługi, dodawania, usuwania itp..
-                b1.readItemsFromFile();
+                bags->readItemsFromFile();
                 application.readRemoveFromFile();
-                b1.presentationOfBags();
+                bags->presentationOfBags();
 
-                b1.getMarksAndAmounts();
-                purchases.remove(application.removedThings,b1.allMarks,b1.allAmounts);
-                b1.refreshObjectsAfterRemoving(b1.bags);
+                bags->getMarksAndAmounts();
+                purchases.remove(application.removedThings,bags->allMarks,bags->allAmounts);
+                bags->refreshObjectsAfterRemoving(bags->bags);
 
-                b1.chooseBag(purchases);             //przekazanie całego obiektu przez referencje aby była mozliwosc jego modyfikacji w funkcji
+                bags->chooseBag(purchases);             //przekazanie całego obiektu przez referencje aby była mozliwosc jego modyfikacji w funkcji
                 purchases.showOrderedPurchases();
 
 
-                //b1.allAmounts = b1.getAmounts();
-
-                b1.saveItemsToFile();
+                bags->saveItemsToFile();
                 application.saveRemovedToFile();
             }
 
@@ -242,24 +225,24 @@ int main(int argc, char *argv[]) {
 
             else if(choose == 4)
             {
-                shop::SchoolSupplies supplies;
+                unique_ptr<shop::SchoolSupplies> supplies;
 
 
-                supplies.readItemsFromFile();
+                supplies->readItemsFromFile();
                 application.readRemoveFromFile();
 
-                supplies.presentationOfSupplies();
-                supplies.chooseSup(purchases);
+                supplies->presentationOfSupplies();
+                supplies->chooseSup(purchases);
 
-                supplies.getSize();
+                supplies->getSize();
 
                 purchases.showOrderedPurchases();
 
-                supplies.getNamesAndAmounts();
-                purchases.remove(application.removedThings,supplies.names,supplies.amounts);
-                supplies.refreshAmount();
+                supplies->getNamesAndAmounts();
+                purchases.remove(application.removedThings,supplies->names,supplies->amounts);
+                supplies->refreshAmount();
 
-                supplies.saveItemsToFile();
+                supplies->saveItemsToFile();
                 application.saveRemovedToFile();
             }
 
