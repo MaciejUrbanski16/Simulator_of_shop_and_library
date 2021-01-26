@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Admin/Desktop/CLionProjects/machineOfState/lib/googletest-master
+# Install script for directory: C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/lib/googletest-master
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/Admin/Desktop/CLionProjects/machineOfState/cmake-build-debug/lib/googletest-master/googlemock/cmake_install.cmake")
+  include("C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/cmake-build-debug/lib/googletest-master/googlemock/cmake_install.cmake")
 
 endif()
 

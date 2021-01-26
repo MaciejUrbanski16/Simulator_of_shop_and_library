@@ -10,7 +10,7 @@
 #include <fstream>
 #include <iostream>
 
-//this class storages configuration of simulator
+///this class storages configuration of simulator
 class Application {
 
 protected:

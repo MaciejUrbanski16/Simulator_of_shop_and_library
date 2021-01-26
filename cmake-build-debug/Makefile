@@ -47,10 +47,10 @@ RM = "C:\Users\Admin\Desktop\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.ex
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Admin\Desktop\CLionProjects\machineOfState
+CMAKE_SOURCE_DIR = C:\Users\Admin\Desktop\Projekt\Simulator_of_shop
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Admin\Desktop\CLionProjects\machineOfState\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -125,9 +125,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Admin\Desktop\CLionProjects\machineOfState\cmake-build-debug\CMakeFiles C:\Users\Admin\Desktop\CLionProjects\machineOfState\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\cmake-build-debug\CMakeFiles C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Admin\Desktop\CLionProjects\machineOfState\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
