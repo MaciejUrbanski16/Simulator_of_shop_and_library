@@ -154,6 +154,8 @@ void Ware :: addToPurchases()
 
 void Ware::showOrderedPurchases()
 {
+    cout<<"Aktualny stan koszyka to: "<<endl;
+
     for(int i =0;i<orderedPurchasesName.size();i++)
     {
         cout<<i+1<<". Nazwa: "<<orderedPurchasesName[i]<<" w cenie: "<<orderedPurchasesPrice[i]<<endl;

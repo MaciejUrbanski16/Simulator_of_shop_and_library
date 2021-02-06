@@ -79,9 +79,10 @@ void Book:: saveItemsToFile()
 
 void Book::editionStateOfBooks()
 {
-
+    cout<<"WYBOR: "<<endl;
     cout<<"1. Dodanie nowej ksiazki do sklepu"<<endl;
     cout<<"2. Usuniecie wybranej ksiazki ze sklepu"<<endl;
+
     int choose = enteringTheNumber(1,2);
     switch(choose)
     {
@@ -168,7 +169,7 @@ int Book :: showSearchedBooks(std::vector<std::string>searchedBooks)
     if(searchedBooks.empty()||searchedBooks[0]=="ZADNA_Z_POWYZSZYCH")
     {
         cout<<"Brak znalezionych pozycji pod ta litera!!! "<<endl;
-       //ks->searchingBook(ks);
+
        return NOT_FOUND;
     }
     else

@@ -96,7 +96,7 @@ namespace shop {
 
         void addToPurchases();              //dodaje do koszyka wybrana rzecz
 
-        void presentationOfServices();      //przedstawuienie uslug
+
 
 
 

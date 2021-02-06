@@ -59,50 +59,45 @@ int main(int argc, char *argv[]) {
     if(purchases.enterToShop())
     {
         application.stage = INTRODUCTION;
+
     }
-
-
     application.readRemoveFromFile(); //wczytanie usunietych przedmiotow z bufora
-    while(application.stage != CONFIRM)
-    {
+
+
+    while(application.stage != CONFIRM) {
         //stage = SELLER_MODE;
 
         //OPISAC WYBORTRYBOW I FUNKCJI DLaUZytkownika
 
-        if(application.mode == CUSTOMER_MODE)
-        {
+        if (application.mode == CUSTOMER_MODE) {
             std::string title;
             int choose;
             choose = application.chooseOfService();
 
-            if(choose == 1)
-            {
-                unique_ptr<shop::Book> ksiega;
-                ksiega->readItemsFromFile();                      //odczyt musi nastąpić zaraz po deklaracji
+            if (choose == 1) {
+
+                shop::Book ksiega;
+                ksiega.readItemsFromFile();                      //odczyt musi nastąpić zaraz po deklaracji
                 application.readRemoveFromFile();
-                ksiega->searchInRemoved(application);                      //sprawdza czy element z kontenera jest w ogolnym spisie elementow tytulow ksiazek
-                                                                //i oddaje ten element na swoje miejsce "polke"
-                if (ksiega->searchingBook() == shop::Book::FOUND)
-                {
-                    purchases.paramOfChoosenThing = ksiega->chooseOfSearchedBook();    //t - parametr okreslajacy wybrana pozycje ks w currentSearching
-                    if (purchases.paramOfChoosenThing == ksiega->getSizeOfCurrentSearchings())
-                    {
+                ksiega.searchInRemoved(
+                        application);                      //sprawdza czy element z kontenera jest w ogolnym spisie elementow tytulow ksiazek
+                //i oddaje ten element na swoje miejsce "polke"
+                if (ksiega.searchingBook() == shop::Book::FOUND) {
+                    purchases.paramOfChoosenThing = ksiega.chooseOfSearchedBook();    //t - parametr okreslajacy wybrana pozycje ks w currentSearching
+                    if (purchases.paramOfChoosenThing == ksiega.getSizeOfCurrentSearchings()) {
                         cout << "wybrano zadna z pow" << endl;
-                    }
-                    else
-                        {
+                    } else {
                         cout << "T: " << purchases.paramOfChoosenThing << endl;
-                        ksiega->choosenTitle = ksiega->getSearchedBook(purchases.paramOfChoosenThing - 1);
+                        ksiega.choosenTitle = ksiega.getSearchedBook(purchases.paramOfChoosenThing - 1);
                         //int t = ksiega->checkIfBookExist(ksiega,ksiega->choosenTitle);
-                        cout << "Tytul: " << ksiega->choosenTitle << endl;
-                        purchases.position = ksiega->checkIfBookExist(ksiega->choosenTitle);
+                        cout << "Tytul: " << ksiega.choosenTitle << endl;
+                        purchases.position = ksiega.checkIfBookExist(ksiega.choosenTitle);
 
-                        cout << "Ilosc; " << ksiega->amountOfBooksInShop[purchases.paramOfChoosenThing - 1] << endl;
-                        if (ksiega->checkAmountofBookInShop(purchases))
-                        {
+                        cout << "Ilosc; " << ksiega.amountOfBooksInShop[purchases.paramOfChoosenThing - 1] << endl;
+                        if (ksiega.checkAmountofBookInShop(purchases)) {
 
-                            purchases.name = ksiega->titleOfBooksInShop[purchases.position];        //zapisanie nazwy biezacej ksiazki do zmiennej titleOfBooksInShop klasy Ware
-                            purchases.praise = ksiega->praisesOfBooksInShop[purchases.position];    //zapisanie ceny biezacej ksiazki do zmiennj klasy Ware
+                            purchases.name = ksiega.titleOfBooksInShop[purchases.position];        //zapisanie nazwy biezacej ksiazki do zmiennej titleOfBooksInShop klasy Ware
+                            purchases.praise = ksiega.praisesOfBooksInShop[purchases.position];    //zapisanie ceny biezacej ksiazki do zmiennj klasy Ware
                             cout << "Wybr. tyt: " << purchases.name << endl;
                             purchases.addToPurchases();//dodanie do koszyka
 
@@ -111,9 +106,7 @@ int main(int argc, char *argv[]) {
                             purchases.showOrderedPurchases();
                         }
                     }
-                }
-                else
-                {
+                } else {
                     purchases.showOrderedPurchases();
                 }
 
@@ -122,64 +115,59 @@ int main(int argc, char *argv[]) {
 
 
                 remove(application.removedThings,
-                                                 ksiega->titleOfBooksInShop,
-                                                 ksiega->amountOfBooksInShop); // zwrot niechcianych ksiazek z koszyka powrotemo do sklepu
+                       ksiega.titleOfBooksInShop,
+                       ksiega.amountOfBooksInShop); // zwrot niechcianych ksiazek z koszyka powrotemo do sklepu
 
                 ///zapisuje vector - ze zwróconymi nazwami rzeczy przez kupującego jeszcze w trakcie wykonywania zakupów - do pliku .txt
                 application.saveRemovedToFile();
 
                 ///zapisuje aktualny stan - nazwy wszystkich rzeczy, ich aktualną liczebnosc i ceny do plików .txt
-                ksiega->saveItemsToFile();  //zapisanie biezacego stanu sklepu
+                ksiega.saveItemsToFile();  //zapisanie biezacego stanu sklepu
 
-            }
-
-            else if(choose==2)
-            {
-                unique_ptr<shop::Notepad> notes;
-               // notes->dimensions.clear();
-                notes->readItemsFromFile(); // wczytanie danych
+            } else if (choose == 2) {
+                shop::Notepad notes;
+                // notes->dimensions.clear();
+                notes.readItemsFromFile(); // wczytanie danych
                 application.readRemoveFromFile();
 
-                cout << "Size dimension notes: " << notes->dimensions.size() << endl;
+                cout << "Size dimension notes: " << notes.dimensions.size() << endl;
                 //y
                 // assert(notes->dimensions.size()==3);
                 //notes->setDimensionsOfNote();
                 int c;
-                c=notes->chooseOfDimension();
-                cout<<"c: "<<c<<endl;
+                c = notes.chooseOfDimension();
+                cout << "c: " << c << endl;
 
                 //notes->chooseOfColor();
-                purchases.name = notes->dimensions[c - 1];
-                purchases.praise = notes->price[c - 1];
-                if(notes->checkIfNoteIsAvailable(c)) // sprawdfzenie czy notes o wybranej pozycji jest nadal dostepny
+                purchases.name = notes.dimensions[c - 1];
+                purchases.praise = notes.price[c - 1];
+                if (notes.checkIfNoteIsAvailable(c)) // sprawdfzenie czy notes o wybranej pozycji jest nadal dostepny
                 {
-                    notes->amount[c - 1]--;    //sprawdzenie czy jest jeszcze dostepny towar danego rodzaju
+                    notes.amount[c - 1]--;    //sprawdzenie czy jest jeszcze dostepny towar danego rodzaju
 
                     purchases.addToPurchases();
                     purchases.showOrderedPurchases();
-                }
-                else
-                {
-                    cout<<"BRAK ZESZYTOW O ROZMIARZE: "<<purchases.name<<endl;
+                } else {
+                    cout << "BRAK ZESZYTOW O ROZMIARZE: " << purchases.name << endl;
                     purchases.showOrderedPurchases();
                 }
 
 
-               /* for(int i=0;i<purchases.removedThings.size();i++) //co to jest??? czemu nie daje rady tego oddzielic do osobnej funkcji??
-                {
-                    for(int j=0;j<notes->dimensions.size();j++)
-                    {
-                        if(purchases.removedThings[i] == notes->dimensions[j])
-                        {
-                            purchases.removedThings.erase(purchases.removedThings.begin() + i);
-                            //notes->amount[j]++;
-                        }
-                    }
-                }*/
+                /* for(int i=0;i<purchases.removedThings.size();i++) //co to jest??? czemu nie daje rady tego oddzielic do osobnej funkcji??
+                 {
+                     for(int j=0;j<notes->dimensions.size();j++)
+                     {
+                         if(purchases.removedThings[i] == notes->dimensions[j])
+                         {
+                             purchases.removedThings.erase(purchases.removedThings.begin() + i);
+                             //notes->amount[j]++;
+                         }
+                     }
+                 }*/
 
                 //notes->amount = incrementAmountOfNoteAfterReturnedItToShop(purchases.removedThings, notes->dimensions,
                 //                                                            notes->amount);
-                purchases.remove(application.removedThings, notes->dimensions, notes->amount);
+                purchases.remove(application.removedThings, notes.dimensions, notes.amount);
 
                 //purchases.pairOfRemovedAndItsPosition = remove(purchases.removedThings,notes->dimensions,notes->amount); //TO jest to
                 //notes->addThingFromRemovedToShop(purchases.pairOfRemovedAndItsPosition)
@@ -190,113 +178,93 @@ int main(int argc, char *argv[]) {
                 //notes->returnNoteFromBasketToShop(purchases.removedThings, notes->dimensions, notes->amount); //zwraca rzecxz do sklepu(nie wiem dlaczego
                 // musiałem tu jeszcze raz przekazywac
                 // obiekt tego samego typu co klasa z której pochodzi ta funkcja
-                notes->saveItemsToFile(); //zapis na koncu!!!
+                notes.saveItemsToFile(); //zapis na koncu!!!
                 application.saveRemovedToFile();
 
             }
 
-            ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+                ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-            else if(choose == 3)
-            {
+            else if (choose == 3) {
 
-                unique_ptr<shop::Bagpack> bags;
+                shop::Bagpack bags;
 
                 //b1.bags.emplace_back("Pumaa","Blue",10,6);//zrobic tak: robic odczyty z plikow i na tej podstawie tworzyc obiekty i zapisywac je do vectora bags
                 //b1.bags.emplace_back("Nike","Black",24,3);
-                                                            //i z danych w vectorze przeprowadzac operacje obsługi, dodawania, usuwania itp..
-                bags->readItemsFromFile();
+                //i z danych w vectorze przeprowadzac operacje obsługi, dodawania, usuwania itp..
+                bags.readItemsFromFile();
                 application.readRemoveFromFile();
-                bags->presentationOfBags();
+                bags.presentationOfBags();
 
-                bags->getMarksAndAmounts();
-                purchases.remove(application.removedThings,bags->allMarks,bags->allAmounts);
-                bags->refreshObjectsAfterRemoving(bags->bags);
+                bags.getMarksAndAmounts();
+                purchases.remove(application.removedThings, bags.allMarks, bags.allAmounts);
+                bags.refreshObjectsAfterRemoving(bags.bags);
 
-                bags->chooseBag(purchases);             //przekazanie całego obiektu przez referencje aby była mozliwosc jego modyfikacji w funkcji
+                bags.chooseBag(
+                        purchases);             //przekazanie całego obiektu przez referencje aby była mozliwosc jego modyfikacji w funkcji
                 purchases.showOrderedPurchases();
 
 
-                bags->saveItemsToFile();
+                bags.saveItemsToFile();
                 application.saveRemovedToFile();
             }
 
-            ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+                ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-            else if(choose == 4)
-            {
-                unique_ptr<shop::SchoolSupplies> supplies;
+            else if (choose == 4) {
+                shop::SchoolSupplies supplies;
 
 
-                supplies->readItemsFromFile();
+                supplies.readItemsFromFile();
                 application.readRemoveFromFile();
 
-                supplies->presentationOfSupplies();
-                supplies->chooseSup(purchases);
+                supplies.presentationOfSupplies();
+                supplies.chooseSup(purchases);
 
-                supplies->getSize();
+                supplies.getSize();
 
                 purchases.showOrderedPurchases();
 
-                supplies->getNamesAndAmounts();
-                purchases.remove(application.removedThings,supplies->names,supplies->amounts);
-                supplies->refreshAmount();
+                supplies.getNamesAndAmounts();
+                purchases.remove(application.removedThings, supplies.names, supplies.amounts);
+                supplies.refreshAmount();
 
-                supplies->saveItemsToFile();
+                supplies.saveItemsToFile();
                 application.saveRemovedToFile();
-            }
-
-            else if(choose == 5)
-            {
-                ///logika usuniecia przedmiiotu z koszyka uzytkownika
+            } else if (choose == 5) {
+                ///logika usuniecia przedmiotu z koszyka uzytkownika
                 application.readRemoveFromFile();
-               application.removedThings.push_back(purchases.removeThingFromPurchases()) ;
+                application.removedThings.push_back(purchases.removeThingFromPurchases());
 
-               for(int i=0;i<application.removedThings.size();i++)
-               {
-                   cout<<"Usuniete: "<<application.removedThings[i]<<endl;
-               }
-               application.saveRemovedToFile();
-            }
-
-            else if(choose == 6)
-            {
-                application.mode = purchases.changeModeToSellerMode("12trempki",application.mode);
-            }
-            else if(choose == 7)
-            {
-                cout<<"Tu"<<endl;
+                for (int i = 0; i < application.removedThings.size(); i++) {
+                    cout << "Usuniete: " << application.removedThings[i] << endl;
+                }
+                application.saveRemovedToFile();
+            } else if (choose == 6) {
+                application.mode = purchases.changeModeToSellerMode("password", application.mode);
+            } else if (choose == 7) {
+                cout << "Tu" << endl;
                 application.stage = CONFIRM;
-            }
-
-            else
-            {
+            } else {
                 application.chooseOfService();
             }
 
             //sprawdzic czy klient juz konczy zakupy i wystawuc mu rachunek po przerwaniu petli...
 
 
-        }
-
-        else if(application.mode == SELLER_MODE)//TRZEBA ZROBIC OBSLUGE WSZYSTKICH RZECZ -NIE TYLKO KSIAZEK!!!
+        } else if (application.mode == SELLER_MODE)//TRZEBA ZROBIC OBSLUGE WSZYSTKICH RZECZ -NIE TYLKO KSIAZEK!!!
         {
             std::string title;
-            cout<<"ELO"<<endl;
+
             application.presentationOfServices();
-            //choose = purchases.chooseOfService();
-            //cout<<"Choose: "<<choose<<endl;
-            //if(choose==1||choose ==2)
             {
 
-                cout<<"Tu jestem"<<endl;
                 auto *bookEdition = new shop::Book(title);
                 auto *noteEdition = new shop::Notepad;
                 auto *bagEdition = new shop::Bagpack();
                 auto *suppliesEdition = new shop::SchoolSupplies;
-                int chooseOfEdition = enteringTheNumber(1,7);
-                switch(chooseOfEdition)
-                {
+                int chooseOfEdition = enteringTheNumber(1, 7);
+                switch (chooseOfEdition) {
                     case 1:
                         bookEdition->readItemsFromFile();
                         bookEdition->editionStateOfBooks();
@@ -332,7 +300,7 @@ int main(int argc, char *argv[]) {
                         break;
 
                     case 5:
-                        application.mode = purchases.changeModeToSellerMode("12trempki",application.mode);
+                        application.mode = purchases.changeModeToSellerMode("password", application.mode);
                         break;
 
                     default:
@@ -345,7 +313,8 @@ int main(int argc, char *argv[]) {
 
 
     }
-   // placenie
+
+   // Płacenie
 
     Bill bill;
     shop::towar_int_t toPay = bill.calculate(purchases);
@@ -355,33 +324,11 @@ int main(int argc, char *argv[]) {
 
 
     bill.printBill(purchases, toPay);
-   /* shop::towar_int_t zaok2 = zaok*10000000;
-    //dynamic_cast<long long unsigned int>zaok2;
-
-    int zaok3 = 0;
-    zaok3 = static_cast<long long int>(zaok2);
-
-    if(zaok3%1000 == 0)
-    {
-        std::cout<<"oooo"<<std::endl;
-        zaok2 = static_cast<shop::towar_int_t >(zaok3);
-        zaok2 =zaok2/10000000;
-    }*/
 
 
+    return 0;
 
-        // bill.printBill(purchases); //???
 
-    int c1 = 10;
-
-        return 0;
-    //else {
-
-        // bill.printBill(purchases);
-
-        return 0;
-
-   // }
 }
 
 
