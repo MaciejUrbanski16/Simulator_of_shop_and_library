@@ -26,7 +26,10 @@ void Book :: readItemsFromFile()
     readAmount.open("amountOfBooks.txt");
     readPrices.open("pricesOfBooks.txt");
 
-    while(getline(readTitles,title))
+    ReadCsvTsv read("book.tsv");
+    read.readFromFile(titleOfBooksInShop,amountOfBooksInShop,praisesOfBooksInShop);
+
+    /*while(getline(readTitles,title))
     {
         titleOfBooksInShop.push_back(title);
     }
@@ -39,7 +42,7 @@ void Book :: readItemsFromFile()
     {
         pr = atof(price.c_str());
         praisesOfBooksInShop.push_back(pr);
-    }
+    }*/
 
 
     readTitles.close();

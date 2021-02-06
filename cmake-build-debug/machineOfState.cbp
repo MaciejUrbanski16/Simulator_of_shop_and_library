@@ -360,6 +360,12 @@
 		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Notepad.h">
 			<Option target="machineOfState"/>
 		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.cpp">
+			<Option target="machineOfState"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h">
+			<Option target="machineOfState"/>
+		</Unit>
 		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/SchoolSupplies.cpp">
 			<Option target="machineOfState"/>
 		</Unit>

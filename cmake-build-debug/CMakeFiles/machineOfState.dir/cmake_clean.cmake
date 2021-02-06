@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/machineOfState.dir/Book.cpp.obj"
   "CMakeFiles/machineOfState.dir/ConcreteBook.cpp.obj"
   "CMakeFiles/machineOfState.dir/Notepad.cpp.obj"
+  "CMakeFiles/machineOfState.dir/ReadCsvTsv.cpp.obj"
   "CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.obj"
   "CMakeFiles/machineOfState.dir/ServiceCsvTsv.cpp.obj"
   "CMakeFiles/machineOfState.dir/Tests/NotepadTests.cpp.obj"

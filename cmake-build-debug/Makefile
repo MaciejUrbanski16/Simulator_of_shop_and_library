@@ -409,6 +409,33 @@ Notepad.cpp.s:
 	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Notepad.cpp.s
 .PHONY : Notepad.cpp.s
 
+ReadCsvTsv.obj: ReadCsvTsv.cpp.obj
+
+.PHONY : ReadCsvTsv.obj
+
+# target to build an object file
+ReadCsvTsv.cpp.obj:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ReadCsvTsv.cpp.obj
+.PHONY : ReadCsvTsv.cpp.obj
+
+ReadCsvTsv.i: ReadCsvTsv.cpp.i
+
+.PHONY : ReadCsvTsv.i
+
+# target to preprocess a source file
+ReadCsvTsv.cpp.i:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ReadCsvTsv.cpp.i
+.PHONY : ReadCsvTsv.cpp.i
+
+ReadCsvTsv.s: ReadCsvTsv.cpp.s
+
+.PHONY : ReadCsvTsv.s
+
+# target to generate assembly for a file
+ReadCsvTsv.cpp.s:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ReadCsvTsv.cpp.s
+.PHONY : ReadCsvTsv.cpp.s
+
 SchoolSupplies.obj: SchoolSupplies.cpp.obj
 
 .PHONY : SchoolSupplies.obj
@@ -717,6 +744,9 @@ help:
 	@echo ... Notepad.obj
 	@echo ... Notepad.i
 	@echo ... Notepad.s
+	@echo ... ReadCsvTsv.obj
+	@echo ... ReadCsvTsv.i
+	@echo ... ReadCsvTsv.s
 	@echo ... SchoolSupplies.obj
 	@echo ... SchoolSupplies.i
 	@echo ... SchoolSupplies.s

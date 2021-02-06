@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Book.cpp" "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/cmake-build-debug/CMakeFiles/machineOfState.dir/Book.cpp.obj"
   "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBook.cpp" "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/cmake-build-debug/CMakeFiles/machineOfState.dir/ConcreteBook.cpp.obj"
   "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Notepad.cpp" "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/cmake-build-debug/CMakeFiles/machineOfState.dir/Notepad.cpp.obj"
+  "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.cpp" "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/cmake-build-debug/CMakeFiles/machineOfState.dir/ReadCsvTsv.cpp.obj"
   "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/SchoolSupplies.cpp" "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/cmake-build-debug/CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.obj"
   "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.cpp" "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/cmake-build-debug/CMakeFiles/machineOfState.dir/ServiceCsvTsv.cpp.obj"
   "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Tests/NotepadTests.cpp" "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/cmake-build-debug/CMakeFiles/machineOfState.dir/Tests/NotepadTests.cpp.obj"
