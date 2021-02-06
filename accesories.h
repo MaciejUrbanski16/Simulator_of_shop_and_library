@@ -54,6 +54,8 @@ namespace shop {
 
     class Ware                     //ogolna klasa towaru sklepu
     {
+    private:
+
     public:
         Ware(std::vector<shop::Ware>::iterator iterator);
 
@@ -72,16 +74,6 @@ namespace shop {
         std::vector<std::string> orderedPurchasesName;
         std::vector<towar_int_t> orderedPurchasesPrice;
 
-
-
-    public:
-        Ware() {
-            praise = 0;
-            amount = 0;
-            available = true;
-
-        }
-
         int position;
 
 
@@ -95,12 +87,6 @@ namespace shop {
         std::string removeThingFromPurchases();    //usuwa rzecz dodana do koszyka
 
         void addToPurchases();              //dodaje do koszyka wybrana rzecz
-
-
-
-
-
-        //virtual void addThingToShop(int stage);      //dodanie przedmiotu do sklepu -mozliwe jedynie w trybie sprzedawcy
 
         int choosingFromList(int, int);
 

@@ -19,19 +19,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a417d592-79c6-4910-a3f3-8b98fcb03eae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Book.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Book.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accesories.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/accesories.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accesories.h" beforeDir="false" afterPath="$PROJECT_DIR$/accesories.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/amountOfBooks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/amountOfBooks.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/amountsOfNotes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/amountsOfNotes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/machineOfState.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/machineOfState.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/pricesOfBags.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/pricesOfBags.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/pricesOfBooks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/pricesOfBooks.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/removedFromBasket.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/removedFromBasket.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/supplies.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/supplies.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/titleOfBooks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/titleOfBooks.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -245,7 +233,7 @@
       <workItem from="1609922110936" duration="4795000" />
       <workItem from="1611687010537" duration="3184000" />
       <workItem from="1612441100373" duration="224000" />
-      <workItem from="1612609790334" duration="1909000" />
+      <workItem from="1612609790334" duration="3010000" />
     </task>
     <task id="LOCAL-00001" summary="All features of special things work properly">
       <created>1606246468089</created>
