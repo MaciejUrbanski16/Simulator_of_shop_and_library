@@ -3,7 +3,7 @@
 //
 
 #include "Book.h"
-//#include <iostream>
+#include<string>
 
 using namespace std;
 using namespace shop;
@@ -15,6 +15,7 @@ void Book :: readItemsFromFile()
     titleOfBooksInShop.clear();
     amountOfBooksInShop.clear();
     praisesOfBooksInShop.clear();
+
 
 
     std::string title,amount,price;
@@ -54,23 +55,49 @@ void Book:: saveItemsToFile()
     fstream fileToSaveAmount("amountOfBooks.txt", ios::out);
     fstream fileToSavePrice("pricesOfBooks.txt", ios::out);
 
+    WriteCsvTsv write("book.tsv");
+    std::vector<std::string>header{"TYTUL","ILOSC","CENA"};
+    write.addHeader(header);
+
+    std::vector<std::string> dataToTsv;
+    std::string readyData;
+
+
 
     for(int i =0; i < titleOfBooksInShop.size(); i++)
     {
-        //cout<<"Zapisze: "<<titleOfBooksInShop[i]<<endl;
 
         if(i+1 == titleOfBooksInShop.size())
         {
             fileToSaveTitle << titleOfBooksInShop[i];
             fileToSaveAmount <<amountOfBooksInShop[i];
             fileToSavePrice << praisesOfBooksInShop[i];
+
+            dataToTsv.push_back(titleOfBooksInShop[i]);
+
+            std::string am = std::to_string(amountOfBooksInShop[i]);
+            dataToTsv.push_back(am);
+
+            std::string pr = std::to_string(praisesOfBooksInShop[i]);
+            dataToTsv.push_back(pr);
         }
         else
         {
             fileToSaveTitle << titleOfBooksInShop[i] << endl;
             fileToSaveAmount <<amountOfBooksInShop[i] << endl;
             fileToSavePrice << praisesOfBooksInShop[i] <<endl;
+
+            dataToTsv.push_back(titleOfBooksInShop[i]);
+
+            std::string am = std::to_string(amountOfBooksInShop[i]);
+            dataToTsv.push_back(am);
+
+            std::string pr = std::to_string(praisesOfBooksInShop[i]);
+            dataToTsv.push_back(pr);
         }
+
+        write.writeToFile(dataToTsv);
+        dataToTsv.clear();
 
     }
 }

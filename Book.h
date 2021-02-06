@@ -12,6 +12,7 @@
 #include <conio.h>
 #include "accesories.h"
 #include <map>
+#include "WriteCsvTsv.h"
 
 #include "Application.h"
 //#include "Catch_tests/AbsoluteDateTest.cpp"
@@ -30,8 +31,10 @@ namespace shop {
 
 
     private:
+
+
         std::vector<std::string>currentSearchings;
-        //std::vector<std::string>::iterator iter;
+
 
 
         std::fstream readTitles;
