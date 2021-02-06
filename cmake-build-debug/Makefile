@@ -436,6 +436,33 @@ SchoolSupplies.cpp.s:
 	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.s
 .PHONY : SchoolSupplies.cpp.s
 
+ServiceCsvTsv.obj: ServiceCsvTsv.cpp.obj
+
+.PHONY : ServiceCsvTsv.obj
+
+# target to build an object file
+ServiceCsvTsv.cpp.obj:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ServiceCsvTsv.cpp.obj
+.PHONY : ServiceCsvTsv.cpp.obj
+
+ServiceCsvTsv.i: ServiceCsvTsv.cpp.i
+
+.PHONY : ServiceCsvTsv.i
+
+# target to preprocess a source file
+ServiceCsvTsv.cpp.i:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ServiceCsvTsv.cpp.i
+.PHONY : ServiceCsvTsv.cpp.i
+
+ServiceCsvTsv.s: ServiceCsvTsv.cpp.s
+
+.PHONY : ServiceCsvTsv.s
+
+# target to generate assembly for a file
+ServiceCsvTsv.cpp.s:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ServiceCsvTsv.cpp.s
+.PHONY : ServiceCsvTsv.cpp.s
+
 Tests/NotepadTests.obj: Tests/NotepadTests.cpp.obj
 
 .PHONY : Tests/NotepadTests.obj
@@ -489,6 +516,60 @@ Tests/TowarTests.s: Tests/TowarTests.cpp.s
 Tests/TowarTests.cpp.s:
 	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Tests/TowarTests.cpp.s
 .PHONY : Tests/TowarTests.cpp.s
+
+Tests/WritingReadingCsvTsvTests.obj: Tests/WritingReadingCsvTsvTests.cpp.obj
+
+.PHONY : Tests/WritingReadingCsvTsvTests.obj
+
+# target to build an object file
+Tests/WritingReadingCsvTsvTests.cpp.obj:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj
+.PHONY : Tests/WritingReadingCsvTsvTests.cpp.obj
+
+Tests/WritingReadingCsvTsvTests.i: Tests/WritingReadingCsvTsvTests.cpp.i
+
+.PHONY : Tests/WritingReadingCsvTsvTests.i
+
+# target to preprocess a source file
+Tests/WritingReadingCsvTsvTests.cpp.i:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.i
+.PHONY : Tests/WritingReadingCsvTsvTests.cpp.i
+
+Tests/WritingReadingCsvTsvTests.s: Tests/WritingReadingCsvTsvTests.cpp.s
+
+.PHONY : Tests/WritingReadingCsvTsvTests.s
+
+# target to generate assembly for a file
+Tests/WritingReadingCsvTsvTests.cpp.s:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.s
+.PHONY : Tests/WritingReadingCsvTsvTests.cpp.s
+
+WriteCsvTsv.obj: WriteCsvTsv.cpp.obj
+
+.PHONY : WriteCsvTsv.obj
+
+# target to build an object file
+WriteCsvTsv.cpp.obj:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/WriteCsvTsv.cpp.obj
+.PHONY : WriteCsvTsv.cpp.obj
+
+WriteCsvTsv.i: WriteCsvTsv.cpp.i
+
+.PHONY : WriteCsvTsv.i
+
+# target to preprocess a source file
+WriteCsvTsv.cpp.i:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/WriteCsvTsv.cpp.i
+.PHONY : WriteCsvTsv.cpp.i
+
+WriteCsvTsv.s: WriteCsvTsv.cpp.s
+
+.PHONY : WriteCsvTsv.s
+
+# target to generate assembly for a file
+WriteCsvTsv.cpp.s:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/WriteCsvTsv.cpp.s
+.PHONY : WriteCsvTsv.cpp.s
 
 accesories.obj: accesories.cpp.obj
 
@@ -639,12 +720,21 @@ help:
 	@echo ... SchoolSupplies.obj
 	@echo ... SchoolSupplies.i
 	@echo ... SchoolSupplies.s
+	@echo ... ServiceCsvTsv.obj
+	@echo ... ServiceCsvTsv.i
+	@echo ... ServiceCsvTsv.s
 	@echo ... Tests/NotepadTests.obj
 	@echo ... Tests/NotepadTests.i
 	@echo ... Tests/NotepadTests.s
 	@echo ... Tests/TowarTests.obj
 	@echo ... Tests/TowarTests.i
 	@echo ... Tests/TowarTests.s
+	@echo ... Tests/WritingReadingCsvTsvTests.obj
+	@echo ... Tests/WritingReadingCsvTsvTests.i
+	@echo ... Tests/WritingReadingCsvTsvTests.s
+	@echo ... WriteCsvTsv.obj
+	@echo ... WriteCsvTsv.i
+	@echo ... WriteCsvTsv.s
 	@echo ... accesories.obj
 	@echo ... accesories.i
 	@echo ... accesories.s

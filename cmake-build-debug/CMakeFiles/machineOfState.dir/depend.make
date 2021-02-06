@@ -50,6 +50,9 @@ CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.obj: ../SchoolSupplies.h
 CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.obj: ../accesories.h
 CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.obj: ../tests.h
 
+CMakeFiles/machineOfState.dir/ServiceCsvTsv.cpp.obj: ../ServiceCsvTsv.cpp
+CMakeFiles/machineOfState.dir/ServiceCsvTsv.cpp.obj: ../ServiceCsvTsv.h
+
 CMakeFiles/machineOfState.dir/Tests/NotepadTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/gtest-death-test.h
 CMakeFiles/machineOfState.dir/Tests/NotepadTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/gtest-matchers.h
 CMakeFiles/machineOfState.dir/Tests/NotepadTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/gtest-message.h
@@ -99,6 +102,34 @@ CMakeFiles/machineOfState.dir/Tests/TowarTests.cpp.obj: ../lib/googletest-master
 CMakeFiles/machineOfState.dir/Tests/TowarTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
 CMakeFiles/machineOfState.dir/Tests/TowarTests.cpp.obj: ../Tests/TowarTests.cpp
 CMakeFiles/machineOfState.dir/Tests/TowarTests.cpp.obj: ../accesories.h
+
+CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/gtest-death-test.h
+CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/gtest-matchers.h
+CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/gtest-message.h
+CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/gtest-param-test.h
+CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/gtest-printers.h
+CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/gtest-test-part.h
+CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/gtest-typed-test.h
+CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/gtest.h
+CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/gtest_pred_impl.h
+CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/gtest_prod.h
+CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/internal/custom/gtest-port.h
+CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/internal/custom/gtest-printers.h
+CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/internal/gtest-death-test-internal.h
+CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/internal/gtest-filepath.h
+CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/internal/gtest-internal.h
+CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/internal/gtest-param-util.h
+CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/internal/gtest-port-arch.h
+CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/internal/gtest-port.h
+CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
+CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
+CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj: ../ServiceCsvTsv.h
+CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj: ../Tests/WritingReadingCsvTsvTests.cpp
+CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj: ../tests.h
+
+CMakeFiles/machineOfState.dir/WriteCsvTsv.cpp.obj: ../ServiceCsvTsv.h
+CMakeFiles/machineOfState.dir/WriteCsvTsv.cpp.obj: ../WriteCsvTsv.cpp
+CMakeFiles/machineOfState.dir/WriteCsvTsv.cpp.obj: ../WriteCsvTsv.h
 
 CMakeFiles/machineOfState.dir/accesories.cpp.obj: ../Application.h
 CMakeFiles/machineOfState.dir/accesories.cpp.obj: ../Book.h

@@ -252,6 +252,48 @@ CMakeFiles/machineOfState.dir/ConcreteBook.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/machineOfState.dir/ConcreteBook.cpp.s"
 	C:\Users\Admin\Desktop\MACIEK~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\ConcreteBook.cpp -o CMakeFiles\machineOfState.dir\ConcreteBook.cpp.s
 
+CMakeFiles/machineOfState.dir/ServiceCsvTsv.cpp.obj: CMakeFiles/machineOfState.dir/flags.make
+CMakeFiles/machineOfState.dir/ServiceCsvTsv.cpp.obj: CMakeFiles/machineOfState.dir/includes_CXX.rsp
+CMakeFiles/machineOfState.dir/ServiceCsvTsv.cpp.obj: ../ServiceCsvTsv.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/machineOfState.dir/ServiceCsvTsv.cpp.obj"
+	C:\Users\Admin\Desktop\MACIEK~1\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\machineOfState.dir\ServiceCsvTsv.cpp.obj -c C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\ServiceCsvTsv.cpp
+
+CMakeFiles/machineOfState.dir/ServiceCsvTsv.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/machineOfState.dir/ServiceCsvTsv.cpp.i"
+	C:\Users\Admin\Desktop\MACIEK~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\ServiceCsvTsv.cpp > CMakeFiles\machineOfState.dir\ServiceCsvTsv.cpp.i
+
+CMakeFiles/machineOfState.dir/ServiceCsvTsv.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/machineOfState.dir/ServiceCsvTsv.cpp.s"
+	C:\Users\Admin\Desktop\MACIEK~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\ServiceCsvTsv.cpp -o CMakeFiles\machineOfState.dir\ServiceCsvTsv.cpp.s
+
+CMakeFiles/machineOfState.dir/WriteCsvTsv.cpp.obj: CMakeFiles/machineOfState.dir/flags.make
+CMakeFiles/machineOfState.dir/WriteCsvTsv.cpp.obj: CMakeFiles/machineOfState.dir/includes_CXX.rsp
+CMakeFiles/machineOfState.dir/WriteCsvTsv.cpp.obj: ../WriteCsvTsv.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/machineOfState.dir/WriteCsvTsv.cpp.obj"
+	C:\Users\Admin\Desktop\MACIEK~1\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\machineOfState.dir\WriteCsvTsv.cpp.obj -c C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\WriteCsvTsv.cpp
+
+CMakeFiles/machineOfState.dir/WriteCsvTsv.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/machineOfState.dir/WriteCsvTsv.cpp.i"
+	C:\Users\Admin\Desktop\MACIEK~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\WriteCsvTsv.cpp > CMakeFiles\machineOfState.dir\WriteCsvTsv.cpp.i
+
+CMakeFiles/machineOfState.dir/WriteCsvTsv.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/machineOfState.dir/WriteCsvTsv.cpp.s"
+	C:\Users\Admin\Desktop\MACIEK~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\WriteCsvTsv.cpp -o CMakeFiles\machineOfState.dir\WriteCsvTsv.cpp.s
+
+CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj: CMakeFiles/machineOfState.dir/flags.make
+CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj: CMakeFiles/machineOfState.dir/includes_CXX.rsp
+CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj: ../Tests/WritingReadingCsvTsvTests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj"
+	C:\Users\Admin\Desktop\MACIEK~1\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\machineOfState.dir\Tests\WritingReadingCsvTsvTests.cpp.obj -c C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\Tests\WritingReadingCsvTsvTests.cpp
+
+CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.i"
+	C:\Users\Admin\Desktop\MACIEK~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\Tests\WritingReadingCsvTsvTests.cpp > CMakeFiles\machineOfState.dir\Tests\WritingReadingCsvTsvTests.cpp.i
+
+CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.s"
+	C:\Users\Admin\Desktop\MACIEK~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\Tests\WritingReadingCsvTsvTests.cpp -o CMakeFiles\machineOfState.dir\Tests\WritingReadingCsvTsvTests.cpp.s
+
 # Object files for target machineOfState
 machineOfState_OBJECTS = \
 "CMakeFiles/machineOfState.dir/main.cpp.obj" \
@@ -267,7 +309,10 @@ machineOfState_OBJECTS = \
 "CMakeFiles/machineOfState.dir/Tests/TowarTests.cpp.obj" \
 "CMakeFiles/machineOfState.dir/AccessoriesFactory.cpp.obj" \
 "CMakeFiles/machineOfState.dir/Application.cpp.obj" \
-"CMakeFiles/machineOfState.dir/ConcreteBook.cpp.obj"
+"CMakeFiles/machineOfState.dir/ConcreteBook.cpp.obj" \
+"CMakeFiles/machineOfState.dir/ServiceCsvTsv.cpp.obj" \
+"CMakeFiles/machineOfState.dir/WriteCsvTsv.cpp.obj" \
+"CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj"
 
 # External object files for target machineOfState
 machineOfState_EXTERNAL_OBJECTS =
@@ -286,6 +331,9 @@ machineOfState.exe: CMakeFiles/machineOfState.dir/Tests/TowarTests.cpp.obj
 machineOfState.exe: CMakeFiles/machineOfState.dir/AccessoriesFactory.cpp.obj
 machineOfState.exe: CMakeFiles/machineOfState.dir/Application.cpp.obj
 machineOfState.exe: CMakeFiles/machineOfState.dir/ConcreteBook.cpp.obj
+machineOfState.exe: CMakeFiles/machineOfState.dir/ServiceCsvTsv.cpp.obj
+machineOfState.exe: CMakeFiles/machineOfState.dir/WriteCsvTsv.cpp.obj
+machineOfState.exe: CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj
 machineOfState.exe: CMakeFiles/machineOfState.dir/build.make
 machineOfState.exe: lib/libgtestd.a
 machineOfState.exe: lib/libgtest_maind.a
@@ -293,7 +341,7 @@ machineOfState.exe: lib/libgtestd.a
 machineOfState.exe: CMakeFiles/machineOfState.dir/linklibs.rsp
 machineOfState.exe: CMakeFiles/machineOfState.dir/objects1.rsp
 machineOfState.exe: CMakeFiles/machineOfState.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable machineOfState.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable machineOfState.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\machineOfState.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

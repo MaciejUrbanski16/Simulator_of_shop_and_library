@@ -27,7 +27,7 @@ namespace shop {
     public:
         //Book(const std::string &title);
         Book(){}
-        Book(std::string title){this->title = "new";}
+
 
     private:
         std::vector<std::string>currentSearchings;

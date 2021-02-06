@@ -259,7 +259,7 @@ int main(int argc, char *argv[]) {
             application.presentationOfServices();
             {
 
-                auto *bookEdition = new shop::Book(title);
+                auto *bookEdition = new shop::Book;
                 auto *noteEdition = new shop::Notepad;
                 auto *bagEdition = new shop::Bagpack();
                 auto *suppliesEdition = new shop::SchoolSupplies;

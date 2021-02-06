@@ -58,6 +58,7 @@ namespace shop {
 
     public:
         Ware(std::vector<shop::Ware>::iterator iterator);
+        Ware(){}
 
         bool available;
         towar_int_t praise;

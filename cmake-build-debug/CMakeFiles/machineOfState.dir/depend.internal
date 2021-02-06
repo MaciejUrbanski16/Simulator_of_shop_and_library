@@ -50,6 +50,9 @@ CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.obj
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/SchoolSupplies.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/accesories.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/tests.h
+CMakeFiles/machineOfState.dir/ServiceCsvTsv.cpp.obj
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.cpp
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
 CMakeFiles/machineOfState.dir/Tests/NotepadTests.cpp.obj
  ../lib/googletest-master/googletest/include/gtest/gtest-death-test.h
  ../lib/googletest-master/googletest/include/gtest/gtest-matchers.h
@@ -100,6 +103,34 @@ CMakeFiles/machineOfState.dir/Tests/TowarTests.cpp.obj
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Tests/TowarTests.cpp
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/accesories.h
+CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj
+ ../lib/googletest-master/googletest/include/gtest/gtest-death-test.h
+ ../lib/googletest-master/googletest/include/gtest/gtest-matchers.h
+ ../lib/googletest-master/googletest/include/gtest/gtest-message.h
+ ../lib/googletest-master/googletest/include/gtest/gtest-param-test.h
+ ../lib/googletest-master/googletest/include/gtest/gtest-printers.h
+ ../lib/googletest-master/googletest/include/gtest/gtest-test-part.h
+ ../lib/googletest-master/googletest/include/gtest/gtest-typed-test.h
+ ../lib/googletest-master/googletest/include/gtest/gtest.h
+ ../lib/googletest-master/googletest/include/gtest/gtest_pred_impl.h
+ ../lib/googletest-master/googletest/include/gtest/gtest_prod.h
+ ../lib/googletest-master/googletest/include/gtest/internal/custom/gtest-port.h
+ ../lib/googletest-master/googletest/include/gtest/internal/custom/gtest-printers.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-death-test-internal.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-filepath.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-internal.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-param-util.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-port-arch.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-port.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Tests/WritingReadingCsvTsvTests.cpp
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/tests.h
+CMakeFiles/machineOfState.dir/WriteCsvTsv.cpp.obj
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/WriteCsvTsv.cpp
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/WriteCsvTsv.h
 CMakeFiles/machineOfState.dir/accesories.cpp.obj
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Book.h
