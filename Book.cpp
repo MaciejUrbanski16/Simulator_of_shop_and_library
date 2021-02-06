@@ -11,54 +11,20 @@ using namespace shop;
 void Book :: readItemsFromFile()
 {
 
-
     titleOfBooksInShop.clear();
     amountOfBooksInShop.clear();
     praisesOfBooksInShop.clear();
 
-
-
-    std::string title,amount,price;
-    int am=0;
-    towar_int_t pr =0;//zmienne pomocnicze
-
-    readTitles.open("titleOfBooks.txt");
-    readAmount.open("amountOfBooks.txt");
-    readPrices.open("pricesOfBooks.txt");
-
     ReadCsvTsv read("book.tsv");
     read.readFromFile(titleOfBooksInShop,amountOfBooksInShop,praisesOfBooksInShop);
-
-    /*while(getline(readTitles,title))
-    {
-        titleOfBooksInShop.push_back(title);
-    }
-    while(getline(readAmount,amount))
-    {
-        am = atoi(amount.c_str());
-        amountOfBooksInShop.push_back(am);
-    }
-    while(getline(readPrices,price))
-    {
-        pr = atof(price.c_str());
-        praisesOfBooksInShop.push_back(pr);
-    }*/
-
-
-    readTitles.close();
-    readAmount.close();
-    readPrices.close();
-
 
 }
 
 void Book:: saveItemsToFile()
 {
-    fstream fileToSaveTitle("titleOfBooks.txt",ios::out);
-    fstream fileToSaveAmount("amountOfBooks.txt", ios::out);
-    fstream fileToSavePrice("pricesOfBooks.txt", ios::out);
 
     WriteCsvTsv write("book.tsv");
+    
     std::vector<std::string>header{"TYTUL","ILOSC","CENA"};
     write.addHeader(header);
 
@@ -72,9 +38,6 @@ void Book:: saveItemsToFile()
 
         if(i+1 == titleOfBooksInShop.size())
         {
-            fileToSaveTitle << titleOfBooksInShop[i];
-            fileToSaveAmount <<amountOfBooksInShop[i];
-            fileToSavePrice << praisesOfBooksInShop[i];
 
             dataToTsv.push_back(titleOfBooksInShop[i]);
 
@@ -86,9 +49,6 @@ void Book:: saveItemsToFile()
         }
         else
         {
-            fileToSaveTitle << titleOfBooksInShop[i] << endl;
-            fileToSaveAmount <<amountOfBooksInShop[i] << endl;
-            fileToSavePrice << praisesOfBooksInShop[i] <<endl;
 
             dataToTsv.push_back(titleOfBooksInShop[i]);
 
