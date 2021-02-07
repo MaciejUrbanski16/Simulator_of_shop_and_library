@@ -23,8 +23,8 @@ namespace shop
         Bagpack() = default;
 
         Bagpack(std::string mark, std::string color, towar_int_t price,int amount);
-
         std::vector<shop::Bagpack> bags;
+
 
         void readBagpacksFromFile();
 

@@ -17,6 +17,7 @@
 #include <map>
 
 
+
 //class Ware;
 
 enum                        //enumeracja do poruszania sie w procesie zakupu
@@ -106,5 +107,8 @@ namespace shop {
         void removeThing(Type *obj, std::vector<Type> &things);
 
         towar_int_t roundFloatToSecond(towar_int_t d);
+
+
+
     };
 }

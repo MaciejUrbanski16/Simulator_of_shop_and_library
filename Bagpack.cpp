@@ -22,21 +22,21 @@ void shop::Bagpack::readItemsFromFile()
 {
     bags.clear();
     std::fstream readDateFromFile;
-    readDateFromFile.open("pricesOfBags.txt");
+    readDateFromFile.open("bags.txt");
 
 
     while(getline(readDateFromFile,line))
     {
         prepareStrings(line);
     }
-    //bags.emplace_back(marka,colour,cena,amount_);
+
     readDateFromFile.close();
 }
 
 void shop::Bagpack::saveItemsToFile()
 {
     bags[0].mark = "Olg";
-    std::fstream fileToSaveBags("pricesOfBags.txt",std::ios::out);
+    std::fstream fileToSaveBags("bags.txt",std::ios::out);
     for(int i=0;i<bags.size();i++)
     {
         if(i+1 == bags.size())

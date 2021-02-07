@@ -3,6 +3,8 @@
 //
 
 #include "SchoolSupplies.h"
+#include "ReadCsvTsv.h"
+#include "WriteCsvTsv.h"
 #include "tests.h"
 
 #include <utility>
@@ -18,6 +20,7 @@ void shop::SchoolSupplies::readItemsFromFile()
 {
     fileWithSupplies.open("supplies.txt");
 
+
     if(fileWithSupplies.good())
     {
         while(getline(fileWithSupplies,line))
@@ -32,14 +35,35 @@ void shop::SchoolSupplies::saveItemsToFile()
 {
         std::fstream saveDate("supplies.txt",std::ios::out);
 
+        WriteCsvTsv writeSupplies("supplies.tsv");
+
+        std::vector<std::string> header = {"NAZWA","ILOSC","CENA"};
+        writeSupplies.addHeader(header);
+
+        std::string readyData;
+        std::vector<std::string> dataToTsv;
+
+
         for(int i=0;i<schoolSupplies.size();i++)
         {
-            if(i+1 == schoolSupplies.size())
+            readyData = schoolSupplies[i].name;
+            dataToTsv.push_back(readyData);
+
+            readyData = to_string(schoolSupplies[i].amount);
+            dataToTsv.push_back(readyData);
+
+            readyData = to_string(schoolSupplies[i].price);
+            dataToTsv.push_back(readyData);
+
+            writeSupplies.writeToFile(dataToTsv);
+
+            dataToTsv.clear();
+            /*if(i+1 == schoolSupplies.size())
             {
                 saveDate<< schoolSupplies[i].name <<' '<<schoolSupplies[i].price<<' '<<schoolSupplies[i].amount<<" _";
             }
             else
-                saveDate<< schoolSupplies[i].name <<' '<<schoolSupplies[i].price<<' '<<schoolSupplies[i].amount<<" _" <<std::endl;
+                saveDate<< schoolSupplies[i].name <<' '<<schoolSupplies[i].price<<' '<<schoolSupplies[i].amount<<" _" <<std::endl;*/
         }
 }
 
