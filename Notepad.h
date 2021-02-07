@@ -24,7 +24,7 @@ namespace shop
         std::string color;
         //std::vector<std::string> dimension;
         std::vector<std::string>dimensions;
-        std::vector<float>price;
+        std::vector<towar_int_t>price;
         std::vector<int>amount;
         bool noteWithLines;
         int chooseOfColor();
@@ -36,7 +36,7 @@ namespace shop
         bool checkIfNoteIsAvailable(int);
 
         void saveItemsToFile() override;
-        void readItemsFromFile();
+        void readItemsFromFile()override;
 
         std::vector<Notepad> bookedNotes;
 

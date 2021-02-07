@@ -24,7 +24,7 @@ void Book:: saveItemsToFile()
 {
 
     WriteCsvTsv write("book.tsv");
-    
+
     std::vector<std::string>header{"TYTUL","ILOSC","CENA"};
     write.addHeader(header);
 

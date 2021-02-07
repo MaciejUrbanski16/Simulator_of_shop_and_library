@@ -3,6 +3,8 @@
 //
 
 #include "Notepad.h"
+#include "WriteCsvTsv.h"
+#include "ReadCsvTsv.h"
 
 using namespace std;
 using namespace shop;
@@ -69,31 +71,31 @@ int Notepad :: chooseOfColor()
 
 void Notepad::saveItemsToFile()
 {
-    for(int i=0;i<dimensions.size();i++)
-    {
-        cout<<"Do zapisu: "<<i+1<<". "<<dimensions[i]<<" "<<amount[i]<<" "<<price[i]<<endl;
-    }
-    //assert(dimensions.size()==3);
-    fstream fileToSaveDimension("dimensionsOfNotes.txt",ios::out);
-    fstream fileToSavePrice("pricesOfNotes.txt",ios::out);
-    fstream fileToSaveAmount("amountsOfNotes.txt",ios::out);
-    //fstream fileToSaveColor("colorsOfNotes.txt",ios::out);
+
+    std::vector<std::string>headerOfNotes = {"ROZMIAR","ILOŚC","CENA"};
+    std::vector<std::string>dataToTsv;
+    std::string readyData;
+
+    WriteCsvTsv writeNotes("notes.tsv");
+    writeNotes.addHeader(headerOfNotes);
+
 
     for(int i=0;i<dimensions.size();i++)
     {
-        if(i+1==dimensions.size())
-        {
-            fileToSaveDimension<<dimensions[i];
-            fileToSavePrice<<price[i];
-            fileToSaveAmount<<amount[i];
-        }
-        else
-        {
-            fileToSaveDimension<<dimensions[i]<<endl;
-            fileToSavePrice<<price[i]<<endl;
-            fileToSaveAmount<<amount[i]<<endl;
-        }
+        //zapisanie aktualnego stanu zeszytow w vectorach do pliku tsv
+        dataToTsv.push_back(dimensions[i]);
+
+        readyData = to_string(amount[i]);
+        dataToTsv.push_back(readyData);
+
+        readyData = to_string(price[i]);
+        dataToTsv.push_back(readyData);
+
+        writeNotes.writeToFile(dataToTsv);
+        dataToTsv.clear();
+
     }
+
 }
 
 
@@ -103,36 +105,9 @@ void Notepad::readItemsFromFile()
     price.clear();
     amount.clear();
 
-    std::string d,p,a;
-    float _pri;
-    int _amo;
-    readDimensions.open("dimensionsOfNotes.txt");
-    readAmount.open("amountsOfNotes.txt");
-    readPrice.open("pricesOfNotes.txt");            //
 
-    while(getline(readDimensions,d))
-    {
-        dimensions.push_back(d);
-    }
-    while(getline(readPrice,p))
-    {
-        _pri = atof(p.c_str());
-        price.push_back(_pri);
-        //price.push_back(dimen);
-    }
-    while(getline(readAmount,a))
-    {
-        _amo = atoi(a.c_str());
-        amount.push_back(_amo);
-    }
-    dimensionsSize = dimensions.size();
-    cout<<"Size "<<dimensionsSize<<endl;
-    //assert(dimensions.size()==3);
-
-    readPrice.close();
-    readAmount.close();
-    readDimensions.close();
-
+    ReadCsvTsv readNotes("notes.tsv");
+    readNotes.readFromFile(dimensions,amount,price);
 
 }
 

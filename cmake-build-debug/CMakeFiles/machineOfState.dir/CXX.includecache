@@ -16,12 +16,6 @@ fstream
 iostream
 -
 
-C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Book.cpp
-Book.h
-C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Book.h
-string
--
-
 C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Book.h
 string
 -
@@ -41,6 +35,28 @@ WriteCsvTsv.h
 C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/WriteCsvTsv.h
 ReadCsvTsv.h
 C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h
+Application.h
+C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
+
+C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Notepad.cpp
+Notepad.h
+C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Notepad.h
+WriteCsvTsv.h
+C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/WriteCsvTsv.h
+ReadCsvTsv.h
+C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h
+
+C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Notepad.h
+iostream
+-
+cassert
+-
+string
+-
+fstream
+-
+Book.h
+C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Book.h
 Application.h
 C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
 
