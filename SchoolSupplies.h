@@ -10,7 +10,7 @@
 namespace shop
 {
 
-    class SchoolSupplies {
+    class SchoolSupplies: public Ware {
     public:
         std::string name;
         shop::towar_int_t price{};
@@ -21,8 +21,8 @@ namespace shop
 
         std::vector<SchoolSupplies> schoolSupplies;
 
-        void readItemsFromFile();
-        void saveItemsToFile();
+        void readItemsFromFile()override ;
+        void saveItemsToFile()override ;
 
         void presentationOfSupplies();
 

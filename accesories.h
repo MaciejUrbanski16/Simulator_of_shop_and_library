@@ -58,7 +58,6 @@ namespace shop {
     private:
 
     public:
-        Ware(std::vector<shop::Ware>::iterator iterator);
         Ware(){}
 
         bool available;
@@ -98,17 +97,7 @@ namespace shop {
                                    int mode); //zmienia treyb z klienta na sprzedawce i z spr na klienta
 
 
-
-
-        template<class type>
-        void remove1(type el);
-
-        template<typename Type>
-        void removeThing(Type *obj, std::vector<Type> &things);
-
         towar_int_t roundFloatToSecond(towar_int_t d);
-
-
 
     };
 }

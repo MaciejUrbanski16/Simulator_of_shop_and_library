@@ -163,11 +163,6 @@ void Ware::showOrderedPurchases()
     }
 }
 
-Ware::Ware(std::vector<shop::Ware>::iterator iterator) {
-    iterator.base();
-}
-
-
 
 towar_int_t Ware::roundFloatToSecond(towar_int_t d)
 {

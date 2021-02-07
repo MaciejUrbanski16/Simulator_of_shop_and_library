@@ -58,12 +58,12 @@ void shop::SchoolSupplies::saveItemsToFile()
             writeSupplies.writeToFile(dataToTsv);
 
             dataToTsv.clear();
-            /*if(i+1 == schoolSupplies.size())
+            if(i+1 == schoolSupplies.size())
             {
                 saveDate<< schoolSupplies[i].name <<' '<<schoolSupplies[i].price<<' '<<schoolSupplies[i].amount<<" _";
             }
             else
-                saveDate<< schoolSupplies[i].name <<' '<<schoolSupplies[i].price<<' '<<schoolSupplies[i].amount<<" _" <<std::endl;*/
+                saveDate<< schoolSupplies[i].name <<' '<<schoolSupplies[i].price<<' '<<schoolSupplies[i].amount<<" _" <<std::endl;
         }
 }
 

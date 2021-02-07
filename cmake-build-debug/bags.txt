@@ -1,7 +1,7 @@
 109.99 Red 10 Olg k
-209.99 Green 7 Puma k
+209.99 Green 6 Puma k
 109.99 Red 10 Nike k
-109.99 Red 9 Olg k
+109.99 Red 7 Olg k
 209.99 Green 10 Puma k
 109.99 Red 10 Nike k
 109.99 Red 10 Olg k
