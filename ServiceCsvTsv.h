@@ -10,21 +10,25 @@
 #include <string>
 #include <fstream>
 
-class ServiceCsvTsv{
-public:
-    ServiceCsvTsv() = default;
+namespace base {
 
-    std::vector<std::string> split(const std::string &data, const std::string &delimiter);
-    std::string join(const std::vector<std::string> &data, const std::string &delimiter);
+    class ServiceCsvTsv {
+    public:
+        ServiceCsvTsv() = default;
 
-protected:
+        std::vector<std::string> split(const std::string &data, const std::string &delimiter);
 
-    std::string extensionOfFile;
-    bool csvFormat;
+        std::string join(const std::vector<std::string> &data, const std::string &delimiter);
 
-private:
+    protected:
 
-};
+        std::string extensionOfFile;
+        bool csvFormat;
+
+    private:
+
+    };
+}
 
 
 #endif //MACHINEOFSTATE_SERVICECSVTSV_H

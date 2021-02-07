@@ -8,6 +8,7 @@
 
 using namespace std;
 using namespace shop;
+using namespace base;
 
 void Notepad :: setDimensionsOfNote()
 {

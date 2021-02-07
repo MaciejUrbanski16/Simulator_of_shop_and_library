@@ -7,6 +7,7 @@
 
 using namespace std;
 using namespace shop;
+using namespace base;
 
 void Book :: readItemsFromFile()
 {

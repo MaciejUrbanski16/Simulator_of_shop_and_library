@@ -17,31 +17,24 @@
 #include "ReadCsvTsv.h"
 
 #include "Application.h"
-//#include "Catch_tests/AbsoluteDateTest.cpp"
+
 
 
 namespace shop {
 
-    class Book : public shop::Ware    //klasa jako przedstawiciel książki
+    class Book : public shop::Ware    //ogolna klasa do zarzadzania zbiorem ksiazek
     {
     private:
-        char letter;
+        char letter; //znak podany przez uzytkownika do odnalezienia kontreknej pozycji na liscie
         int choose;
     public:
-        //Book(const std::string &title);
+
         Book(){}
 
-
     private:
-
 
         std::vector<std::string>currentSearchings;
 
-
-
-        std::fstream readTitles;
-        std::fstream readAmount;
-        std::fstream readPrices;
 
         std::string titleToRemove;
         towar_int_t position_b = -1;
@@ -63,21 +56,12 @@ namespace shop {
                                   towar_int_t praisesOfNewBook,
                                   int amountOfNewBook);
 
-
-
         void toLower();
         void toUpper();
 
     public:
-        std::string title;               //tytul
-        //std::string editor;              //wydawnictwo
-        shop::towar_int_t praiseOfBook{};
 
         std::string choosenTitle;
-
-
-
-
 
         enum
         {
@@ -90,8 +74,6 @@ namespace shop {
         std::vector<int> amountOfBooksInShop;
         std::vector<shop::towar_int_t > praisesOfBooksInShop;
 
-        //std::vector<Book> bookBooked;        //zamowione ksiazki
-        //std::fstream fileForTitleOfBooks;
 
         int getSizeOfCurrentSearchings();           //zwraca rozmiar prywatnego vectora currentSearchings
 
@@ -112,10 +94,10 @@ namespace shop {
         int showSearchedBooks(std::vector<std::string> searchedBooks);
 
         //zapisanie wszystkich ksiazek ze sklepu przed wyjsciem z uslugi
-        void saveItemsToFile();
+        void saveItemsToFile()override ;
 
         //odczytanie z pliku ksiazek obecnie posiadanych prze sklep
-        void readItemsFromFile();
+        void readItemsFromFile()override ;
 
         void searchInRemoved(Application &app);
 

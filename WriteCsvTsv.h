@@ -6,19 +6,23 @@
 #define MACHINEOFSTATE_WRITECSVTSV_H
 #include "ServiceCsvTsv.h"
 
-class WriteCsvTsv :public ServiceCsvTsv {
+namespace base {
 
-public:
-    WriteCsvTsv(std::string path);
+    class WriteCsvTsv : public ServiceCsvTsv {
 
-    void writeToFile(std::vector<std::string> &data);
-    void addHeader(std::vector<std::string> &data);
+    public:
+        WriteCsvTsv(std::string path);
 
-private:
-    std::string path;
-    std::ofstream outToFile;
-    std::string toFile;
-};
+        void writeToFile(std::vector<std::string> &data);
+
+        void addHeader(std::vector<std::string> &data);
+
+    private:
+        std::string path;
+        std::ofstream outToFile;
+        std::string toFile;
+    };
+}
 
 
 #endif //MACHINEOFSTATE_WRITECSVTSV_H

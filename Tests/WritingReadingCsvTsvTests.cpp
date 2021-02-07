@@ -9,6 +9,8 @@
 
 using testing::Eq;
 
+using namespace base;
+
 namespace
 {
     class TsvCsvTest : public ::testing::Test

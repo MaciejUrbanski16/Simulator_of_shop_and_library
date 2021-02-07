@@ -7,18 +7,19 @@
 
 #include "ServiceCsvTsv.h"
 
+namespace base {
 
+    class ReadCsvTsv : public ServiceCsvTsv {
+    public:
+        ReadCsvTsv(std::string path);
 
-class ReadCsvTsv :public ServiceCsvTsv  {
-public:
-    ReadCsvTsv(std::string path);
+        void readFromFile(std::vector<std::string> &names, std::vector<int> &amounts, std::vector<double> &prices);
 
-    void readFromFile(std::vector<std::string> &names, std::vector<int> &amounts, std::vector<double> &prices);
+    private:
+        std::string path;
 
-private:
-    std::string path;
-
-};
+    };
+}
 
 
 #endif //MACHINEOFSTATE_READCSVTSV_H

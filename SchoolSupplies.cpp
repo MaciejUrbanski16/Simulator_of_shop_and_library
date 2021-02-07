@@ -35,29 +35,8 @@ void shop::SchoolSupplies::saveItemsToFile()
 {
         std::fstream saveDate("supplies.txt",std::ios::out);
 
-        WriteCsvTsv writeSupplies("supplies.tsv");
-
-        std::vector<std::string> header = {"NAZWA","ILOSC","CENA"};
-        writeSupplies.addHeader(header);
-
-        std::string readyData;
-        std::vector<std::string> dataToTsv;
-
-
         for(int i=0;i<schoolSupplies.size();i++)
         {
-            readyData = schoolSupplies[i].name;
-            dataToTsv.push_back(readyData);
-
-            readyData = to_string(schoolSupplies[i].amount);
-            dataToTsv.push_back(readyData);
-
-            readyData = to_string(schoolSupplies[i].price);
-            dataToTsv.push_back(readyData);
-
-            writeSupplies.writeToFile(dataToTsv);
-
-            dataToTsv.clear();
             if(i+1 == schoolSupplies.size())
             {
                 saveDate<< schoolSupplies[i].name <<' '<<schoolSupplies[i].price<<' '<<schoolSupplies[i].amount<<" _";

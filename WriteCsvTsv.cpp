@@ -4,6 +4,7 @@
 
 #include "WriteCsvTsv.h"
 
+using namespace base;
 
 WriteCsvTsv::WriteCsvTsv(std::string path) {
 

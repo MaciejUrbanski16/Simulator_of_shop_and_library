@@ -6,6 +6,8 @@
 
 #include "ReadCsvTsv.h"
 
+using namespace base;
+
 ReadCsvTsv::ReadCsvTsv(std::string path)  {
     for(int i =path.length()-4;i <= path.length()-1;i++){
         this->extensionOfFile +=path[i];

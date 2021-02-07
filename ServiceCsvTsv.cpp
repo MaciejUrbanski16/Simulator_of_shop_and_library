@@ -7,6 +7,7 @@
 #include <vector>
 #include <string>
 
+using namespace base;
 
 std::string ServiceCsvTsv::join(const std::vector<std::string> &data, const std::string &delimiter){
     std::string out;
