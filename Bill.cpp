@@ -18,9 +18,6 @@ shop::towar_int_t Bill::calculate(shop::Ware &towar)
 void Bill::printBill(shop::Ware &towar, shop::towar_int_t toPay)
 {
     std::cout<<std::endl<<std::endl<<std::endl;
-    //int longer = 0;
-    //int space = 50;
-    //std::vector<char>spaces;
     std::string sp;
     int longer = 0 ;
 
@@ -37,15 +34,7 @@ void Bill::printBill(shop::Ware &towar, shop::towar_int_t toPay)
 
     for(int i=0;i<towar.orderedPurchasesPrice.size()+1; i++)
     {
-        //longer = orderedPurchasesName[i].size();
-       // int freeArea  = space - longer;
-       // while(freeArea <space)
 
-           //freeArea++;
-            //spaces.push_back(' ');
-           //sp +=" ";
-
-        //longer =0;
         if(i < towar.orderedPurchasesPrice.size())
         {
             longer = towar.orderedPurchasesName[i].size();
@@ -76,12 +65,5 @@ void Bill::printBill(shop::Ware &towar, shop::towar_int_t toPay)
         }
 
     }
-    //sp = "";
-    //std::cout<<std::endl;
-    //while(longer <40)
-
-    //    std::cout<<' ';
-     //   longer++;
-
 
 }

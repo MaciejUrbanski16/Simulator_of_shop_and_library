@@ -9,7 +9,7 @@
 #include <cassert>
 #include <string>
 #include <fstream>
-//#include "accesories.h"
+
 #include "Book.h"
 #include "Application.h"
 //#include <map>
@@ -18,27 +18,27 @@
 
 namespace shop
 {
+
+    ///OGÓLNA KLASA DO ZARZĄDZANIA LISTĄ DOSTĘPNYCH ZESZYTÓW
     class Notepad : public shop::Ware
     {
     public:
         std::string color;
-        //std::vector<std::string> dimension;
         std::vector<std::string>dimensions;
         std::vector<towar_int_t>price;
         std::vector<int>amount;
         bool noteWithLines;
-        int chooseOfColor();
-        int chooseOfDimension();
+        int chooseOfColor(); //wybor koloru ->do zrobienia
+
+        int chooseOfDimension(); //wybór konkretnego zeszytu przez uzytkownika
 
 
         void setDimensionsOfNote();  //dostepne rozmiary zesytow
 
-        bool checkIfNoteIsAvailable(int);
+        bool checkIfNoteIsAvailable(int); //sprawdza dostępność wybranej przez użytkownika pozycji
 
         void saveItemsToFile() override;
         void readItemsFromFile()override;
-
-        std::vector<Notepad> bookedNotes;
 
         void returnNoteFromBasketToShop(std::vector<std::string> removedThings, std::vector<std::string> dimensions, std::vector<int>amount);
 
@@ -51,25 +51,18 @@ namespace shop
 
         std::vector<int>incrementAmountOfNotesAfterReturnedToShop(Application &app);
 
-        void editionStateOfNotes();
+        void editionStateOfNotes(); //pozwala dodawać/usuwac zeszyty (w trybie sprzedawcy)
 
     private:
         std::string dim;
         int choose;
         int dimensionsSize; //ilosc elementow vectora dimension
 
-        std::fstream readDimensions;
-        std::fstream readAmount;
-        std::fstream readPrice;
+        void addNotesToShop(int mode, int howMuch,int where); //pozwala edytować liczbę dostępnych zeszytów o danym rozmiarze
+        void showResourcesOfNotes(); //pokazuje aktualny stan zeszytów w sklepie
 
-        void addNotesToShop(int mode, int howMuch,int where);
-        void showResourcesOfNotes();
 
-        std::string dimen,pr,am;
-        //float pr;
-        //int am;
-
-        void addingByOwnerNewNote();
+        void addingByOwnerNewNote(); //pozwala dodawac zeszyt do sklepu (w trybie sprzedawcy)
         void removeByOwnerNote();
 
 

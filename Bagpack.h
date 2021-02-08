@@ -14,16 +14,19 @@
 
 namespace shop
 {
+    ///OGÓLNA KLASA DO ZARZĄDZANIA ZBIOREM PLECAKÓW
     class Bagpack : public Ware {    //atrybuty: marka kolor cena
     public:
-        std::string mark;
-        std::string color;
-        towar_int_t price;
+
         int amount;
         Bagpack() = default;
 
         Bagpack(std::string mark, std::string color, towar_int_t price,int amount);
         std::vector<shop::Bagpack> bags;
+
+        std::string mark;
+        std::string color;
+        towar_int_t price;
 
 
         void readBagpacksFromFile();
@@ -34,7 +37,6 @@ namespace shop
 
         bool areThereAnyBagpacks(); // zwroci falsz gdy nie ma danego plecaka w zasobach sklepu
 
-        ///mozna by sprobowac cos z tym gitem teraz !!!
 
         ~Bagpack();
 
@@ -45,7 +47,6 @@ namespace shop
         void getAmounts();
 
         void readItemsFromFile() override ;
-
         void saveItemsToFile() override ;
 
         void presentationOfBags();
@@ -58,10 +59,8 @@ namespace shop
 
     private:
         std::string line;
-        std::string marka = "Tgt";
-        std::string colour = "red";
-        shop::towar_int_t cena = 10;
-        int amount_ = 5;
+
+
 
         std::string strToMark, strToColour,strToPrice,strToAmount,strTemp;
 

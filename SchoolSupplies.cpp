@@ -135,7 +135,6 @@ void shop::SchoolSupplies::refreshAmount()
 
 void shop::SchoolSupplies::editionState()
 {
-   //shop::Ware::removeThing<SchoolSupplies>(suppliesEdition,suppliesEdition->schoolSupplies);
    int choose = enteringTheNumber(1,2);
    switch(choose)
    {

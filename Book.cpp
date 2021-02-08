@@ -155,7 +155,7 @@ void Book::addSearchedBooks()
 
     }
 }
-int Book :: showSearchedBooks(std::vector<std::string>searchedBooks)
+int Book :: showSearchedBooks(std::vector<std::string>&searchedBooks)
 {
     if(searchedBooks.empty()||searchedBooks[0]=="ZADNA_Z_POWYZSZYCH")
     {
@@ -175,11 +175,8 @@ int Book :: showSearchedBooks(std::vector<std::string>searchedBooks)
     }
 }
 
-bool Book ::checkAmountofBookInShop(const Ware& purchases)
+bool Book ::checkAmountofBookInShop(const Ware &purchases)
 {
-    //ksiega->amountOfBooksInShop[purchases.position] = ksiega->amountOfBooksInShop[purchases.position] - 1;
-   // int j = ksiega->amountOfBooksInShop[purchases.position];
-
     bool p;
     this->amountOfBooksInShop[purchases.position]--;
     int checker = 1;//ksiega->amountOfBooksInShop[purchases.position];
@@ -200,7 +197,7 @@ bool Book ::checkAmountofBookInShop(const Ware& purchases)
 
 //----------------------------------------------------------------------------------------------------------------------
 
- int Book ::checkIfBookExist(std::string title)
+ int Book ::checkIfBookExist(std::string &title)
 {
     int position = -1;
     for(int i =0; i<this->titleOfBooksInShop.size(); i++)
@@ -222,7 +219,7 @@ std::string Book::getSearchedBook(int t)
 
 //----------------------------------------------------------------------------------------------------------------------
 
-void Book::addBookToShop( std::string titleOfNewBook, towar_int_t praisesOfNewBook, int amountOfNewBook)
+void Book::addBookToShop( std::string &titleOfNewBook, towar_int_t &praisesOfNewBook, int amountOfNewBook)
 {
     //automatyzacja uzupelniania zapasow sklepu
     this->titleOfBooksInShop.push_back(titleOfNewBook);
@@ -248,8 +245,6 @@ void Book:: addThingToShop()
         cin>>pricesToAdd;
         cin>>amountToAdd;
         this->addBookToShop(title_a,pricesToAdd,amountToAdd);
-        //ks->addBookToShop(ks,"mt2",1222,1111);
-        //cout<<"Rozmiar: "<<ks->titleOfBooksInShop.size()<<endl;
 
     }
 }

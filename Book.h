@@ -22,7 +22,8 @@
 
 namespace shop {
 
-    class Book : public shop::Ware    //ogolna klasa do zarzadzania zbiorem ksiazek
+    ///OGÓLNA KLASA DO ZARZĄDZANIA ZBIOREM KSIĄŻEK
+    class Book : public shop::Ware
     {
     private:
         char letter; //znak podany przez uzytkownika do odnalezienia kontreknej pozycji na liscie
@@ -52,8 +53,8 @@ namespace shop {
 
 
         //funkcja dodajaca ksiazke w systemie
-        void addBookToShop(       std::string titleOfNewBook,
-                                  towar_int_t praisesOfNewBook,
+        void addBookToShop(       std::string &titleOfNewBook,
+                                  towar_int_t &praisesOfNewBook,
                                   int amountOfNewBook);
 
         void toLower();
@@ -80,7 +81,7 @@ namespace shop {
         bool checkAmountofBookInShop(const Ware &t); //sprawdza czy w sklepie jest pozycja o zadanym tytlue
 
 
-        int checkIfBookExist(std::string title); //zwraca pozycje ksiazki o zadanym tytule
+        int checkIfBookExist(std::string &title); //zwraca pozycje ksiazki o zadanym tytule
 
         void editionStateOfBooks();   //usuwanie badz dodawanie zasobow sklaepu ksiazke
 
@@ -91,7 +92,7 @@ namespace shop {
         int searchingBook();        //wyszukiwanie tytulu po zadanej pierwszej literze(uwzglednia duze i male litery
 
         //pokazuje tytuly wyszukanych ksiazek po zadanej pierwszej literze, zwraca parametr FOUND badz NOT_FOUND
-        int showSearchedBooks(std::vector<std::string> searchedBooks);
+        int showSearchedBooks(std::vector<std::string> &searchedBooks);
 
         //zapisanie wszystkich ksiazek ze sklepu przed wyjsciem z uslugi
         void saveItemsToFile()override ;

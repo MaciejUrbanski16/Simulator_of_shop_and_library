@@ -147,6 +147,7 @@ void Notepad :: addNotesToShop(int mode, int howMuch,int where)
 }
 void Notepad ::showResourcesOfNotes()
 {
+    cout<<"Dostepne zeszyty w sklepie: "<<endl;
     for(int i = 0;i<dimensions.size();i++)
     {
         cout<<i+1<<". "<<dimensions[i]<<endl;
@@ -177,11 +178,6 @@ void Notepad ::addingByOwnerNewNote()
 
 }
 
-void Notepad::addThingFromRemovedToShop(std::map<std::string, int> mapa) {
-    mapa["4"] = 1;
-    //string d = mapa.key_comp();
-
-}
 
 vector<int>
 Notepad::incrementAmountofRemovedThing(std::map<std::string, int> incrementAmountOfNotesAfterRemovingFromBaskte) {
@@ -190,7 +186,7 @@ Notepad::incrementAmountofRemovedThing(std::map<std::string, int> incrementAmoun
 
 vector<int>
 Notepad::incrementAmountOfNotesAfterReturnedToShop(Application &app) {
-     for(int i=0;i<app.removedThings.size();i++) //co to jest??? czemu nie daje rady tego oddzielic do osobnej funkcji??
+    for(int i=0;i<app.removedThings.size();i++)
  {
      for(int j=0;j<dimensions.size();j++)
      {

@@ -1,5 +1,5 @@
 //
-// Created by Admin on 26.07.2020.
+// Created by Admin on 26.01.2021.
 //
 
 #ifndef MACHINEOFSTATE_ACCESORIES_H
@@ -17,14 +17,11 @@
 #include <map>
 
 
-
-//class Ware;
-
 enum                        //enumeracja do poruszania sie w procesie zakupu
 {
     START,
-    CHOOSE,
     INTRODUCTION,
+    CHOOSE,
     CONFIRM,
     END
 };
@@ -53,7 +50,8 @@ extern int mode;
 namespace shop {
     typedef double towar_int_t;
 
-    class Ware                     //ogolna klasa towaru sklepu
+    ///OGÓLNA KLASA TOWARU
+    class Ware
     {
     private:
 
@@ -68,10 +66,11 @@ namespace shop {
 
         int paramOfChoosenThing;
 
+        //funkcje odczytu i zapisu danych
         virtual void readItemsFromFile();
-
         virtual void saveItemsToFile();
 
+        //kontenery do przechowywania wybranych przez klienta rzeczy ze sklepu
         std::vector<std::string> orderedPurchasesName;
         std::vector<towar_int_t> orderedPurchasesPrice;
 
@@ -80,8 +79,9 @@ namespace shop {
 
         static bool enterToShop();          //wejscie do sklepu jedynie po potweirzdzeniu checi wejscia
 
-        void
-        remove(std::vector<std::string> &removedThings, std::vector<std::string> &dimensions, std::vector<int> &amount);
+        void remove(std::vector<std::string> &removedThings,
+                    std::vector<std::string> &dimensions,
+                    std::vector<int> &amount);
 
         void showOrderedPurchases();        //wyswietla wszystkie rzeczy dodane do koszyka
 
@@ -94,7 +94,7 @@ namespace shop {
         int enteringTheNumber(int minValue, int maxValue);
 
         int changeModeToSellerMode(std::string password,
-                                   int mode); //zmienia treyb z klienta na sprzedawce i z spr na klienta
+                                   int mode); //zmienia treyb z klienta na sprzedawce i na odwrót
 
 
         towar_int_t roundFloatToSecond(towar_int_t d);

@@ -1,13 +1,9 @@
 //
-// Created by Admin on 26.07.2020.
+// Created by Admin on 26.01.2021.
 //
-//#include "accesories.h"
+
 #include "Book.h"
-//#include "accesories.h"
 
-//#include "accesories.h"
-
-//#include "accesories.h"
 
 #include <iostream>
 
@@ -64,7 +60,7 @@ int Ware::changeModeToSellerMode(std::string password, int mode)
     else {
         mode = CUSTOMER_MODE;
         cout << "Zmieniono tryb na tryb klienta" << endl;
-        //return stage;
+
     }
     return  mode;
 }
@@ -74,7 +70,7 @@ int Ware::changeModeToSellerMode(std::string password, int mode)
 int Ware ::choosingFromList(int minRange, int maxRange)
 {
     int choose1 = -1;
-        cout<<"Podaj cyfre 1-3 aby wybrac usługe"<<endl;
+        cout<<"Podaj cyfre "<<minRange<<"-"<<maxRange<<" aby wybrac usługe"<<endl;
         cout<<"------------------"<<endl;
 
 
@@ -95,10 +91,8 @@ int Ware ::choosingFromList(int minRange, int maxRange)
 
 int Ware :: enteringTheNumber(int minValue, int maxValue)
 {
-    //int howMuch = 0;
-
     int where = -1;
-    //cout<<"Podaj cyfre z zakresu od "<<minValue<<" do"<<maxValue<<endl;
+
 
     bool good1,bad1;
 

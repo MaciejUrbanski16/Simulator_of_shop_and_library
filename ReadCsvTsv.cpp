@@ -4,8 +4,6 @@
 
 #include "ReadCsvTsv.h"
 
-#include "ReadCsvTsv.h"
-
 using namespace base;
 
 ReadCsvTsv::ReadCsvTsv(std::string path)  {

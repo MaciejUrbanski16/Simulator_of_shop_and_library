@@ -10,7 +10,7 @@
 #include <fstream>
 #include <iostream>
 
-//this class storages configuration of simulator
+///KLASA DO PRZECHOWYWANIA KONFIGURACJI SYMULATORA
 class Application {
 
 protected:
@@ -18,7 +18,7 @@ protected:
     static Application *app;
 public:
     Application() = default;
-    //to ensure only one instance of this class
+
     Application(Application &other) = delete;
     void operator=(const Application &other) = delete;
 

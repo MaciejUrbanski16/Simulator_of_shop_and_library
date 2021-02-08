@@ -20,6 +20,35 @@
   <component name="ChangeListManager">
     <list default="true" id="a417d592-79c6-4910-a3f3-8b98fcb03eae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application.h" beforeDir="false" afterPath="$PROJECT_DIR$/Application.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bagpack.h" beforeDir="false" afterPath="$PROJECT_DIR$/Bagpack.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bill.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Bill.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bill.h" beforeDir="false" afterPath="$PROJECT_DIR$/Bill.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Book.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Book.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Book.h" beforeDir="false" afterPath="$PROJECT_DIR$/Book.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notepad.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Notepad.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notepad.h" beforeDir="false" afterPath="$PROJECT_DIR$/Notepad.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReadCsvTsv.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ReadCsvTsv.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolSupplies.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SchoolSupplies.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolSupplies.h" beforeDir="false" afterPath="$PROJECT_DIR$/SchoolSupplies.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/NotepadTests.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/NotepadTests.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accesories.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/accesories.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accesories.h" beforeDir="false" afterPath="$PROJECT_DIR$/accesories.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/Book.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/Book.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/Notepad.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/Notepad.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/ReadCsvTsv.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/ReadCsvTsv.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/tests/NotepadTests.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/tests/NotepadTests.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/bags.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/bags.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/book.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/book.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/machineOfState.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/machineOfState.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/notes.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/notes.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/supplies.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/supplies.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generalFunctions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/generalFunctions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +130,12 @@
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EnteringNumbers.TEST1" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="machineOfState" TARGET_NAME="machineOfState" RUN_TARGET_PROJECT_NAME="machineOfState" RUN_TARGET_NAME="machineOfState" TEST_CLASS="EnteringNumbers" TEST_METHOD="TEST1" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NotepadTests.Test1" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="machineOfState" TARGET_NAME="machineOfState" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="machineOfState" RUN_TARGET_NAME="machineOfState" TEST_CLASS="NotepadTests" TEST_METHOD="Test1" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -140,17 +175,19 @@
     </configuration>
     <list>
       <item itemvalue="Catch.Catch_tests" />
-      <item itemvalue="Google Test.BookTests" />
-      <item itemvalue="Google Test.NotepadTests.Test1" />
-      <item itemvalue="Google Test.NotepadTests.TestReadDateFromFile" />
       <item itemvalue="CMake Application.gmock" />
       <item itemvalue="CMake Application.gmock_main" />
       <item itemvalue="CMake Application.gtest" />
       <item itemvalue="CMake Application.gtest_main" />
       <item itemvalue="CMake Application.machineOfState" />
+      <item itemvalue="Google Test.BookTests" />
+      <item itemvalue="Google Test.NotepadTests.Test1" />
+      <item itemvalue="Google Test.NotepadTests.TestReadDateFromFile" />
+      <item itemvalue="Google Test.EnteringNumbers.TEST1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Google Test.EnteringNumbers.TEST1" />
         <item itemvalue="Google Test.NotepadTests.Test1" />
         <item itemvalue="Google Test.NotepadTests.TestReadDateFromFile" />
         <item itemvalue="Google Test.BookTests" />
@@ -236,7 +273,7 @@
       <workItem from="1612609790334" duration="9973000" />
       <workItem from="1612619831460" duration="290000" />
       <workItem from="1612722862812" duration="7944000" />
-      <workItem from="1612810666762" duration="336000" />
+      <workItem from="1612810666762" duration="4547000" />
     </task>
     <task id="LOCAL-00001" summary="All features of special things work properly">
       <created>1606246468089</created>
@@ -273,22 +310,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="585" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1606246465638" />
-    <state width="938" height="295" key="GridCell.Tab.0.bottom" timestamp="1612731293018">
+    <state width="938" height="295" key="GridCell.Tab.0.bottom" timestamp="1612815216586">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1612731293018" />
-    <state width="938" height="295" key="GridCell.Tab.0.center" timestamp="1612731293018">
+    <state width="938" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1612815216586" />
+    <state width="938" height="295" key="GridCell.Tab.0.center" timestamp="1612815216586">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="295" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1612731293018" />
-    <state width="938" height="295" key="GridCell.Tab.0.left" timestamp="1612731293018">
+    <state width="938" height="295" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1612815216586" />
+    <state width="938" height="295" key="GridCell.Tab.0.left" timestamp="1612815216586">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="295" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1612731293018" />
-    <state width="938" height="295" key="GridCell.Tab.0.right" timestamp="1612731293018">
+    <state width="938" height="295" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1612815216586" />
+    <state width="938" height="295" key="GridCell.Tab.0.right" timestamp="1612815216586">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="295" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1612731293018" />
+    <state width="938" height="295" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1612815216586" />
     <state width="938" height="259" key="GridCell.Tab.1.bottom" timestamp="1612619808640">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -324,8 +361,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Book.cpp</url>
-          <line>36</line>
-          <option name="timeStamp" value="27" />
+          <line>39</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
