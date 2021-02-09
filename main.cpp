@@ -291,15 +291,13 @@ int main(int argc, char *argv[]) {
 
    // Pokazanie rachunku
 
-    Bill bill;
-    shop::towar_int_t toPay = bill.calculate(purchases);
+    Bill bill(purchases);
+    shop::towar_int_t toPay = bill.calculate();
     shop::towar_int_t wynik_x =( shop::towar_int_t )(( int )( toPay * 100 ) ) / 100;
     wynik_x = purchases.roundFloatToSecond(wynik_x);
     assert(purchases.orderedPurchasesName.size() == purchases.orderedPurchasesPrice.size());
 
-
-    bill.printBill(purchases, toPay);
-
+    bill.printBill(toPay);
 
     return 0;
 

@@ -1,21 +1,21 @@
 //
-// Created by Admin on 20.09.2020.
+// Created by Admin on 20.01.2021.
 //
 
 #include "Bill.h"
 
-shop::towar_int_t Bill::calculate(shop::Ware &towar)
+shop::towar_int_t Bill::calculate()
 {
     allGain = 0;
-    for(int i=0;i<towar.orderedPurchasesPrice.size(); i++)
+    for(int i=0;i<this->ware.orderedPurchasesPrice.size(); i++)
     {
-        allGain  = allGain + towar.orderedPurchasesPrice[i];
+        allGain  = allGain + this->ware.orderedPurchasesPrice[i];
     }
     
     return allGain;
 }
 
-void Bill::printBill(shop::Ware &towar, shop::towar_int_t toPay)
+void Bill::printBill(shop::towar_int_t toPay)
 {
     std::cout<<std::endl<<std::endl<<std::endl;
     std::string sp;
@@ -32,22 +32,22 @@ void Bill::printBill(shop::Ware &towar, shop::towar_int_t toPay)
     }
     std::cout<<std::endl;
 
-    for(int i=0;i<towar.orderedPurchasesPrice.size()+1; i++)
+    for(int i=0;i<this->ware.orderedPurchasesPrice.size()+1; i++)
     {
 
-        if(i < towar.orderedPurchasesPrice.size())
+        if(i < this->ware.orderedPurchasesPrice.size())
         {
-            longer = towar.orderedPurchasesName[i].size();
+            longer = this->ware.orderedPurchasesName[i].size();
 
-            std::cout<<towar.orderedPurchasesName[i];
+            std::cout<<this->ware.orderedPurchasesName[i];
 
             while(longer < 50)
             {
                 std::cout<<' ';
                 longer++;
             }
-            std::cout<<towar.orderedPurchasesPrice[i]<<std::endl;
-        } else if (i == towar.orderedPurchasesPrice.size())
+            std::cout<<this->ware.orderedPurchasesPrice[i]<<std::endl;
+        } else if (i == this->ware.orderedPurchasesPrice.size())
         {
 
             for(int j = 0;j< 56;j++)
@@ -66,4 +66,8 @@ void Bill::printBill(shop::Ware &towar, shop::towar_int_t toPay)
 
     }
 
+}
+
+Bill::Bill(Ware &ware) {
+    this->ware = ware;
 }

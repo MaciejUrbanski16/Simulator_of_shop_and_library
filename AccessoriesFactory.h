@@ -1,5 +1,5 @@
 //
-// Created by Admin on 25.11.2020.
+
 //
 
 #ifndef MACHINEOFSTATE_ACCESSORIESFACTORY_H

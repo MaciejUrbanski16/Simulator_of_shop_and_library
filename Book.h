@@ -1,5 +1,5 @@
 //
-// Created by Admin on 06.08.2020.
+// Created by Admin on 06.01.2021.
 //
 
 #ifndef MACHINEOFSTATE_BOOK_H
@@ -10,7 +10,7 @@
 #include <vector>
 #include <fstream>
 #include <conio.h>
-#include "accesories.h"
+#include "ShopWare.h"
 #include <map>
 
 #include "WriteCsvTsv.h"

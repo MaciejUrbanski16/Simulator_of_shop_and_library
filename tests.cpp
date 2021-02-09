@@ -1,5 +1,5 @@
 //
-// Created by Admin on 09.09.2020.
+
 //
 #include "tests.h"
 

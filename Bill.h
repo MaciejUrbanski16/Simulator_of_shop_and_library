@@ -1,5 +1,5 @@
 //
-// Created by Admin on 20.09.2020.
+// Created by Admin on 20.01.2021.
 //
 
 #ifndef MACHINEOFSTATE_BILL_H
@@ -14,15 +14,18 @@ using namespace shop;
 class Bill : public shop::Ware {
 public:
     Bill() = default;
+    Bill(Ware &ware);
 
-    shop::towar_int_t calculate(Ware &towar);
+    shop::towar_int_t calculate();
 
-    void printBill(shop::Ware &towar, shop::towar_int_t toPay);
+    void printBill(shop::towar_int_t toPay);
 
     void payForPurchases();
 
 private:
     shop::towar_int_t allGain;
+
+    shop::Ware ware;
 
 };
 

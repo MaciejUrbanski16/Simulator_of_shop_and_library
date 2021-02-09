@@ -3,7 +3,7 @@
 //
 
 #include <gtest/gtest.h>
-#include "../accesories.h"
+#include "../ShopWare.h"
 
 using testing::Eq;
 
