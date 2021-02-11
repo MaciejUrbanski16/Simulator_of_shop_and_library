@@ -520,12 +520,6 @@ cxxabi.h
 acxx_demangle.h
 -
 
-C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/AccessoriesFactory.h
-SchoolSupplies.h
-C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/SchoolSupplies.h
-Bagpack.h
-C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Bagpack.h
-
 C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
 vector
 -
@@ -544,10 +538,6 @@ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Book.h
 fstream
 -
 
-C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Bill.cpp
-Bill.h
-C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Bill.h
-
 C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Bill.h
 Book.h
 C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Book.h
@@ -565,8 +555,8 @@ fstream
 -
 conio.h
 -
-accesories.h
-C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/accesories.h
+ShopWare.h
+C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
 map
 -
 WriteCsvTsv.h
@@ -606,11 +596,7 @@ string
 fstream
 -
 
-C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/WriteCsvTsv.h
-ServiceCsvTsv.h
-C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
-
-C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/accesories.h
+C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
 iostream
 -
 string
@@ -623,6 +609,10 @@ memory
 -
 map
 -
+
+C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/WriteCsvTsv.h
+ServiceCsvTsv.h
+C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
 
 C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/generalFunctions.h
 string
@@ -637,8 +627,6 @@ memory
 -
 generalFunctions.h
 C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/generalFunctions.h
-AccessoriesFactory.h
-C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/AccessoriesFactory.h
 cassert
 -
 vector

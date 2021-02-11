@@ -1,8 +1,9 @@
 //
-// Created by Admin on 06.01.2021.
+// Created by Admin on 06.08.2020.
 //
 
 #include "Book.h"
+
 #include<string>
 
 using namespace std;
@@ -14,10 +15,10 @@ void Book :: readItemsFromFile()
 
     titleOfBooksInShop.clear();
     amountOfBooksInShop.clear();
-    praisesOfBooksInShop.clear();
+    pricesOfBooksInShop.clear();
 
     ReadCsvTsv read("book.tsv");
-    read.readFromFile(titleOfBooksInShop,amountOfBooksInShop,praisesOfBooksInShop);
+    read.readFromFile(titleOfBooksInShop, amountOfBooksInShop, pricesOfBooksInShop);
 
 }
 
@@ -45,7 +46,7 @@ void Book:: saveItemsToFile()
             std::string am = std::to_string(amountOfBooksInShop[i]);
             dataToTsv.push_back(am);
 
-            std::string pr = std::to_string(praisesOfBooksInShop[i]);
+            std::string pr = std::to_string(pricesOfBooksInShop[i]);
             dataToTsv.push_back(pr);
         }
         else
@@ -56,7 +57,7 @@ void Book:: saveItemsToFile()
             std::string am = std::to_string(amountOfBooksInShop[i]);
             dataToTsv.push_back(am);
 
-            std::string pr = std::to_string(praisesOfBooksInShop[i]);
+            std::string pr = std::to_string(pricesOfBooksInShop[i]);
             dataToTsv.push_back(pr);
         }
 
@@ -91,7 +92,8 @@ void Book::editionStateOfBooks()
 int Book::searchingBook()
 {
 
-    cout<<"Podaj litere: "<<endl;
+    cout<<"Podaj litere, na ktora zaczyna sie tytul: "<<endl;
+
     while(!_kbhit())
     {
         letter = getch();                //wyszukiwanie ksiazek po wcisnietym znaku
@@ -101,11 +103,11 @@ int Book::searchingBook()
 
     toUpper();                              //zamiana litery na duza
 
-    addSearchedBooks();                     //dodanie do zbioru wyszukanych pozycji na litere duza
+    addSearchedBooks(letter);                     //dodanie do zbioru wyszukanych pozycji na litere duza
 
     toLower();                              //zamiana litery na małą
 
-    addSearchedBooks();                     //dodanie do zbioru wyszukanych pozycji na litere duza
+    addSearchedBooks(letter);                     //dodanie do zbioru wyszukanych pozycji na litere duza
 
     currentSearchings.push_back("ZADNA_Z_POWYZSZYCH");
 
@@ -144,11 +146,11 @@ int Book::getSizeOfCurrentSearchings()
     return currentSearchings.size();
 }
 
-void Book::addSearchedBooks()
+void Book::addSearchedBooks(char letter_)
 {
     for(int i = 0; i < titleOfBooksInShop.size(); i++)
     {
-        if(titleOfBooksInShop[i][0] == letter)
+        if(titleOfBooksInShop[i][0] == letter_)
         {
             currentSearchings.push_back(titleOfBooksInShop[i]);
         }
@@ -223,7 +225,7 @@ void Book::addBookToShop( std::string &titleOfNewBook, towar_int_t &praisesOfNew
 {
     //automatyzacja uzupelniania zapasow sklepu
     this->titleOfBooksInShop.push_back(titleOfNewBook);
-    this->praisesOfBooksInShop.push_back(praisesOfNewBook);
+    this->pricesOfBooksInShop.push_back(praisesOfNewBook);
     this->amountOfBooksInShop.push_back(amountOfNewBook);
 }
 
@@ -267,7 +269,7 @@ void Book ::removeThingFromShop()
         if(position_b>=0)
         {
             this->titleOfBooksInShop.erase(this->titleOfBooksInShop.begin() + position_b);
-            this->praisesOfBooksInShop.erase(this->praisesOfBooksInShop.begin() + position_b);
+            this->pricesOfBooksInShop.erase(this->pricesOfBooksInShop.begin() + position_b);
             this->amountOfBooksInShop.erase(this->amountOfBooksInShop.begin() + position_b);
         }
         else

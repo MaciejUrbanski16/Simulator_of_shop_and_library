@@ -1,9 +1,8 @@
 //
-// Created by Admin on 26.01.2021.
+// Created by Admin on 06.08.2020.
 //
 
 #include "Book.h"
-
 
 #include <iostream>
 
@@ -46,6 +45,7 @@ int Ware::changeModeToSellerMode(std::string password, int mode)
                 if (password == givenPassword && attemp > 0) {
                     mode = SELLER_MODE;
                     attemp = 3;
+                    this->inSellerMode = true;
                     cout << "Pomyslnie zmieniono tryb, teraz mozna edytowac zasoby sklepu" << endl;
                     break;
                 }
@@ -93,7 +93,7 @@ int Ware :: enteringTheNumber(int minValue, int maxValue)
 {
     int where = -1;
 
-
+#ifndef TESTING
     bool good1,bad1;
 
     do{
@@ -104,6 +104,9 @@ int Ware :: enteringTheNumber(int minValue, int maxValue)
         cin.sync();
     }while((where<minValue||where>maxValue)||(good1==0||bad1==1));
     //cin>>howMuch;
+#else
+    where = 4;
+#endif
     return where;
 }
 
@@ -190,6 +193,15 @@ void  Ware::remove(std::vector<std::string> &removedThings, std::vector<std::str
         }
     }
 
+}
+
+char Ware::enterTheLetter() {
+    char letter = 'c';
+    while(!_kbhit())
+    {
+        letter = getch();                //wyszukiwanie ksiazek po wcisnietym znaku
+    }
+    return letter;
 }
 
 

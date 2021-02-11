@@ -318,12 +318,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/AccessoriesFactory.cpp">
-			<Option target="machineOfState"/>
-		</Unit>
-		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/AccessoriesFactory.h">
-			<Option target="machineOfState"/>
-		</Unit>
 		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.cpp">
 			<Option target="machineOfState"/>
 		</Unit>
@@ -346,12 +340,6 @@
 			<Option target="machineOfState"/>
 		</Unit>
 		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Book.h">
-			<Option target="machineOfState"/>
-		</Unit>
-		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBook.cpp">
-			<Option target="machineOfState"/>
-		</Unit>
-		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBook.h">
 			<Option target="machineOfState"/>
 		</Unit>
 		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Notepad.cpp">
@@ -378,6 +366,15 @@
 		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h">
 			<Option target="machineOfState"/>
 		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.cpp">
+			<Option target="machineOfState"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h">
+			<Option target="machineOfState"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Tests/BookTests.cpp">
+			<Option target="machineOfState"/>
+		</Unit>
 		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Tests/NotepadTests.cpp">
 			<Option target="machineOfState"/>
 		</Unit>
@@ -391,12 +388,6 @@
 			<Option target="machineOfState"/>
 		</Unit>
 		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/WriteCsvTsv.h">
-			<Option target="machineOfState"/>
-		</Unit>
-		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/accesories.cpp">
-			<Option target="machineOfState"/>
-		</Unit>
-		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/accesories.h">
 			<Option target="machineOfState"/>
 		</Unit>
 		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/generalFunctions.cpp">

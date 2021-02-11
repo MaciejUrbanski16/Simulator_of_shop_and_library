@@ -5,6 +5,7 @@
 #include "../Notepad.h"
 
 #include "../tests.h"
+#define TESTING
 
 using testing::Eq;
 
@@ -23,24 +24,21 @@ namespace
 
 TEST(EnteringNumbers, TEST1)
 {
+    shop::Ware w;
     int  p =4;
-    //EXPECT_EQ(p,enteringTheNumber(3,5));
+   // EXPECT_EQ(p,w.enteringTheNumber(3,5));
     EXPECT_EQ(1,1);
 
 }
 
 TEST_F(NotepadTests,Test1)
 {
+    //WHEN
     n1.readItemsFromFile();
-    int roz = n1.dimensions.size();
 
-
-
-    int roz2 = n1.amount.size();
-    int roz3 = n1.price.size();
-
-    EXPECT_EQ(roz,roz2);
-    EXPECT_EQ(roz2,roz3);
+    //THEN
+    EXPECT_EQ(n1.amount.size(),n1.price.size());
+    EXPECT_EQ(n1.dimensions.size(),n1.amount.size());
 
 }
 

@@ -1,5 +1,5 @@
 //
-// Created by Admin on 31.01.2021.
+// Created by Admin on 04.01.2021.
 //
 
 #include "Application.h"
@@ -18,6 +18,8 @@ void Application :: presentationOfServices()
 
     if(mode == CUSTOMER_MODE)
     {
+        std::cout<<"MOZLIWY WYBOR USLUG: "<<std::endl;
+        std::cout<<"---------------------"<<std::endl;
         std::cout<<"1. Ksiazki"<<std::endl;
         std::cout<<"2. Zeszyty"<<std::endl;
         std::cout<<"3. Tornistry"<<std::endl;
@@ -25,6 +27,8 @@ void Application :: presentationOfServices()
         std::cout<<"5. USUNIECIE PRZEDMIOTU Z KOSZYKA"<<std::endl;
         std::cout<<"6. ZMIANA TRYBU - Obecny tryb CUSTOMER_MODE "<<std::endl;
         std::cout<<"7. Wyjscie"<<std::endl;
+        std::cout<<"---------------------"<<std::endl;
+        std::cout<<std::endl;
 
     }
     else if(mode == SELLER_MODE)
@@ -34,8 +38,6 @@ void Application :: presentationOfServices()
         std::cout<<"3. Edycja tornistrow"<<std::endl;
         std::cout<<"4. Edycja przyborow"<<std::endl;
         std::cout<<"5. ZMIANA TRYBU - Obecny tryb SELLER_MODE "<<std::endl;
-        //cout<<"6. Edycja przyborow"<<endl;
-        //cout<<"7. ZMIANA TRYBU - Obecny tryb SELLER_MODE "<<endl;
     }
 }
 
@@ -78,20 +80,12 @@ int Application :: chooseOfService()
     int choose = 0;
     if(mode == CUSTOMER_MODE)
     {
-        std::cout<<"Podaj cyfre 1-7, aby wybrac usługe"<<std::endl;
-        std::cout<<"------------------"<<std::endl;
-
-
         choose = enteringTheNumber(1,7);
     }
 
     else if(mode == SELLER_MODE)
     {
-        std::cout<<"Podaj cyfre 1-5 aby wybrac usługe"<<endl;
-        std::cout<<"------------------"<<std::endl;
-
         choose  = enteringTheNumber(1,5);
-
     }
     return choose;
 }

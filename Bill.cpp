@@ -1,5 +1,5 @@
 //
-// Created by Admin on 20.01.2021.
+// Created by Admin on 20.09.2020.
 //
 
 #include "Bill.h"
@@ -56,7 +56,7 @@ void Bill::printBill(shop::towar_int_t toPay)
             }
             std::cout<<std::endl;
 
-            std::cout<<"SUMA PTU:";
+            std::cout<<"SUMA:";
             for(int j=0;j<41;j++)
             {
                 std::cout<<' ';

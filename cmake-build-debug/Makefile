@@ -220,33 +220,6 @@ gtest_main/fast:
 	$(MAKE) -f lib\googletest-master\googletest\CMakeFiles\gtest_main.dir\build.make lib/googletest-master/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-AccessoriesFactory.obj: AccessoriesFactory.cpp.obj
-
-.PHONY : AccessoriesFactory.obj
-
-# target to build an object file
-AccessoriesFactory.cpp.obj:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/AccessoriesFactory.cpp.obj
-.PHONY : AccessoriesFactory.cpp.obj
-
-AccessoriesFactory.i: AccessoriesFactory.cpp.i
-
-.PHONY : AccessoriesFactory.i
-
-# target to preprocess a source file
-AccessoriesFactory.cpp.i:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/AccessoriesFactory.cpp.i
-.PHONY : AccessoriesFactory.cpp.i
-
-AccessoriesFactory.s: AccessoriesFactory.cpp.s
-
-.PHONY : AccessoriesFactory.s
-
-# target to generate assembly for a file
-AccessoriesFactory.cpp.s:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/AccessoriesFactory.cpp.s
-.PHONY : AccessoriesFactory.cpp.s
-
 Application.obj: Application.cpp.obj
 
 .PHONY : Application.obj
@@ -354,33 +327,6 @@ Book.s: Book.cpp.s
 Book.cpp.s:
 	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Book.cpp.s
 .PHONY : Book.cpp.s
-
-ConcreteBook.obj: ConcreteBook.cpp.obj
-
-.PHONY : ConcreteBook.obj
-
-# target to build an object file
-ConcreteBook.cpp.obj:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteBook.cpp.obj
-.PHONY : ConcreteBook.cpp.obj
-
-ConcreteBook.i: ConcreteBook.cpp.i
-
-.PHONY : ConcreteBook.i
-
-# target to preprocess a source file
-ConcreteBook.cpp.i:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteBook.cpp.i
-.PHONY : ConcreteBook.cpp.i
-
-ConcreteBook.s: ConcreteBook.cpp.s
-
-.PHONY : ConcreteBook.s
-
-# target to generate assembly for a file
-ConcreteBook.cpp.s:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteBook.cpp.s
-.PHONY : ConcreteBook.cpp.s
 
 Notepad.obj: Notepad.cpp.obj
 
@@ -490,6 +436,60 @@ ServiceCsvTsv.cpp.s:
 	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ServiceCsvTsv.cpp.s
 .PHONY : ServiceCsvTsv.cpp.s
 
+ShopWare.obj: ShopWare.cpp.obj
+
+.PHONY : ShopWare.obj
+
+# target to build an object file
+ShopWare.cpp.obj:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ShopWare.cpp.obj
+.PHONY : ShopWare.cpp.obj
+
+ShopWare.i: ShopWare.cpp.i
+
+.PHONY : ShopWare.i
+
+# target to preprocess a source file
+ShopWare.cpp.i:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ShopWare.cpp.i
+.PHONY : ShopWare.cpp.i
+
+ShopWare.s: ShopWare.cpp.s
+
+.PHONY : ShopWare.s
+
+# target to generate assembly for a file
+ShopWare.cpp.s:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ShopWare.cpp.s
+.PHONY : ShopWare.cpp.s
+
+Tests/BookTests.obj: Tests/BookTests.cpp.obj
+
+.PHONY : Tests/BookTests.obj
+
+# target to build an object file
+Tests/BookTests.cpp.obj:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Tests/BookTests.cpp.obj
+.PHONY : Tests/BookTests.cpp.obj
+
+Tests/BookTests.i: Tests/BookTests.cpp.i
+
+.PHONY : Tests/BookTests.i
+
+# target to preprocess a source file
+Tests/BookTests.cpp.i:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Tests/BookTests.cpp.i
+.PHONY : Tests/BookTests.cpp.i
+
+Tests/BookTests.s: Tests/BookTests.cpp.s
+
+.PHONY : Tests/BookTests.s
+
+# target to generate assembly for a file
+Tests/BookTests.cpp.s:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Tests/BookTests.cpp.s
+.PHONY : Tests/BookTests.cpp.s
+
 Tests/NotepadTests.obj: Tests/NotepadTests.cpp.obj
 
 .PHONY : Tests/NotepadTests.obj
@@ -598,33 +598,6 @@ WriteCsvTsv.cpp.s:
 	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/WriteCsvTsv.cpp.s
 .PHONY : WriteCsvTsv.cpp.s
 
-accesories.obj: accesories.cpp.obj
-
-.PHONY : accesories.obj
-
-# target to build an object file
-accesories.cpp.obj:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/accesories.cpp.obj
-.PHONY : accesories.cpp.obj
-
-accesories.i: accesories.cpp.i
-
-.PHONY : accesories.i
-
-# target to preprocess a source file
-accesories.cpp.i:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/accesories.cpp.i
-.PHONY : accesories.cpp.i
-
-accesories.s: accesories.cpp.s
-
-.PHONY : accesories.s
-
-# target to generate assembly for a file
-accesories.cpp.s:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/accesories.cpp.s
-.PHONY : accesories.cpp.s
-
 generalFunctions.obj: generalFunctions.cpp.obj
 
 .PHONY : generalFunctions.obj
@@ -723,9 +696,6 @@ help:
 	@echo ... gmock
 	@echo ... gtest
 	@echo ... gtest_main
-	@echo ... AccessoriesFactory.obj
-	@echo ... AccessoriesFactory.i
-	@echo ... AccessoriesFactory.s
 	@echo ... Application.obj
 	@echo ... Application.i
 	@echo ... Application.s
@@ -738,9 +708,6 @@ help:
 	@echo ... Book.obj
 	@echo ... Book.i
 	@echo ... Book.s
-	@echo ... ConcreteBook.obj
-	@echo ... ConcreteBook.i
-	@echo ... ConcreteBook.s
 	@echo ... Notepad.obj
 	@echo ... Notepad.i
 	@echo ... Notepad.s
@@ -753,6 +720,12 @@ help:
 	@echo ... ServiceCsvTsv.obj
 	@echo ... ServiceCsvTsv.i
 	@echo ... ServiceCsvTsv.s
+	@echo ... ShopWare.obj
+	@echo ... ShopWare.i
+	@echo ... ShopWare.s
+	@echo ... Tests/BookTests.obj
+	@echo ... Tests/BookTests.i
+	@echo ... Tests/BookTests.s
 	@echo ... Tests/NotepadTests.obj
 	@echo ... Tests/NotepadTests.i
 	@echo ... Tests/NotepadTests.s
@@ -765,9 +738,6 @@ help:
 	@echo ... WriteCsvTsv.obj
 	@echo ... WriteCsvTsv.i
 	@echo ... WriteCsvTsv.s
-	@echo ... accesories.obj
-	@echo ... accesories.i
-	@echo ... accesories.s
 	@echo ... generalFunctions.obj
 	@echo ... generalFunctions.i
 	@echo ... generalFunctions.s

@@ -1,5 +1,5 @@
 //
-// Created by Admin on 26.01.2021.
+// Created by Admin on 06.08.2020.
 //
 
 #ifndef MACHINEOFSTATE_ACCESORIES_H
@@ -74,7 +74,11 @@ namespace shop {
         std::vector<std::string> orderedPurchasesName;
         std::vector<towar_int_t> orderedPurchasesPrice;
 
+        char enterTheLetter();
+
         int position;
+
+        bool inSellerMode = false;  //oflagowanie wejscia do trybu sprzedawcy
 
 
         static bool enterToShop();          //wejscie do sklepu jedynie po potweirzdzeniu checi wejscia

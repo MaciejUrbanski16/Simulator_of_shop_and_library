@@ -3,9 +3,6 @@
 #include <memory>
 
 #include "generalFunctions.h"
-#include "AccessoriesFactory.h"
-
-//#include "accesories.h
 
 #include <cassert>
 #include <vector>
@@ -25,25 +22,22 @@
 #include <gmock/gmock.h>
 
 
-
-
-//#define CATCH_CONFIG_MAIN
-
 using namespace std;
-
-Application* Application::app = nullptr;
 
 int mode;
 int stage;
 
+Application* Application::app = nullptr;
+
+
+
 int main(int argc, char *argv[]) {
 
-    //instancja klasy zawierajacej konfiguracje programu
+    //instancja klasy zawierajacej konfigurację programu
     Application application;
-    testREMOVE();
 
     testing::InitGoogleTest(&argc,argv);
-    int  p = RUN_ALL_TESTS();
+    int t = RUN_ALL_TESTS();
 
 
     shop::Ware purchases;
@@ -53,7 +47,7 @@ int main(int argc, char *argv[]) {
     application.presentationOfServices();
 
 
-    application.stage = START;          //odwołania do enuma z deklaracji klasy Ware
+    application.stage = START;          //odwołania do enuma zawierajacego etapy zakupu z deklaracji klasy Ware
 
     if(purchases.enterToShop())
     {
@@ -65,10 +59,10 @@ int main(int argc, char *argv[]) {
 
     while(application.stage != CONFIRM) {
 
-        //OPISAC WYBORTRYBOW I FUNKCJI DLaUZytkownika
 
+        ///PRZEŁĄCZENIE W ZALEŻNOŚCI OD TRYBU: KLIENTA/SPRZEDAWCY
         if (application.mode == CUSTOMER_MODE) {
-            std::string title;
+
             int choose;
             choose = application.chooseOfService();
 
@@ -79,6 +73,7 @@ int main(int argc, char *argv[]) {
                 application.readRemoveFromFile();
                 ksiega.searchInRemoved(application);             //sprawdza czy element z kontenera jest w ogolnym spisie elementow tytulow ksiazek
                                                                     //i oddaje ten element na swoje miejsce "polke"
+                //char choosenLetter = purchases.enterTheLetter();
                 if (ksiega.searchingBook() == shop::Book::FOUND) {
                     purchases.paramOfChoosenThing = ksiega.chooseOfSearchedBook();    //t - parametr okreslajacy wybrana pozycje ks w currentSearching
                     if (purchases.paramOfChoosenThing == ksiega.getSizeOfCurrentSearchings()) {
@@ -87,14 +82,15 @@ int main(int argc, char *argv[]) {
 
                         ksiega.choosenTitle = ksiega.getSearchedBook(purchases.paramOfChoosenThing - 1);
 
-                        purchases.position = ksiega.checkIfBookExist(ksiega.choosenTitle);
+                        purchases.position = ksiega.checkIfBookExist(ksiega.choosenTitle);   //sprawdzenie, czy wybrana pozycja istnieje na liscie
 
-                        if (ksiega.checkAmountofBookInShop(purchases)) {
+                        if (ksiega.checkAmountofBookInShop(purchases)) {                        //sprawdzenie, czy jest jescze dostępna jakakolwiek ksiazka
+                                                                                                //o wybranym tytule
 
                             purchases.name = ksiega.titleOfBooksInShop[purchases.position];        //zapisanie nazwy biezacej ksiazki do zmiennej titleOfBooksInShop klasy Ware
-                            purchases.praise = ksiega.praisesOfBooksInShop[purchases.position];    //zapisanie ceny biezacej ksiazki do zmiennj klasy Ware
+                            purchases.praise = ksiega.pricesOfBooksInShop[purchases.position];    //zapisanie ceny biezacej ksiazki do zmiennj klasy Ware
 
-                            purchases.addToPurchases();//dodanie do koszyka
+                            purchases.addToPurchases();             //dodanie do koszyka
 
                             purchases.showOrderedPurchases();
                         }
@@ -103,9 +99,9 @@ int main(int argc, char *argv[]) {
                     purchases.showOrderedPurchases();
                 }
 
+
                 ///oddaje pozycje umieszczone w buforze zwrotnym, w którym umieszczone są rzeczy zwrocone przez kupujacego
                 ///spowrotem do sklepu, do odpowiednich rodzajów rzeczy zwiekszając przy tym liczebność danej rzeczy o jeden
-
 
                 remove(application.removedThings,
                        ksiega.titleOfBooksInShop,
@@ -214,7 +210,7 @@ int main(int argc, char *argv[]) {
 
 
             } else if (choose == 7) {
-                cout << "Tu" << endl;
+
                 application.stage = CONFIRM;
 
 
@@ -227,8 +223,6 @@ int main(int argc, char *argv[]) {
 
         } else if (application.mode == SELLER_MODE)//TRZEBA ZROBIC OBSLUGE WSZYSTKICH RZECZ -NIE TYLKO KSIAZEK!!!
         {
-            std::string title;
-
             application.presentationOfServices();
             {
 
@@ -286,18 +280,19 @@ int main(int argc, char *argv[]) {
 
         }
 
-
     }
 
    // Pokazanie rachunku
 
-    Bill bill(purchases);
-    shop::towar_int_t toPay = bill.calculate();
-    shop::towar_int_t wynik_x =( shop::towar_int_t )(( int )( toPay * 100 ) ) / 100;
-    wynik_x = purchases.roundFloatToSecond(wynik_x);
-    assert(purchases.orderedPurchasesName.size() == purchases.orderedPurchasesPrice.size());
+   if(!purchases.inSellerMode) {
+       Bill bill(purchases);
+       shop::towar_int_t toPay = bill.calculate();
+       shop::towar_int_t wynik_x = (shop::towar_int_t) ((int) (toPay * 100)) / 100;
+       wynik_x = purchases.roundFloatToSecond(wynik_x);
+       assert(purchases.orderedPurchasesName.size() == purchases.orderedPurchasesPrice.size());
 
-    bill.printBill(toPay);
+       bill.printBill(toPay);
+   }
 
     return 0;
 

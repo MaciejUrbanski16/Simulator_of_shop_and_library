@@ -1,5 +1,5 @@
 //
-// Created by Admin on 06.01.2021.
+// Created by Admin on 06.08.2020.
 //
 
 #ifndef MACHINEOFSTATE_BOOK_H
@@ -40,7 +40,7 @@ namespace shop {
         std::string titleToRemove;
         towar_int_t position_b = -1;
 
-        void addSearchedBooks();
+        void addSearchedBooks(char letter);
 
         //funkcja dodawania ksiazek komunikujaca sie z sprzedawca
         void addThingToShop();
@@ -73,7 +73,7 @@ namespace shop {
         //kontenery na dane o przechowywanych ksiazkach w sklepie
         std::vector<std::string> titleOfBooksInShop;
         std::vector<int> amountOfBooksInShop;
-        std::vector<shop::towar_int_t > praisesOfBooksInShop;
+        std::vector<shop::towar_int_t > pricesOfBooksInShop;
 
 
         int getSizeOfCurrentSearchings();           //zwraca rozmiar prywatnego vectora currentSearchings
@@ -87,7 +87,7 @@ namespace shop {
 
         std::string getSearchedBook(int t);     //zwraca tytul szuaknej ksiazki
 
-        int chooseOfSearchedBook();     //zwraca nr wybranej ksizki z proponowanej listy
+        int chooseOfSearchedBook();     //zwraca nr wybranej ksiazki z proponowanej listy
 
         int searchingBook();        //wyszukiwanie tytulu po zadanej pierwszej literze(uwzglednia duze i male litery
 
