@@ -12,8 +12,11 @@
 
 #include <fstream>
 
+
 namespace shop
 {
+    class Bagpack;
+
     ///OGÓLNA KLASA DO ZARZĄDZANIA ZBIOREM PLECAKÓW
     class Bagpack : public Ware {    //atrybuty: marka kolor cena
     public:
@@ -22,11 +25,14 @@ namespace shop
         Bagpack() = default;
 
         Bagpack(std::string mark, std::string color, towar_int_t price,int amount);
-        std::vector<shop::Bagpack> bags;
+
 
         std::string mark;
         std::string color;
         towar_int_t price;
+
+
+        std::vector<Bagpack> bags;
 
 
         void readBagpacksFromFile();

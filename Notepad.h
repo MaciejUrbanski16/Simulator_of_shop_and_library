@@ -53,12 +53,14 @@ namespace shop
 
         void editionStateOfNotes(); //pozwala dodawać/usuwac zeszyty (w trybie sprzedawcy)
 
+        void addNotesToShop(int mode, int howMuch,int where); //pozwala edytować liczbę dostępnych zeszytów o danym rozmiarze
+
     private:
         std::string dim;
         int choose;
         int dimensionsSize; //ilosc elementow vectora dimension
 
-        void addNotesToShop(int mode, int howMuch,int where); //pozwala edytować liczbę dostępnych zeszytów o danym rozmiarze
+
         void showResourcesOfNotes(); //pokazuje aktualny stan zeszytów w sklepie
 
 

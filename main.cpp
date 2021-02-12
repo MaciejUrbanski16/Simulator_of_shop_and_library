@@ -29,7 +29,7 @@ int stage;
 
 Application* Application::app = nullptr;
 
-
+//extern std::vector<shop::Bagpack> bags;
 
 int main(int argc, char *argv[]) {
 
@@ -46,14 +46,16 @@ int main(int argc, char *argv[]) {
 
     application.presentationOfServices();
 
+    ConcreteBag bag("A","B",12);
+
 
     application.stage = START;          //odwołania do enuma zawierajacego etapy zakupu z deklaracji klasy Ware
 
     if(purchases.enterToShop())
     {
         application.stage = INTRODUCTION;
-
     }
+
     application.readRemoveFromFile(); //wczytanie usunietych przedmiotow z bufora
 
 
@@ -102,7 +104,6 @@ int main(int argc, char *argv[]) {
 
                 ///oddaje pozycje umieszczone w buforze zwrotnym, w którym umieszczone są rzeczy zwrocone przez kupujacego
                 ///spowrotem do sklepu, do odpowiednich rodzajów rzeczy zwiekszając przy tym liczebność danej rzeczy o jeden
-
                 remove(application.removedThings,
                        ksiega.titleOfBooksInShop,
                        ksiega.amountOfBooksInShop); // zwrot niechcianych ksiazek z koszyka powrotemo do sklepu
@@ -128,11 +129,13 @@ int main(int argc, char *argv[]) {
 
                 //notes->chooseOfColor();
 
-                purchases.name = notes.dimensions[c - 1];
-                purchases.praise = notes.price[c - 1];
+
                 if (notes.checkIfNoteIsAvailable(c)) // sprawdzenie czy notes o wybranej pozycji jest nadal dostepny
                 {
-                    notes.amount[c - 1]--;    //sprawdzenie czy jest jeszcze dostepny towar danego rodzaju
+                    purchases.name = notes.dimensions[c - 1];
+                    purchases.praise = notes.price[c - 1];
+
+                    notes.amount[c - 1]--;          //dekrementacja ilosci wybranego notesu
 
                     purchases.addToPurchases();
                     purchases.showOrderedPurchases();

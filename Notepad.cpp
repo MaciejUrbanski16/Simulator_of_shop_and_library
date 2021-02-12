@@ -161,9 +161,11 @@ void Notepad ::addingByOwnerNewNote()
     {
         int howMuch = 0, where =-1;
         showResourcesOfNotes();
+
         cout<<"Wybierz numer z listy ktorego ilosc chcesz modyfikowac i wpisz o ile zmenic ilosc: "<<endl;
+
         where = enteringTheNumber(1,dimensions.size());
-        //cin>>howMuch;
+
         howMuch = enteringTheNumber(0,10000);
 
         addNotesToShop(mode,howMuch,where);
@@ -172,8 +174,9 @@ void Notepad ::addingByOwnerNewNote()
     {
         cout<<"W trybie klienta nie mozna modyfikowac zasobow sklepu "<<endl;
         cout<<"Jesli chcesz mozesz zmienic teraz tryb z trybu CUSTOMER_MODE na tryb SELLER_MODE"<<endl;
+
         changeModeToSellerMode("12trempki",mode);
-        //presentationOfServices();
+
     }
 
 }
@@ -204,7 +207,9 @@ void Notepad::editionStateOfNotes()
 {
     cout<<"1. Dodaj zeszyt do sklepu "<<endl;
     cout<<"2. Usun zeszyt ze sklepu "<<endl;
+
     int choose = enteringTheNumber(1,2);
+
     switch(choose)
     {
         case 1:

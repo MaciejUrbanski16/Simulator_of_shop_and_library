@@ -37,15 +37,15 @@ void shop::Bagpack::saveItemsToFile()
 {
     bags[0].mark = "Olg";
     std::fstream fileToSaveBags("bags.txt",std::ios::out);
-    for(int i=0;i<bags.size();i++)
+    for(int i=0; i < bags.size(); i++)
     {
         if(i+1 == bags.size())
         {
-            fileToSaveBags << bags[i].price <<" "<<bags[i].color <<" "<<bags[i].amount <<" "<<bags[i].mark<<" "<<'_';
+            fileToSaveBags << bags[i].price << " " << bags[i].color << " " << bags[i].amount << " " << bags[i].mark << " " << '_';
         }
         else
             {
-            fileToSaveBags << bags[i].price <<" "<<bags[i].color << " " <<bags[i].amount <<" "<<bags[i].mark<<" "<<'k'<<std::endl;
+            fileToSaveBags << bags[i].price << " " << bags[i].color << " " << bags[i].amount << " " << bags[i].mark << " " << 'k' << std::endl;
         }
 
     }
@@ -92,7 +92,7 @@ void shop::Bagpack::prepareStrings(std::string basicString)
         pr = atof(strToPrice.c_str());
 
         //dodanie do vectora plecakow kolejnego obiektu powstałego z odczytanych danych z pliku
-        bags.emplace_back(strToMark,strToColour,pr,am);
+        bags.emplace_back(strToMark, strToColour, pr, am);
         strToAmount = "";
         strToPrice = "";
         strToColour = "";
@@ -110,11 +110,11 @@ void shop::Bagpack::prepareStrings(std::string basicString)
 
 void shop::Bagpack::presentationOfBags()
 {
-    for(int i=0;i<bags.size();i++)
+    for(int i=0; i < bags.size(); i++)
     {
-        if(bags[i].amount>0)
+        if(bags[i].amount > 0)
         {
-            std::cout<<i+1<<". "<<bags[i].mark<<" cena: "<<bags[i].price<<std::endl;
+            std::cout <<i+1 << ". " << bags[i].mark << " cena: " << bags[i].price << std::endl;
         }
     }
 
@@ -123,18 +123,18 @@ void shop::Bagpack::presentationOfBags()
 void shop::Bagpack::chooseBag(Ware &purchases)
 {
     std::cout<<"Wybierz sposrod dostepnych plecakow "<<std::endl;
-    int chooseB = enteringTheNumber(1,bags.size());
+    int chooseB = enteringTheNumber(1, bags.size());
 
-    if(bags[chooseB-1].amount <= 0)
+    if(bags[chooseB - 1].amount <= 0)
     {
-        std::cout<<"Brak plecakow marki "<<bags[chooseB - 1].mark<<std::endl;
+        std::cout << "Brak plecakow marki " << bags[chooseB - 1].mark << std::endl;
     }
     else
     {
-        bags[chooseB -1].amount--;
+        bags[chooseB - 1].amount--;
 
-        purchases.name = bags[chooseB-1].mark;
-        purchases.praise = bags[chooseB-1].price;
+        purchases.name = bags[chooseB - 1].mark;
+        purchases.praise = bags[chooseB - 1].price;
 
 
         purchases.addToPurchases();
@@ -145,7 +145,7 @@ void shop::Bagpack::chooseBag(Ware &purchases)
 void shop::Bagpack::getMarksAndAmounts()
 {
 
-    for(int i=0;i<bags.size();i++)
+    for(int i=0; i < bags.size(); i++)
     {
         allMarks.push_back(bags[i].mark);
         allAmounts.push_back(bags[i].amount);
@@ -194,17 +194,19 @@ void shop::Bagpack::addBags()
     int addAmount;
 
     std::cin>>addMark>>addColor>>addPrice>>addAmount;
-    bags.emplace_back(addMark,addColor,addPrice,addAmount);
+    bags.emplace_back(addMark, addColor, addPrice, addAmount);
 
 }
 
 void shop::Bagpack::removeBags()
 {
     presentationOfBags();
-    int chooseRemove = enteringTheNumber(1,bags.size());
+    int chooseRemove = enteringTheNumber(1, bags.size());
     bags.erase(bags.begin() + chooseRemove);
 
 }
+
+
 
 
 

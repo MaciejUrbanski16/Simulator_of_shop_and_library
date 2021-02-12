@@ -4,6 +4,7 @@
 CMakeFiles/machineOfState.dir/Application.cpp.obj
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.cpp
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBag.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/tests.h
 CMakeFiles/machineOfState.dir/Bagpack.cpp.obj
@@ -11,6 +12,7 @@ CMakeFiles/machineOfState.dir/Bagpack.cpp.obj
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Bagpack.cpp
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Bagpack.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Book.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBag.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
@@ -20,6 +22,7 @@ CMakeFiles/machineOfState.dir/Bill.cpp.obj
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Bill.cpp
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Bill.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Book.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBag.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
@@ -28,13 +31,18 @@ CMakeFiles/machineOfState.dir/Book.cpp.obj
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Book.cpp
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Book.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBag.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/WriteCsvTsv.h
+CMakeFiles/machineOfState.dir/ConcreteBag.cpp.obj
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBag.cpp
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBag.h
 CMakeFiles/machineOfState.dir/Notepad.cpp.obj
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Book.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBag.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Notepad.cpp
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Notepad.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h
@@ -48,6 +56,7 @@ CMakeFiles/machineOfState.dir/ReadCsvTsv.cpp.obj
 CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.obj
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Book.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBag.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/SchoolSupplies.cpp
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/SchoolSupplies.h
@@ -61,6 +70,7 @@ CMakeFiles/machineOfState.dir/ServiceCsvTsv.cpp.obj
 CMakeFiles/machineOfState.dir/ShopWare.cpp.obj
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Book.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBag.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.cpp
@@ -89,6 +99,7 @@ CMakeFiles/machineOfState.dir/Tests/BookTests.cpp.obj
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Book.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBag.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
@@ -117,6 +128,7 @@ CMakeFiles/machineOfState.dir/Tests/NotepadTests.cpp.obj
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Book.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBag.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Notepad.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
@@ -218,6 +230,7 @@ CMakeFiles/machineOfState.dir/main.cpp.obj
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Bagpack.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Bill.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Book.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBag.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Notepad.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/SchoolSupplies.h

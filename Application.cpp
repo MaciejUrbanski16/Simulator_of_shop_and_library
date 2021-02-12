@@ -63,6 +63,7 @@ void Application::saveRemovedToFile()
 void Application::readRemoveFromFile()
 {
     removedThings.clear();
+
     std::fstream f;
     f.open("removedFromBasket.txt");
     std::string str;

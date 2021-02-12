@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Bagpack.cpp" "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/cmake-build-debug/CMakeFiles/machineOfState.dir/Bagpack.cpp.obj"
   "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Bill.cpp" "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/cmake-build-debug/CMakeFiles/machineOfState.dir/Bill.cpp.obj"
   "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Book.cpp" "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/cmake-build-debug/CMakeFiles/machineOfState.dir/Book.cpp.obj"
+  "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBag.cpp" "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/cmake-build-debug/CMakeFiles/machineOfState.dir/ConcreteBag.cpp.obj"
   "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Notepad.cpp" "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/cmake-build-debug/CMakeFiles/machineOfState.dir/Notepad.cpp.obj"
   "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.cpp" "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/cmake-build-debug/CMakeFiles/machineOfState.dir/ReadCsvTsv.cpp.obj"
   "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/SchoolSupplies.cpp" "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/cmake-build-debug/CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.obj"

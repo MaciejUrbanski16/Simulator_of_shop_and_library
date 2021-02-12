@@ -31,7 +31,7 @@ TEST_F(BookTests, readProperValuesOfBooks)
     EXPECT_TRUE(!book.amountOfBooksInShop.empty());
 }
 
-TEST_F(BookTests, returnBookFromBasketToShop)
+/*TEST_F(BookTests, returnBookFromBasketToShop)
 {
     //GIVEN
     book;
@@ -50,7 +50,7 @@ TEST_F(BookTests, returnBookFromBasketToShop)
 
     //THEN
     EXPECT_EQ(currentAmount + 1 , book.amountOfBooksInShop[0]);
-}
+}*/
 
 TEST_F(BookTests, searchingBookAfterEnteredLetter)
 {
@@ -111,6 +111,28 @@ TEST_F(BookTests, addBookToShop)
     //THEN
     EXPECT_EQ(book.checkIfBookExist(title1),-1);
     EXPECT_EQ(book.checkIfBookExist(title2),-1);
+
+}
+
+TEST_F(BookTests, checkAmountOfChoosenBook)
+{
+    //GIVEN
+    book;
+    Application app;
+    shop::Ware ware;
+    std::string title1 = "Dluga_noc_1";
+    std::string title2 = "Sami_swoi_1";
+
+    //WHEN
+    book.readItemsFromFile();
+    book.titleOfBooksInShop.push_back(title1);
+    book.amountOfBooksInShop.push_back(25);
+    book.pricesOfBooksInShop.push_back(11.99);
+
+    ware.position = book.checkIfBookExist(title1);
+
+    //THEN
+    EXPECT_TRUE(book.checkAmountofBookInShop(ware));
 
 }
 

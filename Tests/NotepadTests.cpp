@@ -14,55 +14,127 @@ namespace
     class NotepadTests : public ::testing::Test
     {
     public:
-        shop::Notepad n1;
+        shop::Notepad notepads;
         NotepadTests()
         {
-            n1;
+            notepads;
         }
     };
 }
 
-TEST(EnteringNumbers, TEST1)
-{
-    shop::Ware w;
-    int  p =4;
-   // EXPECT_EQ(p,w.enteringTheNumber(3,5));
-    EXPECT_EQ(1,1);
 
-}
-
-TEST_F(NotepadTests,Test1)
+TEST_F(NotepadTests,TestProperSizeAfterReading)
 {
+
     //WHEN
-    n1.readItemsFromFile();
+    notepads.readItemsFromFile();
 
     //THEN
-    EXPECT_EQ(n1.amount.size(),n1.price.size());
-    EXPECT_EQ(n1.dimensions.size(),n1.amount.size());
+    ASSERT_EQ(notepads.amount.size(),notepads.price.size());
+    ASSERT_EQ(notepads.dimensions.size(),notepads.amount.size());
 
 }
 
-TEST_F(NotepadTests,Test2)
+TEST_F(NotepadTests,TestReadDateFromFile)
 {
-    EXPECT_EQ(true, true);
+    //GIVEN
+    notepads;
+
+    //WHEN
+    notepads.readItemsFromFile();
+
+    //THEN
+    EXPECT_EQ(true,!(notepads.dimensions.empty()));
+    EXPECT_EQ(true,!(notepads.amount.empty()));
+    EXPECT_EQ(true,!(notepads.price.empty()));
+
+    notepads.saveItemsToFile();
 }
 
-
-TEST_F(NotepadTests,Test3)
+TEST_F(NotepadTests,TestReadAddNewNotesToShop)
 {
-EXPECT_EQ(true, 1);
+    //GIVEN
+    notepads;
+    shop::Ware ware;
+    Application app;
+    app.mode = SELLER_MODE;
+    int howMuch = 50;
+    int where = 2;
+
+
+
+    //WHEN
+    notepads.readItemsFromFile();
+    int currentAmount = notepads.amount[where];
+    notepads.addNotesToShop(app.mode,howMuch,where);
+    notepads.saveItemsToFile();
+    notepads.readItemsFromFile();
+
+
+    //THEN
+    EXPECT_EQ(currentAmount,notepads.amount[where]);
+
+
+
 }
 
-///*Sprobuje napisac test do odczytywania danych z plikow  txt porownujac rozmiary
-
-/*TEST_F(NotepadTests,TestReadDateFromFile)
+TEST_F(NotepadTests,TestCheckIfChoosenNoteIsAvailble)
 {
-    int n =4;
-    n1.readItemsFromFile();
+    //GIVEN
+    notepads;
+    shop::Ware ware;
+    Application app;
+    app.mode = SELLER_MODE;
+    int where = 1;
 
-    EXPECT_EQ(4,n1.dimensions.size());
-    EXPECT_EQ(4,n1.amount.size());
-    EXPECT_EQ(4,n1.price.size());
+    //WHEN
+    notepads.readItemsFromFile();
 
-    n1.saveItemsToFile();
-}*/
+    //THEN
+    EXPECT_TRUE(notepads.checkIfNoteIsAvailable(where));
+
+}
+
+TEST_F(NotepadTests,TestAddingtoPurchases)
+{
+    //GIVEN
+    notepads;
+    shop::Ware ware;
+
+    std::string name = "N1";
+    shop::towar_int_t price = 12.99;
+
+    //WHEN
+    notepads.readItemsFromFile();
+    ware.name = name;
+    ware.praise = price;
+
+    ware.addToPurchases();
+
+    //THEN
+    EXPECT_TRUE(!ware.orderedPurchasesName.empty());
+    EXPECT_EQ(ware.orderedPurchasesName.size(),1);
+
+}
+
+TEST_F(NotepadTests,TestRemoveNoteFromBasketToShop)
+{
+    //GIVEN
+    notepads;
+    shop::Ware ware;
+    Application app;
+
+    app.removedThings.clear();
+    app.removedThings.push_back("A6");
+
+    //WHEN
+    notepads.readItemsFromFile();
+    int currentAmount = notepads.amount[0];
+
+    ware.remove(app.removedThings,notepads.dimensions,notepads.amount);
+
+
+    //THEN
+    EXPECT_EQ(notepads.amount[0],currentAmount + 1);
+
+}

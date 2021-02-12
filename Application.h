@@ -9,6 +9,7 @@
 #include <string>
 #include <fstream>
 #include <iostream>
+#include "ConcreteBag.h"
 
 ///KLASA DO PRZECHOWYWANIA KONFIGURACJI SYMULATORA
 class Application {

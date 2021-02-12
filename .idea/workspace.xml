@@ -19,37 +19,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a417d592-79c6-4910-a3f3-8b98fcb03eae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Tests/BookTests.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConcreteBag.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConcreteBag.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AccessoriesFactory.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AccessoriesFactory.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Application.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Application.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Application.h" beforeDir="false" afterPath="$PROJECT_DIR$/Application.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bagpack.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Bagpack.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bagpack.h" beforeDir="false" afterPath="$PROJECT_DIR$/Bagpack.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bill.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Bill.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bill.h" beforeDir="false" afterPath="$PROJECT_DIR$/Bill.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Book.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Book.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Book.h" beforeDir="false" afterPath="$PROJECT_DIR$/Book.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConcreteBook.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConcreteBook.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notepad.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Notepad.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notepad.h" beforeDir="false" afterPath="$PROJECT_DIR$/Notepad.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShopWare.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ShopWare.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShopWare.h" beforeDir="false" afterPath="$PROJECT_DIR$/ShopWare.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/BookTests.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/BookTests.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/NotepadTests.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/NotepadTests.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/AccessoriesFactory.cpp.obj" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/Application.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/Application.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/Bagpack.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/Bagpack.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/Bill.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/Bill.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/Book.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/Book.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/ConcreteBook.cpp.obj" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/Notepad.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/Notepad.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/accesories.cpp.obj" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/depend.internal" afterDir="false" />
@@ -58,9 +50,7 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/objects1.rsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/tests.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/tests.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/tests/NotepadTests.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/tests/NotepadTests.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/tests/TowarTests.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/tests/TowarTests.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/bags.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/bags.txt" afterDir="false" />
@@ -68,11 +58,7 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/machineOfState.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/machineOfState.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/machineOfState.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/machineOfState.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/notes.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/notes.tsv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/supplies.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/supplies.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generalFunctions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/generalFunctions.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generalFunctions.h" beforeDir="false" afterPath="$PROJECT_DIR$/generalFunctions.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,31 +134,31 @@
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookTests.checkIfBookExist" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="machineOfState" TARGET_NAME="machineOfState" RUN_TARGET_PROJECT_NAME="machineOfState" RUN_TARGET_NAME="machineOfState" TEST_CLASS="BookTests" TEST_METHOD="checkIfBookExist" TEST_MODE="SUITE_TEST">
+    <configuration name="NotepadTests.TestAddingtoPurchases" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="machineOfState" TARGET_NAME="machineOfState" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="machineOfState" RUN_TARGET_NAME="machineOfState" TEST_CLASS="NotepadTests" TEST_METHOD="TestAddingtoPurchases" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookTests.readProperValuesOfBooks" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="machineOfState" TARGET_NAME="machineOfState" RUN_TARGET_PROJECT_NAME="machineOfState" RUN_TARGET_NAME="machineOfState" TEST_CLASS="BookTests" TEST_METHOD="readProperValuesOfBooks" TEST_MODE="SUITE_TEST">
+    <configuration name="NotepadTests.TestCheckIfChoosenNoteIsAvailble" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="machineOfState" TARGET_NAME="machineOfState" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="machineOfState" RUN_TARGET_NAME="machineOfState" TEST_CLASS="NotepadTests" TEST_METHOD="TestCheckIfChoosenNoteIsAvailble" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookTests.returnBookFromBasketToShop" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="machineOfState" TARGET_NAME="machineOfState" RUN_TARGET_PROJECT_NAME="machineOfState" RUN_TARGET_NAME="machineOfState" TEST_CLASS="BookTests" TEST_METHOD="returnBookFromBasketToShop" TEST_MODE="SUITE_TEST">
+    <configuration name="NotepadTests.TestReadAddNewNotesToShop" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="machineOfState" TARGET_NAME="machineOfState" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="machineOfState" RUN_TARGET_NAME="machineOfState" TEST_CLASS="NotepadTests" TEST_METHOD="TestReadAddNewNotesToShop" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookTests.searchingBookAfterEnteredLetter" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="machineOfState" TARGET_NAME="machineOfState" RUN_TARGET_PROJECT_NAME="machineOfState" RUN_TARGET_NAME="machineOfState" TEST_CLASS="BookTests" TEST_METHOD="searchingBookAfterEnteredLetter" TEST_MODE="SUITE_TEST">
+    <configuration name="NotepadTests.TestReadDateFromFile" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="machineOfState" TARGET_NAME="machineOfState" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="machineOfState" RUN_TARGET_NAME="machineOfState" TEST_CLASS="NotepadTests" TEST_METHOD="TestReadDateFromFile" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookTests.searchingBookAfterEnteredLetterIfNotFound" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="machineOfState" TARGET_NAME="machineOfState" RUN_TARGET_PROJECT_NAME="machineOfState" RUN_TARGET_NAME="machineOfState" TEST_CLASS="BookTests" TEST_METHOD="searchingBookAfterEnteredLetterIfNotFound" TEST_MODE="SUITE_TEST">
+    <configuration name="NotepadTests.TestRemoveNoteFromBasketToShop" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="machineOfState" TARGET_NAME="machineOfState" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="machineOfState" RUN_TARGET_NAME="machineOfState" TEST_CLASS="NotepadTests" TEST_METHOD="TestRemoveNoteFromBasketToShop" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
@@ -210,19 +196,19 @@
       <item itemvalue="CMake Application.gtest" />
       <item itemvalue="CMake Application.gtest_main" />
       <item itemvalue="CMake Application.machineOfState" />
-      <item itemvalue="Google Test.BookTests.readProperValuesOfBooks" />
-      <item itemvalue="Google Test.BookTests.returnBookFromBasketToShop" />
-      <item itemvalue="Google Test.BookTests.searchingBookAfterEnteredLetter" />
-      <item itemvalue="Google Test.BookTests.searchingBookAfterEnteredLetterIfNotFound" />
-      <item itemvalue="Google Test.BookTests.checkIfBookExist" />
+      <item itemvalue="Google Test.NotepadTests.TestReadDateFromFile" />
+      <item itemvalue="Google Test.NotepadTests.TestReadAddNewNotesToShop" />
+      <item itemvalue="Google Test.NotepadTests.TestCheckIfChoosenNoteIsAvailble" />
+      <item itemvalue="Google Test.NotepadTests.TestAddingtoPurchases" />
+      <item itemvalue="Google Test.NotepadTests.TestRemoveNoteFromBasketToShop" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Google Test.BookTests.checkIfBookExist" />
-        <item itemvalue="Google Test.BookTests.searchingBookAfterEnteredLetterIfNotFound" />
-        <item itemvalue="Google Test.BookTests.searchingBookAfterEnteredLetter" />
-        <item itemvalue="Google Test.BookTests.returnBookFromBasketToShop" />
-        <item itemvalue="Google Test.BookTests.readProperValuesOfBooks" />
+        <item itemvalue="Google Test.NotepadTests.TestRemoveNoteFromBasketToShop" />
+        <item itemvalue="Google Test.NotepadTests.TestAddingtoPurchases" />
+        <item itemvalue="Google Test.NotepadTests.TestCheckIfChoosenNoteIsAvailble" />
+        <item itemvalue="Google Test.NotepadTests.TestReadAddNewNotesToShop" />
+        <item itemvalue="Google Test.NotepadTests.TestReadDateFromFile" />
       </list>
     </recent_temporary>
   </component>
@@ -308,7 +294,8 @@
       <workItem from="1612810666762" duration="5078000" />
       <workItem from="1612892059627" duration="3192000" />
       <workItem from="1612971314543" duration="7727000" />
-      <workItem from="1613064712294" duration="6658000" />
+      <workItem from="1613064712294" duration="7844000" />
+      <workItem from="1613151449145" duration="7701000" />
     </task>
     <task id="LOCAL-00001" summary="All features of special things work properly">
       <created>1606246468089</created>
@@ -353,42 +340,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="585" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1612893315670" />
-    <state width="1201" height="295" key="GridCell.Tab.0.bottom" timestamp="1613071074726">
+    <state width="1154" height="295" key="GridCell.Tab.0.bottom" timestamp="1613158682120">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1201" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1613071074726" />
-    <state width="1201" height="295" key="GridCell.Tab.0.center" timestamp="1613071074726">
+    <state width="1154" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1613158682120" />
+    <state width="1154" height="295" key="GridCell.Tab.0.center" timestamp="1613158682120">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1201" height="295" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1613071074726" />
-    <state width="1201" height="295" key="GridCell.Tab.0.left" timestamp="1613071074725">
+    <state width="1154" height="295" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1613158682120" />
+    <state width="1154" height="295" key="GridCell.Tab.0.left" timestamp="1613158682120">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1201" height="295" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1613071074725" />
-    <state width="1201" height="295" key="GridCell.Tab.0.right" timestamp="1613071074726">
+    <state width="1154" height="295" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1613158682120" />
+    <state width="1154" height="295" key="GridCell.Tab.0.right" timestamp="1613158682120">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1201" height="295" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1613071074726" />
-    <state width="938" height="259" key="GridCell.Tab.1.bottom" timestamp="1613070528895">
+    <state width="1154" height="295" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1613158682120" />
+    <state width="938" height="259" key="GridCell.Tab.1.bottom" timestamp="1613153794410">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="259" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1613070528895" />
-    <state width="938" height="259" key="GridCell.Tab.1.center" timestamp="1613070528895">
+    <state width="938" height="259" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1613153794410" />
+    <state width="938" height="259" key="GridCell.Tab.1.center" timestamp="1613153794410">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="259" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1613070528895" />
-    <state width="938" height="259" key="GridCell.Tab.1.left" timestamp="1613070528895">
+    <state width="938" height="259" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1613153794410" />
+    <state width="938" height="259" key="GridCell.Tab.1.left" timestamp="1613153794409">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="259" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1613070528895" />
-    <state width="938" height="259" key="GridCell.Tab.1.right" timestamp="1613070528895">
+    <state width="938" height="259" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1613153794409" />
+    <state width="938" height="259" key="GridCell.Tab.1.right" timestamp="1613153794410">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="259" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1613070528895" />
-    <state x="533" y="269" key="com.intellij.ide.util.TipDialog" timestamp="1613064733576">
+    <state width="938" height="259" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1613153794410" />
+    <state x="732" y="231" key="RollbackChangesDialog" timestamp="1613158677907">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="533" y="269" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1613064733576" />
+    <state x="732" y="231" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1613158677907" />
+    <state x="533" y="269" key="com.intellij.ide.util.TipDialog" timestamp="1613151618221">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="533" y="269" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1613151618221" />
     <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609880418847">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -401,11 +392,6 @@
           <url>file://$PROJECT_DIR$/../../Maciek pliki/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h</url>
           <line>68</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>68</line>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

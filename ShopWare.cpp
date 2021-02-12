@@ -114,7 +114,7 @@ std::string Ware::removeThingFromPurchases()
 {
     showOrderedPurchases();
     int choose=-1;
-    bool good, bad;
+
     if(!orderedPurchasesName.empty())
     {
         cout<<"Wybierz nr rzeczy ktora chcesz wyjac z koszyka zpowrotem do sklepu: "<<endl;
@@ -128,6 +128,7 @@ std::string Ware::removeThingFromPurchases()
 
         orderedPurchasesName.erase(orderedPurchasesName.begin() + choose);
         orderedPurchasesPrice.erase(orderedPurchasesPrice.begin() + choose);
+
         cout<<"Pomyslnie usunieto: "<<removedName<<" w cenie "<<removedPrice<<endl;
 
         showOrderedPurchases();
@@ -165,12 +166,8 @@ towar_int_t Ware::roundFloatToSecond(towar_int_t d)
 {
 
     int y = d * 1000; // przesuwamy przecinek o 4 miejsca i pozbywamy sie reszty za przecinkiem - y jest calkowite
-    //if (y % 10 >= 5)
-    {
-     //   y += 10; // jezeli cyfra jednosci >= 5
-    }
-    return (y / 10) * 0.01; // usuwamy ostatnia cyfre i zamieniamy na liczbe zmiennoprzecinkowa
 
+    return (y / 10) * 0.01; // usuwamy ostatnia cyfre i zamieniamy na liczbe zmiennoprzecinkowa
 }
 
 void  Ware::remove(std::vector<std::string> &removedThings, std::vector<std::string> &dimensions, std::vector<int>&amount)
@@ -186,7 +183,6 @@ void  Ware::remove(std::vector<std::string> &removedThings, std::vector<std::str
                 {
                     removedThings.erase(removedThings.begin() + i);
                     amount[j]++;
-                    //pairOfRemovedThingAndPosition[removedThings[i]] = j;
                 }
 
             }
@@ -203,25 +199,5 @@ char Ware::enterTheLetter() {
     }
     return letter;
 }
-
-
-
-/*template<typename Type>
-void Ware::removeThing(Type *obj) {
-    int choose;
-}
-
-template<typename Type>
-void Ware::removeThing(Type *obj, vector<Type> &things) {
-    int choose = enteringTheNumber(1, things.size());
-    things.erase(things.begin() + choose -1);
-}*/
-
-/*template<class type>
-void Ware::remove<type>(type el) {
-    //type el;
-    el->titleOfBooksInShop;
-
-}*/
 
 

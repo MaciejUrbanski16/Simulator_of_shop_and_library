@@ -2,3 +2,4 @@
 .idea\
 *.obj
 *.dir
+cmake-build-debug/CMakeFiles
