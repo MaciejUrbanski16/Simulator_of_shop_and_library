@@ -19,63 +19,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a417d592-79c6-4910-a3f3-8b98fcb03eae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Tests/BagpackTests.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application.h" beforeDir="false" afterPath="$PROJECT_DIR$/Application.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bagpack.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/BagpackManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bagpack.h" beforeDir="false" afterPath="$PROJECT_DIR$/BagpackManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bill.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Bill.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bill.h" beforeDir="false" afterPath="$PROJECT_DIR$/Bill.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Book.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Book.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Book.h" beforeDir="false" afterPath="$PROJECT_DIR$/Book.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConcreteBag.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ConcreteBagpack.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConcreteBag.h" beforeDir="false" afterPath="$PROJECT_DIR$/ConcreteBagpack.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notepad.h" beforeDir="false" afterPath="$PROJECT_DIR$/Notepad.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SchoolSupplies.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SchoolSupplies.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SchoolSupplies.h" beforeDir="false" afterPath="$PROJECT_DIR$/SchoolSupplies.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShopWare.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ShopWare.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShopWare.h" beforeDir="false" afterPath="$PROJECT_DIR$/ShopWare.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/BookTests.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/BookTests.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/NotepadTests.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/NotepadTests.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/Application.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/Application.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/Bagpack.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/Bill.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/Bill.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/Book.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/Book.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/Notepad.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/Notepad.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/main.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/objects1.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/tests/NotepadTests.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/tests/NotepadTests.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/tests/TowarTests.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/tests/TowarTests.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/bags.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/bags.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/book.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/book.tsv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-master/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/libgtest_maind.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/libgtest_maind.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/libgtestd.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/libgtestd.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/machineOfState.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/machineOfState.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/machineOfState.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/machineOfState.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/notes.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/notes.tsv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/supplies.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/supplies.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/googletest-master/googletest/docs/advanced.md" beforeDir="false" afterPath="$PROJECT_DIR$/lib/googletest-master/googletest/docs/advanced.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/googletest-master/googletest/include/gtest/gtest.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/googletest-master/googletest/include/gtest/gtest.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/googletest-master/googletest/include/gtest/internal/gtest-port.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/googletest-master/googletest/include/gtest/internal/gtest-port.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/googletest-master/googletest/src/gtest-internal-inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/googletest-master/googletest/src/gtest-internal-inl.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/googletest-master/googletest/src/gtest.cc" beforeDir="false" afterPath="$PROJECT_DIR$/lib/googletest-master/googletest/src/gtest.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/googletest-master/googletest/test/BUILD.bazel" beforeDir="false" afterPath="$PROJECT_DIR$/lib/googletest-master/googletest/test/BUILD.bazel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BagpackManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/BagpackManager.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -316,7 +260,7 @@
       <workItem from="1613318663580" duration="4916000" />
       <workItem from="1613331199268" duration="9427000" />
       <workItem from="1613379511013" duration="3197000" />
-      <workItem from="1613412165480" duration="9650000" />
+      <workItem from="1613412165480" duration="10078000" />
     </task>
     <task id="LOCAL-00001" summary="All features of special things work properly">
       <created>1606246468089</created>
@@ -361,22 +305,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="585" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1612893315670" />
-    <state width="1093" height="295" key="GridCell.Tab.0.bottom" timestamp="1613422193159">
+    <state width="1091" height="295" key="GridCell.Tab.0.bottom" timestamp="1613422737740">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1093" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1613422193159" />
-    <state width="1093" height="295" key="GridCell.Tab.0.center" timestamp="1613422193159">
+    <state width="1091" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1613422737740" />
+    <state width="1091" height="295" key="GridCell.Tab.0.center" timestamp="1613422737739">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1093" height="295" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1613422193159" />
-    <state width="1093" height="295" key="GridCell.Tab.0.left" timestamp="1613422193159">
+    <state width="1091" height="295" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1613422737739" />
+    <state width="1091" height="295" key="GridCell.Tab.0.left" timestamp="1613422737739">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1093" height="295" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1613422193159" />
-    <state width="1093" height="295" key="GridCell.Tab.0.right" timestamp="1613422193159">
+    <state width="1091" height="295" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1613422737739" />
+    <state width="1091" height="295" key="GridCell.Tab.0.right" timestamp="1613422737739">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1093" height="295" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1613422193159" />
+    <state width="1091" height="295" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1613422737739" />
     <state width="938" height="259" key="GridCell.Tab.1.bottom" timestamp="1613422183879">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

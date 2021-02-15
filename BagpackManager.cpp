@@ -194,7 +194,9 @@ void shop::BagpackManager::addBags()
     int addAmount;
 
     std::cin>>addMark>>addColor>>addPrice>>addAmount;
-    bags.emplace_back(addMark, addColor, addPrice, addAmount);
+    shop::ConcreteBagpack addBag(addMark,addColor,addPrice);
+    bagsFromFile.push_back(addBag);
+    amountsOfBags.push_back(addAmount);
 
 }
 
@@ -202,7 +204,8 @@ void shop::BagpackManager::removeBags()
 {
     presentationOfBags();
     int chooseRemove = enteringTheNumber(1, bags.size());
-    bags.erase(bags.begin() + chooseRemove);
+    bagsFromFile.erase(bagsFromFile.begin() + chooseRemove);
+    amountsOfBags.erase(amountsOfBags.begin() + chooseRemove);
 
 }
 
