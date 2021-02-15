@@ -2235,7 +2235,7 @@ const char* StringFromGTestEnv(const char* flag, const char* default_val);
 
 #if !defined(GTEST_INTERNAL_DEPRECATED)
 
-// Internal Macro to mark an API deprecated, for googletest usage only
+// Internal Macro to _mark an API deprecated, for googletest usage only
 // Usage: class GTEST_INTERNAL_DEPRECATED(message) MyClass or
 // GTEST_INTERNAL_DEPRECATED(message) <return_type> myFunction(); Every usage of
 // a deprecated entity will trigger a warning when compiled with

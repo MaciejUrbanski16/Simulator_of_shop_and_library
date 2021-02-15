@@ -1,5 +1,7 @@
 *.xml
 .idea\
-*.obj
 *.dir
-cmake-build-debug/CMakeFiles
+*.slo
+*.lo
+*.o
+*.obj

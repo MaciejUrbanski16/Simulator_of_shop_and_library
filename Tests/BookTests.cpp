@@ -52,7 +52,7 @@ TEST_F(BookTests, readProperValuesOfBooks)
     EXPECT_EQ(currentAmount + 1 , book.amountOfBooksInShop[0]);
 }*/
 
-TEST_F(BookTests, searchingBookAfterEnteredLetter)
+/*TEST_F(BookTests, searchingBookAfterEnteredLetter)
 {
     //GIVEN
     book;
@@ -63,9 +63,9 @@ TEST_F(BookTests, searchingBookAfterEnteredLetter)
     //THEN
     EXPECT_EQ(shop::Book::FOUND,book.searchingBook());
 
-}
+}*/
 
-TEST_F(BookTests, searchingBookAfterEnteredLetterIfNotFound)
+/*TEST_F(BookTests, searchingBookAfterEnteredLetterIfNotFound)
 {
     //GIVEN
     book;
@@ -77,7 +77,7 @@ TEST_F(BookTests, searchingBookAfterEnteredLetterIfNotFound)
     //THEN
     EXPECT_EQ(book.getSizeOfCurrentSearchings(),1);
 
-}
+}*/
 
 TEST_F(BookTests, checkIfBookExist)
 {

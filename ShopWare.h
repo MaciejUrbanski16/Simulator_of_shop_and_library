@@ -47,8 +47,9 @@ enum
 extern int stage;
 extern int mode;
 
+
 namespace shop {
-    typedef double towar_int_t;
+    typedef double towar_t;
 
     ///OGÓLNA KLASA TOWARU
     class Ware
@@ -59,7 +60,7 @@ namespace shop {
         Ware(){}
 
         bool available;
-        towar_int_t praise;
+        towar_t praise;
         int amount;
         std::string name;
 
@@ -72,7 +73,7 @@ namespace shop {
 
         //kontenery do przechowywania wybranych przez klienta rzeczy ze sklepu
         std::vector<std::string> orderedPurchasesName;
-        std::vector<towar_int_t> orderedPurchasesPrice;
+        std::vector<towar_t> orderedPurchasesPrice;
 
         char enterTheLetter();
 
@@ -101,7 +102,7 @@ namespace shop {
                                    int mode); //zmienia treyb z klienta na sprzedawce i na odwrót
 
 
-        towar_int_t roundFloatToSecond(towar_int_t d);
+        towar_t roundFloatToSecond(towar_t d);
 
     };
 }

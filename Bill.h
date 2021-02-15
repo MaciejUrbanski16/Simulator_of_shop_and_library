@@ -16,14 +16,14 @@ public:
     Bill() = default;
     Bill(Ware &ware);
 
-    shop::towar_int_t calculate();
+    shop::towar_t calculate();
 
-    void printBill(shop::towar_int_t toPay);
+    void printBill(shop::towar_t toPay);
 
     void payForPurchases();
 
 private:
-    shop::towar_int_t allGain;
+    shop::towar_t allGain;
 
     shop::Ware ware;
 

@@ -221,7 +221,7 @@ std::string Book::getSearchedBook(int t)
 
 //----------------------------------------------------------------------------------------------------------------------
 
-void Book::addBookToShop( std::string &titleOfNewBook, towar_int_t &praisesOfNewBook, int amountOfNewBook)
+void Book::addBookToShop(std::string &titleOfNewBook, towar_t &praisesOfNewBook, int amountOfNewBook)
 {
     //automatyzacja uzupelniania zapasow sklepu
     this->titleOfBooksInShop.push_back(titleOfNewBook);
@@ -241,7 +241,7 @@ void Book:: addThingToShop()
     {
         cout<<"Podaj kolejno tytul ksiazki, cene za sztuke, ilosc ksiazek: ";
         std::string title_a;
-        towar_int_t  pricesToAdd;
+        towar_t  pricesToAdd;
         int amountToAdd;
         cin>>title_a;
         cin>>pricesToAdd;

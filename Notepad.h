@@ -25,7 +25,7 @@ namespace shop
     public:
         std::string color;
         std::vector<std::string>dimensions;
-        std::vector<towar_int_t>price;
+        std::vector<towar_t>price;
         std::vector<int>amount;
         bool noteWithLines;
         int chooseOfColor(); //wybor koloru ->do zrobienia

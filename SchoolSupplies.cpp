@@ -9,7 +9,7 @@
 
 #include <utility>
 
-shop::SchoolSupplies::SchoolSupplies(std::string name, towar_int_t price, int amount)
+shop::SchoolSupplies::SchoolSupplies(std::string name, towar_t price, int amount)
 {
     this->name = std::move(name);
     this->price = price;

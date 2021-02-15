@@ -124,7 +124,7 @@ std::string Ware::removeThingFromPurchases()
         choose--; //aby dostosowac sie do iteracji vectora od 0
 
         std::string removedName = orderedPurchasesName[choose];
-        towar_int_t removedPrice = orderedPurchasesPrice[choose];
+        towar_t removedPrice = orderedPurchasesPrice[choose];
 
         orderedPurchasesName.erase(orderedPurchasesName.begin() + choose);
         orderedPurchasesPrice.erase(orderedPurchasesPrice.begin() + choose);
@@ -162,7 +162,7 @@ void Ware::showOrderedPurchases()
 }
 
 
-towar_int_t Ware::roundFloatToSecond(towar_int_t d)
+towar_t Ware::roundFloatToSecond(towar_t d)
 {
 
     int y = d * 1000; // przesuwamy przecinek o 4 miejsca i pozbywamy sie reszty za przecinkiem - y jest calkowite
@@ -170,9 +170,8 @@ towar_int_t Ware::roundFloatToSecond(towar_int_t d)
     return (y / 10) * 0.01; // usuwamy ostatnia cyfre i zamieniamy na liczbe zmiennoprzecinkowa
 }
 
-void  Ware::remove(std::vector<std::string> &removedThings, std::vector<std::string> &dimensions, std::vector<int>&amount)
+void  Ware::remove(std::vector<std::string> &removedThings, std::vector<std::string> &dimensions, std::vector<int>& _amount)
 {
-    //std::map<std::string, int> pairOfRemovedThingAndPosition;
     for(int i=0;i<removedThings.size();i++)
     {
         for(int j=0;j<dimensions.size();j++)
@@ -182,7 +181,7 @@ void  Ware::remove(std::vector<std::string> &removedThings, std::vector<std::str
                 if(!removedThings.empty())
                 {
                     removedThings.erase(removedThings.begin() + i);
-                    amount[j]++;
+                    _amount[j]++;
                 }
 
             }

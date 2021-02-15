@@ -247,32 +247,32 @@ Application.cpp.s:
 	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Application.cpp.s
 .PHONY : Application.cpp.s
 
-Bagpack.obj: Bagpack.cpp.obj
+BagpackManager.obj: BagpackManager.cpp.obj
 
-.PHONY : Bagpack.obj
+.PHONY : BagpackManager.obj
 
 # target to build an object file
-Bagpack.cpp.obj:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Bagpack.cpp.obj
-.PHONY : Bagpack.cpp.obj
+BagpackManager.cpp.obj:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/BagpackManager.cpp.obj
+.PHONY : BagpackManager.cpp.obj
 
-Bagpack.i: Bagpack.cpp.i
+BagpackManager.i: BagpackManager.cpp.i
 
-.PHONY : Bagpack.i
+.PHONY : BagpackManager.i
 
 # target to preprocess a source file
-Bagpack.cpp.i:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Bagpack.cpp.i
-.PHONY : Bagpack.cpp.i
+BagpackManager.cpp.i:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/BagpackManager.cpp.i
+.PHONY : BagpackManager.cpp.i
 
-Bagpack.s: Bagpack.cpp.s
+BagpackManager.s: BagpackManager.cpp.s
 
-.PHONY : Bagpack.s
+.PHONY : BagpackManager.s
 
 # target to generate assembly for a file
-Bagpack.cpp.s:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Bagpack.cpp.s
-.PHONY : Bagpack.cpp.s
+BagpackManager.cpp.s:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/BagpackManager.cpp.s
+.PHONY : BagpackManager.cpp.s
 
 Bill.obj: Bill.cpp.obj
 
@@ -328,32 +328,32 @@ Book.cpp.s:
 	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Book.cpp.s
 .PHONY : Book.cpp.s
 
-ConcreteBag.obj: ConcreteBag.cpp.obj
+ConcreteBagpack.obj: ConcreteBagpack.cpp.obj
 
-.PHONY : ConcreteBag.obj
+.PHONY : ConcreteBagpack.obj
 
 # target to build an object file
-ConcreteBag.cpp.obj:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteBag.cpp.obj
-.PHONY : ConcreteBag.cpp.obj
+ConcreteBagpack.cpp.obj:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteBagpack.cpp.obj
+.PHONY : ConcreteBagpack.cpp.obj
 
-ConcreteBag.i: ConcreteBag.cpp.i
+ConcreteBagpack.i: ConcreteBagpack.cpp.i
 
-.PHONY : ConcreteBag.i
+.PHONY : ConcreteBagpack.i
 
 # target to preprocess a source file
-ConcreteBag.cpp.i:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteBag.cpp.i
-.PHONY : ConcreteBag.cpp.i
+ConcreteBagpack.cpp.i:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteBagpack.cpp.i
+.PHONY : ConcreteBagpack.cpp.i
 
-ConcreteBag.s: ConcreteBag.cpp.s
+ConcreteBagpack.s: ConcreteBagpack.cpp.s
 
-.PHONY : ConcreteBag.s
+.PHONY : ConcreteBagpack.s
 
 # target to generate assembly for a file
-ConcreteBag.cpp.s:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteBag.cpp.s
-.PHONY : ConcreteBag.cpp.s
+ConcreteBagpack.cpp.s:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteBagpack.cpp.s
+.PHONY : ConcreteBagpack.cpp.s
 
 Notepad.obj: Notepad.cpp.obj
 
@@ -489,6 +489,33 @@ ShopWare.s: ShopWare.cpp.s
 ShopWare.cpp.s:
 	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ShopWare.cpp.s
 .PHONY : ShopWare.cpp.s
+
+Tests/BagpackTests.obj: Tests/BagpackTests.cpp.obj
+
+.PHONY : Tests/BagpackTests.obj
+
+# target to build an object file
+Tests/BagpackTests.cpp.obj:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Tests/BagpackTests.cpp.obj
+.PHONY : Tests/BagpackTests.cpp.obj
+
+Tests/BagpackTests.i: Tests/BagpackTests.cpp.i
+
+.PHONY : Tests/BagpackTests.i
+
+# target to preprocess a source file
+Tests/BagpackTests.cpp.i:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Tests/BagpackTests.cpp.i
+.PHONY : Tests/BagpackTests.cpp.i
+
+Tests/BagpackTests.s: Tests/BagpackTests.cpp.s
+
+.PHONY : Tests/BagpackTests.s
+
+# target to generate assembly for a file
+Tests/BagpackTests.cpp.s:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Tests/BagpackTests.cpp.s
+.PHONY : Tests/BagpackTests.cpp.s
 
 Tests/BookTests.obj: Tests/BookTests.cpp.obj
 
@@ -726,18 +753,18 @@ help:
 	@echo ... Application.obj
 	@echo ... Application.i
 	@echo ... Application.s
-	@echo ... Bagpack.obj
-	@echo ... Bagpack.i
-	@echo ... Bagpack.s
+	@echo ... BagpackManager.obj
+	@echo ... BagpackManager.i
+	@echo ... BagpackManager.s
 	@echo ... Bill.obj
 	@echo ... Bill.i
 	@echo ... Bill.s
 	@echo ... Book.obj
 	@echo ... Book.i
 	@echo ... Book.s
-	@echo ... ConcreteBag.obj
-	@echo ... ConcreteBag.i
-	@echo ... ConcreteBag.s
+	@echo ... ConcreteBagpack.obj
+	@echo ... ConcreteBagpack.i
+	@echo ... ConcreteBagpack.s
 	@echo ... Notepad.obj
 	@echo ... Notepad.i
 	@echo ... Notepad.s
@@ -753,6 +780,9 @@ help:
 	@echo ... ShopWare.obj
 	@echo ... ShopWare.i
 	@echo ... ShopWare.s
+	@echo ... Tests/BagpackTests.obj
+	@echo ... Tests/BagpackTests.i
+	@echo ... Tests/BagpackTests.s
 	@echo ... Tests/BookTests.obj
 	@echo ... Tests/BookTests.i
 	@echo ... Tests/BookTests.s

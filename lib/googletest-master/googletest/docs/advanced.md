@@ -2228,31 +2228,31 @@ important information:
 
 <code>
 ...<br/>
-  <font color="green">[----------]</font><font color="black"> 1 test from
+  <font _color="green">[----------]</font><font _color="black"> 1 test from
   FooTest</font><br/>
-  <font color="green">[ RUN &nbsp; &nbsp; &nbsp;]</font><font color="black">
+  <font _color="green">[ RUN &nbsp; &nbsp; &nbsp;]</font><font _color="black">
   FooTest.DoesAbc</font><br/>
-  <font color="green">[ &nbsp; &nbsp; &nbsp; OK ]</font><font color="black">
+  <font _color="green">[ &nbsp; &nbsp; &nbsp; OK ]</font><font _color="black">
   FooTest.DoesAbc </font><br/>
-  <font color="green">[----------]</font><font color="black">
+  <font _color="green">[----------]</font><font _color="black">
   2 tests from BarTest</font><br/>
-  <font color="green">[ RUN &nbsp; &nbsp; &nbsp;]</font><font color="black">
+  <font _color="green">[ RUN &nbsp; &nbsp; &nbsp;]</font><font _color="black">
   BarTest.HasXyzProperty </font><br/>
-  <font color="green">[ &nbsp; &nbsp; &nbsp; OK ]</font><font color="black">
+  <font _color="green">[ &nbsp; &nbsp; &nbsp; OK ]</font><font _color="black">
   BarTest.HasXyzProperty</font><br/>
-  <font color="green">[ RUN &nbsp; &nbsp; &nbsp;]</font><font color="black">
+  <font _color="green">[ RUN &nbsp; &nbsp; &nbsp;]</font><font _color="black">
   BarTest.ReturnsTrueOnSuccess ... some error messages ...</font><br/>
-  <font color="red">[ &nbsp; FAILED ]</font><font color="black">
+  <font _color="red">[ &nbsp; FAILED ]</font><font _color="black">
   BarTest.ReturnsTrueOnSuccess ...</font><br/>
-  <font color="green">[==========]</font><font color="black">
+  <font _color="green">[==========]</font><font _color="black">
   30 tests from 14 test suites ran.</font><br/>
-  <font color="green">[ &nbsp; PASSED ]</font><font color="black">
+  <font _color="green">[ &nbsp; PASSED ]</font><font _color="black">
   28 tests.</font><br/>
-  <font color="red">[ &nbsp; FAILED ]</font><font color="black">
+  <font _color="red">[ &nbsp; FAILED ]</font><font _color="black">
   2 tests, listed below:</font><br/>
-  <font color="red">[ &nbsp; FAILED ]</font><font color="black">
+  <font _color="red">[ &nbsp; FAILED ]</font><font _color="black">
   BarTest.ReturnsTrueOnSuccess</font><br/>
-  <font color="red">[ &nbsp; FAILED ]</font><font color="black">
+  <font _color="red">[ &nbsp; FAILED ]</font><font _color="black">
   AnotherTest.DoesXyz<br/>
 <br/>
   2 FAILED TESTS
@@ -2263,7 +2263,7 @@ You can set the `GTEST_COLOR` environment variable or the `--gtest_color`
 command line flag to `yes`, `no`, or `auto` (the default) to enable colors,
 disable colors, or let googletest decide. When the value is `auto`, googletest
 will use colors if and only if the output goes to a terminal and (on non-Windows
-platforms) the `TERM` environment variable is set to `xterm` or `xterm-color`.
+platforms) the `TERM` environment variable is set to `xterm` or `xterm-_color`.
 
 #### Suppressing test passes
 

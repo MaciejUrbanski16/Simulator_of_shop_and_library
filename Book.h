@@ -38,7 +38,7 @@ namespace shop {
 
 
         std::string titleToRemove;
-        towar_int_t position_b = -1;
+        towar_t position_b = -1;
 
         void addSearchedBooks(char letter);
 
@@ -53,9 +53,9 @@ namespace shop {
 
 
         //funkcja dodajaca ksiazke w systemie
-        void addBookToShop(       std::string &titleOfNewBook,
-                                  towar_int_t &praisesOfNewBook,
-                                  int amountOfNewBook);
+        void addBookToShop(std::string &titleOfNewBook,
+                           towar_t &praisesOfNewBook,
+                           int amountOfNewBook);
 
         void toLower();
         void toUpper();
@@ -73,7 +73,7 @@ namespace shop {
         //kontenery na dane o przechowywanych ksiazkach w sklepie
         std::vector<std::string> titleOfBooksInShop;
         std::vector<int> amountOfBooksInShop;
-        std::vector<shop::towar_int_t > pricesOfBooksInShop;
+        std::vector<shop::towar_t > pricesOfBooksInShop;
 
 
         int getSizeOfCurrentSearchings();           //zwraca rozmiar prywatnego vectora currentSearchings

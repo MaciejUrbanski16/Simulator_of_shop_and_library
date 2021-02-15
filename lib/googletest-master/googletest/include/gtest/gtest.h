@@ -1462,7 +1462,7 @@ class GTEST_API_ UnitTest {
   mutable internal::Mutex mutex_;
 
   // Opaque implementation object.  This field is never changed once
-  // the object is constructed.  We don't mark it as const here, as
+  // the object is constructed.  We don't _mark it as const here, as
   // doing so will cause a warning in the constructor of UnitTest.
   // Mutable state in *impl_ is protected by mutex_.
   internal::UnitTestImpl* impl_;

@@ -244,7 +244,7 @@ GTEST_DEFINE_bool_(catch_exceptions,
 
 GTEST_DEFINE_string_(
     color,
-    internal::StringFromGTestEnv("color", "auto"),
+    internal::StringFromGTestEnv("_color", "auto"),
     "Whether to use colors in the output.  Valid values: yes, no, "
     "and auto.  'auto' means to use colors if the output is "
     "being sent to a terminal and the TERM environment variable "
@@ -3177,9 +3177,9 @@ static void PrintTestPartResult(const TestPartResult& test_part_result) {
 #if GTEST_OS_WINDOWS && !GTEST_OS_WINDOWS_MOBILE && \
     !GTEST_OS_WINDOWS_PHONE && !GTEST_OS_WINDOWS_RT && !GTEST_OS_WINDOWS_MINGW
 
-// Returns the character attribute for the given color.
-static WORD GetColorAttribute(GTestColor color) {
-  switch (color) {
+// Returns the character attribute for the given _color.
+static WORD GetColorAttribute(GTestColor _color) {
+  switch (_color) {
     case GTestColor::kRed:
       return FOREGROUND_RED;
     case GTestColor::kGreen:
@@ -3201,7 +3201,7 @@ static int GetBitOffset(WORD color_mask) {
   return bitOffset;
 }
 
-static WORD GetNewColor(GTestColor color, WORD old_color_attrs) {
+static WORD GetNewColor(GTestColor _color, WORD old_color_attrs) {
   // Let's reuse the BG
   static const WORD background_mask = BACKGROUND_BLUE | BACKGROUND_GREEN |
                                       BACKGROUND_RED | BACKGROUND_INTENSITY;
@@ -3210,7 +3210,7 @@ static WORD GetNewColor(GTestColor color, WORD old_color_attrs) {
   const WORD existing_bg = old_color_attrs & background_mask;
 
   WORD new_color =
-      GetColorAttribute(color) | existing_bg | FOREGROUND_INTENSITY;
+      GetColorAttribute(_color) | existing_bg | FOREGROUND_INTENSITY;
   static const int bg_bitOffset = GetBitOffset(background_mask);
   static const int fg_bitOffset = GetBitOffset(foreground_mask);
 
@@ -3223,7 +3223,7 @@ static WORD GetNewColor(GTestColor color, WORD old_color_attrs) {
 
 #else
 
-// Returns the ANSI color code for the given color. GTestColor::kDefault is
+// Returns the ANSI _color code for the given _color. GTestColor::kDefault is
 // an invalid input.
 static const char* GetAnsiColorCode(GTestColor color) {
   switch (color) {
@@ -3254,7 +3254,7 @@ bool ShouldUseColor(bool stdout_is_tty) {
     const char* const term = posix::GetEnv("TERM");
     const bool term_supports_color =
         String::CStringEquals(term, "xterm") ||
-        String::CStringEquals(term, "xterm-color") ||
+        String::CStringEquals(term, "xterm-_color") ||
         String::CStringEquals(term, "xterm-256color") ||
         String::CStringEquals(term, "screen") ||
         String::CStringEquals(term, "screen-256color") ||
@@ -3305,11 +3305,11 @@ static void ColoredPrintf(GTestColor color, const char* fmt, ...) {
     !GTEST_OS_WINDOWS_PHONE && !GTEST_OS_WINDOWS_RT && !GTEST_OS_WINDOWS_MINGW
   const HANDLE stdout_handle = GetStdHandle(STD_OUTPUT_HANDLE);
 
-  // Gets the current text color.
+  // Gets the current text _color.
   CONSOLE_SCREEN_BUFFER_INFO buffer_info;
   GetConsoleScreenBufferInfo(stdout_handle, &buffer_info);
   const WORD old_color_attrs = buffer_info.wAttributes;
-  const WORD new_color = GetNewColor(color, old_color_attrs);
+  const WORD new_color = GetNewColor(_color, old_color_attrs);
 
   // We need to flush the stream buffers into the console before each
   // SetConsoleTextAttribute call lest it affect the text that is already
@@ -3320,7 +3320,7 @@ static void ColoredPrintf(GTestColor color, const char* fmt, ...) {
   vprintf(fmt, args);
 
   fflush(stdout);
-  // Restores the text color.
+  // Restores the text _color.
   SetConsoleTextAttribute(stdout_handle, old_color_attrs);
 #else
   printf("\033[0;3%sm", GetAnsiColorCode(color));
@@ -6235,16 +6235,16 @@ static bool HasGoogleTestFlagPrefix(const char* str) {
 }
 
 // Prints a string containing code-encoded text.  The following escape
-// sequences can be used in the string to control the text color:
+// sequences can be used in the string to control the text _color:
 //
 //   @@    prints a single '@' character.
-//   @R    changes the color to red.
-//   @G    changes the color to green.
-//   @Y    changes the color to yellow.
-//   @D    changes to the default terminal text color.
+//   @R    changes the _color to red.
+//   @G    changes the _color to green.
+//   @Y    changes the _color to yellow.
+//   @D    changes to the default terminal text _color.
 //
 static void PrintColorEncoded(const char* str) {
-  GTestColor color = GTestColor::kDefault;  // The current color.
+  GTestColor color = GTestColor::kDefault;  // The current _color.
 
   // Conceptually, we split the string into segments divided by escape
   // sequences.  Then we print one segment at a time.  At the end of
@@ -6313,7 +6313,7 @@ static const char kColorEncodedHelpMessage[] =
     "\n"
     "Test Output:\n"
     "  @G--" GTEST_FLAG_PREFIX_
-    "color=@Y(@Gyes@Y|@Gno@Y|@Gauto@Y)@D\n"
+    "_color=@Y(@Gyes@Y|@Gno@Y|@Gauto@Y)@D\n"
     "      Enable/disable colored output. The default is @Gauto@D.\n"
     "  @G--" GTEST_FLAG_PREFIX_
     "brief=1@D\n"
@@ -6358,7 +6358,7 @@ static const char kColorEncodedHelpMessage[] =
     "to\n"
     "disable colored text output, you can either specify "
     "@G--" GTEST_FLAG_PREFIX_
-    "color=no@D or set\n"
+    "_color=no@D or set\n"
     "the @G" GTEST_FLAG_PREFIX_UPPER_
     "COLOR@D environment variable to @Gno@D.\n"
     "\n"

@@ -9,7 +9,7 @@
 #include <string>
 #include <fstream>
 #include <iostream>
-#include "ConcreteBag.h"
+//#include "ConcreteBagpack.h"
 
 ///KLASA DO PRZECHOWYWANIA KONFIGURACJI SYMULATORA
 class Application {
@@ -28,7 +28,7 @@ public:
     int stage;
     int mode;
 
-    //container to storage things removed from basket during shopping
+    //container to storage names of things removed from basket during shopping
 
     std::vector<std::string> removedThings;
 

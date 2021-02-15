@@ -11,15 +11,18 @@
 #include "Application.h"
 #include "Book.h"
 #include "Notepad.h"
-#include "Bagpack.h"
+#include "BagpackManager.h"
+#include "ConcreteBagpack.h"
 #include "SchoolSupplies.h"
 
 #include "Bill.h"
 
 #include <gtest/gtest.h>
+#include <gmock/gmock.h>
 
 #include <map>
-#include <gmock/gmock.h>
+
+
 
 
 using namespace std;
@@ -29,7 +32,6 @@ int stage;
 
 Application* Application::app = nullptr;
 
-//extern std::vector<shop::Bagpack> bags;
 
 int main(int argc, char *argv[]) {
 
@@ -46,7 +48,13 @@ int main(int argc, char *argv[]) {
 
     application.presentationOfServices();
 
-    ConcreteBag bag("A","B",12);
+    std::string a = "A",b="B";
+    shop::towar_t price = 12.09;
+    shop::ConcreteBagpack bag(a, b, price),bag2(a, b, price+1.9);
+    std::map <shop::ConcreteBagpack,int> mapa;
+    mapa[bag] = 10;
+    mapa[bag2] = 1;
+
 
 
     application.stage = START;          //odwołania do enuma zawierajacego etapy zakupu z deklaracji klasy Ware
@@ -117,6 +125,9 @@ int main(int argc, char *argv[]) {
             } else if (choose == 2) {
                 shop::Notepad notes;
 
+
+
+
                 notes.readItemsFromFile(); // wczytanie danych
                 application.readRemoveFromFile();
 
@@ -155,15 +166,15 @@ int main(int argc, char *argv[]) {
 
             else if (choose == 3) {
 
-                shop::Bagpack bags;
+                shop::BagpackManager bags;
 
                 bags.readItemsFromFile();
                 application.readRemoveFromFile();
                 bags.presentationOfBags();
 
-                bags.getMarksAndAmounts();
-                purchases.remove(application.removedThings, bags.allMarks, bags.allAmounts);
-                bags.refreshObjectsAfterRemoving(bags.bags);
+                bags.getMarks();
+                purchases.remove(application.removedThings, bags.allMarks, bags.amountsOfBags);
+                //bags.refreshObjectsAfterRemoving(bags.bags);
 
                 bags.chooseBag(purchases);
                 purchases.showOrderedPurchases();
@@ -231,7 +242,7 @@ int main(int argc, char *argv[]) {
 
                 auto *bookEdition = new shop::Book;
                 auto *noteEdition = new shop::Notepad;
-                auto *bagEdition = new shop::Bagpack();
+                auto *bagEdition = new shop::BagpackManager();
                 auto *suppliesEdition = new shop::SchoolSupplies;
                 int chooseOfEdition = enteringTheNumber(1, 7);
 
@@ -289,8 +300,8 @@ int main(int argc, char *argv[]) {
 
    if(!purchases.inSellerMode) {
        Bill bill(purchases);
-       shop::towar_int_t toPay = bill.calculate();
-       shop::towar_int_t wynik_x = (shop::towar_int_t) ((int) (toPay * 100)) / 100;
+       shop::towar_t toPay = bill.calculate();
+       shop::towar_t wynik_x = (shop::towar_t) ((int) (toPay * 100)) / 100;
        wynik_x = purchases.roundFloatToSecond(wynik_x);
        assert(purchases.orderedPurchasesName.size() == purchases.orderedPurchasesPrice.size());
 
