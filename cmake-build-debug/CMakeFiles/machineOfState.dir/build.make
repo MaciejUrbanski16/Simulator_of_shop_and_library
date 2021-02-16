@@ -84,19 +84,19 @@ CMakeFiles/machineOfState.dir/ShopWare.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/machineOfState.dir/ShopWare.cpp.s"
 	C:\Users\Admin\Desktop\MACIEK~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\ShopWare.cpp -o CMakeFiles\machineOfState.dir\ShopWare.cpp.s
 
-CMakeFiles/machineOfState.dir/Book.cpp.obj: CMakeFiles/machineOfState.dir/flags.make
-CMakeFiles/machineOfState.dir/Book.cpp.obj: CMakeFiles/machineOfState.dir/includes_CXX.rsp
-CMakeFiles/machineOfState.dir/Book.cpp.obj: ../Book.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/machineOfState.dir/Book.cpp.obj"
-	C:\Users\Admin\Desktop\MACIEK~1\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\machineOfState.dir\Book.cpp.obj -c C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\Book.cpp
+CMakeFiles/machineOfState.dir/BookManager.cpp.obj: CMakeFiles/machineOfState.dir/flags.make
+CMakeFiles/machineOfState.dir/BookManager.cpp.obj: CMakeFiles/machineOfState.dir/includes_CXX.rsp
+CMakeFiles/machineOfState.dir/BookManager.cpp.obj: ../BookManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/machineOfState.dir/BookManager.cpp.obj"
+	C:\Users\Admin\Desktop\MACIEK~1\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\machineOfState.dir\BookManager.cpp.obj -c C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\BookManager.cpp
 
-CMakeFiles/machineOfState.dir/Book.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/machineOfState.dir/Book.cpp.i"
-	C:\Users\Admin\Desktop\MACIEK~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\Book.cpp > CMakeFiles\machineOfState.dir\Book.cpp.i
+CMakeFiles/machineOfState.dir/BookManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/machineOfState.dir/BookManager.cpp.i"
+	C:\Users\Admin\Desktop\MACIEK~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\BookManager.cpp > CMakeFiles\machineOfState.dir\BookManager.cpp.i
 
-CMakeFiles/machineOfState.dir/Book.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/machineOfState.dir/Book.cpp.s"
-	C:\Users\Admin\Desktop\MACIEK~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\Book.cpp -o CMakeFiles\machineOfState.dir\Book.cpp.s
+CMakeFiles/machineOfState.dir/BookManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/machineOfState.dir/BookManager.cpp.s"
+	C:\Users\Admin\Desktop\MACIEK~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\BookManager.cpp -o CMakeFiles\machineOfState.dir\BookManager.cpp.s
 
 CMakeFiles/machineOfState.dir/Notepad.cpp.obj: CMakeFiles/machineOfState.dir/flags.make
 CMakeFiles/machineOfState.dir/Notepad.cpp.obj: CMakeFiles/machineOfState.dir/includes_CXX.rsp
@@ -322,11 +322,25 @@ CMakeFiles/machineOfState.dir/Tests/BagpackTests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/machineOfState.dir/Tests/BagpackTests.cpp.s"
 	C:\Users\Admin\Desktop\MACIEK~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\Tests\BagpackTests.cpp -o CMakeFiles\machineOfState.dir\Tests\BagpackTests.cpp.s
 
+CMakeFiles/machineOfState.dir/ConcreteBook.cpp.obj: CMakeFiles/machineOfState.dir/flags.make
+CMakeFiles/machineOfState.dir/ConcreteBook.cpp.obj: CMakeFiles/machineOfState.dir/includes_CXX.rsp
+CMakeFiles/machineOfState.dir/ConcreteBook.cpp.obj: ../ConcreteBook.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/machineOfState.dir/ConcreteBook.cpp.obj"
+	C:\Users\Admin\Desktop\MACIEK~1\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\machineOfState.dir\ConcreteBook.cpp.obj -c C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\ConcreteBook.cpp
+
+CMakeFiles/machineOfState.dir/ConcreteBook.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/machineOfState.dir/ConcreteBook.cpp.i"
+	C:\Users\Admin\Desktop\MACIEK~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\ConcreteBook.cpp > CMakeFiles\machineOfState.dir\ConcreteBook.cpp.i
+
+CMakeFiles/machineOfState.dir/ConcreteBook.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/machineOfState.dir/ConcreteBook.cpp.s"
+	C:\Users\Admin\Desktop\MACIEK~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\ConcreteBook.cpp -o CMakeFiles\machineOfState.dir\ConcreteBook.cpp.s
+
 # Object files for target machineOfState
 machineOfState_OBJECTS = \
 "CMakeFiles/machineOfState.dir/main.cpp.obj" \
 "CMakeFiles/machineOfState.dir/ShopWare.cpp.obj" \
-"CMakeFiles/machineOfState.dir/Book.cpp.obj" \
+"CMakeFiles/machineOfState.dir/BookManager.cpp.obj" \
 "CMakeFiles/machineOfState.dir/Notepad.cpp.obj" \
 "CMakeFiles/machineOfState.dir/Tests/NotepadTests.cpp.obj" \
 "CMakeFiles/machineOfState.dir/tests.cpp.obj" \
@@ -342,14 +356,15 @@ machineOfState_OBJECTS = \
 "CMakeFiles/machineOfState.dir/ReadCsvTsv.cpp.obj" \
 "CMakeFiles/machineOfState.dir/Tests/BookTests.cpp.obj" \
 "CMakeFiles/machineOfState.dir/ConcreteBagpack.cpp.obj" \
-"CMakeFiles/machineOfState.dir/Tests/BagpackTests.cpp.obj"
+"CMakeFiles/machineOfState.dir/Tests/BagpackTests.cpp.obj" \
+"CMakeFiles/machineOfState.dir/ConcreteBook.cpp.obj"
 
 # External object files for target machineOfState
 machineOfState_EXTERNAL_OBJECTS =
 
 machineOfState.exe: CMakeFiles/machineOfState.dir/main.cpp.obj
 machineOfState.exe: CMakeFiles/machineOfState.dir/ShopWare.cpp.obj
-machineOfState.exe: CMakeFiles/machineOfState.dir/Book.cpp.obj
+machineOfState.exe: CMakeFiles/machineOfState.dir/BookManager.cpp.obj
 machineOfState.exe: CMakeFiles/machineOfState.dir/Notepad.cpp.obj
 machineOfState.exe: CMakeFiles/machineOfState.dir/Tests/NotepadTests.cpp.obj
 machineOfState.exe: CMakeFiles/machineOfState.dir/tests.cpp.obj
@@ -366,6 +381,7 @@ machineOfState.exe: CMakeFiles/machineOfState.dir/ReadCsvTsv.cpp.obj
 machineOfState.exe: CMakeFiles/machineOfState.dir/Tests/BookTests.cpp.obj
 machineOfState.exe: CMakeFiles/machineOfState.dir/ConcreteBagpack.cpp.obj
 machineOfState.exe: CMakeFiles/machineOfState.dir/Tests/BagpackTests.cpp.obj
+machineOfState.exe: CMakeFiles/machineOfState.dir/ConcreteBook.cpp.obj
 machineOfState.exe: CMakeFiles/machineOfState.dir/build.make
 machineOfState.exe: lib/libgtestd.a
 machineOfState.exe: lib/libgtest_maind.a
@@ -373,7 +389,7 @@ machineOfState.exe: lib/libgtestd.a
 machineOfState.exe: CMakeFiles/machineOfState.dir/linklibs.rsp
 machineOfState.exe: CMakeFiles/machineOfState.dir/objects1.rsp
 machineOfState.exe: CMakeFiles/machineOfState.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable machineOfState.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable machineOfState.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\machineOfState.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

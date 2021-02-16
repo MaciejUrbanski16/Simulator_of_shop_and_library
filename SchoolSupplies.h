@@ -5,7 +5,7 @@
 #ifndef MACHINEOFSTATE_SCHOOLSUPPLIES_H
 #define MACHINEOFSTATE_SCHOOLSUPPLIES_H
 
-#include "Book.h"
+#include "BookManager.h"
 
 namespace shop
 {
@@ -14,11 +14,11 @@ namespace shop
     class SchoolSupplies: public Ware {
     public:
         std::string name;
-        shop::towar_t price{};
+        shop::ware_t price{};
         int amount{};
 
         SchoolSupplies() = default;
-        SchoolSupplies(std::string name, towar_t price, int amount);
+        SchoolSupplies(std::string name, ware_t price, int amount);
 
         //kontener do rpzechowywania wszystkich przyborów
         std::vector<SchoolSupplies> schoolSupplies;
@@ -66,7 +66,7 @@ namespace shop
 
         //parametry o które zwiększamy liste przyborów przy dodawaniu nowego przyboru
         std::string name_ADD;
-        towar_t price_ADD;
+        ware_t price_ADD;
         int amount_ADD;
     };
 

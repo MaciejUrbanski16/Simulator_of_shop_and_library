@@ -5,7 +5,7 @@
 #ifndef MACHINEOFSTATE_BAGPACKMANAGER_H
 #define MACHINEOFSTATE_BAGPACKMANAGER_H
 
-#include "Book.h"
+#include "BookManager.h"
 #include "ConcreteBagpack.h"
 
 #include <string>
@@ -32,12 +32,12 @@ namespace shop
         int amount;
         BagpackManager() {}
 
-        //BagpackManager(std::string mark, std::string color, towar_t price, int amount);
+        //BagpackManager(std::string mark, std::string color, ware_t price, int amount);
 
 
         std::string mark;
         std::string color;
-        towar_t price;
+        ware_t price;
 
         std::vector<BagpackManager> bags;
 

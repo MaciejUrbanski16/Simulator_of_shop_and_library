@@ -4,7 +4,7 @@
 
 #include "Bill.h"
 
-shop::towar_t Bill::calculate()
+shop::ware_t Bill::calculate()
 {
     allGain = 0;
     for(int i=0;i<this->ware.orderedPurchasesPrice.size(); i++)
@@ -15,7 +15,7 @@ shop::towar_t Bill::calculate()
     return allGain;
 }
 
-void Bill::printBill(shop::towar_t toPay)
+void Bill::printBill(shop::ware_t toPay)
 {
     std::cout<<std::endl<<std::endl<<std::endl;
     std::string sp;

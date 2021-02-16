@@ -301,32 +301,32 @@ Bill.cpp.s:
 	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Bill.cpp.s
 .PHONY : Bill.cpp.s
 
-Book.obj: Book.cpp.obj
+BookManager.obj: BookManager.cpp.obj
 
-.PHONY : Book.obj
+.PHONY : BookManager.obj
 
 # target to build an object file
-Book.cpp.obj:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Book.cpp.obj
-.PHONY : Book.cpp.obj
+BookManager.cpp.obj:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/BookManager.cpp.obj
+.PHONY : BookManager.cpp.obj
 
-Book.i: Book.cpp.i
+BookManager.i: BookManager.cpp.i
 
-.PHONY : Book.i
+.PHONY : BookManager.i
 
 # target to preprocess a source file
-Book.cpp.i:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Book.cpp.i
-.PHONY : Book.cpp.i
+BookManager.cpp.i:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/BookManager.cpp.i
+.PHONY : BookManager.cpp.i
 
-Book.s: Book.cpp.s
+BookManager.s: BookManager.cpp.s
 
-.PHONY : Book.s
+.PHONY : BookManager.s
 
 # target to generate assembly for a file
-Book.cpp.s:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Book.cpp.s
-.PHONY : Book.cpp.s
+BookManager.cpp.s:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/BookManager.cpp.s
+.PHONY : BookManager.cpp.s
 
 ConcreteBagpack.obj: ConcreteBagpack.cpp.obj
 
@@ -354,6 +354,33 @@ ConcreteBagpack.s: ConcreteBagpack.cpp.s
 ConcreteBagpack.cpp.s:
 	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteBagpack.cpp.s
 .PHONY : ConcreteBagpack.cpp.s
+
+ConcreteBook.obj: ConcreteBook.cpp.obj
+
+.PHONY : ConcreteBook.obj
+
+# target to build an object file
+ConcreteBook.cpp.obj:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteBook.cpp.obj
+.PHONY : ConcreteBook.cpp.obj
+
+ConcreteBook.i: ConcreteBook.cpp.i
+
+.PHONY : ConcreteBook.i
+
+# target to preprocess a source file
+ConcreteBook.cpp.i:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteBook.cpp.i
+.PHONY : ConcreteBook.cpp.i
+
+ConcreteBook.s: ConcreteBook.cpp.s
+
+.PHONY : ConcreteBook.s
+
+# target to generate assembly for a file
+ConcreteBook.cpp.s:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteBook.cpp.s
+.PHONY : ConcreteBook.cpp.s
 
 Notepad.obj: Notepad.cpp.obj
 
@@ -759,12 +786,15 @@ help:
 	@echo ... Bill.obj
 	@echo ... Bill.i
 	@echo ... Bill.s
-	@echo ... Book.obj
-	@echo ... Book.i
-	@echo ... Book.s
+	@echo ... BookManager.obj
+	@echo ... BookManager.i
+	@echo ... BookManager.s
 	@echo ... ConcreteBagpack.obj
 	@echo ... ConcreteBagpack.i
 	@echo ... ConcreteBagpack.s
+	@echo ... ConcreteBook.obj
+	@echo ... ConcreteBook.i
+	@echo ... ConcreteBook.s
 	@echo ... Notepad.obj
 	@echo ... Notepad.i
 	@echo ... Notepad.s

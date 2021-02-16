@@ -9,7 +9,7 @@
 #include "tests.h"
 
 #include "Application.h"
-#include "Book.h"
+#include "BookManager.h"
 #include "Notepad.h"
 #include "BagpackManager.h"
 #include "ConcreteBagpack.h"
@@ -48,15 +48,6 @@ int main(int argc, char *argv[]) {
 
     application.presentationOfServices();
 
-    std::string a = "A",b="B";
-    shop::towar_t price = 12.09;
-    shop::ConcreteBagpack bag(a, b, price),bag2(a, b, price+1.9);
-    std::map <shop::ConcreteBagpack,int> mapa;
-    mapa[bag] = 10;
-    mapa[bag2] = 1;
-
-
-
     application.stage = START;          //odwołania do enuma zawierajacego etapy zakupu z deklaracji klasy Ware
 
     if(purchases.enterToShop())
@@ -78,27 +69,30 @@ int main(int argc, char *argv[]) {
 
             if (choose == 1) {
 
-                shop::Book ksiega;
-                ksiega.readItemsFromFile();                      //odczyt musi nastąpić zaraz po deklaracji
+                shop::BookManager books;
+                books.readItemsFromFile();                      //odczyt musi nastąpić zaraz po deklaracji
                 application.readRemovedFromFile();
-                ksiega.searchInRemoved(application);             //sprawdza czy element z kontenera jest w ogolnym spisie elementow tytulow ksiazek
+                books.searchInRemoved(application);             //sprawdza czy element z kontenera jest w ogolnym spisie elementow tytulow ksiazek
                                                                     //i oddaje ten element na swoje miejsce "polke"
                 //char choosenLetter = purchases.enterTheLetter();
-                if (ksiega.searchingBook() == shop::Book::FOUND) {
-                    purchases.paramOfChoosenThing = ksiega.chooseOfSearchedBook();    //t - parametr okreslajacy wybrana pozycje ks w currentSearching
-                    if (purchases.paramOfChoosenThing == ksiega.getSizeOfCurrentSearchings()) {
+                if (books.searchingBook() == shop::BookManager::FOUND) {
+                    purchases.paramOfChoosenThing = books.chooseOfSearchedBook();    //t - parametr okreslajacy wybrana pozycje ks w currentSearching
+                    if (purchases.paramOfChoosenThing == books.getSizeOfCurrentSearchings()) {
                         cout << "Nie wybrano zadnej z powyzszych" << endl;
                     } else {
 
-                        ksiega.choosenTitle = ksiega.getSearchedBook(purchases.paramOfChoosenThing - 1);
+                        books.choosenTitle = books.getSearchedBook(purchases.paramOfChoosenThing - 1);
 
-                        purchases.position = ksiega.checkIfBookExist(ksiega.choosenTitle);   //sprawdzenie, czy wybrana pozycja istnieje na liscie
+                        purchases.position = books.checkIfBookExist(books.choosenTitle);   //sprawdzenie, czy wybrana pozycja istnieje na liscie
 
-                        if (ksiega.checkAmountofBookInShop(purchases)) {                        //sprawdzenie, czy jest jescze dostępna jakakolwiek ksiazka
+                        if (books.checkAmountofBookInShop(purchases)) {                        //sprawdzenie, czy jest jescze dostępna jakakolwiek ksiazka
                                                                                                 //o wybranym tytule
 
-                            purchases.name = ksiega.titleOfBooksInShop[purchases.position];        //zapisanie nazwy biezacej ksiazki do zmiennej titleOfBooksInShop klasy Ware
-                            purchases.praise = ksiega.pricesOfBooksInShop[purchases.position];    //zapisanie ceny biezacej ksiazki do zmiennj klasy Ware
+                            purchases.name = books.titleOfBooksInShop[purchases.position];        //zapisanie nazwy biezacej ksiazki do zmiennej titleOfBooksInShop klasy Ware
+                            purchases.name = books.getBook(purchases.position).getPairOfTitleAndAuthorBook().second;//wyłuskanie tytułu ksiazki z pary
+
+                            purchases.praise = books.pricesOfBooksInShop[purchases.position];    //zapisanie ceny biezacej ksiazki do zmiennj klasy Ware
+                            purchases.praise = books.getBook(purchases.position).getPrice();    //wyłuskanie ceny ksiazki
 
                             purchases.addToPurchases();             //dodanie do koszyka
 
@@ -112,15 +106,17 @@ int main(int argc, char *argv[]) {
 
                 ///oddaje pozycje umieszczone w buforze zwrotnym, w którym umieszczone są rzeczy zwrocone przez kupujacego
                 ///spowrotem do sklepu, do odpowiednich rodzajów rzeczy zwiekszając przy tym liczebność danej rzeczy o jeden
+                std::vector<ConcreteBook> b;
+                b = books.getBooks(); //wyłuskanie zbioru ksiazek
                 remove(application.removedThings,
-                       ksiega.titleOfBooksInShop,
-                       ksiega.amountOfBooksInShop); // zwrot niechcianych ksiazek z koszyka powrotemo do sklepu
+                       b,
+                       books.amountOfBooksInShop); // zwrot niechcianych ksiazek z koszyka powrotemo do sklepu
 
                 ///zapisuje vector - ze zwróconymi nazwami rzeczy przez kupującego jeszcze w trakcie wykonywania zakupów - do pliku .txt
                 application.saveRemovedToFile();
 
                 ///zapisuje aktualny stan - nazwy wszystkich rzeczy, ich aktualną liczebnosc i ceny do plików .txt
-                ksiega.saveItemsToFile();  //zapisanie biezacego stanu sklepu
+                books.saveItemsToFile();  //zapisanie biezacego stanu sklepu
 
             } else if (choose == 2) {
                 shop::Notepad notes;
@@ -240,7 +236,7 @@ int main(int argc, char *argv[]) {
             application.presentationOfServices();
             {
 
-                auto *bookEdition = new shop::Book;
+                auto *bookEdition = new shop::BookManager;
                 auto *noteEdition = new shop::Notepad;
                 auto *bagEdition = new shop::BagpackManager();
                 auto *suppliesEdition = new shop::SchoolSupplies;
@@ -300,8 +296,8 @@ int main(int argc, char *argv[]) {
 
    if(!purchases.inSellerMode) {
        Bill bill(purchases);
-       shop::towar_t toPay = bill.calculate();
-       shop::towar_t wynik_x = (shop::towar_t) ((int) (toPay * 100)) / 100;
+       shop::ware_t toPay = bill.calculate();
+       shop::ware_t wynik_x = (shop::ware_t) ((int) (toPay * 100)) / 100;
        wynik_x = purchases.roundFloatToSecond(wynik_x);
        assert(purchases.orderedPurchasesName.size() == purchases.orderedPurchasesPrice.size());
 

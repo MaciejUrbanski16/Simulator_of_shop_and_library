@@ -30,7 +30,7 @@ void shop::ConcreteBagpack::setColor(std::string &color) {
     this->_color = color;
 }
 
-void shop::ConcreteBagpack::setPrice(shop::towar_t price) {
+void shop::ConcreteBagpack::setPrice(shop::ware_t price) {
     this->_price = price;
 }
 

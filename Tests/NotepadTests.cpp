@@ -102,7 +102,7 @@ TEST_F(NotepadTests,TestAddingtoPurchases)
     shop::Ware ware;
 
     std::string name = "N1";
-    shop::towar_t price = 12.99;
+    shop::ware_t price = 12.99;
 
     //WHEN
     notepads.readItemsFromFile();

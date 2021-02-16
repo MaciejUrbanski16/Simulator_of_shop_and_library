@@ -51,11 +51,59 @@ void ReadCsvTsv::readFromFile(std::vector<std::string> &names, std::vector<int> 
             if(i>=1) {
                 read = split(line,"\t");
 
+                //book1.at()
+
                 names.push_back(read[0]);
 
                 amounts.push_back(atoi(read[1].c_str()));
 
                 prices.push_back(atof(read[2].c_str()));
+            }
+            i++;
+        }
+    }
+
+}
+
+void ReadCsvTsv::readFromFile(std::vector<shop::ConcreteBook> &books, std::vector<int> &amounts) {
+
+    std::ifstream in;
+    in.open(path);
+    std::string line;
+    std::vector<std::string> dataAsString;
+    std::string tempStr;
+    int i = 0;
+    std::vector<std::string> read;
+    if(csvFormat) {
+        while (std::getline(in, line)) {
+            if(i>=1){
+                dataAsString = split(line,",");
+                for(int i = 0 ; i<dataAsString.size();i++) {
+
+                    //read.push_back(atof(dataAsString[i].c_str()));
+                }
+            }
+            // read.push_back(split(line, ","));
+            i++;
+        }
+    }
+    else if(!csvFormat){
+        while (std::getline(in, line)) {
+            if(i>=1) {
+                read = split(line,"\t");
+
+
+                std::pair<std::string, std::string> pairFromReading(read[0],read[1]);
+
+                //names.push_back(read[0]);
+
+                //it storages amounts in another container
+                amounts.push_back(atoi(read[2].c_str()));
+
+                shop::ware_t priceFromReading = atof(read[3].c_str());
+
+                //it storages books in one container
+                books.emplace_back(pairFromReading, priceFromReading);
             }
             i++;
         }

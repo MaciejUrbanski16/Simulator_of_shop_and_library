@@ -69,23 +69,4 @@ TEST_F(BagpackTests, getBackRemovedBagToShop)
     EXPECT_EQ(am + 1, bagpacks.amountsOfBags[6]);
 }
 
-TEST_F(BagpackTests, chooseBagAndAddToPurchases)
-{
-    //GIVEN
-    bagpacks;
-    shop::Ware ware;
-    Application app;
-    int choose = 10;
 
-
-
-    //WHEN
-
-    bagpacks.readItemsFromFile();
-    bagpacks.setChooseBag(choose);
-
-    bagpacks.chooseBagToPurchases(ware);
-
-    //THEN
-    EXPECT_EQ(ware.praise, bagpacks.bagsFromFile[choose - 1].getPrice());
-}

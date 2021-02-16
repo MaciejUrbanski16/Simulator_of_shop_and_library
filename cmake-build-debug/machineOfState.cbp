@@ -336,16 +336,22 @@
 		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Bill.h">
 			<Option target="machineOfState"/>
 		</Unit>
-		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Book.cpp">
+		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/BookManager.cpp">
 			<Option target="machineOfState"/>
 		</Unit>
-		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Book.h">
+		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/BookManager.h">
 			<Option target="machineOfState"/>
 		</Unit>
 		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBagpack.cpp">
 			<Option target="machineOfState"/>
 		</Unit>
 		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBagpack.h">
+			<Option target="machineOfState"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBook.cpp">
+			<Option target="machineOfState"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBook.h">
 			<Option target="machineOfState"/>
 		</Unit>
 		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Notepad.cpp">

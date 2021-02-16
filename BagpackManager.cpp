@@ -8,7 +8,7 @@
 
 
 
-/*shop::BagpackManager::BagpackManager(std::string mark, std::string color, shop::towar_t price, int amount)
+/*shop::BagpackManager::BagpackManager(std::string mark, std::string color, shop::ware_t price, int amount)
         : mark(std::move(mark)),
           color(std::move(color)),
           price(price),
@@ -119,9 +119,24 @@ void shop::BagpackManager::presentationOfBags()
 
 void shop::BagpackManager::chooseBagToPurchases(Ware &purchases)
 {
-#ifdef TESTING
+#ifndef TESTING
     std::cout<<"Wybierz sposrod dostepnych plecakow "<<std::endl;
     _chooseBag = enteringTheNumber(1, amountsOfBags.size());
+
+    if(amountsOfBags[_chooseBag - 1] <= 0)
+    {
+        std::cout << "Brak plecakow marki " << bagsFromFile[_chooseBag - 1].getMark() << std::endl;
+    }
+    else
+    {
+        amountsOfBags[_chooseBag - 1]--;
+
+        purchases.name = bagsFromFile[_chooseBag - 1].getMark();
+        purchases.praise = bagsFromFile[_chooseBag - 1].getPrice();
+
+
+        purchases.addToPurchases();
+    }
 #else
     if(amountsOfBags[_chooseBag - 1] <= 0)
     {
@@ -192,7 +207,7 @@ void shop::BagpackManager::addBags()
     presentationOfBags();
     std::cout<<"Podaj kolejno marke, kolor, cene, ilosc"<<std::endl;
     std::string addMark, addColor;
-    shop::towar_t addPrice;
+    shop::ware_t addPrice;
     int addAmount;
 
     std::cin>>addMark>>addColor>>addPrice>>addAmount;

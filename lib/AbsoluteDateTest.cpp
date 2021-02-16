@@ -3,7 +3,7 @@
 //
 #include "catch.hpp"
 #include "Book.h"
-#include "../Book.h"
+#include "../BookManager.h"
 
 using namespace shop;
 

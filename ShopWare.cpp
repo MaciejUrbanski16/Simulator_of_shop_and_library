@@ -2,7 +2,7 @@
 // Created by Admin on 06.08.2020.
 //
 
-#include "Book.h"
+#include "BookManager.h"
 
 #include <iostream>
 
@@ -124,7 +124,7 @@ std::string Ware::removeThingFromPurchases()
         choose--; //aby dostosowac sie do iteracji vectora od 0
 
         std::string removedName = orderedPurchasesName[choose];
-        towar_t removedPrice = orderedPurchasesPrice[choose];
+        ware_t removedPrice = orderedPurchasesPrice[choose];
 
         orderedPurchasesName.erase(orderedPurchasesName.begin() + choose);
         orderedPurchasesPrice.erase(orderedPurchasesPrice.begin() + choose);
@@ -162,7 +162,7 @@ void Ware::showOrderedPurchases()
 }
 
 
-towar_t Ware::roundFloatToSecond(towar_t d)
+ware_t Ware::roundFloatToSecond(ware_t d)
 {
 
     int y = d * 1000; // przesuwamy przecinek o 4 miejsca i pozbywamy sie reszty za przecinkiem - y jest calkowite

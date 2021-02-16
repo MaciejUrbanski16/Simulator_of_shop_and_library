@@ -10,7 +10,7 @@
 #include <string>
 #include <fstream>
 
-#include "Book.h"
+#include "BookManager.h"
 #include "Application.h"
 //#include <map>
 
@@ -25,7 +25,7 @@ namespace shop
     public:
         std::string color;
         std::vector<std::string>dimensions;
-        std::vector<towar_t>price;
+        std::vector<ware_t>price;
         std::vector<int>amount;
         bool noteWithLines;
         int chooseOfColor(); //wybor koloru ->do zrobienia

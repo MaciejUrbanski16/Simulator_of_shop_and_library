@@ -19,7 +19,7 @@ namespace shop {
     //class ConcreteBagpack;
 
     ///TODO ilosc ConcreteBagpack'ow przetrzymywac w mapie
-    //typedef double towar_t;
+    //typedef double ware_t;
     class ConcreteBagpack {
     public:
         ConcreteBagpack() = default;
@@ -33,7 +33,7 @@ namespace shop {
         //setters
         void setMark(std::string &mark);
         void setColor(std::string &color);
-        void setPrice(shop::towar_t price);
+        void setPrice(shop::ware_t price);
 
 
         //overloaded operators

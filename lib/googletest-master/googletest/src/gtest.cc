@@ -3098,7 +3098,7 @@ void TestSuite::UnshuffleTests() {
 // singular form or the plural form is used. e.g.
 //
 // FormatCountableNoun(1, "formula", "formuli") returns "1 formula".
-// FormatCountableNoun(5, "book", "books") returns "5 books".
+// FormatCountableNoun(5, "books", "books") returns "5 books".
 static std::string FormatCountableNoun(int count,
                                        const char * singular_form,
                                        const char * plural_form) {

@@ -49,7 +49,7 @@ extern int mode;
 
 
 namespace shop {
-    typedef double towar_t;
+    typedef double ware_t;
 
     ///OGÓLNA KLASA TOWARU
     class Ware
@@ -60,7 +60,7 @@ namespace shop {
         Ware(){}
 
         bool available;
-        towar_t praise;
+        ware_t praise;
         int amount;
         std::string name;
 
@@ -73,7 +73,7 @@ namespace shop {
 
         //kontenery do przechowywania wybranych przez klienta rzeczy ze sklepu
         std::vector<std::string> orderedPurchasesName;
-        std::vector<towar_t> orderedPurchasesPrice;
+        std::vector<ware_t> orderedPurchasesPrice;
 
         char enterTheLetter();
 
@@ -102,7 +102,7 @@ namespace shop {
                                    int mode); //zmienia treyb z klienta na sprzedawce i na odwrót
 
 
-        towar_t roundFloatToSecond(towar_t d);
+        ware_t roundFloatToSecond(ware_t d);
 
     };
 }
