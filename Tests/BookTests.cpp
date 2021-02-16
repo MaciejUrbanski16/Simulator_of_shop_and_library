@@ -45,7 +45,7 @@ TEST_F(BookTests, readProperValuesOfBooks)
     app.removedThings.push_back(book.titleOfBooksInShop[0]);
 
     app.saveRemovedToFile();
-    app.readRemoveFromFile();
+    app.readRemovedFromFile();
     book.searchInRemoved(app);
 
     //THEN

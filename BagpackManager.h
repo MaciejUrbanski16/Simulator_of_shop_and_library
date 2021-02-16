@@ -30,9 +30,9 @@ namespace shop
 
 
         int amount;
-        BagpackManager() = default;
+        BagpackManager() {}
 
-        BagpackManager(std::string mark, std::string color, towar_t price, int amount);
+        //BagpackManager(std::string mark, std::string color, towar_t price, int amount);
 
 
         std::string mark;
@@ -59,11 +59,13 @@ namespace shop
 
         void presentationOfBags();
 
-        void chooseBag(Ware &purchases);
+        void chooseBagToPurchases(Ware &purchases);
 
-        void refreshObjectsAfterRemoving(std::vector<shop::BagpackManager> &bags);
+        void refreshObjectsAfterRemoving();
 
         void editionStateOfBags();
+
+        void setChooseBag(int choose);
 
     private:
         std::string line;
@@ -76,7 +78,7 @@ namespace shop
 
         int am;
         float pr;
-
+        int _chooseBag;
 
 
         void prepareStrings(std::string basicString);

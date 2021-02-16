@@ -1,6 +1,6 @@
-109.99 Red 10 Olg k
-209.99 Green 1 Puma k
-109.99 Red 8 Nike k
+109.99 Red 8 Olg k
+209.99 Green 0 Puma k
+109.99 Red 7 Nike k
 109.99 Red 0 OlgP k
 209.99 Green 8 PumaF k
 109.99 Red 10 NikeNew k
@@ -9,8 +9,8 @@
 109.99 Red 10 Nike k
 109.99 Red 18 Olg2 k
 254.99 Green 998 Bob_ k
-23.78 gtrr 10008 Gtttttt k
-167.99 red 132 MyCoin k
-356.99 Blue 95 Adidas k
+23.78 gtrr 10007 Gtttttt k
+167.99 red 131 MyCoin k
+356.99 Blue 94 Adidas k
 359.99 Purple 950 Adidas2 k
-598.99 Violet 24 IBM _
+598.99 Violet 23 IBM _

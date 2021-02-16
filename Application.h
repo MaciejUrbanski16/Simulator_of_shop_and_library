@@ -34,7 +34,7 @@ public:
 
     void saveRemovedToFile();
 
-    void readRemoveFromFile();
+    void readRemovedFromFile();
 
     void presentationOfServices();
 

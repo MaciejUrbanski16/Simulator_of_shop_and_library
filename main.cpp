@@ -64,7 +64,7 @@ int main(int argc, char *argv[]) {
         application.stage = INTRODUCTION;
     }
 
-    application.readRemoveFromFile(); //wczytanie usunietych przedmiotow z bufora
+    application.readRemovedFromFile(); //wczytanie usunietych przedmiotow z bufora
 
 
     while(application.stage != CONFIRM) {
@@ -80,7 +80,7 @@ int main(int argc, char *argv[]) {
 
                 shop::Book ksiega;
                 ksiega.readItemsFromFile();                      //odczyt musi nastąpić zaraz po deklaracji
-                application.readRemoveFromFile();
+                application.readRemovedFromFile();
                 ksiega.searchInRemoved(application);             //sprawdza czy element z kontenera jest w ogolnym spisie elementow tytulow ksiazek
                                                                     //i oddaje ten element na swoje miejsce "polke"
                 //char choosenLetter = purchases.enterTheLetter();
@@ -129,7 +129,7 @@ int main(int argc, char *argv[]) {
 
 
                 notes.readItemsFromFile(); // wczytanie danych
-                application.readRemoveFromFile();
+                application.readRemovedFromFile();
 
                 cout << "Size dimension notes: " << notes.dimensions.size() << endl;
 
@@ -169,14 +169,14 @@ int main(int argc, char *argv[]) {
                 shop::BagpackManager bags;
 
                 bags.readItemsFromFile();
-                application.readRemoveFromFile();
+                application.readRemovedFromFile();
                 bags.presentationOfBags();
 
                 bags.getMarks();
                 purchases.remove(application.removedThings, bags.allMarks, bags.amountsOfBags);
-                //bags.refreshObjectsAfterRemoving(bags.bags);
 
-                bags.chooseBag(purchases);
+
+                bags.chooseBagToPurchases(purchases);
                 purchases.showOrderedPurchases();
 
 
@@ -191,7 +191,7 @@ int main(int argc, char *argv[]) {
 
 
                 supplies.readItemsFromFile();
-                application.readRemoveFromFile();
+                application.readRemovedFromFile();
 
                 supplies.presentationOfSupplies();
                 supplies.chooseSup(purchases);
@@ -210,7 +210,7 @@ int main(int argc, char *argv[]) {
             } else if (choose == 5) {
 
                 ///logika usuniecia przedmiotu z koszyka uzytkownika
-                application.readRemoveFromFile();//odczyt bufora usunietych rzeczy z  koszyka
+                application.readRemovedFromFile();//odczyt bufora usunietych rzeczy z  koszyka
                 application.removedThings.push_back(purchases.removeThingFromPurchases());
 
                 for (int i = 0; i < application.removedThings.size(); i++) {

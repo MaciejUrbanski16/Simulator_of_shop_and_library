@@ -60,7 +60,7 @@ void Application::saveRemovedToFile()
 
 }
 
-void Application::readRemoveFromFile()
+void Application::readRemovedFromFile()
 {
     removedThings.clear();
 

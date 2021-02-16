@@ -8,11 +8,11 @@
 
 
 
-shop::BagpackManager::BagpackManager(std::string mark, std::string color, shop::towar_t price, int amount)
-: mark(std::move(mark)),
-  color(std::move(color)),
-  price(price),
-  amount(amount){}
+/*shop::BagpackManager::BagpackManager(std::string mark, std::string color, shop::towar_t price, int amount)
+        : mark(std::move(mark)),
+          color(std::move(color)),
+          price(price),
+          amount(amount){}*/
 
 shop::BagpackManager::~BagpackManager() {
     //delete b;
@@ -91,7 +91,7 @@ void shop::BagpackManager::prepareStrings(std::string basicString)
         pr = atof(strToPrice.c_str());
 
         //dodanie do vectora plecakow kolejnego obiektu powstałego z odczytanych danych z pliku
-        bags.emplace_back(strToMark, strToColour, pr, am);
+        //bags.emplace_back(strToMark, strToColour, pr, am);
 
         bagsFromFile.emplace_back(strToMark,strToColour,pr);
         amountsOfBags.push_back(am);
@@ -117,25 +117,27 @@ void shop::BagpackManager::presentationOfBags()
 
 }
 
-void shop::BagpackManager::chooseBag(Ware &purchases)
+void shop::BagpackManager::chooseBagToPurchases(Ware &purchases)
 {
+#ifdef TESTING
     std::cout<<"Wybierz sposrod dostepnych plecakow "<<std::endl;
-    int chooseB = enteringTheNumber(1, bags.size());
-
-    if(amountsOfBags[chooseB - 1] <= 0)
+    _chooseBag = enteringTheNumber(1, amountsOfBags.size());
+#else
+    if(amountsOfBags[_chooseBag - 1] <= 0)
     {
-        std::cout << "Brak plecakow marki " << bagsFromFile[chooseB - 1].getMark() << std::endl;
+        std::cout << "Brak plecakow marki " << bagsFromFile[_chooseBag - 1].getMark() << std::endl;
     }
     else
     {
-        amountsOfBags[chooseB - 1]--;
+        amountsOfBags[_chooseBag - 1]--;
 
-        purchases.name = bagsFromFile[chooseB - 1].getMark();
-        purchases.praise = bagsFromFile[chooseB - 1].getPrice();
+        purchases.name = bagsFromFile[_chooseBag - 1].getMark();
+        purchases.praise = bagsFromFile[_chooseBag - 1].getPrice();
 
 
         purchases.addToPurchases();
     }
+#endif
 
 }
 
@@ -155,13 +157,13 @@ void  shop::BagpackManager::getAmounts()
 
 }
 
-void shop::BagpackManager::refreshObjectsAfterRemoving(std::vector<shop::BagpackManager> &bags) {
+void shop::BagpackManager::refreshObjectsAfterRemoving() {
 
     for(int i=0;i<allMarks.size();i++)
     {
-        bags[i].amount = allAmounts[i];
+        //bags[i].amount = allAmounts[i];
 
-        amountsOfBags[i] = allAmounts[i];
+        //amountsOfBags[i] = allAmounts[i];
     }
 
 }
@@ -207,6 +209,10 @@ void shop::BagpackManager::removeBags()
     bagsFromFile.erase(bagsFromFile.begin() + chooseRemove);
     amountsOfBags.erase(amountsOfBags.begin() + chooseRemove);
 
+}
+
+void shop::BagpackManager::setChooseBag(int choose) {
+    _chooseBag = choose;
 }
 
 
