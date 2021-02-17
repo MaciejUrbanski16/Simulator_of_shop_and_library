@@ -183,9 +183,9 @@ void BookManager::addSearchedBooks(char letter_)
     for(ConcreteBook  b : _books)
     {
         //TODO wyszukiwarke w kontenerze ksiazek
-        if(b.getPairOfTitleAndAuthorBook().first[0] == letter_)
+        if(b.getPairOfTitleAndAuthorBook().second[0] == letter_)
         {
-            currentSearchings.push_back(b.getPairOfTitleAndAuthorBook().first);
+            currentSearchings.push_back(b.getPairOfTitleAndAuthorBook().second);
         }
     }
 }
@@ -236,25 +236,25 @@ bool BookManager ::checkAmountofBookInShop(const Ware &purchases)
  int BookManager ::checkIfBookExist(std::string &title)
 {
     int position = -1,position1 = -1;
-   /* for(int i =0; i<this->titleOfBooksInShop.size(); i++)
+    for(int i =0; i<this->_amounts.size(); i++)
     {
-        if(this->titleOfBooksInShop[i] == title)
+        if(this->_books[i].getPairOfTitleAndAuthorBook().second == title)
         {
             position = i;
             break;
         }
     }
-*/
-    for(auto & b : _books)
+
+    /*for(auto & b : _books)
     {
         if(b.getPairOfTitleAndAuthorBook().second == title)
         {
             break;
         }
         position1++;
-    }
+    }*/
 
-    return position1;
+    return position;
 
 }
 

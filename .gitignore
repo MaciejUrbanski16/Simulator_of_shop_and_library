@@ -48,6 +48,8 @@ $RECYCLE.BIN/
 # Icon must end with two \r
 Icon
 
+cmake-build-debug/CMakeFiles/
+*.a
 # Thumbnails
 ._*
 

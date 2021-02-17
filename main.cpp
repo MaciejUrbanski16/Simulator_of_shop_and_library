@@ -81,6 +81,7 @@ int main(int argc, char *argv[]) {
                 if (books.searchingBook() == shop::BookManager::FOUND) {
                     cout<<"Size "<< books.getSizeOfCurrentSearchings()<<endl;
                     purchases.paramOfChoosenThing = books.chooseOfSearchedBook();    //t - parametr okreslajacy wybrana pozycje ks w currentSearching
+                    cout<<"Gdzie "<<purchases.paramOfChoosenThing<<endl;
                     if (purchases.paramOfChoosenThing == books.getSizeOfCurrentSearchings()) {
                         cout << "Nie wybrano zadnej z powyzszych" << endl;
                     } else {
@@ -93,11 +94,11 @@ int main(int argc, char *argv[]) {
                                                                                                 //o wybranym tytule
 
                            // purchases.name = books.titleOfBooksInShop[purchases.position];        //zapisanie nazwy biezacej ksiazki do zmiennej titleOfBooksInShop klasy Ware
-                            purchases.name = books.getBook(purchases.position).getPairOfTitleAndAuthorBook().first;//wyłuskanie tytułu ksiazki z pary
+                            purchases.name = books.getTitleOfConcreteBook(purchases.position);//wyłuskanie tytułu ksiazki z pary
                             cout<<"Name: "<<purchases.name<<endl;
                             //purchases.praise = books.pricesOfBooksInShop[purchases.position];    //zapisanie ceny biezacej ksiazki do zmiennj klasy Ware
                             purchases.praise = books.getBook(purchases.position).getPrice();    //wyłuskanie ceny ksiazki
-                            cout<<"Price: "<<purchases.praise;
+                            cout<<"Price: "<<purchases.praise<<endl;
                             purchases.addToPurchases();             //dodanie do koszyka
 
                             purchases.showOrderedPurchases();

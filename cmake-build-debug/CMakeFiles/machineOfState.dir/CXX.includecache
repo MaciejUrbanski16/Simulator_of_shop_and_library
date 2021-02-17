@@ -16,6 +16,14 @@ fstream
 iostream
 -
 
+C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/BookManager.cpp
+BookManager.h
+C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/BookManager.h
+ConcreteBook.h
+C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBook.h
+string
+-
+
 C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/BookManager.h
 ShopWare.h
 C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
@@ -45,10 +53,6 @@ BookManager.h
 C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/BookManager.h
 map
 -
-
-C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.cpp
-ReadCsvTsv.h
-C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h
 
 C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h
 ServiceCsvTsv.h
