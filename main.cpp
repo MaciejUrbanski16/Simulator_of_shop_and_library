@@ -73,33 +73,28 @@ int main(int argc, char *argv[]) {
                 books.readItemsFromFile();                      //odczyt musi nastąpić zaraz po deklaracji
                 application.readRemovedFromFile();
                 books.searchInRemoved(application);             //sprawdza czy element z kontenera jest w ogolnym spisie elementow tytulow ksiazek
-
-                std::string title = books.getTitleOfConcreteBook(0);
-                cout<<"Title: "<<books.getTitleOfConcreteBook(0)<<endl;
                                                                     //i oddaje ten element na swoje miejsce "polke"
-                //char choosenLetter = purchases.enterTheLetter();
+
                 if (books.searchingBook() == shop::BookManager::FOUND) {
-                    cout<<"Size "<< books.getSizeOfCurrentSearchings()<<endl;
+
                     purchases.paramOfChoosenThing = books.chooseOfSearchedBook();    //t - parametr okreslajacy wybrana pozycje ks w currentSearching
-                    cout<<"Gdzie "<<purchases.paramOfChoosenThing<<endl;
+
                     if (purchases.paramOfChoosenThing == books.getSizeOfCurrentSearchings()) {
                         cout << "Nie wybrano zadnej z powyzszych" << endl;
                     } else {
 
                         books.choosenTitle = books.getSearchedBook(purchases.paramOfChoosenThing - 1);
-                        cout<<"Wybrano: "<<books.choosenTitle<<endl;
+
                         purchases.position = books.checkIfBookExist(books.choosenTitle);   //sprawdzenie, czy wybrana pozycja istnieje na liscie
-                        cout<<"Pozycja: "<<purchases.position<<endl;
-                        if (books.checkAmountofBookInShop(purchases)) {                        //sprawdzenie, czy jest jescze dostępna jakakolwiek ksiazka
+
+                        if (books.checkAmountofBookInShop(purchases)) {                        //sprawdzenie, czy jest jeszcze dostępna jakakolwiek ksiazka
                                                                                                 //o wybranym tytule
 
-                           // purchases.name = books.titleOfBooksInShop[purchases.position];        //zapisanie nazwy biezacej ksiazki do zmiennej titleOfBooksInShop klasy Ware
                             purchases.name = books.getTitleOfConcreteBook(purchases.position);//wyłuskanie tytułu ksiazki z pary
-                            cout<<"Name: "<<purchases.name<<endl;
-                            //purchases.praise = books.pricesOfBooksInShop[purchases.position];    //zapisanie ceny biezacej ksiazki do zmiennj klasy Ware
+                                                                                               //zapisanie ceny biezacej ksiazki do zmiennj klasy Ware
                             purchases.praise = books.getBook(purchases.position).getPrice();    //wyłuskanie ceny ksiazki
-                            cout<<"Price: "<<purchases.praise<<endl;
-                            purchases.addToPurchases();             //dodanie do koszyka
+
+                            purchases.addToPurchases();                                         //dodanie do koszyka
 
                             purchases.showOrderedPurchases();
                         }

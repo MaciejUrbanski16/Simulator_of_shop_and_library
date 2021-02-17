@@ -212,9 +212,9 @@ int BookManager :: showSearchedBooks(std::vector<std::string>&searchedBooks)
 bool BookManager ::checkAmountofBookInShop(const Ware &purchases)
 {
     bool p;
-    //this->amountOfBooksInShop[purchases.position]--;
+
     this->_amounts[purchases.position]--;
-    int checker = 1;//ksiega->amountOfBooksInShop[purchases.position];
+
 
     if(this->_amounts[purchases.position]>0)
     {

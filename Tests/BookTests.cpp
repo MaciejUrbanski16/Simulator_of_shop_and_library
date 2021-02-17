@@ -17,6 +17,50 @@ public:
     }
 };
 
+TEST_F(BookTests, readingBooksFromFileToContainerOfBooksObjects)
+{
+    //GIVEN
+    books;
+
+    //WHEN
+    books.readItemsFromFile();
+    std::vector<shop::ConcreteBook> read = books.getBooks();
+
+    //THEN
+    ASSERT_TRUE(!read.empty());
+}
+
+TEST_F(BookTests, findingConcreteBook)
+{
+    //GIVEN
+    books;
+    std::string title = "Bajki robotow";
+    //WHEN
+    books.readItemsFromFile();
+    std::vector<shop::ConcreteBook> read = books.getBooks();
+
+    //THEN
+    ASSERT_EQ(title.length(), read[0].getPairOfTitleAndAuthorBook().second.length());
+}
+
+TEST_F(BookTests, checkIfIsAvailableConcreteBook)
+{
+    //GIVEN
+    books;
+    shop::Ware ware;
+
+    //WHEN
+    books.readItemsFromFile();
+
+    std::vector<shop::ConcreteBook> read = books.getBooks();
+    ware.position = 1;
+
+    //THEN
+    ASSERT_TRUE(books.checkAmountofBookInShop(ware));
+}
+
+
+
 /*TEST_F(BookTests, getObjectOfBook)
 {
     //GIVEN
