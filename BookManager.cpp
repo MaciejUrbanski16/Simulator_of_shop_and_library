@@ -30,9 +30,9 @@ void BookManager :: readItemsFromFile()
 void BookManager:: saveItemsToFile()
 {
 
-    WriteCsvTsv write("books.tsv");
+    WriteCsvTsv write("book.tsv");
 
-    std::vector<std::string>header{"AUTOR","TYTUL","ILOSC","CENA"};
+    std::vector<std::string>header{"AUTOR","TYTUL","CENA","ILOSC"};
     write.addHeader(header);
 
     std::vector<std::string> dataToTsv;
@@ -118,8 +118,9 @@ int BookManager::searchingBook()
 
     while(!_kbhit())
     {
-        letter = getch();                //wyszukiwanie ksiazek po wcisnietym znaku
+        //letter = getch();                //wyszukiwanie ksiazek po wcisnietym znaku
     }
+    cin>>letter;
 
     cout<<"Litera: "<<letter<<endl;
 
@@ -148,7 +149,8 @@ int BookManager :: chooseOfSearchedBook()
 {
     cout<<"Wybierz z powyzszej listy interesujaca cie pozycje: "<<endl;
     choose = -1;
-    bool good,bad;
+    choose = enteringTheNumber(1,currentSearchings.size());
+    /*bool good,bad;
     do
     {
         cin>>choose;
@@ -157,7 +159,7 @@ int BookManager :: chooseOfSearchedBook()
         bad = cin.bad();//zabezbieczenie przed wprowadzeniem innegotypu danych jak int
         cin.clear();
         cin.sync();
-    }while (choose <=0 || choose>currentSearchings.size()||good==0||bad==1);
+    }while (choose <=0 || choose>currentSearchings.size()||good==0||bad==1);*/
     return choose;
 }
 
@@ -170,14 +172,14 @@ int BookManager::getSizeOfCurrentSearchings()
 
 void BookManager::addSearchedBooks(char letter_)
 {
-    for(int i = 0; i < titleOfBooksInShop.size(); i++)
+   /* for(int i = 0; i < titleOfBooksInShop.size(); i++)
     {
         if(titleOfBooksInShop[i][0] == letter_)
         {
             //currentSearchings.push_back(titleOfBooksInShop[i]);
         }
 
-    }
+    }*/
     for(ConcreteBook  b : _books)
     {
         //TODO wyszukiwarke w kontenerze ksiazek
@@ -210,7 +212,7 @@ int BookManager :: showSearchedBooks(std::vector<std::string>&searchedBooks)
 bool BookManager ::checkAmountofBookInShop(const Ware &purchases)
 {
     bool p;
-    this->amountOfBooksInShop[purchases.position]--;
+    //this->amountOfBooksInShop[purchases.position]--;
     this->_amounts[purchases.position]--;
     int checker = 1;//ksiega->amountOfBooksInShop[purchases.position];
 
@@ -233,8 +235,8 @@ bool BookManager ::checkAmountofBookInShop(const Ware &purchases)
 
  int BookManager ::checkIfBookExist(std::string &title)
 {
-    int position = -1,position1 = 0;
-    for(int i =0; i<this->titleOfBooksInShop.size(); i++)
+    int position = -1,position1 = -1;
+   /* for(int i =0; i<this->titleOfBooksInShop.size(); i++)
     {
         if(this->titleOfBooksInShop[i] == title)
         {
@@ -242,7 +244,7 @@ bool BookManager ::checkAmountofBookInShop(const Ware &purchases)
             break;
         }
     }
-
+*/
     for(auto & b : _books)
     {
         if(b.getPairOfTitleAndAuthorBook().second == title)
@@ -380,11 +382,15 @@ std::vector<std::string> BookManager::returnBookFromBasketToShop(std::vector<std
 }
 
 ConcreteBook BookManager::getBook(int index) {
-    return ConcreteBook();
+    return _books[index];
 }
 
 std::vector<shop::ConcreteBook> BookManager::getBooks() {
     return this->_books;
+}
+
+std::string BookManager::getTitleOfConcreteBook(int index) {
+    return getBook(index).getPairOfTitleAndAuthorBook().second;
 }
 
 

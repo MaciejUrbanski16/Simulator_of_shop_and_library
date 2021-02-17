@@ -92,15 +92,16 @@ void ReadCsvTsv::readFromFile(std::vector<shop::ConcreteBook> &books, std::vecto
             if(i>=1) {
                 read = split(line,"\t");
 
-
+                //read[0]  --> autor
+                //read[1]  --> tytuł
                 std::pair<std::string, std::string> pairFromReading(read[0],read[1]);
 
                 //names.push_back(read[0]);
 
                 //it storages amounts in another container
-                amounts.push_back(atoi(read[2].c_str()));
+                amounts.push_back(atoi(read[3].c_str()));
 
-                shop::ware_t priceFromReading = atof(read[3].c_str());
+                shop::ware_t priceFromReading = atof(read[2].c_str());
 
                 //it storages books in one container
                 books.emplace_back(pairFromReading, priceFromReading);

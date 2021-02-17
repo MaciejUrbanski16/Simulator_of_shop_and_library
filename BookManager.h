@@ -82,7 +82,11 @@ namespace shop {
         std::vector<int> amountOfBooksInShop;
         std::vector<shop::ware_t > pricesOfBooksInShop;
 
+
+
         ConcreteBook getBook(int index);
+        std::string getTitleOfConcreteBook(int index);
+        ware_t getPriceOfConcreteBook(int index);
         std::vector<ConcreteBook> getBooks();
 
         //ware_t getPrice
@@ -108,7 +112,7 @@ namespace shop {
         //zapisanie wszystkich ksiazek ze sklepu przed wyjsciem z uslugi
         void saveItemsToFile()override ;
 
-        //odczytanie z pliku ksiazek obecnie posiadanych prze sklep
+        //odczytanie z pliku ksiazek obecnie posiadanych przez sklep
         void readItemsFromFile()override ;
 
         void searchInRemoved(Application &app);

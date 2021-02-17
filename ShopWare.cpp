@@ -117,7 +117,7 @@ std::string Ware::removeThingFromPurchases()
 
     if(!orderedPurchasesName.empty())
     {
-        cout<<"Wybierz nr rzeczy ktora chcesz wyjac z koszyka zpowrotem do sklepu: "<<endl;
+        cout<<"Wybierz nr rzeczy ktora chcesz wyjac z koszyka z powrotem do sklepu: "<<endl;
 
         choose = enteringTheNumber(1,orderedPurchasesName.size());
 
