@@ -16,17 +16,11 @@ class Application {
 
 protected:
 
-    static Application *app;
 public:
     Application() = default;
 
-    Application(Application &other) = delete;
-    void operator=(const Application &other) = delete;
-
-    static Application *getInstance();
-
-    int stage;
-    int mode;
+    int stage{};
+    int mode{};
 
     //container to storage names of things removed from basket during shopping
 

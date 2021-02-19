@@ -10,8 +10,6 @@
 #include "WriteCsvTsv.h"
 #include "ReadCsvTsv.h"
 
-#include "Application.h"
-
 #include <string>
 #include <utility>
 #include <vector>
@@ -24,46 +22,50 @@
 namespace shop {
     class ConcreteBook;
 
-    ///OGÓLNA KLASA DO ZARZĄDZANIA ZBIOREM KSIĄŻEK
+    ///GENERAL CLASS TO MANAGE TO ALL BOOKS
     class BookManager : public shop::Ware
     {
     private:
-        char letter; //znak podany przez uzytkownika do odnalezienia kontreknej pozycji na liscie
-        int choose;
+        char letter; //char which is given by user to search concrete book in list of books
+        int choose;  //number of chosen book which user want to add to basket or incrementAmountOfReturnedItem from basket
     public:
 
         BookManager(){}
 
+        //lists of all books and amounts of these books
+        std::vector<ConcreteBook> books_;
+        std::vector<int> amounts_;
+
     private:
 
-        std::map<std::string, std::string> _books1;
-        std::vector<ware_t> _prices;
 
-        std::vector<ConcreteBook> _books;
-        std::vector<int> _amounts;
 
+        //buffer of searched title of books started by given letter
         std::vector<std::string>currentSearchings;
 
         std::string titleToRemove;
         int position_b = -1;
 
+        //add book to list of searched book that start by given letter
         void addSearchedBooks(char letter);
 
-        //funkcja dodawania ksiazek komunikujaca sie z sprzedawca
+        //adding book to shop -> this function allows seller to enter his new book to shop
         void addThingToShop();
 
-        //usuniecie przedmiotu ze sklepu (dostepne jedynie w trybie sprzedawcy)
+        //incrementAmountOfReturnedItem book from shop
         void removeThingFromShop();
 
 
 
 
 
-        //funkcja dodajaca ksiazke w systemie
-        void addBookToShop(std::string &titleOfNewBook,
+        //add book to shop automatically -> only in SELLER_MODE
+        void addBookToShop(std::string &authorOfNewBook,
+                           std::string &titleOfNewBook,
                            ware_t &praisesOfNewBook,
                            int amountOfNewBook);
 
+        //changing letter from capital to small or small to capital to search book in all list of books
         void toLower();
         void toUpper();
 
@@ -80,7 +82,6 @@ namespace shop {
         //kontenery na dane o przechowywanych ksiazkach w sklepie
         std::vector<std::string> titleOfBooksInShop;
         std::vector<int> amountOfBooksInShop;
-        std::vector<shop::ware_t > pricesOfBooksInShop;
 
 
 
@@ -89,9 +90,6 @@ namespace shop {
         ware_t getPriceOfConcreteBook(int index);
         std::vector<ConcreteBook> getBooks();
 
-        //ware_t getPrice
-
-        //int getSizeOfCurrentSearchings();           //zwraca rozmiar prywatnego vectora currentSearchings
 
         bool checkAmountofBookInShop(const Ware &t); //sprawdza czy w sklepie jest pozycja o zadanym tytlue
 

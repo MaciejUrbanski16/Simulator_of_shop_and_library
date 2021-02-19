@@ -70,7 +70,7 @@ In fact, you can *declare* `Bar()` with an `int` parameter, and define it with a
 `const int` parameter. The compiler will still match them up.
 
 Since making a parameter `const` is meaningless in the method declaration, we
-recommend to remove it in both `Foo` and `MockFoo`. That should workaround the
+recommend to incrementAmountOfReturnedItem it in both `Foo` and `MockFoo`. That should workaround the
 VC bug.
 
 Note that we are talking about the *top-level* `const` modifier here. If the

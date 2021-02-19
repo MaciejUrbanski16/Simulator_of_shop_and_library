@@ -382,32 +382,86 @@ ConcreteBook.cpp.s:
 	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteBook.cpp.s
 .PHONY : ConcreteBook.cpp.s
 
-Notepad.obj: Notepad.cpp.obj
+ConcreteNotepad.obj: ConcreteNotepad.cpp.obj
 
-.PHONY : Notepad.obj
+.PHONY : ConcreteNotepad.obj
 
 # target to build an object file
-Notepad.cpp.obj:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Notepad.cpp.obj
-.PHONY : Notepad.cpp.obj
+ConcreteNotepad.cpp.obj:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteNotepad.cpp.obj
+.PHONY : ConcreteNotepad.cpp.obj
 
-Notepad.i: Notepad.cpp.i
+ConcreteNotepad.i: ConcreteNotepad.cpp.i
 
-.PHONY : Notepad.i
+.PHONY : ConcreteNotepad.i
 
 # target to preprocess a source file
-Notepad.cpp.i:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Notepad.cpp.i
-.PHONY : Notepad.cpp.i
+ConcreteNotepad.cpp.i:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteNotepad.cpp.i
+.PHONY : ConcreteNotepad.cpp.i
 
-Notepad.s: Notepad.cpp.s
+ConcreteNotepad.s: ConcreteNotepad.cpp.s
 
-.PHONY : Notepad.s
+.PHONY : ConcreteNotepad.s
 
 # target to generate assembly for a file
-Notepad.cpp.s:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Notepad.cpp.s
-.PHONY : Notepad.cpp.s
+ConcreteNotepad.cpp.s:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteNotepad.cpp.s
+.PHONY : ConcreteNotepad.cpp.s
+
+ConcreteSchoolSupply.obj: ConcreteSchoolSupply.cpp.obj
+
+.PHONY : ConcreteSchoolSupply.obj
+
+# target to build an object file
+ConcreteSchoolSupply.cpp.obj:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteSchoolSupply.cpp.obj
+.PHONY : ConcreteSchoolSupply.cpp.obj
+
+ConcreteSchoolSupply.i: ConcreteSchoolSupply.cpp.i
+
+.PHONY : ConcreteSchoolSupply.i
+
+# target to preprocess a source file
+ConcreteSchoolSupply.cpp.i:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteSchoolSupply.cpp.i
+.PHONY : ConcreteSchoolSupply.cpp.i
+
+ConcreteSchoolSupply.s: ConcreteSchoolSupply.cpp.s
+
+.PHONY : ConcreteSchoolSupply.s
+
+# target to generate assembly for a file
+ConcreteSchoolSupply.cpp.s:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteSchoolSupply.cpp.s
+.PHONY : ConcreteSchoolSupply.cpp.s
+
+NotepadManager.obj: NotepadManager.cpp.obj
+
+.PHONY : NotepadManager.obj
+
+# target to build an object file
+NotepadManager.cpp.obj:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/NotepadManager.cpp.obj
+.PHONY : NotepadManager.cpp.obj
+
+NotepadManager.i: NotepadManager.cpp.i
+
+.PHONY : NotepadManager.i
+
+# target to preprocess a source file
+NotepadManager.cpp.i:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/NotepadManager.cpp.i
+.PHONY : NotepadManager.cpp.i
+
+NotepadManager.s: NotepadManager.cpp.s
+
+.PHONY : NotepadManager.s
+
+# target to generate assembly for a file
+NotepadManager.cpp.s:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/NotepadManager.cpp.s
+.PHONY : NotepadManager.cpp.s
 
 ReadCsvTsv.obj: ReadCsvTsv.cpp.obj
 
@@ -436,32 +490,32 @@ ReadCsvTsv.cpp.s:
 	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ReadCsvTsv.cpp.s
 .PHONY : ReadCsvTsv.cpp.s
 
-SchoolSupplies.obj: SchoolSupplies.cpp.obj
+SchoolSuppliesManager.obj: SchoolSuppliesManager.cpp.obj
 
-.PHONY : SchoolSupplies.obj
+.PHONY : SchoolSuppliesManager.obj
 
 # target to build an object file
-SchoolSupplies.cpp.obj:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.obj
-.PHONY : SchoolSupplies.cpp.obj
+SchoolSuppliesManager.cpp.obj:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/SchoolSuppliesManager.cpp.obj
+.PHONY : SchoolSuppliesManager.cpp.obj
 
-SchoolSupplies.i: SchoolSupplies.cpp.i
+SchoolSuppliesManager.i: SchoolSuppliesManager.cpp.i
 
-.PHONY : SchoolSupplies.i
+.PHONY : SchoolSuppliesManager.i
 
 # target to preprocess a source file
-SchoolSupplies.cpp.i:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.i
-.PHONY : SchoolSupplies.cpp.i
+SchoolSuppliesManager.cpp.i:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/SchoolSuppliesManager.cpp.i
+.PHONY : SchoolSuppliesManager.cpp.i
 
-SchoolSupplies.s: SchoolSupplies.cpp.s
+SchoolSuppliesManager.s: SchoolSuppliesManager.cpp.s
 
-.PHONY : SchoolSupplies.s
+.PHONY : SchoolSuppliesManager.s
 
 # target to generate assembly for a file
-SchoolSupplies.cpp.s:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/SchoolSupplies.cpp.s
-.PHONY : SchoolSupplies.cpp.s
+SchoolSuppliesManager.cpp.s:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/SchoolSuppliesManager.cpp.s
+.PHONY : SchoolSuppliesManager.cpp.s
 
 ServiceCsvTsv.obj: ServiceCsvTsv.cpp.obj
 
@@ -597,6 +651,33 @@ Tests/NotepadTests.s: Tests/NotepadTests.cpp.s
 Tests/NotepadTests.cpp.s:
 	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Tests/NotepadTests.cpp.s
 .PHONY : Tests/NotepadTests.cpp.s
+
+Tests/SchoolSuppliesTests.obj: Tests/SchoolSuppliesTests.cpp.obj
+
+.PHONY : Tests/SchoolSuppliesTests.obj
+
+# target to build an object file
+Tests/SchoolSuppliesTests.cpp.obj:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Tests/SchoolSuppliesTests.cpp.obj
+.PHONY : Tests/SchoolSuppliesTests.cpp.obj
+
+Tests/SchoolSuppliesTests.i: Tests/SchoolSuppliesTests.cpp.i
+
+.PHONY : Tests/SchoolSuppliesTests.i
+
+# target to preprocess a source file
+Tests/SchoolSuppliesTests.cpp.i:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Tests/SchoolSuppliesTests.cpp.i
+.PHONY : Tests/SchoolSuppliesTests.cpp.i
+
+Tests/SchoolSuppliesTests.s: Tests/SchoolSuppliesTests.cpp.s
+
+.PHONY : Tests/SchoolSuppliesTests.s
+
+# target to generate assembly for a file
+Tests/SchoolSuppliesTests.cpp.s:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Tests/SchoolSuppliesTests.cpp.s
+.PHONY : Tests/SchoolSuppliesTests.cpp.s
 
 Tests/TowarTests.obj: Tests/TowarTests.cpp.obj
 
@@ -795,15 +876,21 @@ help:
 	@echo ... ConcreteBook.obj
 	@echo ... ConcreteBook.i
 	@echo ... ConcreteBook.s
-	@echo ... Notepad.obj
-	@echo ... Notepad.i
-	@echo ... Notepad.s
+	@echo ... ConcreteNotepad.obj
+	@echo ... ConcreteNotepad.i
+	@echo ... ConcreteNotepad.s
+	@echo ... ConcreteSchoolSupply.obj
+	@echo ... ConcreteSchoolSupply.i
+	@echo ... ConcreteSchoolSupply.s
+	@echo ... NotepadManager.obj
+	@echo ... NotepadManager.i
+	@echo ... NotepadManager.s
 	@echo ... ReadCsvTsv.obj
 	@echo ... ReadCsvTsv.i
 	@echo ... ReadCsvTsv.s
-	@echo ... SchoolSupplies.obj
-	@echo ... SchoolSupplies.i
-	@echo ... SchoolSupplies.s
+	@echo ... SchoolSuppliesManager.obj
+	@echo ... SchoolSuppliesManager.i
+	@echo ... SchoolSuppliesManager.s
 	@echo ... ServiceCsvTsv.obj
 	@echo ... ServiceCsvTsv.i
 	@echo ... ServiceCsvTsv.s
@@ -819,6 +906,9 @@ help:
 	@echo ... Tests/NotepadTests.obj
 	@echo ... Tests/NotepadTests.i
 	@echo ... Tests/NotepadTests.s
+	@echo ... Tests/SchoolSuppliesTests.obj
+	@echo ... Tests/SchoolSuppliesTests.i
+	@echo ... Tests/SchoolSuppliesTests.s
 	@echo ... Tests/TowarTests.obj
 	@echo ... Tests/TowarTests.i
 	@echo ... Tests/TowarTests.s

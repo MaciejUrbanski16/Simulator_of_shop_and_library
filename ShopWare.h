@@ -7,6 +7,8 @@
 
 #endif //MACHINEOFSTATE_ACCESORIES_H
 
+#include "Application.h"
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -17,7 +19,7 @@
 #include <map>
 
 
-enum                        //enumeracja do poruszania sie w procesie zakupu
+enum                        //all process of shopping
 {
     START,
     INTRODUCTION,
@@ -28,78 +30,69 @@ enum                        //enumeracja do poruszania sie w procesie zakupu
 
 enum
 {
-    SELLER_MODE,                //tryb sprzedawcy
-    CUSTOMER_MODE               //tryb klienta
+    SELLER_MODE,                //seller mode
+    CUSTOMER_MODE               //customer mode
 };
-enum
-{
-    KSIAZKI,
-    ZESZYTY,
-    TORNISTRY,
-    PLECAKI,
-    PIORNIKI,
-    PRZYBORY,
-    ZABAWKI,
-    NOTESY
-};
-
-
-extern int stage;
-extern int mode;
-
 
 namespace shop {
+
+    //forward declaration
+    class ConcreteBook;
     typedef double ware_t;
 
-    ///OGÓLNA KLASA TOWARU
+    ///GENERAL CLASS OF WARE
     class Ware
     {
-    private:
-
+    protected:
+        Application application_;
     public:
-        Ware(){}
+        Ware()= default;
 
-        bool available;
-        ware_t praise;
-        int amount;
+        //make available all configuration of program during shopping
+        explicit Ware(Application &application);
+
+        bool available{};
+        ware_t praise{};
+        int amount{};
         std::string name;
 
 
-        int paramOfChoosenThing;
+        int indexOfChoosenThing{};
 
-        //funkcje odczytu i zapisu danych
+        //READ AND WRITE DATA TO PROPER FILES
         virtual void readItemsFromFile();
         virtual void saveItemsToFile();
 
-        //kontenery do przechowywania wybranych przez klienta rzeczy ze sklepu
+        //containers to storage chosen things by customers
         std::vector<std::string> orderedPurchasesName;
         std::vector<ware_t> orderedPurchasesPrice;
 
-        char enterTheLetter();
+        int position{};  //assign position of concrete thing in list
 
-        int position;
-
-        bool inSellerMode = false;  //oflagowanie wejscia do trybu sprzedawcy
+        bool inSellerMode = false;  //seller do not need buy anything in his own shop
 
 
-        static bool enterToShop();          //wejscie do sklepu jedynie po potweirzdzeniu checi wejscia
+        static bool enterToShop();
 
-        void remove(std::vector<std::string> &removedThings,
-                    std::vector<std::string> &dimensions,
-                    std::vector<int> &amount);
+        //things which were removed from basket are returned to shop
+        void incrementAmountOfReturnedItem(std::vector<std::string> &removedThings,
+                                           std::vector<std::string> &dimensions,
+                                           std::vector<int> &amount);
 
-        void showOrderedPurchases();        //wyswietla wszystkie rzeczy dodane do koszyka
+        //void  incrementAmountOfReturnedItem(std::vector<std::string> &removedThings, std::vector<shop::ConcreteBook> &books,std::vector<int>&amount);
 
-        std::string removeThingFromPurchases();    //usuwa rzecz dodana do koszyka
 
-        void addToPurchases();              //dodaje do koszyka wybrana rzecz
+        void showOrderedPurchases();
 
-        int choosingFromList(int, int);
+        std::string removeThingFromPurchases();    //incrementAmountOfReturnedItem thing from basket
+
+        void addToPurchases();              //add chosen thing to basket
 
         int enteringTheNumber(int minValue, int maxValue);
 
         int changeModeToSellerMode(std::string password,
-                                   int mode); //zmienia treyb z klienta na sprzedawce i na odwrót
+                                   int mode); //change mode (CUSTOMER_MODE --> SELLER_MODE (required password),
+                                                            // SELLER_MODE --> CUSTOMER_MODE (without password))
 
 
         ware_t roundFloatToSecond(ware_t d);

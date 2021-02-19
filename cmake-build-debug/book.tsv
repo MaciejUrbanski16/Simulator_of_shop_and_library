@@ -1,4 +1,6 @@
-AUTOR	TYTUL	CENA	ILOSC
-Stanislaw Lem	Bajki robotow	10.990000	8
-Julian Tuwim	Lokomotywa	17.790000	20
-Jan Brzechwa	Zosia Samosia	12.980000	22
+AUTHOR	TITLE	PRICE	AMOUNT
+Stanislaw Lem	Bajki robotow	10.990000	1
+Jan Brzechwa	Zosia Samosia	12.980000	17
+Henryk_Sienkiewicz	Krzyzacy	251.990000	40
+Adam_Mickiewicz	Powrot_taty	11.990000	25
+Adam_Mickiewicz	Dziady_cz_III	57.990000	124

@@ -640,7 +640,7 @@ class TuplePrefix {
       *os << "  Expected arg #" << N - 1 << ": ";
       std::get<N - 1>(matchers).DescribeTo(os);
       *os << "\n           Actual: ";
-      // We remove the reference in type Value to prevent the
+      // We incrementAmountOfReturnedItem the reference in type Value to prevent the
       // universal printer from printing the address of value, which
       // isn't interesting to the user most of the time.  The
       // matcher's MatchAndExplain() method handles the case when

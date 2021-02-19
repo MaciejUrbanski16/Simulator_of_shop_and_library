@@ -43,7 +43,7 @@ When using gMock,
 
 ## Why gMock?
 
-While mock objects help you remove unnecessary dependencies in tests and make
+While mock objects help you incrementAmountOfReturnedItem unnecessary dependencies in tests and make
 them fast and reliable, using mocks manually in C++ is *hard*:
 
 *   Someone has to implement the mocks. The job is usually tedious and

@@ -27,15 +27,16 @@ std::vector<std::string> ServiceCsvTsv::split(const std::string &data, const std
     int ind =0;
     std::vector<std::string> out;
     std::string text;
-    std::vector<int>indexes;//przechowuje indeksy, w których zaczynają sie separatory
+    std::vector<int>indexes;//storage indexes of beginning of delimiters
     std::string compare;
     compare = "";
     int j = 0;
     int s = delimiter.size();
     if(s == 0){
-        out.push_back(data);//gdy brak separatora -> zwrócenie ciągu wejściowego
+        out.push_back(data);//when there is no delimiter -->return input
     }
     else {
+        //find all substrings between delimiters
         for (int i = 0; i < data.size(); i++) {
 
             if (data[i] == delimiter[j]) {
@@ -63,7 +64,7 @@ std::vector<std::string> ServiceCsvTsv::split(const std::string &data, const std
         out.clear();
         text = "";
 
-        //dodanie poczatkowego i koncowego indeksu do vectora indeksow
+        //adding beginning and ending index "manually"
         indexes.insert(indexes.begin(), 0);
         indexes.insert(indexes.end(), data.size());
         std::string d = data;

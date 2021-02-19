@@ -363,6 +363,12 @@ machineOfState_BINARY_DIR:STATIC=C:/Users/Admin/Desktop/Projekt/Simulator_of_sho
 //Value Computed by CMake
 machineOfState_SOURCE_DIR:STATIC=C:/Users/Admin/Desktop/Projekt/Simulator_of_shop
 
+//Value Computed by CMake
+simulator_of_shop_BINARY_DIR:STATIC=C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/cmake-build-debug
+
+//Value Computed by CMake
+simulator_of_shop_SOURCE_DIR:STATIC=C:/Users/Admin/Desktop/Projekt/Simulator_of_shop
+
 
 ########################
 # INTERNAL cache entries

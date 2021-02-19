@@ -336,7 +336,7 @@ bool FilePath::CreateFolder() const {
   return true;  // No error.
 }
 
-// If input titleOfBooksInShop has a trailing separator character, remove it and return the
+// If input titleOfBooksInShop has a trailing separator character, incrementAmountOfReturnedItem it and return the
 // titleOfBooksInShop, otherwise return the titleOfBooksInShop string unmodified.
 // On Windows platform, uses \ as the separator, other platforms use /.
 FilePath FilePath::RemoveTrailingPathSeparator() const {

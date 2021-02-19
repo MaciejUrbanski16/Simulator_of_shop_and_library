@@ -14,14 +14,16 @@
 
 #include <fstream>
 namespace shop {
+
+    //forward declaration
     class ConcreteBagpack;
 }
 
+//forward declaration to compare my own object in map
 template<>
 struct std::less<shop::ConcreteBagpack>;
 
-namespace shop
-{
+namespace shop {
 
 
     ///OGÓLNA KLASA DO ZARZĄDZANIA ZBIOREM PLECAKÓW
@@ -30,18 +32,14 @@ namespace shop
 
 
         int amount;
+
         BagpackManager() {}
 
-        //BagpackManager(std::string mark, std::string color, ware_t price, int amount);
-
-
-        std::string mark;
-        std::string color;
         ware_t price;
 
         std::vector<BagpackManager> bags;
 
-        std::map<ConcreteBagpack*, int> listOfBagpacks;
+        std::map<ConcreteBagpack *, int> listOfBagpacks;
         std::vector<ConcreteBagpack> bagsFromFile;
         std::vector<int> amountsOfBags;
 
@@ -49,49 +47,38 @@ namespace shop
         ~BagpackManager();
 
         std::vector<std::string> allMarks;
-        std::vector<int> allAmounts;
 
-        void getMarks();       //przepisuje wartosci pol _mark kazdego obiektu do osobnego vectora
-        void getAmounts();
+        void getMarks();
 
-        void readItemsFromFile() override ;
-        void saveItemsToFile() override ;
+
+        void readItemsFromFile() override;
+
+        void saveItemsToFile() override;
 
         void presentationOfBags();
 
         void chooseBagToPurchases(Ware &purchases);
 
-        void refreshObjectsAfterRemoving();
 
-        void editionStateOfBags();
-
-        void setChooseBag(int choose);
+        void editionStateOfBags(); //adding/removing concrete bags -->only in SELLER_MODE
 
     private:
         std::string line;
 
-        ConcreteBagpack *buffor = nullptr;
-
-
-
-        std::string strToMark, strToColour,strToPrice,strToAmount,strTemp;
+        std::string strToMark, strToColour, strToPrice, strToAmount;
 
         int am;
         float pr;
         int _chooseBag;
 
-
+        //prepare string read from file and after that create new object of ConcreteBagpack type
         void prepareStrings(std::string basicString);
 
 
-        void addBags();
+        void addBags(); //add bag to shop (only in SELLER_MODE)
 
-        void removeBags();
+        void removeBags(); //incrementAmountOfReturnedItem bag from shop (only in SELLER_MODE)
     };
 }
-
-//to compare objects of ConcreteBagpack type
-
-
 
 #endif //MACHINEOFSTATE_BAGPACKMANAGER_H

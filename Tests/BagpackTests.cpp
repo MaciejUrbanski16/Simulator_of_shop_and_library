@@ -63,10 +63,10 @@ TEST_F(BagpackTests, getBackRemovedBagToShop)
     app.removedThings.push_back("OlgS");
     bagpacks.saveItemsToFile();
     bagpacks.readItemsFromFile();
-    ware.remove(app.removedThings,bagpacks.allMarks,bagpacks.amountsOfBags);
+    ware.incrementAmountOfReturnedItem(app.removedThings, bagpacks.allMarks, bagpacks.amountsOfBags);
 
     //THEN
-    EXPECT_EQ(am + 1, bagpacks.amountsOfBags[6]);
+    EXPECT_EQ(am , bagpacks.amountsOfBags[6]);
 }
 
 

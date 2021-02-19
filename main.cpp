@@ -1,7 +1,5 @@
 #include <iostream>
 
-#include <memory>
-
 #include "generalFunctions.h"
 
 #include <cassert>
@@ -10,10 +8,9 @@
 
 #include "Application.h"
 #include "BookManager.h"
-#include "Notepad.h"
+#include "NotepadManager.h"
 #include "BagpackManager.h"
-#include "ConcreteBagpack.h"
-#include "SchoolSupplies.h"
+#include "SchoolSuppliesManager.h"
 
 #include "Bill.h"
 
@@ -22,46 +19,38 @@
 
 #include <map>
 
-
-
-
 using namespace std;
-
-int mode;
-int stage;
-
-Application* Application::app = nullptr;
-
 
 int main(int argc, char *argv[]) {
 
-    //instancja klasy zawierajacej konfigurację programu
+    //instance of class which includes config of program
     Application application;
 
+    //start tests
     testing::InitGoogleTest(&argc,argv);
     int t = RUN_ALL_TESTS();
 
 
-    shop::Ware purchases;
+    shop::Ware purchases(application);
 
     application.mode = CUSTOMER_MODE;
 
     application.presentationOfServices();
 
-    application.stage = START;          //odwołania do enuma zawierajacego etapy zakupu z deklaracji klasy Ware
+    application.stage = START;
 
     if(purchases.enterToShop())
     {
         application.stage = INTRODUCTION;
     }
 
-    application.readRemovedFromFile(); //wczytanie usunietych przedmiotow z bufora
+    application.readRemovedFromFile(); //load removed thing from buffer
 
-
+    //main loop of program
     while(application.stage != CONFIRM) {
 
 
-        ///PRZEŁĄCZENIE W ZALEŻNOŚCI OD TRYBU: KLIENTA/SPRZEDAWCY
+        ///SWITCH DEPENDS ON ACTUAL MODE
         if (application.mode == CUSTOMER_MODE) {
 
             int choose;
@@ -70,31 +59,31 @@ int main(int argc, char *argv[]) {
             if (choose == 1) {
 
                 shop::BookManager books;
-                books.readItemsFromFile();                      //odczyt musi nastąpić zaraz po deklaracji
+                books.readItemsFromFile();                      //load data firstly
                 application.readRemovedFromFile();
-                books.searchInRemoved(application);             //sprawdza czy element z kontenera jest w ogolnym spisie elementow tytulow ksiazek
-                                                                    //i oddaje ten element na swoje miejsce "polke"
+                books.searchInRemoved(application);             //check if element in container is situated in general list of books
+                                                                    //and give back it to its place in shop
 
                 if (books.searchingBook() == shop::BookManager::FOUND) {
 
-                    purchases.paramOfChoosenThing = books.chooseOfSearchedBook();    //t - parametr okreslajacy wybrana pozycje ks w currentSearching
+                    purchases.indexOfChoosenThing = books.chooseOfSearchedBook();
 
-                    if (purchases.paramOfChoosenThing == books.getSizeOfCurrentSearchings()) {
-                        cout << "Nie wybrano zadnej z powyzszych" << endl;
+                    if (purchases.indexOfChoosenThing == books.getSizeOfCurrentSearchings()) {
+                        cout << "You do not choose any book! " << endl;
                     } else {
 
-                        books.choosenTitle = books.getSearchedBook(purchases.paramOfChoosenThing - 1);
+                        books.choosenTitle = books.getSearchedBook(purchases.indexOfChoosenThing - 1);
 
-                        purchases.position = books.checkIfBookExist(books.choosenTitle);   //sprawdzenie, czy wybrana pozycja istnieje na liscie
+                        purchases.position = books.checkIfBookExist(books.choosenTitle);   //check if chosen book exists in list
 
-                        if (books.checkAmountofBookInShop(purchases)) {                        //sprawdzenie, czy jest jeszcze dostępna jakakolwiek ksiazka
-                                                                                                //o wybranym tytule
+                        if (books.checkAmountofBookInShop(purchases)) {                        //and check if there is available one book witth chosen
+                                                                                                //title at least
 
-                            purchases.name = books.getTitleOfConcreteBook(purchases.position);//wyłuskanie tytułu ksiazki z pary
-                                                                                               //zapisanie ceny biezacej ksiazki do zmiennj klasy Ware
-                            purchases.praise = books.getBook(purchases.position).getPrice();    //wyłuskanie ceny ksiazki
+                            purchases.name = books.getTitleOfConcreteBook(purchases.position);//rewrite title and price of chosen book
+                                                                                                //to add it to basket
+                            purchases.praise = books.getBook(purchases.position).getPrice();
 
-                            purchases.addToPurchases();                                         //dodanie do koszyka
+                            purchases.addToPurchases();                                         //add chosen book to basket
 
                             purchases.showOrderedPurchases();
                         }
@@ -104,32 +93,31 @@ int main(int argc, char *argv[]) {
                 }
 
 
-                ///oddaje pozycje umieszczone w buforze zwrotnym, w którym umieszczone są rzeczy zwrocone przez kupujacego
-                ///spowrotem do sklepu, do odpowiednich rodzajów rzeczy zwiekszając przy tym liczebność danej rzeczy o jeden
-                std::vector<ConcreteBook> b;
-                b = books.getBooks(); //wyłuskanie zbioru ksiazek
-                remove(application.removedThings,
-                       b,
-                       books.amountOfBooksInShop); // zwrot niechcianych ksiazek z koszyka powrotemo do sklepu
+                //gives back books which are situated in buffer (removedThings),
+                //match it to proper kind of book,
+                //and increase amount of this book
 
-                ///zapisuje vector - ze zwróconymi nazwami rzeczy przez kupującego jeszcze w trakcie wykonywania zakupów - do pliku .txt
+                remove(application.removedThings,
+                       books.books_,
+                       books.amounts_);
+
+
+                //save container with returned books by user to file
                 application.saveRemovedToFile();
 
-                ///zapisuje aktualny stan - nazwy wszystkich rzeczy, ich aktualną liczebnosc i ceny do plików .txt
-                books.saveItemsToFile();  //zapisanie biezacego stanu sklepu
+                //save actual state of book after all process
+                books.saveItemsToFile();
 
             } else if (choose == 2) {
-                shop::Notepad notes;
+                shop::NotepadManager notes;
 
 
+                notes.readItemsFromFile(); // load data about notepads
+                application.readRemovedFromFile(); // load removed
 
+                cout << "Size dimension notes: " << notes.notepads.size() << endl;
 
-                notes.readItemsFromFile(); // wczytanie danych
-                application.readRemovedFromFile();
-
-                cout << "Size dimension notes: " << notes.dimensions.size() << endl;
-
-                assert(notes.dimensions.size() == notes.amount.size()); //asercja po odczycie danych
+                assert(notes.notepads.size() == notes.amounts.size()); //control assert
 
                 int c;
                 c = notes.chooseOfDimension();
@@ -137,23 +125,27 @@ int main(int argc, char *argv[]) {
                 //notes->chooseOfColor();
 
 
-                if (notes.checkIfNoteIsAvailable(c)) // sprawdzenie czy notes o wybranej pozycji jest nadal dostepny
+                if (notes.checkIfNoteIsAvailable(c)) // check if chosen note is still available
                 {
-                    purchases.name = notes.dimensions[c - 1];
-                    purchases.praise = notes.price[c - 1];
+                    purchases.name = notes.notepads[c - 1].getFormat();
+                    purchases.praise = notes.notepads[c - 1].getPrice();
 
-                    notes.amount[c - 1]--;          //dekrementacja ilosci wybranego notesu
+                    notes.amounts[c - 1]--;          //decrement of amount chosen note
 
                     purchases.addToPurchases();
                     purchases.showOrderedPurchases();
                 } else {
-                    cout << "BRAK ZESZYTOW O ROZMIARZE: " << purchases.name << endl;
+                    cout << "There are no notes with chosen format " << purchases.name << endl;
                     purchases.showOrderedPurchases();
                 }
 
-                purchases.remove(application.removedThings, notes.dimensions, notes.amount);
+                //rewrite formats to match removed formats to formats in list so that increment their amount
+                std::vector<std::string> formats = notes.getFormats();
+                purchases.incrementAmountOfReturnedItem(application.removedThings, formats, notes.amounts);
 
-                notes.saveItemsToFile(); //zapis na koncu!!!
+
+                //save after all!!!
+                notes.saveItemsToFile();
                 application.saveRemovedToFile();
 
             }
@@ -169,7 +161,7 @@ int main(int argc, char *argv[]) {
                 bags.presentationOfBags();
 
                 bags.getMarks();
-                purchases.remove(application.removedThings, bags.allMarks, bags.amountsOfBags);
+                purchases.incrementAmountOfReturnedItem(application.removedThings, bags.allMarks, bags.amountsOfBags);
 
 
                 bags.chooseBagToPurchases(purchases);
@@ -183,7 +175,7 @@ int main(int argc, char *argv[]) {
                 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             else if (choose == 4) {
-                shop::SchoolSupplies supplies;
+                shop::SchoolSuppliesManager supplies;
 
 
                 supplies.readItemsFromFile();
@@ -196,53 +188,62 @@ int main(int argc, char *argv[]) {
 
                 purchases.showOrderedPurchases();
 
-                supplies.getNamesAndAmounts();
-                purchases.remove(application.removedThings, supplies.names, supplies.amounts);
-                supplies.refreshAmount();
+                std::vector<std::string> names = supplies.getNames();
+                purchases.incrementAmountOfReturnedItem(application.removedThings, names, supplies.amounts);
 
                 supplies.saveItemsToFile();
                 application.saveRemovedToFile();
 
             } else if (choose == 5) {
 
-                ///logika usuniecia przedmiotu z koszyka uzytkownika
-                application.readRemovedFromFile();//odczyt bufora usunietych rzeczy z  koszyka
+                ///logic of removing thing from basket to shop
+
+                //read buffer with removed things
+                application.readRemovedFromFile();
+
+                //and save removed things by user during actual shopping
                 application.removedThings.push_back(purchases.removeThingFromPurchases());
 
-                for (int i = 0; i < application.removedThings.size(); i++) {
-                    cout << "Usuniete: " << application.removedThings[i] << endl;
+                for (const auto & removedThing : application.removedThings) {
+                    cout << "Removed: " << removedThing << endl;
                 }
+
+                //save all removed things to file
                 application.saveRemovedToFile();
 
 
             } else if (choose == 6) {
+
+                ///change mode
                 application.mode = purchases.changeModeToSellerMode("password", application.mode);
 
 
             } else if (choose == 7) {
-
+                ///end of shopping
                 application.stage = CONFIRM;
 
 
             } else {
+                //default
                 application.chooseOfService();
             }
 
-            //sprawdzic czy klient juz konczy zakupy i wystawuc mu rachunek po przerwaniu petli
 
 
-        } else if (application.mode == SELLER_MODE)//TRZEBA ZROBIC OBSLUGE WSZYSTKICH RZECZ -NIE TYLKO KSIAZEK!!!
+        }
+
+        else if (application.mode == SELLER_MODE)
         {
             application.presentationOfServices();
             {
 
                 auto *bookEdition = new shop::BookManager;
-                auto *noteEdition = new shop::Notepad;
+                auto *noteEdition = new shop::NotepadManager;
                 auto *bagEdition = new shop::BagpackManager();
-                auto *suppliesEdition = new shop::SchoolSupplies;
+                auto *suppliesEdition = new shop::SchoolSuppliesManager;
                 int chooseOfEdition = enteringTheNumber(1, 7);
 
-                //edycja wybranej listy rzeczy (tylko w trybie sprzedawcy)
+                //edition of chosen list of things (only in SELLER_MODE)
                 switch (chooseOfEdition) {
                     case 1:
                         bookEdition->readItemsFromFile();
@@ -292,7 +293,7 @@ int main(int argc, char *argv[]) {
 
     }
 
-   // Pokazanie rachunku
+   // show bill after shopping
 
    if(!purchases.inSellerMode) {
        Bill bill(purchases);
@@ -305,8 +306,6 @@ int main(int argc, char *argv[]) {
    }
 
     return 0;
-
-
 }
 
 

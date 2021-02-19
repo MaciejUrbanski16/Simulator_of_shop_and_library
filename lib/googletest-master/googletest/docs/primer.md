@@ -503,7 +503,7 @@ namespace {
 // The fixture for testing class Foo.
 class FooTest : public ::testing::Test {
  protected:
-  // You can remove any or all of the following functions if their bodies would
+  // You can incrementAmountOfReturnedItem any or all of the following functions if their bodies would
   // be empty.
 
   FooTest() {

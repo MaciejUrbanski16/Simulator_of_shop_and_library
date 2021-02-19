@@ -162,7 +162,7 @@ GTEST_DISABLE_MSC_WARNINGS_POP_()  //  4275
 namespace edit_distance {
 // Returns the optimal edits to go from 'left' to 'right'.
 // All edits cost the same, with replace having lower priority than
-// add/remove.
+// add/incrementAmountOfReturnedItem.
 // Simple implementation of the Wagner-Fischer algorithm.
 // See http://en.wikipedia.org/wiki/Wagner-Fischer_algorithm
 enum EditType { kMatch, kAdd, kRemove, kReplace };

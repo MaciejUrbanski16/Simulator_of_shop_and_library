@@ -37,12 +37,11 @@ void ReadCsvTsv::readFromFile(std::vector<std::string> &names, std::vector<int> 
         while (std::getline(in, line)) {
             if(i>=1){
                 dataAsString = split(line,",");
-                for(int i = 0 ; i<dataAsString.size();i++) {
+                for(const auto & i1 : dataAsString) {
 
-                    //read.push_back(atof(dataAsString[i].c_str()));
+                    read.push_back(i1);
                 }
             }
-            // read.push_back(split(line, ","));
             i++;
         }
     }
@@ -50,8 +49,6 @@ void ReadCsvTsv::readFromFile(std::vector<std::string> &names, std::vector<int> 
         while (std::getline(in, line)) {
             if(i>=1) {
                 read = split(line,"\t");
-
-                //book1.at()
 
                 names.push_back(read[0]);
 
@@ -75,28 +72,31 @@ void ReadCsvTsv::readFromFile(std::vector<shop::ConcreteBook> &books, std::vecto
     int i = 0;
     std::vector<std::string> read;
     if(csvFormat) {
+        //*.csv
         while (std::getline(in, line)) {
             if(i>=1){
                 dataAsString = split(line,",");
-                for(int i = 0 ; i<dataAsString.size();i++) {
+                for(auto & i1 : dataAsString) {
 
-                    //read.push_back(atof(dataAsString[i].c_str()));
+                    read.push_back(i1); //it is not ended
                 }
             }
-            // read.push_back(split(line, ","));
+
             i++;
         }
     }
     else if(!csvFormat){
+        //*.tsv
         while (std::getline(in, line)) {
             if(i>=1) {
                 read = split(line,"\t");
 
-                //read[0]  --> autor
-                //read[1]  --> tytuł
-                std::pair<std::string, std::string> pairFromReading(read[0],read[1]);
+                //read[0]  --> author
+                //read[1]  --> title
+                //read[2]  --> price
+                //read[3]  --> amount
 
-                //names.push_back(read[0]);
+                std::pair<std::string, std::string> pairFromReading(read[0],read[1]);
 
                 //it storages amounts in another container
                 amounts.push_back(atoi(read[3].c_str()));
@@ -105,6 +105,57 @@ void ReadCsvTsv::readFromFile(std::vector<shop::ConcreteBook> &books, std::vecto
 
                 //it storages books in one container
                 books.emplace_back(pairFromReading, priceFromReading);
+            }
+            i++;
+        }
+    }
+
+}
+
+void ReadCsvTsv::readFromFile(std::vector<shop::ConcreteNotepad> &notepads, std::vector<int> &amounts) {
+
+    std::ifstream in;
+    in.open(path);
+    std::string line;
+    std::vector<std::string> dataAsString;
+    std::string tempStr;
+    int i = 0;
+    std::vector<std::string> read;
+    if(csvFormat) {
+        //*.csv
+        while (std::getline(in, line)) {
+            if(i>=1){
+                dataAsString = split(line,",");
+                for(auto & i1 : dataAsString) {
+
+                    read.push_back(i1); //it is not ended
+                }
+            }
+
+            i++;
+        }
+    }
+    else if(!csvFormat){
+        //*.tsv
+        while (std::getline(in, line)) {
+            if(i>=1) {
+                read = split(line,"\t");
+
+                //read[0]  --> format
+                //read[1]  --> price
+                //read[2]  --> amount
+                //read[3]  --> cards
+
+
+                //it storages amounts in another container
+                amounts.push_back(atoi(read[2].c_str()));
+
+                int numOfCards = atoi(read[3].c_str());
+
+                shop::ware_t priceFromReading = atof(read[1].c_str());
+
+                //it storages notepads in one container
+                notepads.emplace_back(read[0],numOfCards,priceFromReading);
             }
             i++;
         }

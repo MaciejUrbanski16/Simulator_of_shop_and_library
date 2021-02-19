@@ -6,12 +6,7 @@
 #include "ShopWare.h"
 #include "tests.h"
 
-Application *Application::getInstance() {
-    if(app == nullptr){
-        app = new Application();
-    }
-    return app;
-}
+
 
 void Application :: presentationOfServices()
 {

@@ -35,41 +35,4 @@ int enteringTheNumber(int minValue, int maxValue)
 
     return where;
 }
-void testREMOVE()
-{
-    vector<int> liczby1 = {1,2,3,4,5,6,7,8};
-    liczby1.erase(liczby1.begin());
- //   for(int i : liczby1)
-    //{
-   //     cout<<i<<endl;
-    //}
-}
-
-void testConio()
-{
-    char letter;
-    while (!_kbhit())
-    {
-
-
-        letter = getch();
-
-
-
-    }
-    cout<<"Wcisnieto: "<<letter<<endl;
-}
-
-void test()
-{
-    std::vector<int>t;
-    for(std::vector<int>::iterator iter = t.begin(); iter<t.end();iter++)
-    {
-    }
-    t.erase(t.begin()+2);
-    for(std::vector<int>::iterator iter = t.begin(); iter!=t.end();iter++)
-    {
-        cout<<t[*iter]<<endl;
-    }
-}
 

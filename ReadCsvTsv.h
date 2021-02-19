@@ -7,9 +7,11 @@
 
 #include "ServiceCsvTsv.h"
 #include "ConcreteBook.h"
+#include "ConcreteNotepad.h"
 
 namespace shop{
     class ConcreteBook;
+    class ConcreteNotepad;
 }
 
 namespace base {
@@ -21,6 +23,8 @@ namespace base {
         void readFromFile(std::vector<std::string> &names, std::vector<int> &amounts, std::vector<double> &prices);
 
         void readFromFile(std::vector<shop::ConcreteBook> &books, std::vector<int> &amounts);
+
+        void readFromFile(std::vector<shop::ConcreteNotepad> &notepads, std::vector<int> &amounts);
 
     private:
         std::string path;

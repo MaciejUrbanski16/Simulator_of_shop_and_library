@@ -25,7 +25,7 @@ namespace shop {
         void setPrice(ware_t price);
 
     private:
-        std::pair<std::string, std::string> _book;  //storages key:AUTHOR mapped:TITLE
+        std::pair<std::string, std::string> _book;  //storages key:AUTHOR with value:TITLE
         ware_t _price;
     };
 }//end namespace shop

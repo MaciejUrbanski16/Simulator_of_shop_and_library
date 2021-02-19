@@ -354,10 +354,22 @@
 		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBook.h">
 			<Option target="machineOfState"/>
 		</Unit>
-		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Notepad.cpp">
+		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteNotepad.cpp">
 			<Option target="machineOfState"/>
 		</Unit>
-		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Notepad.h">
+		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteNotepad.h">
+			<Option target="machineOfState"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteSchoolSupply.cpp">
+			<Option target="machineOfState"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteSchoolSupply.h">
+			<Option target="machineOfState"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/NotepadManager.cpp">
+			<Option target="machineOfState"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/NotepadManager.h">
 			<Option target="machineOfState"/>
 		</Unit>
 		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.cpp">
@@ -366,10 +378,10 @@
 		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h">
 			<Option target="machineOfState"/>
 		</Unit>
-		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/SchoolSupplies.cpp">
+		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/SchoolSuppliesManager.cpp">
 			<Option target="machineOfState"/>
 		</Unit>
-		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/SchoolSupplies.h">
+		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/SchoolSuppliesManager.h">
 			<Option target="machineOfState"/>
 		</Unit>
 		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.cpp">
@@ -391,6 +403,9 @@
 			<Option target="machineOfState"/>
 		</Unit>
 		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Tests/NotepadTests.cpp">
+			<Option target="machineOfState"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Tests/SchoolSuppliesTests.cpp">
 			<Option target="machineOfState"/>
 		</Unit>
 		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Tests/TowarTests.cpp">

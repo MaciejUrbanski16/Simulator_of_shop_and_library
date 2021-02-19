@@ -6,14 +6,6 @@
 
 #include <utility>
 
-
-
-/*shop::BagpackManager::BagpackManager(std::string mark, std::string color, shop::ware_t price, int amount)
-        : mark(std::move(mark)),
-          color(std::move(color)),
-          price(price),
-          amount(amount){}*/
-
 shop::BagpackManager::~BagpackManager() {
     //delete b;
 }
@@ -37,8 +29,6 @@ void shop::BagpackManager::readItemsFromFile()
 
 void shop::BagpackManager::saveItemsToFile()
 {
-    std::string m = "Olg";
-    bagsFromFile[0].setMark(m);
     std::fstream fileToSaveBags("bags.txt",std::ios::out);
     for(int i=0; i < bagsFromFile.size(); i++)
     {
@@ -90,9 +80,7 @@ void shop::BagpackManager::prepareStrings(std::string basicString)
         am= atoi(strToAmount.c_str());
         pr = atof(strToPrice.c_str());
 
-        //dodanie do vectora plecakow kolejnego obiektu powstałego z odczytanych danych z pliku
-        //bags.emplace_back(strToMark, strToColour, pr, am);
-
+        //add prepared objects created from read strings to tables which storage concrete bagpacks and their amounts
         bagsFromFile.emplace_back(strToMark,strToColour,pr);
         amountsOfBags.push_back(am);
 
@@ -100,9 +88,6 @@ void shop::BagpackManager::prepareStrings(std::string basicString)
         strToPrice = "";
         strToColour = "";
         strToMark = "";
-
-
-
     }
 }
 
@@ -120,12 +105,12 @@ void shop::BagpackManager::presentationOfBags()
 void shop::BagpackManager::chooseBagToPurchases(Ware &purchases)
 {
 #ifndef TESTING
-    std::cout<<"Wybierz sposrod dostepnych plecakow "<<std::endl;
+    std::cout<<"Choose bag you want "<<std::endl;
     _chooseBag = enteringTheNumber(1, amountsOfBags.size());
 
     if(amountsOfBags[_chooseBag - 1] <= 0)
     {
-        std::cout << "Brak plecakow marki " << bagsFromFile[_chooseBag - 1].getMark() << std::endl;
+        std::cout << "There is no " << bagsFromFile[_chooseBag - 1].getMark() << "mark"<<std::endl;
     }
     else
     {
@@ -167,25 +152,10 @@ void shop::BagpackManager::getMarks()
     }
 }
 
-void  shop::BagpackManager::getAmounts()
-{
-
-}
-
-void shop::BagpackManager::refreshObjectsAfterRemoving() {
-
-    for(int i=0;i<allMarks.size();i++)
-    {
-        //bags[i].amount = allAmounts[i];
-
-        //amountsOfBags[i] = allAmounts[i];
-    }
-
-}
 
 void shop::BagpackManager::editionStateOfBags()
 {
-    std::cout<<"1. Dodanie/ 2.Usuniecie"<<std::endl;
+    std::cout<<"1. Add bag/ 2.Remove bag"<<std::endl;
 
     int addRem = enteringTheNumber(1,2);
 
@@ -205,7 +175,7 @@ void shop::BagpackManager::editionStateOfBags()
 void shop::BagpackManager::addBags()
 {
     presentationOfBags();
-    std::cout<<"Podaj kolejno marke, kolor, cene, ilosc"<<std::endl;
+    std::cout<<"Enter mark, color, price, amount of concrete bagpack in this order"<<std::endl;
     std::string addMark, addColor;
     shop::ware_t addPrice;
     int addAmount;
@@ -224,10 +194,6 @@ void shop::BagpackManager::removeBags()
     bagsFromFile.erase(bagsFromFile.begin() + chooseRemove);
     amountsOfBags.erase(amountsOfBags.begin() + chooseRemove);
 
-}
-
-void shop::BagpackManager::setChooseBag(int choose) {
-    _chooseBag = choose;
 }
 
 

@@ -2,7 +2,7 @@
 // Created by Admin on 26.01.2021.
 //
 #include <gtest/gtest.h>
-#include "../Notepad.h"
+#include "../NotepadManager.h"
 
 #include "../tests.h"
 #define TESTING
@@ -14,7 +14,7 @@ namespace
     class NotepadTests : public ::testing::Test
     {
     public:
-        shop::Notepad notepads;
+        shop::NotepadManager notepads;
         NotepadTests()
         {
             notepads;
@@ -30,8 +30,8 @@ TEST_F(NotepadTests,TestProperSizeAfterReading)
     notepads.readItemsFromFile();
 
     //THEN
-    ASSERT_EQ(notepads.amount.size(),notepads.price.size());
-    ASSERT_EQ(notepads.dimensions.size(),notepads.amount.size());
+    ASSERT_EQ(notepads.amounts.size(),notepads.notepads.size());
+
 
 }
 
@@ -44,9 +44,9 @@ TEST_F(NotepadTests,TestReadDateFromFile)
     notepads.readItemsFromFile();
 
     //THEN
-    EXPECT_EQ(true,!(notepads.dimensions.empty()));
-    EXPECT_EQ(true,!(notepads.amount.empty()));
-    EXPECT_EQ(true,!(notepads.price.empty()));
+    EXPECT_EQ(true,!(notepads.notepads.empty()));
+    EXPECT_EQ(true,!(notepads.amounts.empty()));
+
 
     notepads.saveItemsToFile();
 }
@@ -65,14 +65,14 @@ TEST_F(NotepadTests,TestReadAddNewNotesToShop)
 
     //WHEN
     notepads.readItemsFromFile();
-    int currentAmount = notepads.amount[where];
+    int currentAmount = notepads.amounts[where];
     notepads.addNotesToShop(app.mode,howMuch,where);
     notepads.saveItemsToFile();
     notepads.readItemsFromFile();
 
 
     //THEN
-    EXPECT_EQ(currentAmount,notepads.amount[where]);
+    EXPECT_EQ(currentAmount,notepads.amounts[where]);
 
 
 
@@ -129,12 +129,12 @@ TEST_F(NotepadTests,TestRemoveNoteFromBasketToShop)
 
     //WHEN
     notepads.readItemsFromFile();
-    int currentAmount = notepads.amount[0];
-
-    ware.remove(app.removedThings,notepads.dimensions,notepads.amount);
+    int currentAmount = notepads.amounts[0];
+    std::vector<std::string> formats = notepads.getFormats();
+    ware.incrementAmountOfReturnedItem(app.removedThings, formats, notepads.amounts);
 
 
     //THEN
-    EXPECT_EQ(notepads.amount[0],currentAmount + 1);
+    EXPECT_EQ(notepads.amounts[0],currentAmount + 1);
 
 }

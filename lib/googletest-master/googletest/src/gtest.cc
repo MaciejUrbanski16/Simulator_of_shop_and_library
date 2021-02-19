@@ -1247,7 +1247,7 @@ std::vector<EditType> CalculateOptimalEdits(const std::vector<size_t>& left,
         costs[l_i + 1][r_i + 1] = remove + 1;
         best_move[l_i + 1][r_i + 1] = kRemove;
       } else {
-        // We make replace a little more expensive than add/remove to lower
+        // We make replace a little more expensive than add/incrementAmountOfReturnedItem to lower
         // their priority.
         costs[l_i + 1][r_i + 1] = replace + 1.00001;
         best_move[l_i + 1][r_i + 1] = kReplace;
@@ -4904,7 +4904,7 @@ class ScopedPrematureExitFile {
     if (!premature_exit_filepath_.empty()) {
       int retval = remove(premature_exit_filepath_.c_str());
       if (retval) {
-        GTEST_LOG_(ERROR) << "Failed to remove premature exit filepath \""
+        GTEST_LOG_(ERROR) << "Failed to incrementAmountOfReturnedItem premature exit filepath \""
                           << premature_exit_filepath_ << "\" with error "
                           << retval;
       }

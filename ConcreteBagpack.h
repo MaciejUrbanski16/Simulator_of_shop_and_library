@@ -16,10 +16,7 @@ template<>
 struct std::less<shop::ConcreteBagpack>;
 
 namespace shop {
-    //class ConcreteBagpack;
 
-    ///TODO ilosc ConcreteBagpack'ow przetrzymywac w mapie
-    //typedef double ware_t;
     class ConcreteBagpack {
     public:
         ConcreteBagpack() = default;
@@ -57,7 +54,7 @@ namespace shop {
     };
 }
 
-
+//to compare my objects
 namespace std {
 
     template<>

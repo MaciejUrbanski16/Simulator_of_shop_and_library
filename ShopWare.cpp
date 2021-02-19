@@ -2,13 +2,14 @@
 // Created by Admin on 06.08.2020.
 //
 
-#include "BookManager.h"
-
-#include <iostream>
+#include "ShopWare.h"
 
 using namespace shop;
 using  namespace std;
 
+Ware::Ware(Application &application): application_(application) {
+
+}
 
 void Ware::readItemsFromFile()
 {
@@ -23,7 +24,7 @@ void Ware::saveItemsToFile()
 bool Ware::enterToShop()
 {
     bool pushButton;
-    cout<<"Jesli chcesz wejsc do sklepu wcisnij znak 'y'"<<endl;
+    cout<<"If you want to go into shop press 'y'"<<endl;
     char goShop;
     cin>>goShop;
 
@@ -37,7 +38,7 @@ int Ware::changeModeToSellerMode(std::string password, int mode)
     int attemp = 3;
     if (!(mode == SELLER_MODE)) {
         if (mode == CUSTOMER_MODE) {
-            cout << "Aby przejsc do trybu sprzedawcy nalezy podac haslo, wprowadz je: " << endl;
+            cout << "To go to seller mode you have to provide password: " << endl;
             cin >> givenPassword;
 
 
@@ -46,12 +47,12 @@ int Ware::changeModeToSellerMode(std::string password, int mode)
                     mode = SELLER_MODE;
                     attemp = 3;
                     this->inSellerMode = true;
-                    cout << "Pomyslnie zmieniono tryb, teraz mozna edytowac zasoby sklepu" << endl;
+                    cout << "The mode was changed successfully. Now you can edit state of shop" << endl;
                     break;
                 }
                 else {
                     attemp--;
-                    cout << "Podano nieprawidlowe haslo. Pozostalo prob: " << attemp << endl;
+                    cout << "Provided password is incorrect. There left: " << attemp <<" attempts "<< endl;
                     cin >> givenPassword;
                 }
             }
@@ -59,35 +60,12 @@ int Ware::changeModeToSellerMode(std::string password, int mode)
     }
     else {
         mode = CUSTOMER_MODE;
-        cout << "Zmieniono tryb na tryb klienta" << endl;
+        cout << "The mode was changed. Actual mode is CUSTOMER_MODE" << endl;
 
     }
     return  mode;
 }
 
-
-
-int Ware ::choosingFromList(int minRange, int maxRange)
-{
-    int choose1 = -1;
-        cout<<"Podaj cyfre "<<minRange<<"-"<<maxRange<<" aby wybrac usługe"<<endl;
-        cout<<"------------------"<<endl;
-
-
-
-        bool good1,bad1;
-
-        do{
-            cin>>choose1;
-            good1 = cin.good();
-            bad1 = cin.bad();
-            cin.clear();
-            cin.sync();
-        }while((choose1<minRange&&choose1>maxRange)||(good1==0||bad1==1));
-
-
-    return choose1;
-}
 
 int Ware :: enteringTheNumber(int minValue, int maxValue)
 {
@@ -103,7 +81,7 @@ int Ware :: enteringTheNumber(int minValue, int maxValue)
         cin.clear();
         cin.sync();
     }while((where<minValue||where>maxValue)||(good1==0||bad1==1));
-    //cin>>howMuch;
+
 #else
     where = 4;
 #endif
@@ -117,11 +95,11 @@ std::string Ware::removeThingFromPurchases()
 
     if(!orderedPurchasesName.empty())
     {
-        cout<<"Wybierz nr rzeczy ktora chcesz wyjac z koszyka z powrotem do sklepu: "<<endl;
+        cout<<"Choose number of thing you want to incrementAmountOfReturnedItem: "<<endl;
 
         choose = enteringTheNumber(1,orderedPurchasesName.size());
 
-        choose--; //aby dostosowac sie do iteracji vectora od 0
+        choose--; //vector is iterated from zero
 
         std::string removedName = orderedPurchasesName[choose];
         ware_t removedPrice = orderedPurchasesPrice[choose];
@@ -129,14 +107,14 @@ std::string Ware::removeThingFromPurchases()
         orderedPurchasesName.erase(orderedPurchasesName.begin() + choose);
         orderedPurchasesPrice.erase(orderedPurchasesPrice.begin() + choose);
 
-        cout<<"Pomyslnie usunieto: "<<removedName<<" w cenie "<<removedPrice<<endl;
+        cout<<"The: "<<removedName<<" was removed successfully! "<<endl;
 
         showOrderedPurchases();
         return removedName;
     }
     else
         {
-        cout<<"Nie ma nic do usuniecia!!!"<<endl;
+        cout<<"There is no thing to incrementAmountOfReturnedItem!!!"<<endl;
         return "";
     }
 }
@@ -147,16 +125,16 @@ void Ware :: addToPurchases()
     orderedPurchasesName.push_back(name);
     orderedPurchasesPrice.push_back(praise);
 
-    cout<<"Pomyslnie dodano "<<name<<" do koszyka, w cenie "<<praise<<endl;
+    cout<<"The "<<name<<" was added to basket and it costs "<<praise<<endl;
 }
 
 void Ware::showOrderedPurchases()
 {
-    cout<<"Aktualny stan koszyka to: "<<endl;
+    cout<<"Actual state of your basket: "<<endl;
 
     for(int i =0;i<orderedPurchasesName.size();i++)
     {
-        cout<<i+1<<". Nazwa: "<<orderedPurchasesName[i]<<" w cenie: "<<orderedPurchasesPrice[i]<<endl;
+        cout<<i+1<<". Name: "<<orderedPurchasesName[i]<<" costs: "<<orderedPurchasesPrice[i]<<endl;
 
     }
 }
@@ -165,12 +143,12 @@ void Ware::showOrderedPurchases()
 ware_t Ware::roundFloatToSecond(ware_t d)
 {
 
-    int y = d * 1000; // przesuwamy przecinek o 4 miejsca i pozbywamy sie reszty za przecinkiem - y jest calkowite
+    int y = d * 1000; // shift comma four position
 
-    return (y / 10) * 0.01; // usuwamy ostatnia cyfre i zamieniamy na liczbe zmiennoprzecinkowa
+    return (y / 10) * 0.01; //incrementAmountOfReturnedItem last part of number and change to floating point number
 }
 
-void  Ware::remove(std::vector<std::string> &removedThings, std::vector<std::string> &dimensions, std::vector<int>& _amount)
+void  Ware::incrementAmountOfReturnedItem(std::vector<std::string> &removedThings, std::vector<std::string> &dimensions, std::vector<int>& _amount)
 {
     for(int i=0;i<removedThings.size();i++)
     {
@@ -190,13 +168,9 @@ void  Ware::remove(std::vector<std::string> &removedThings, std::vector<std::str
 
 }
 
-char Ware::enterTheLetter() {
-    char letter = 'c';
-    while(!_kbhit())
-    {
-        letter = getch();                //wyszukiwanie ksiazek po wcisnietym znaku
-    }
-    return letter;
-}
+
+
+
+
 
 
