@@ -28,33 +28,23 @@ namespace shop
         std::vector<ConcreteNotepad> notepads;
         std::vector<int> amounts;
 
-        std::string color;
+
         std::vector<std::string>dimensions;
         std::vector<ware_t>price;
         std::vector<int>amount;
+
+        std::string color;
         bool noteWithLines;
         int chooseOfColor(); //wybor koloru ->do zrobienia
 
         int chooseOfDimension(); //wybór konkretnego zeszytu przez uzytkownika
 
 
-        void setDimensionsOfNote();  //dostepne rozmiary zesytow
-
         bool checkIfNoteIsAvailable(int); //sprawdza dostępność wybranej przez użytkownika pozycji
 
         void saveItemsToFile() override;
         void readItemsFromFile()override;
 
-        void returnNoteFromBasketToShop(std::vector<std::string> removedThings, std::vector<std::string> dimensions, std::vector<int>amount);
-
-
-
-        void addThingFromRemovedToShop(std::map<std::string, int> map);
-
-        std::vector<int>
-        incrementAmountofRemovedThing(std::map<std::string, int> incrementAmountOfNotesAfterRemovingFromBaskte);
-
-        std::vector<int>incrementAmountOfNotesAfterReturnedToShop(Application &app);
 
         void editionStateOfNotes(); //pozwala dodawać/usuwac zeszyty (w trybie sprzedawcy)
 
@@ -63,15 +53,13 @@ namespace shop
         std::vector<std::string> getFormats();
 
     private:
-        std::string dim;
+
         int choose;
-        int dimensionsSize; //ilosc elementow vectora dimension
 
+        void showResourcesOfNotes(); //show actual state of notes
 
-        void showResourcesOfNotes(); //pokazuje aktualny stan zeszytów w sklepie
-
-
-        void addingByOwnerNewNote(); //pozwala dodawac zeszyt do sklepu (w trybie sprzedawcy)
+        //allow add new (remove) note to list of notes (only in SELLER_MODE)
+        void addingByOwnerNewNote();
         void removeByOwnerNote();
 
 

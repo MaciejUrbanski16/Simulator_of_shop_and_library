@@ -94,11 +94,12 @@ int BookManager::searchingBook()
 
     currentSearchings.push_back("NONE OF ABOVE");
 
-    if(showSearchedBooks(currentSearchings)==NOT_FOUND) //show found books
+    if(showSearchedBooks(this->currentSearchings)==NOT_FOUND) //show found books
     {
         return NOT_FOUND;
     } else
     {
+        std::cout<<"Rozmiar tu: "<<this->currentSearchings.size();
         return FOUND;
     }
 }
@@ -109,7 +110,7 @@ int BookManager :: chooseOfSearchedBook()
 {
     cout<<"Choose the book you are looking for: "<<endl;
     choose = -1;
-    choose = enteringTheNumber(1,currentSearchings.size());
+    choose = enteringTheNumber(1,this->currentSearchings.size());
 
     return choose;
 }
@@ -123,11 +124,11 @@ int BookManager::getSizeOfCurrentSearchings()
 
 void BookManager::addSearchedBooks(char letter_)
 {
-    for(ConcreteBook  b : books_)
+    for(ConcreteBook  b : this->books_)
     {
         if(b.getPairOfTitleAndAuthorBook().second[0] == letter_)
         {
-            currentSearchings.push_back(b.getPairOfTitleAndAuthorBook().second);
+            this->currentSearchings.push_back(b.getPairOfTitleAndAuthorBook().second);
         }
     }
 }
@@ -160,6 +161,7 @@ bool BookManager ::checkAmountofBookInShop(const Ware &purchases)
 
     if(this->amounts_[purchases.position] > 0)
     {
+        this->tempAuthor = this->books_[purchases.position].getPairOfTitleAndAuthorBook().first;
         p = true;
     }
     else
@@ -190,7 +192,7 @@ bool BookManager ::checkAmountofBookInShop(const Ware &purchases)
     return position;
 }
 
-std::string BookManager::getSearchedBook(int t)
+std::string BookManager::getTitleOfSearchedBook(int t)
 {
     return currentSearchings[t];
 }
@@ -211,7 +213,7 @@ void BookManager::addBookToShop(std::string &authorOfNewBook,std::string &titleO
 
 void BookManager:: addThingToShop()
 {
-    if(Ware::application_.mode==CUSTOMER_MODE)
+    if(Ware::application_.mode == CLIENT_MODE)
     {
         cout<<"You are not owner of shop - you can not edit state of shop!"<<endl;
     }
@@ -236,7 +238,7 @@ void BookManager:: addThingToShop()
 void BookManager ::removeThingFromShop()
 {
 
-    if(Ware::application_.mode==CUSTOMER_MODE)
+    if(Ware::application_.mode == CLIENT_MODE)
     {
         cout<<"You are not owner of shop - you can not edit state of shop!"<<endl;
     }
@@ -325,6 +327,14 @@ std::vector<shop::ConcreteBook> BookManager::getBooks() {
 
 std::string BookManager::getTitleOfConcreteBook(int index) {
     return getBook(index).getPairOfTitleAndAuthorBook().second;
+}
+
+int BookManager::getCurrentSearchingSize() {
+    return this->currentSearchings.size();
+}
+
+BookManager::~BookManager() {
+    //this->saveItemsToFile();
 }
 
 

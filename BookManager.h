@@ -36,6 +36,10 @@ namespace shop {
         std::vector<ConcreteBook> books_;
         std::vector<int> amounts_;
 
+        int getCurrentSearchingSize();
+
+         ~BookManager();
+
     private:
 
 
@@ -79,7 +83,7 @@ namespace shop {
             NOT_FOUND
         };
 
-        //kontenery na dane o przechowywanych ksiazkach w sklepie
+        //containers to starage data of books in shop
         std::vector<std::string> titleOfBooksInShop;
         std::vector<int> amountOfBooksInShop;
 
@@ -91,26 +95,26 @@ namespace shop {
         std::vector<ConcreteBook> getBooks();
 
 
-        bool checkAmountofBookInShop(const Ware &t); //sprawdza czy w sklepie jest pozycja o zadanym tytlue
+        bool checkAmountofBookInShop(const Ware &t); //checks if there is one book with given title at least
 
 
-        int checkIfBookExist(std::string &title); //zwraca pozycje ksiazki o zadanym tytule
+        int checkIfBookExist(std::string &title); //returns position  of book with given title
 
-        void editionStateOfBooks();   //usuwanie badz dodawanie zasobow sklaepu ksiazke
+        void editionStateOfBooks();   //add or remove book (only in SELLER_MODE)
 
-        std::string getSearchedBook(int t);     //zwraca tytul szuaknej ksiazki
+        std::string getTitleOfSearchedBook(int t);     //returns title of searched book
 
-        int chooseOfSearchedBook();     //zwraca nr wybranej ksiazki z proponowanej listy
+        int chooseOfSearchedBook();     //returns number of title of book which was chosen from given list
 
-        int searchingBook();        //wyszukiwanie tytulu po zadanej pierwszej literze(uwzglednia duze i male litery
+        int searchingBook();        //search books based on given letter of title
 
-        //pokazuje tytuly wyszukanych ksiazek po zadanej pierwszej literze, zwraca parametr FOUND badz NOT_FOUND
+        //shows searched books which were searched after given first letter of title
         int showSearchedBooks(std::vector<std::string> &searchedBooks);
 
-        //zapisanie wszystkich ksiazek ze sklepu przed wyjsciem z uslugi
+        //save all books after going out
         void saveItemsToFile()override ;
 
-        //odczytanie z pliku ksiazek obecnie posiadanych przez sklep
+        //read resources of books
         void readItemsFromFile()override ;
 
         void searchInRemoved(Application &app);
@@ -118,6 +122,8 @@ namespace shop {
         std::vector<std::string> returnBookFromBasketToShop(std::vector<std::string> removed);
 
         int getSizeOfCurrentSearchings();
+
+        std::string tempAuthor;
     };
 
 }

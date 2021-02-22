@@ -15,6 +15,6 @@ add_executable(machineOfState main.cpp ShopWare.h ShopWare.cpp BookManager.cpp B
         Bill.cpp Bill.h Tests/TowarTests.cpp Application.cpp Application.h ServiceCsvTsv.cpp ServiceCsvTsv.h
         WriteCsvTsv.cpp WriteCsvTsv.h Tests/WritingReadingCsvTsvTests.cpp ReadCsvTsv.cpp ReadCsvTsv.h
         Tests/BookTests.cpp ConcreteBagpack.cpp ConcreteBagpack.h Tests/BagpackTests.cpp ConcreteBook.cpp ConcreteBook.h
-        ConcreteSchoolSupply.cpp ConcreteSchoolSupply.h ConcreteNotepad.cpp ConcreteNotepad.h Tests/SchoolSuppliesTests.cpp)
+        ConcreteSchoolSupply.cpp ConcreteSchoolSupply.h ConcreteNotepad.cpp ConcreteNotepad.h Tests/SchoolSuppliesTests.cpp Library/Library.cpp Library/Library.h Library/ClientInLibrary.cpp Library/ClientInLibrary.h Tests/LibraryTests.cpp)
 
 target_link_libraries(machineOfState gtest gtest_main)

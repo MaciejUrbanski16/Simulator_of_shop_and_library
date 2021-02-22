@@ -9,6 +9,13 @@
 #include "ConcreteBook.h"
 #include "ConcreteNotepad.h"
 
+#include "Library/ClientInLibrary.h"
+
+namespace library{
+    class Library;
+    class ClientInLibrary;
+}
+
 namespace shop{
     class ConcreteBook;
     class ConcreteNotepad;
@@ -25,6 +32,8 @@ namespace base {
         void readFromFile(std::vector<shop::ConcreteBook> &books, std::vector<int> &amounts);
 
         void readFromFile(std::vector<shop::ConcreteNotepad> &notepads, std::vector<int> &amounts);
+
+        void readFromFile(std::vector<library::ClientInLibrary> &clients);
 
     private:
         std::string path;

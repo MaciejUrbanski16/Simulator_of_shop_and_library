@@ -436,6 +436,60 @@ ConcreteSchoolSupply.cpp.s:
 	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteSchoolSupply.cpp.s
 .PHONY : ConcreteSchoolSupply.cpp.s
 
+Library/ClientInLibrary.obj: Library/ClientInLibrary.cpp.obj
+
+.PHONY : Library/ClientInLibrary.obj
+
+# target to build an object file
+Library/ClientInLibrary.cpp.obj:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Library/ClientInLibrary.cpp.obj
+.PHONY : Library/ClientInLibrary.cpp.obj
+
+Library/ClientInLibrary.i: Library/ClientInLibrary.cpp.i
+
+.PHONY : Library/ClientInLibrary.i
+
+# target to preprocess a source file
+Library/ClientInLibrary.cpp.i:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Library/ClientInLibrary.cpp.i
+.PHONY : Library/ClientInLibrary.cpp.i
+
+Library/ClientInLibrary.s: Library/ClientInLibrary.cpp.s
+
+.PHONY : Library/ClientInLibrary.s
+
+# target to generate assembly for a file
+Library/ClientInLibrary.cpp.s:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Library/ClientInLibrary.cpp.s
+.PHONY : Library/ClientInLibrary.cpp.s
+
+Library/Library.obj: Library/Library.cpp.obj
+
+.PHONY : Library/Library.obj
+
+# target to build an object file
+Library/Library.cpp.obj:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Library/Library.cpp.obj
+.PHONY : Library/Library.cpp.obj
+
+Library/Library.i: Library/Library.cpp.i
+
+.PHONY : Library/Library.i
+
+# target to preprocess a source file
+Library/Library.cpp.i:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Library/Library.cpp.i
+.PHONY : Library/Library.cpp.i
+
+Library/Library.s: Library/Library.cpp.s
+
+.PHONY : Library/Library.s
+
+# target to generate assembly for a file
+Library/Library.cpp.s:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Library/Library.cpp.s
+.PHONY : Library/Library.cpp.s
+
 NotepadManager.obj: NotepadManager.cpp.obj
 
 .PHONY : NotepadManager.obj
@@ -624,6 +678,33 @@ Tests/BookTests.s: Tests/BookTests.cpp.s
 Tests/BookTests.cpp.s:
 	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Tests/BookTests.cpp.s
 .PHONY : Tests/BookTests.cpp.s
+
+Tests/LibraryTests.obj: Tests/LibraryTests.cpp.obj
+
+.PHONY : Tests/LibraryTests.obj
+
+# target to build an object file
+Tests/LibraryTests.cpp.obj:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Tests/LibraryTests.cpp.obj
+.PHONY : Tests/LibraryTests.cpp.obj
+
+Tests/LibraryTests.i: Tests/LibraryTests.cpp.i
+
+.PHONY : Tests/LibraryTests.i
+
+# target to preprocess a source file
+Tests/LibraryTests.cpp.i:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Tests/LibraryTests.cpp.i
+.PHONY : Tests/LibraryTests.cpp.i
+
+Tests/LibraryTests.s: Tests/LibraryTests.cpp.s
+
+.PHONY : Tests/LibraryTests.s
+
+# target to generate assembly for a file
+Tests/LibraryTests.cpp.s:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Tests/LibraryTests.cpp.s
+.PHONY : Tests/LibraryTests.cpp.s
 
 Tests/NotepadTests.obj: Tests/NotepadTests.cpp.obj
 
@@ -882,6 +963,12 @@ help:
 	@echo ... ConcreteSchoolSupply.obj
 	@echo ... ConcreteSchoolSupply.i
 	@echo ... ConcreteSchoolSupply.s
+	@echo ... Library/ClientInLibrary.obj
+	@echo ... Library/ClientInLibrary.i
+	@echo ... Library/ClientInLibrary.s
+	@echo ... Library/Library.obj
+	@echo ... Library/Library.i
+	@echo ... Library/Library.s
 	@echo ... NotepadManager.obj
 	@echo ... NotepadManager.i
 	@echo ... NotepadManager.s
@@ -903,6 +990,9 @@ help:
 	@echo ... Tests/BookTests.obj
 	@echo ... Tests/BookTests.i
 	@echo ... Tests/BookTests.s
+	@echo ... Tests/LibraryTests.obj
+	@echo ... Tests/LibraryTests.i
+	@echo ... Tests/LibraryTests.s
 	@echo ... Tests/NotepadTests.obj
 	@echo ... Tests/NotepadTests.i
 	@echo ... Tests/NotepadTests.s

@@ -21,23 +21,13 @@ void Ware::saveItemsToFile()
 
 }
 
-bool Ware::enterToShop()
-{
-    bool pushButton;
-    cout<<"If you want to go into shop press 'y'"<<endl;
-    char goShop;
-    cin>>goShop;
-
-    pushButton = goShop == 'Y' || goShop == 'y';
-    return pushButton;
-}
 
 int Ware::changeModeToSellerMode(std::string password, int mode)
 {
     std::string givenPassword;
     int attemp = 3;
     if (!(mode == SELLER_MODE)) {
-        if (mode == CUSTOMER_MODE) {
+        if (mode == CLIENT_MODE) {
             cout << "To go to seller mode you have to provide password: " << endl;
             cin >> givenPassword;
 
@@ -59,8 +49,8 @@ int Ware::changeModeToSellerMode(std::string password, int mode)
         }
     }
     else {
-        mode = CUSTOMER_MODE;
-        cout << "The mode was changed. Actual mode is CUSTOMER_MODE" << endl;
+        mode = CLIENT_MODE;
+        cout << "The mode was changed. Actual mode is CLIENT_MODE" << endl;
 
     }
     return  mode;

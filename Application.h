@@ -23,7 +23,6 @@ public:
     int mode{};
 
     //container to storage names of things removed from basket during shopping
-
     std::vector<std::string> removedThings;
 
     void saveRemovedToFile();
@@ -32,9 +31,21 @@ public:
 
     void presentationOfServices();
 
-    int chooseOfService();              //wybor kategorii
+    int chooseOfService();
+
+    bool enterToShop();
+    char enteredChar;
+    int kindOfService_;
+
+    enum class kindOfService
+    {
+        SHOP,
+        LIBRARY_GIVE_BACK,
+        LIBRARY_BORROW
+    };
 
 
+    void setKindOfService();
 };
 
 

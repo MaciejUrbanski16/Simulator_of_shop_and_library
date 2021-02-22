@@ -31,7 +31,7 @@ enum                        //all process of shopping
 enum
 {
     SELLER_MODE,                //seller mode
-    CUSTOMER_MODE               //customer mode
+    CLIENT_MODE               //customer mode
 };
 
 namespace shop {
@@ -91,8 +91,8 @@ namespace shop {
         int enteringTheNumber(int minValue, int maxValue);
 
         int changeModeToSellerMode(std::string password,
-                                   int mode); //change mode (CUSTOMER_MODE --> SELLER_MODE (required password),
-                                                            // SELLER_MODE --> CUSTOMER_MODE (without password))
+                                   int mode); //change mode (CLIENT_MODE --> SELLER_MODE (required password),
+                                                            // SELLER_MODE --> CLIENT_MODE (without password))
 
 
         ware_t roundFloatToSecond(ware_t d);

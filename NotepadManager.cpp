@@ -90,7 +90,7 @@ void NotepadManager::readItemsFromFile()
 {
 
     notepads.clear();
-    amount.clear();
+    amounts.clear();
 
 
     ReadCsvTsv readNotes("notes.tsv");
@@ -107,9 +107,9 @@ bool NotepadManager::checkIfNoteIsAvailable(int noteChoose)
 
 void NotepadManager :: addNotesToShop(int mode, int howMuch, int where)
 {
-    if(mode == CUSTOMER_MODE)
+    if(mode == CLIENT_MODE)
     {
-        cout<<"CUSTOMER_MODE do not allow to edit state of shop "<<endl;
+        cout<<"CLIENT_MODE do not allow to edit state of shop "<<endl;
     }
     else if(mode == SELLER_MODE)
     {
@@ -141,9 +141,9 @@ void NotepadManager ::addingByOwnerNewNote()
 
         addNotesToShop(application_.mode,howMuch,where);
     }
-    else if(application_.mode == CUSTOMER_MODE)
+    else if(application_.mode == CLIENT_MODE)
     {
-        cout<<"There is not allowed to edit state of shop in CUSTOMER_MODE "<<endl;
+        cout<<"There is not allowed to edit state of shop in CLIENT_MODE "<<endl;
         cout<<"If you want you can now change mode to SELLER_MODE"<<endl;
 
         changeModeToSellerMode("password",application_.mode);
@@ -151,13 +151,6 @@ void NotepadManager ::addingByOwnerNewNote()
     }
 
 }
-
-
-vector<int>
-NotepadManager::incrementAmountofRemovedThing(std::map<std::string, int> incrementAmountOfNotesAfterRemovingFromBaskte) {
-    return std::vector<int>();
-}
-
 
 
 void NotepadManager::editionStateOfNotes()

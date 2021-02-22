@@ -12,37 +12,44 @@
 #include "BagpackManager.h"
 #include "SchoolSuppliesManager.h"
 
+#include "Library/Library.h"
+
 #include "Bill.h"
 
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
 
 #include <map>
+#include <ctime>
 
 using namespace std;
 
 int main(int argc, char *argv[]) {
+
+    srand(time(nullptr));
 
     //instance of class which includes config of program
     Application application;
 
     //start tests
     testing::InitGoogleTest(&argc,argv);
-    int t = RUN_ALL_TESTS();
+
 
 
     shop::Ware purchases(application);
 
-    application.mode = CUSTOMER_MODE;
+    BookManager bookManager;
+    library::Library lib(bookManager);
+    lib.readUsersFromFile();
+
+
+    application.mode = CLIENT_MODE;
 
     application.presentationOfServices();
 
     application.stage = START;
 
-    if(purchases.enterToShop())
-    {
-        application.stage = INTRODUCTION;
-    }
+    application.setKindOfService();
 
     application.readRemovedFromFile(); //load removed thing from buffer
 
@@ -51,7 +58,8 @@ int main(int argc, char *argv[]) {
 
 
         ///SWITCH DEPENDS ON ACTUAL MODE
-        if (application.mode == CUSTOMER_MODE) {
+        if (application.mode == CLIENT_MODE &&
+            static_cast<Application::kindOfService>(application.kindOfService_) == Application::kindOfService::SHOP) {
 
             int choose;
             choose = application.chooseOfService();
@@ -68,25 +76,25 @@ int main(int argc, char *argv[]) {
 
                     purchases.indexOfChoosenThing = books.chooseOfSearchedBook();
 
-                    if (purchases.indexOfChoosenThing == books.getSizeOfCurrentSearchings()) {
-                        cout << "You do not choose any book! " << endl;
-                    } else {
+                        if (purchases.indexOfChoosenThing == books.getSizeOfCurrentSearchings()) {
+                            cout << "You do not choose any book! " << endl;
+                        } else {
 
-                        books.choosenTitle = books.getSearchedBook(purchases.indexOfChoosenThing - 1);
+                            books.choosenTitle = books.getTitleOfSearchedBook(purchases.indexOfChoosenThing - 1);
 
-                        purchases.position = books.checkIfBookExist(books.choosenTitle);   //check if chosen book exists in list
+                            purchases.position = books.checkIfBookExist(books.choosenTitle);   //check if chosen book exists in list
 
-                        if (books.checkAmountofBookInShop(purchases)) {                        //and check if there is available one book witth chosen
-                                                                                                //title at least
+                            if (books.checkAmountofBookInShop(purchases)) {                        //and check if there is available one book witth chosen
+                                //title at least
 
-                            purchases.name = books.getTitleOfConcreteBook(purchases.position);//rewrite title and price of chosen book
-                                                                                                //to add it to basket
-                            purchases.praise = books.getBook(purchases.position).getPrice();
+                                purchases.name = books.getTitleOfConcreteBook(purchases.position);//rewrite title and price of chosen book
+                                //to add it to basket
+                                purchases.praise = books.getBook(purchases.position).getPrice();
 
-                            purchases.addToPurchases();                                         //add chosen book to basket
+                                purchases.addToPurchases();                                         //add chosen book to basket
 
-                            purchases.showOrderedPurchases();
-                        }
+                                purchases.showOrderedPurchases();
+                            }
                     }
                 } else {
                     purchases.showOrderedPurchases();
@@ -232,7 +240,8 @@ int main(int argc, char *argv[]) {
 
         }
 
-        else if (application.mode == SELLER_MODE)
+        else if (application.mode == SELLER_MODE &&
+                static_cast<int>(Application::kindOfService::SHOP) == application.kindOfService_)
         {
             application.presentationOfServices();
             {
@@ -241,7 +250,7 @@ int main(int argc, char *argv[]) {
                 auto *noteEdition = new shop::NotepadManager;
                 auto *bagEdition = new shop::BagpackManager();
                 auto *suppliesEdition = new shop::SchoolSuppliesManager;
-                int chooseOfEdition = enteringTheNumber(1, 7);
+                int chooseOfEdition = enteringTheNumber(1, 5);
 
                 //edition of chosen list of things (only in SELLER_MODE)
                 switch (chooseOfEdition) {
@@ -291,11 +300,161 @@ int main(int argc, char *argv[]) {
 
         }
 
+        else if(static_cast<int>(Application::kindOfService::LIBRARY_BORROW) == application.kindOfService_ ||
+                static_cast<int>(Application::kindOfService::LIBRARY_GIVE_BACK) == application.kindOfService_) {
+            //implementation of library's behaviour
+
+            BookManager books;
+            books.readItemsFromFile();
+
+            library::Library library(books);
+            library.readUsersFromFile();
+
+            std::cout << "S1: " << library.getClients().size() << std::endl;
+
+
+            std::cout << "You are at library. Please enter your ID number and password to login " << std::endl;
+            std::cin >> library.enterIDtoLogin;
+            std::cin >> library.enterPasswordToLogin;
+
+            while (library.attemptsToLogin > 1) {
+
+                if (library.loginToLibrary(library.enterIDtoLogin)) {
+                    std::cout << "You login successfully, now you can use from library resources" << std::endl;
+                    library.attemptsToLogin = 3;
+                    library.validLogin = true;
+                    break;
+                } else {
+                    std::cout << "Your login or password are incorrect. You have " << library.attemptsToLogin
+                              << " left!" << std::endl;
+                    library.attemptsToLogin--;
+
+                    std::cout << "Try to enter your ID number and password again!" << std::endl;
+                    std::cin >> library.enterIDtoLogin;
+                    std::cin >> library.enterPasswordToLogin;
+
+                    if (library.attemptsToLogin == 1) {
+                        std::cout
+                                << "You do not have anymore attempts to login! Do you want to register new account [y/n]"
+                                << std::endl;
+                        std::cin >> library.createNewAccount;
+
+                        if (library.createNewAccount == 'n') {
+                            break;
+                        } else if (library.createNewAccount == 'y') {
+                            std::cout << "Enter your name, surname and password in this order: " << std::endl;
+
+                            library::ClientInLibrary newClient;
+
+                            std::string name, surname, password;
+                            std::cin >> name >> surname >> password;
+
+                            newClient.setNameOfClient(name);
+                            newClient.setSurnameOfClient(surname);
+
+                            std::string clientID = library.generateIDofNewClient();
+                            //TODO make generating  id of new client by randoming
+                            library.addNewClient(library::ClientInLibrary(name, surname, clientID));
+
+                            library.validLogin = true;
+
+                            library.currentIDloggedIn = std::atoi(clientID.c_str());
+                        }
+                    }
+                }
+            }
+
+            //check if process of login was successful
+            if (library.validLogin) {
+                if (static_cast<int>(Application::kindOfService::LIBRARY_BORROW) == application.kindOfService_ ) {
+
+                    ///process of borrowing book from libraary
+
+                    if (books.searchingBook() == books.FOUND) {
+
+                        purchases.indexOfChoosenThing = books.chooseOfSearchedBook();
+
+                        if (purchases.indexOfChoosenThing == books.getSizeOfCurrentSearchings()) {
+                            cout << "You do not choose any book to borrow! " << endl;
+                        } else {
+                            std::cout << "TU";
+                            books.choosenTitle = books.getTitleOfSearchedBook(purchases.indexOfChoosenThing - 1);
+
+                            purchases.position = books.checkIfBookExist(
+                                    books.choosenTitle);   //check if chosen book exists in list and return position
+                            std::cout << "TU";
+                            if (books.checkAmountofBookInShop(
+                                    purchases)) {                        //and check if there is available one book witth chosen title at least
+
+                                //borrow book
+                                std::string tempTitle = books.choosenTitle;
+                                library.borrowBook(purchases.position, tempTitle);
+
+                                std::cout << "You borrow " << books.tempAuthor << "   " << tempTitle << std::endl;
+
+                                library.setManageBooks(books); //refresh actual state of book in library
+
+                            }
+                        }
+                    } else {
+                        std::cout << "There are no more books with given title! " << std::endl;
+                    }
+                }
+
+
+                    ///process of giving back book to library
+                else if (static_cast<int>(Application::kindOfService::LIBRARY_GIVE_BACK) == application.kindOfService_) {
+                    std::cout<<"Przed oddaniem: "<<library.getClients()[1].borrowedByClient.size()<<std::endl;
+                    std::cout<<"Choose book you want to give back: "<<std::endl;
+                    library.showBorrowedBooksByUser();
+                    int index = library.getIndexOfClientWithGivenID();
+
+
+                    //i'm not sure if it is good idea to write code like this below, but i will have to do refactor of this
+                    int choose = purchases.enteringTheNumber(1,library.getClients()[index].borrowedByClient.size());
+
+                    int indexOfActualClient = library.getIndexOfClientWithGivenID();
+                    std::vector<library::ClientInLibrary> tempClients = library.getClients();
+
+                    std::string choosenBookToGiveBack = reinterpret_cast<basic_string<char> &&>(tempClients[indexOfActualClient].borrowedByClient[choose]);
+
+                    //library.giveBackBook(choosenBookToGiveBack,
+                      //      tempClients[indexOfActualClient]);
+                      std::vector<shop::ConcreteBook> actualStateOfBorrowedBooks = library.giveBackBook(choose, tempClients[indexOfActualClient]);
+
+                    tempClients[indexOfActualClient].setBorrowedByClient(actualStateOfBorrowedBooks);
+
+                    library.setClients(tempClients);
+
+                    int p= 1;
+                    p++;
+
+                }
+            }
+
+
+
+            std::cout<<"S2: "<<library.getClients().size()<<std::endl;
+            std::cout<<"S2: "<<library.getClients().back().getNameOfClient()<<std::endl;
+
+            std::cout<<"Przed zapisem: "<<library.getClients()[1].borrowedByClient.size()<<std::endl;
+
+            library.saveUsersToFile();
+            books.saveItemsToFile();
+
+
+
+            application.stage = CONFIRM;//temporary
+        }
+
     }
 
-   // show bill after shopping
 
-   if(!purchases.inSellerMode) {
+
+   /// show bill after shopping
+
+   if(!purchases.inSellerMode && static_cast<int>(Application::kindOfService::SHOP) == application.kindOfService_) {
+
        Bill bill(purchases);
        shop::ware_t toPay = bill.calculate();
        shop::ware_t wynik_x = (shop::ware_t) ((int) (toPay * 100)) / 100;
@@ -305,7 +464,7 @@ int main(int argc, char *argv[]) {
        bill.printBill(toPay);
    }
 
-    return 0;
+    return 0;//RUN_ALL_TESTS();
 }
 
 
