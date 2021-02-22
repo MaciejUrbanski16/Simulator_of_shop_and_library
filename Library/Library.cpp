@@ -43,7 +43,7 @@ void library::Library::saveUsersToFile() {
     base::WriteCsvTsv write("users.tsv");
 
     //preparing header for file
-    std::vector<std::string>header{"NAME", "SURNAME", "ID",  "AUTHOR",	"TITLE", "------>"};
+    std::vector<std::string>header{"NAME", "SURNAME", "ID",  "AUTHOR",	"TITLE", "//NEXT BORROWED BOOKS ------>"};
     write.addHeader(header);
 
     std::vector<std::string> dataToTsv;
@@ -168,7 +168,6 @@ void library::Library::giveBackBook(const std::string &title, ClientInLibrary &c
             client.borrowedByClient.erase(client.borrowedByClient.begin(), client.borrowedByClient.begin() + index - 1);
 
             //and returns it to library
-            //MOCK
             this->manageBooks_.amounts_[1]++;
             break;
         }
@@ -189,15 +188,15 @@ std::vector<shop::ConcreteBook> library::Library::giveBackBook(int choose, libra
 
     for(shop::ConcreteBook &book : client.borrowedByClient){
 
-        //compare title from given pair and title as parameter
-        if(book.getPairOfTitleAndAuthorBook().second == client.borrowedByClient[choose].getPairOfTitleAndAuthorBook().second){
+        //compare book
+        if(book == client.borrowedByClient[choose]){
 
-            //returns index of client's vector where this particular book is situated
-            int index = client.getIndexOfBorrowedBookWithTitle(client.borrowedByClient[choose].getPairOfTitleAndAuthorBook().second);
+
+
             std::cout<<std::endl<<"Before: "<<client.borrowedByClient.size()<<std::endl;
 
-            //it should remove book with given index
-            client.borrowedByClient.erase(client.borrowedByClient.begin() + index - 1);
+            //remove book with given index
+            client.borrowedByClient.erase(client.borrowedByClient.begin() + choose);
 
             //here is ok
             std::cout<<std::endl<<"After: "<<client.borrowedByClient.size()<<std::endl;
@@ -220,6 +219,15 @@ int library::Library::getIndexOfGivenBackBook(const std::string &title) {
     for(int i = 0 ; i < manageBooks_.books_.size(); i++){
         if(manageBooks_.books_[i].getPairOfTitleAndAuthorBook().second == title){
             return i;
+        }
+    }
+}
+
+void library::Library::removeClient(std::string &clientID) {
+
+    for(int i = 0 ; i < this->clients_.size(); i++){
+        if(this->clients_[i].getNumberIDofClient() == clientID){
+            this->clients_.erase( this->clients_.begin() + i);
         }
     }
 }

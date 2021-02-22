@@ -602,10 +602,6 @@ vector
 ../ConcreteBook.h
 C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBook.h
 
-C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/Library.cpp
-Library.h
-C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/Library.h
-
 C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/Library.h
 ../BookManager.h
 C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/BookManager.h
@@ -671,16 +667,6 @@ memory
 -
 map
 -
-
-C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Tests/LibraryTests.cpp
-gtest/gtest.h
--
-../Library/Library.h
-C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/Library.h
-../BookManager.h
-C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/BookManager.h
-../Application.h
-C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
 
 C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/WriteCsvTsv.h
 ServiceCsvTsv.h

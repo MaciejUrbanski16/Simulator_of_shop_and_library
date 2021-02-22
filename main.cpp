@@ -38,6 +38,7 @@ int main(int argc, char *argv[]) {
 
     shop::Ware purchases(application);
 
+    //initializing objects to storage data of library and its books
     BookManager bookManager;
     library::Library lib(bookManager);
     lib.readUsersFromFile();
@@ -310,12 +311,9 @@ int main(int argc, char *argv[]) {
             library::Library library(books);
             library.readUsersFromFile();
 
-            std::cout << "S1: " << library.getClients().size() << std::endl;
 
-
-            std::cout << "You are at library. Please enter your ID number and password to login " << std::endl;
+            std::cout << "You are at library. Please enter your ID number to login " << std::endl;
             std::cin >> library.enterIDtoLogin;
-            std::cin >> library.enterPasswordToLogin;
 
             while (library.attemptsToLogin > 1) {
 
@@ -325,13 +323,13 @@ int main(int argc, char *argv[]) {
                     library.validLogin = true;
                     break;
                 } else {
-                    std::cout << "Your login or password are incorrect. You have " << library.attemptsToLogin
+                    std::cout << "Your login ID is incorrect. You have " << library.attemptsToLogin
                               << " left!" << std::endl;
                     library.attemptsToLogin--;
 
-                    std::cout << "Try to enter your ID number and password again!" << std::endl;
+                    std::cout << "Try to enter your ID number again!" << std::endl;
                     std::cin >> library.enterIDtoLogin;
-                    std::cin >> library.enterPasswordToLogin;
+
 
                     if (library.attemptsToLogin == 1) {
                         std::cout
@@ -341,7 +339,8 @@ int main(int argc, char *argv[]) {
 
                         if (library.createNewAccount == 'n') {
                             break;
-                        } else if (library.createNewAccount == 'y') {
+                        }
+                        else if (library.createNewAccount == 'y') {
                             std::cout << "Enter your name, surname and password in this order: " << std::endl;
 
                             library::ClientInLibrary newClient;
@@ -353,7 +352,7 @@ int main(int argc, char *argv[]) {
                             newClient.setSurnameOfClient(surname);
 
                             std::string clientID = library.generateIDofNewClient();
-                            //TODO make generating  id of new client by randoming
+
                             library.addNewClient(library::ClientInLibrary(name, surname, clientID));
 
                             library.validLogin = true;
@@ -368,7 +367,7 @@ int main(int argc, char *argv[]) {
             if (library.validLogin) {
                 if (static_cast<int>(Application::kindOfService::LIBRARY_BORROW) == application.kindOfService_ ) {
 
-                    ///process of borrowing book from libraary
+                    ///process of borrowing book from library
 
                     if (books.searchingBook() == books.FOUND) {
 
@@ -377,12 +376,12 @@ int main(int argc, char *argv[]) {
                         if (purchases.indexOfChoosenThing == books.getSizeOfCurrentSearchings()) {
                             cout << "You do not choose any book to borrow! " << endl;
                         } else {
-                            std::cout << "TU";
+
                             books.choosenTitle = books.getTitleOfSearchedBook(purchases.indexOfChoosenThing - 1);
 
                             purchases.position = books.checkIfBookExist(
                                     books.choosenTitle);   //check if chosen book exists in list and return position
-                            std::cout << "TU";
+
                             if (books.checkAmountofBookInShop(
                                     purchases)) {                        //and check if there is available one book witth chosen title at least
 
@@ -404,45 +403,54 @@ int main(int argc, char *argv[]) {
 
                     ///process of giving back book to library
                 else if (static_cast<int>(Application::kindOfService::LIBRARY_GIVE_BACK) == application.kindOfService_) {
-                    std::cout<<"Przed oddaniem: "<<library.getClients()[1].borrowedByClient.size()<<std::endl;
-                    std::cout<<"Choose book you want to give back: "<<std::endl;
+
                     library.showBorrowedBooksByUser();
-                    int index = library.getIndexOfClientWithGivenID();
 
-
-                    //i'm not sure if it is good idea to write code like this below, but i will have to do refactor of this
-                    int choose = purchases.enteringTheNumber(1,library.getClients()[index].borrowedByClient.size());
 
                     int indexOfActualClient = library.getIndexOfClientWithGivenID();
+                    //i'm not sure if it is good idea to write code like this below, but i will have to do refactor of this
                     std::vector<library::ClientInLibrary> tempClients = library.getClients();
 
-                    std::string choosenBookToGiveBack = reinterpret_cast<basic_string<char> &&>(tempClients[indexOfActualClient].borrowedByClient[choose]);
+                    //if user has borrowed some books
+                    if(!tempClients[indexOfActualClient].borrowedByClient.empty()) {
 
-                    //library.giveBackBook(choosenBookToGiveBack,
-                      //      tempClients[indexOfActualClient]);
-                      std::vector<shop::ConcreteBook> actualStateOfBorrowedBooks = library.giveBackBook(choose, tempClients[indexOfActualClient]);
+                        std::cout<<"Choose book you want to give back: "<<std::endl;
 
-                    tempClients[indexOfActualClient].setBorrowedByClient(actualStateOfBorrowedBooks);
+                        int choose = purchases.enteringTheNumber(1,
+                                                                 library.getClients()[indexOfActualClient].borrowedByClient.size());
 
+
+                        //here should be object of ConcreteBook
+                        ConcreteBook bookToGiveBack = tempClients[indexOfActualClient].borrowedByClient[choose - 1];
+
+                        books.incrementAmountOfBook(bookToGiveBack);
+
+                        std::vector<shop::ConcreteBook> actualStateOfBorrowedBooks = library.giveBackBook(choose - 1,
+                                                                                                          tempClients[indexOfActualClient]);
+
+                        tempClients[indexOfActualClient].setBorrowedByClient(actualStateOfBorrowedBooks);
+                    }
+                    else{
+                        char toBorrow;
+                        std::cout<<"You do not have any borrowed books! You can borrow [y/n] ";
+                        std::cin>>toBorrow;
+                        if(toBorrow == 'y'){
+                            //
+                        }
+                    }
+
+                    //refresh these instances
                     library.setClients(tempClients);
+                    library.setManageBooks(books);
 
-                    int p= 1;
-                    p++;
+
 
                 }
             }
 
-
-
-            std::cout<<"S2: "<<library.getClients().size()<<std::endl;
-            std::cout<<"S2: "<<library.getClients().back().getNameOfClient()<<std::endl;
-
-            std::cout<<"Przed zapisem: "<<library.getClients()[1].borrowedByClient.size()<<std::endl;
-
+            //save all data after all
             library.saveUsersToFile();
             books.saveItemsToFile();
-
-
 
             application.stage = CONFIRM;//temporary
         }

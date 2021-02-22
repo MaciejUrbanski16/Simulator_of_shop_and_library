@@ -24,3 +24,7 @@ void shop::ConcreteBook::setPairOfTitleAndAuthorBook(std::pair<std::string, std:
 void shop::ConcreteBook::setPrice(shop::ware_t price) {
     this->_price = price;
 }
+
+bool shop::ConcreteBook::operator==(ConcreteBook &c) {
+    return this->getPairOfTitleAndAuthorBook() == c.getPairOfTitleAndAuthorBook();
+}

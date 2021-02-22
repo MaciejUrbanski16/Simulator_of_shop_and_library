@@ -124,6 +124,8 @@ namespace shop {
         int getSizeOfCurrentSearchings();
 
         std::string tempAuthor;
+
+        void incrementAmountOfBook( ConcreteBook &book);
     };
 
 }

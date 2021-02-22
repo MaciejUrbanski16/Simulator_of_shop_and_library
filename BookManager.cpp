@@ -337,6 +337,19 @@ BookManager::~BookManager() {
     //this->saveItemsToFile();
 }
 
+void BookManager::incrementAmountOfBook( ConcreteBook &book) {
+
+    for(int i = 0 ; i < this->books_.size(); i++){
+
+        //finding proper book in all collection
+        if(this->books_[i].getPairOfTitleAndAuthorBook() == book.getPairOfTitleAndAuthorBook()){
+
+            this->amounts_[i]++;
+            break;
+        }
+    }
+}
+
 
 
 //----------------------------------------------------------------------------------------------------------------------

@@ -24,6 +24,8 @@ namespace shop {
         void setPairOfTitleAndAuthorBook(std::pair<std::string,std::string> &book);
         void setPrice(ware_t price);
 
+        bool operator == (ConcreteBook &c);
+
     private:
         std::pair<std::string, std::string> _book;  //storages key:AUTHOR with value:TITLE
         ware_t _price;

@@ -32,6 +32,7 @@ namespace library {
 
     class Library {
     public:
+        //
         Library(shop::BookManager &manageBooks);
 
         shop::BookManager getManageBooks();
@@ -42,15 +43,18 @@ namespace library {
         void registerNewAccount(const std::string &name, const std::string &surname, const std::string &id);
 
         int enterIDtoLogin;
-        std::string enterPasswordToLogin;
+
         int attemptsToLogin = 3;
 
+        //storage id of logged client as integer
         int currentIDloggedIn;
 
+        //return client's index from list of all clients
         int getIndexOfClientWithGivenID();
 
         virtual ~Library();
 
+        //read/save clients and his borrowed books to *.tsv file
         void readUsersFromFile();
 
         void saveUsersToFile();
@@ -63,6 +67,7 @@ namespace library {
         std::vector<ClientInLibrary> getClients();
         void setClients(const std::vector<ClientInLibrary> &clients);
 
+        //add created client to list of all clients
         void addNewClient(const ClientInLibrary& client);
 
 
@@ -72,6 +77,7 @@ namespace library {
 
 
         void showBorrowedBooksByUser();
+
 
     private:
         //instance to manage list of books
@@ -83,8 +89,7 @@ namespace library {
 
         std::map<ClientInLibrary, std::vector<shop::ConcreteBook>> clientAndBorrowedBook;
 
-
-
+        //remove client from list of all clients throughout given id
         void removeClient(std::string &clientID);
 
 
