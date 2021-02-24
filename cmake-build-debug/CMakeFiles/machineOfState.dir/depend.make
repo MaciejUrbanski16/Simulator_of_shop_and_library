@@ -6,20 +6,6 @@ CMakeFiles/machineOfState.dir/Application.cpp.obj: ../Application.h
 CMakeFiles/machineOfState.dir/Application.cpp.obj: ../ShopWare.h
 CMakeFiles/machineOfState.dir/Application.cpp.obj: ../tests.h
 
-CMakeFiles/machineOfState.dir/BagpackManager.cpp.obj: ../Application.h
-CMakeFiles/machineOfState.dir/BagpackManager.cpp.obj: ../BagpackManager.cpp
-CMakeFiles/machineOfState.dir/BagpackManager.cpp.obj: ../BagpackManager.h
-CMakeFiles/machineOfState.dir/BagpackManager.cpp.obj: ../BookManager.h
-CMakeFiles/machineOfState.dir/BagpackManager.cpp.obj: ../ConcreteBagpack.h
-CMakeFiles/machineOfState.dir/BagpackManager.cpp.obj: ../ConcreteBook.h
-CMakeFiles/machineOfState.dir/BagpackManager.cpp.obj: ../ConcreteNotepad.h
-CMakeFiles/machineOfState.dir/BagpackManager.cpp.obj: ../Library/ClientInLibrary.h
-CMakeFiles/machineOfState.dir/BagpackManager.cpp.obj: ../NotepadManager.h
-CMakeFiles/machineOfState.dir/BagpackManager.cpp.obj: ../ReadCsvTsv.h
-CMakeFiles/machineOfState.dir/BagpackManager.cpp.obj: ../ServiceCsvTsv.h
-CMakeFiles/machineOfState.dir/BagpackManager.cpp.obj: ../ShopWare.h
-CMakeFiles/machineOfState.dir/BagpackManager.cpp.obj: ../WriteCsvTsv.h
-
 CMakeFiles/machineOfState.dir/Bill.cpp.obj: ../Application.h
 CMakeFiles/machineOfState.dir/Bill.cpp.obj: ../Bill.cpp
 CMakeFiles/machineOfState.dir/Bill.cpp.obj: ../Bill.h
@@ -27,6 +13,7 @@ CMakeFiles/machineOfState.dir/Bill.cpp.obj: ../BookManager.h
 CMakeFiles/machineOfState.dir/Bill.cpp.obj: ../ConcreteBook.h
 CMakeFiles/machineOfState.dir/Bill.cpp.obj: ../ConcreteNotepad.h
 CMakeFiles/machineOfState.dir/Bill.cpp.obj: ../Library/ClientInLibrary.h
+CMakeFiles/machineOfState.dir/Bill.cpp.obj: ../Library/TimeOfBorrowing.h
 CMakeFiles/machineOfState.dir/Bill.cpp.obj: ../NotepadManager.h
 CMakeFiles/machineOfState.dir/Bill.cpp.obj: ../ReadCsvTsv.h
 CMakeFiles/machineOfState.dir/Bill.cpp.obj: ../ServiceCsvTsv.h
@@ -39,6 +26,7 @@ CMakeFiles/machineOfState.dir/BookManager.cpp.obj: ../BookManager.h
 CMakeFiles/machineOfState.dir/BookManager.cpp.obj: ../ConcreteBook.h
 CMakeFiles/machineOfState.dir/BookManager.cpp.obj: ../ConcreteNotepad.h
 CMakeFiles/machineOfState.dir/BookManager.cpp.obj: ../Library/ClientInLibrary.h
+CMakeFiles/machineOfState.dir/BookManager.cpp.obj: ../Library/TimeOfBorrowing.h
 CMakeFiles/machineOfState.dir/BookManager.cpp.obj: ../NotepadManager.h
 CMakeFiles/machineOfState.dir/BookManager.cpp.obj: ../ReadCsvTsv.h
 CMakeFiles/machineOfState.dir/BookManager.cpp.obj: ../ServiceCsvTsv.h
@@ -46,13 +34,14 @@ CMakeFiles/machineOfState.dir/BookManager.cpp.obj: ../ShopWare.h
 CMakeFiles/machineOfState.dir/BookManager.cpp.obj: ../WriteCsvTsv.h
 
 CMakeFiles/machineOfState.dir/ConcreteBagpack.cpp.obj: ../Application.h
-CMakeFiles/machineOfState.dir/ConcreteBagpack.cpp.obj: ../BagpackManager.h
 CMakeFiles/machineOfState.dir/ConcreteBagpack.cpp.obj: ../BookManager.h
 CMakeFiles/machineOfState.dir/ConcreteBagpack.cpp.obj: ../ConcreteBagpack.cpp
 CMakeFiles/machineOfState.dir/ConcreteBagpack.cpp.obj: ../ConcreteBagpack.h
 CMakeFiles/machineOfState.dir/ConcreteBagpack.cpp.obj: ../ConcreteBook.h
 CMakeFiles/machineOfState.dir/ConcreteBagpack.cpp.obj: ../ConcreteNotepad.h
 CMakeFiles/machineOfState.dir/ConcreteBagpack.cpp.obj: ../Library/ClientInLibrary.h
+CMakeFiles/machineOfState.dir/ConcreteBagpack.cpp.obj: ../Library/TimeOfBorrowing.h
+CMakeFiles/machineOfState.dir/ConcreteBagpack.cpp.obj: ../Managers/BagpackManager.h
 CMakeFiles/machineOfState.dir/ConcreteBagpack.cpp.obj: ../NotepadManager.h
 CMakeFiles/machineOfState.dir/ConcreteBagpack.cpp.obj: ../ReadCsvTsv.h
 CMakeFiles/machineOfState.dir/ConcreteBagpack.cpp.obj: ../ServiceCsvTsv.h
@@ -65,6 +54,7 @@ CMakeFiles/machineOfState.dir/ConcreteBook.cpp.obj: ../ConcreteBook.cpp
 CMakeFiles/machineOfState.dir/ConcreteBook.cpp.obj: ../ConcreteBook.h
 CMakeFiles/machineOfState.dir/ConcreteBook.cpp.obj: ../ConcreteNotepad.h
 CMakeFiles/machineOfState.dir/ConcreteBook.cpp.obj: ../Library/ClientInLibrary.h
+CMakeFiles/machineOfState.dir/ConcreteBook.cpp.obj: ../Library/TimeOfBorrowing.h
 CMakeFiles/machineOfState.dir/ConcreteBook.cpp.obj: ../NotepadManager.h
 CMakeFiles/machineOfState.dir/ConcreteBook.cpp.obj: ../ReadCsvTsv.h
 CMakeFiles/machineOfState.dir/ConcreteBook.cpp.obj: ../ServiceCsvTsv.h
@@ -77,6 +67,7 @@ CMakeFiles/machineOfState.dir/ConcreteNotepad.cpp.obj: ../ConcreteBook.h
 CMakeFiles/machineOfState.dir/ConcreteNotepad.cpp.obj: ../ConcreteNotepad.cpp
 CMakeFiles/machineOfState.dir/ConcreteNotepad.cpp.obj: ../ConcreteNotepad.h
 CMakeFiles/machineOfState.dir/ConcreteNotepad.cpp.obj: ../Library/ClientInLibrary.h
+CMakeFiles/machineOfState.dir/ConcreteNotepad.cpp.obj: ../Library/TimeOfBorrowing.h
 CMakeFiles/machineOfState.dir/ConcreteNotepad.cpp.obj: ../NotepadManager.h
 CMakeFiles/machineOfState.dir/ConcreteNotepad.cpp.obj: ../ReadCsvTsv.h
 CMakeFiles/machineOfState.dir/ConcreteNotepad.cpp.obj: ../ServiceCsvTsv.h
@@ -90,6 +81,7 @@ CMakeFiles/machineOfState.dir/ConcreteSchoolSupply.cpp.obj: ../ConcreteNotepad.h
 CMakeFiles/machineOfState.dir/ConcreteSchoolSupply.cpp.obj: ../ConcreteSchoolSupply.cpp
 CMakeFiles/machineOfState.dir/ConcreteSchoolSupply.cpp.obj: ../ConcreteSchoolSupply.h
 CMakeFiles/machineOfState.dir/ConcreteSchoolSupply.cpp.obj: ../Library/ClientInLibrary.h
+CMakeFiles/machineOfState.dir/ConcreteSchoolSupply.cpp.obj: ../Library/TimeOfBorrowing.h
 CMakeFiles/machineOfState.dir/ConcreteSchoolSupply.cpp.obj: ../NotepadManager.h
 CMakeFiles/machineOfState.dir/ConcreteSchoolSupply.cpp.obj: ../ReadCsvTsv.h
 CMakeFiles/machineOfState.dir/ConcreteSchoolSupply.cpp.obj: ../SchoolSuppliesManager.h
@@ -103,6 +95,7 @@ CMakeFiles/machineOfState.dir/Library/ClientInLibrary.cpp.obj: ../ConcreteBook.h
 CMakeFiles/machineOfState.dir/Library/ClientInLibrary.cpp.obj: ../ConcreteNotepad.h
 CMakeFiles/machineOfState.dir/Library/ClientInLibrary.cpp.obj: ../Library/ClientInLibrary.cpp
 CMakeFiles/machineOfState.dir/Library/ClientInLibrary.cpp.obj: ../Library/ClientInLibrary.h
+CMakeFiles/machineOfState.dir/Library/ClientInLibrary.cpp.obj: ../Library/TimeOfBorrowing.h
 CMakeFiles/machineOfState.dir/Library/ClientInLibrary.cpp.obj: ../NotepadManager.h
 CMakeFiles/machineOfState.dir/Library/ClientInLibrary.cpp.obj: ../ReadCsvTsv.h
 CMakeFiles/machineOfState.dir/Library/ClientInLibrary.cpp.obj: ../ServiceCsvTsv.h
@@ -116,17 +109,37 @@ CMakeFiles/machineOfState.dir/Library/Library.cpp.obj: ../ConcreteNotepad.h
 CMakeFiles/machineOfState.dir/Library/Library.cpp.obj: ../Library/ClientInLibrary.h
 CMakeFiles/machineOfState.dir/Library/Library.cpp.obj: ../Library/Library.cpp
 CMakeFiles/machineOfState.dir/Library/Library.cpp.obj: ../Library/Library.h
+CMakeFiles/machineOfState.dir/Library/Library.cpp.obj: ../Library/TimeOfBorrowing.h
 CMakeFiles/machineOfState.dir/Library/Library.cpp.obj: ../NotepadManager.h
 CMakeFiles/machineOfState.dir/Library/Library.cpp.obj: ../ReadCsvTsv.h
 CMakeFiles/machineOfState.dir/Library/Library.cpp.obj: ../ServiceCsvTsv.h
 CMakeFiles/machineOfState.dir/Library/Library.cpp.obj: ../ShopWare.h
 CMakeFiles/machineOfState.dir/Library/Library.cpp.obj: ../WriteCsvTsv.h
 
+CMakeFiles/machineOfState.dir/Library/TimeOfBorrowing.cpp.obj: ../Library/TimeOfBorrowing.cpp
+CMakeFiles/machineOfState.dir/Library/TimeOfBorrowing.cpp.obj: ../Library/TimeOfBorrowing.h
+
+CMakeFiles/machineOfState.dir/Managers/BagpackManager.cpp.obj: ../Application.h
+CMakeFiles/machineOfState.dir/Managers/BagpackManager.cpp.obj: ../BookManager.h
+CMakeFiles/machineOfState.dir/Managers/BagpackManager.cpp.obj: ../ConcreteBagpack.h
+CMakeFiles/machineOfState.dir/Managers/BagpackManager.cpp.obj: ../ConcreteBook.h
+CMakeFiles/machineOfState.dir/Managers/BagpackManager.cpp.obj: ../ConcreteNotepad.h
+CMakeFiles/machineOfState.dir/Managers/BagpackManager.cpp.obj: ../Library/ClientInLibrary.h
+CMakeFiles/machineOfState.dir/Managers/BagpackManager.cpp.obj: ../Library/TimeOfBorrowing.h
+CMakeFiles/machineOfState.dir/Managers/BagpackManager.cpp.obj: ../Managers/BagpackManager.cpp
+CMakeFiles/machineOfState.dir/Managers/BagpackManager.cpp.obj: ../Managers/BagpackManager.h
+CMakeFiles/machineOfState.dir/Managers/BagpackManager.cpp.obj: ../NotepadManager.h
+CMakeFiles/machineOfState.dir/Managers/BagpackManager.cpp.obj: ../ReadCsvTsv.h
+CMakeFiles/machineOfState.dir/Managers/BagpackManager.cpp.obj: ../ServiceCsvTsv.h
+CMakeFiles/machineOfState.dir/Managers/BagpackManager.cpp.obj: ../ShopWare.h
+CMakeFiles/machineOfState.dir/Managers/BagpackManager.cpp.obj: ../WriteCsvTsv.h
+
 CMakeFiles/machineOfState.dir/NotepadManager.cpp.obj: ../Application.h
 CMakeFiles/machineOfState.dir/NotepadManager.cpp.obj: ../BookManager.h
 CMakeFiles/machineOfState.dir/NotepadManager.cpp.obj: ../ConcreteBook.h
 CMakeFiles/machineOfState.dir/NotepadManager.cpp.obj: ../ConcreteNotepad.h
 CMakeFiles/machineOfState.dir/NotepadManager.cpp.obj: ../Library/ClientInLibrary.h
+CMakeFiles/machineOfState.dir/NotepadManager.cpp.obj: ../Library/TimeOfBorrowing.h
 CMakeFiles/machineOfState.dir/NotepadManager.cpp.obj: ../NotepadManager.cpp
 CMakeFiles/machineOfState.dir/NotepadManager.cpp.obj: ../NotepadManager.h
 CMakeFiles/machineOfState.dir/NotepadManager.cpp.obj: ../ReadCsvTsv.h
@@ -139,6 +152,7 @@ CMakeFiles/machineOfState.dir/ReadCsvTsv.cpp.obj: ../BookManager.h
 CMakeFiles/machineOfState.dir/ReadCsvTsv.cpp.obj: ../ConcreteBook.h
 CMakeFiles/machineOfState.dir/ReadCsvTsv.cpp.obj: ../ConcreteNotepad.h
 CMakeFiles/machineOfState.dir/ReadCsvTsv.cpp.obj: ../Library/ClientInLibrary.h
+CMakeFiles/machineOfState.dir/ReadCsvTsv.cpp.obj: ../Library/TimeOfBorrowing.h
 CMakeFiles/machineOfState.dir/ReadCsvTsv.cpp.obj: ../NotepadManager.h
 CMakeFiles/machineOfState.dir/ReadCsvTsv.cpp.obj: ../ReadCsvTsv.cpp
 CMakeFiles/machineOfState.dir/ReadCsvTsv.cpp.obj: ../ReadCsvTsv.h
@@ -152,6 +166,7 @@ CMakeFiles/machineOfState.dir/SchoolSuppliesManager.cpp.obj: ../ConcreteBook.h
 CMakeFiles/machineOfState.dir/SchoolSuppliesManager.cpp.obj: ../ConcreteNotepad.h
 CMakeFiles/machineOfState.dir/SchoolSuppliesManager.cpp.obj: ../ConcreteSchoolSupply.h
 CMakeFiles/machineOfState.dir/SchoolSuppliesManager.cpp.obj: ../Library/ClientInLibrary.h
+CMakeFiles/machineOfState.dir/SchoolSuppliesManager.cpp.obj: ../Library/TimeOfBorrowing.h
 CMakeFiles/machineOfState.dir/SchoolSuppliesManager.cpp.obj: ../NotepadManager.h
 CMakeFiles/machineOfState.dir/SchoolSuppliesManager.cpp.obj: ../ReadCsvTsv.h
 CMakeFiles/machineOfState.dir/SchoolSuppliesManager.cpp.obj: ../SchoolSuppliesManager.cpp
@@ -189,12 +204,13 @@ CMakeFiles/machineOfState.dir/Tests/BagpackTests.cpp.obj: ../lib/googletest-mast
 CMakeFiles/machineOfState.dir/Tests/BagpackTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
 CMakeFiles/machineOfState.dir/Tests/BagpackTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
 CMakeFiles/machineOfState.dir/Tests/BagpackTests.cpp.obj: ../Application.h
-CMakeFiles/machineOfState.dir/Tests/BagpackTests.cpp.obj: ../BagpackManager.h
 CMakeFiles/machineOfState.dir/Tests/BagpackTests.cpp.obj: ../BookManager.h
 CMakeFiles/machineOfState.dir/Tests/BagpackTests.cpp.obj: ../ConcreteBagpack.h
 CMakeFiles/machineOfState.dir/Tests/BagpackTests.cpp.obj: ../ConcreteBook.h
 CMakeFiles/machineOfState.dir/Tests/BagpackTests.cpp.obj: ../ConcreteNotepad.h
 CMakeFiles/machineOfState.dir/Tests/BagpackTests.cpp.obj: ../Library/ClientInLibrary.h
+CMakeFiles/machineOfState.dir/Tests/BagpackTests.cpp.obj: ../Library/TimeOfBorrowing.h
+CMakeFiles/machineOfState.dir/Tests/BagpackTests.cpp.obj: ../Managers/BagpackManager.h
 CMakeFiles/machineOfState.dir/Tests/BagpackTests.cpp.obj: ../NotepadManager.h
 CMakeFiles/machineOfState.dir/Tests/BagpackTests.cpp.obj: ../ReadCsvTsv.h
 CMakeFiles/machineOfState.dir/Tests/BagpackTests.cpp.obj: ../ServiceCsvTsv.h
@@ -228,6 +244,7 @@ CMakeFiles/machineOfState.dir/Tests/BookTests.cpp.obj: ../BookManager.h
 CMakeFiles/machineOfState.dir/Tests/BookTests.cpp.obj: ../ConcreteBook.h
 CMakeFiles/machineOfState.dir/Tests/BookTests.cpp.obj: ../ConcreteNotepad.h
 CMakeFiles/machineOfState.dir/Tests/BookTests.cpp.obj: ../Library/ClientInLibrary.h
+CMakeFiles/machineOfState.dir/Tests/BookTests.cpp.obj: ../Library/TimeOfBorrowing.h
 CMakeFiles/machineOfState.dir/Tests/BookTests.cpp.obj: ../NotepadManager.h
 CMakeFiles/machineOfState.dir/Tests/BookTests.cpp.obj: ../ReadCsvTsv.h
 CMakeFiles/machineOfState.dir/Tests/BookTests.cpp.obj: ../ServiceCsvTsv.h
@@ -261,6 +278,7 @@ CMakeFiles/machineOfState.dir/Tests/LibraryTests.cpp.obj: ../ConcreteBook.h
 CMakeFiles/machineOfState.dir/Tests/LibraryTests.cpp.obj: ../ConcreteNotepad.h
 CMakeFiles/machineOfState.dir/Tests/LibraryTests.cpp.obj: ../Library/ClientInLibrary.h
 CMakeFiles/machineOfState.dir/Tests/LibraryTests.cpp.obj: ../Library/Library.h
+CMakeFiles/machineOfState.dir/Tests/LibraryTests.cpp.obj: ../Library/TimeOfBorrowing.h
 CMakeFiles/machineOfState.dir/Tests/LibraryTests.cpp.obj: ../NotepadManager.h
 CMakeFiles/machineOfState.dir/Tests/LibraryTests.cpp.obj: ../ReadCsvTsv.h
 CMakeFiles/machineOfState.dir/Tests/LibraryTests.cpp.obj: ../ServiceCsvTsv.h
@@ -293,6 +311,7 @@ CMakeFiles/machineOfState.dir/Tests/NotepadTests.cpp.obj: ../BookManager.h
 CMakeFiles/machineOfState.dir/Tests/NotepadTests.cpp.obj: ../ConcreteBook.h
 CMakeFiles/machineOfState.dir/Tests/NotepadTests.cpp.obj: ../ConcreteNotepad.h
 CMakeFiles/machineOfState.dir/Tests/NotepadTests.cpp.obj: ../Library/ClientInLibrary.h
+CMakeFiles/machineOfState.dir/Tests/NotepadTests.cpp.obj: ../Library/TimeOfBorrowing.h
 CMakeFiles/machineOfState.dir/Tests/NotepadTests.cpp.obj: ../NotepadManager.h
 CMakeFiles/machineOfState.dir/Tests/NotepadTests.cpp.obj: ../ReadCsvTsv.h
 CMakeFiles/machineOfState.dir/Tests/NotepadTests.cpp.obj: ../ServiceCsvTsv.h
@@ -327,6 +346,7 @@ CMakeFiles/machineOfState.dir/Tests/SchoolSuppliesTests.cpp.obj: ../ConcreteBook
 CMakeFiles/machineOfState.dir/Tests/SchoolSuppliesTests.cpp.obj: ../ConcreteNotepad.h
 CMakeFiles/machineOfState.dir/Tests/SchoolSuppliesTests.cpp.obj: ../ConcreteSchoolSupply.h
 CMakeFiles/machineOfState.dir/Tests/SchoolSuppliesTests.cpp.obj: ../Library/ClientInLibrary.h
+CMakeFiles/machineOfState.dir/Tests/SchoolSuppliesTests.cpp.obj: ../Library/TimeOfBorrowing.h
 CMakeFiles/machineOfState.dir/Tests/SchoolSuppliesTests.cpp.obj: ../NotepadManager.h
 CMakeFiles/machineOfState.dir/Tests/SchoolSuppliesTests.cpp.obj: ../ReadCsvTsv.h
 CMakeFiles/machineOfState.dir/Tests/SchoolSuppliesTests.cpp.obj: ../SchoolSuppliesManager.h
@@ -393,6 +413,7 @@ CMakeFiles/machineOfState.dir/generalFunctions.cpp.obj: ../BookManager.h
 CMakeFiles/machineOfState.dir/generalFunctions.cpp.obj: ../ConcreteBook.h
 CMakeFiles/machineOfState.dir/generalFunctions.cpp.obj: ../ConcreteNotepad.h
 CMakeFiles/machineOfState.dir/generalFunctions.cpp.obj: ../Library/ClientInLibrary.h
+CMakeFiles/machineOfState.dir/generalFunctions.cpp.obj: ../Library/TimeOfBorrowing.h
 CMakeFiles/machineOfState.dir/generalFunctions.cpp.obj: ../NotepadManager.h
 CMakeFiles/machineOfState.dir/generalFunctions.cpp.obj: ../ReadCsvTsv.h
 CMakeFiles/machineOfState.dir/generalFunctions.cpp.obj: ../ServiceCsvTsv.h
@@ -401,21 +422,6 @@ CMakeFiles/machineOfState.dir/generalFunctions.cpp.obj: ../WriteCsvTsv.h
 CMakeFiles/machineOfState.dir/generalFunctions.cpp.obj: ../generalFunctions.cpp
 CMakeFiles/machineOfState.dir/generalFunctions.cpp.obj: ../generalFunctions.h
 
-CMakeFiles/machineOfState.dir/main.cpp.obj: ../lib/googletest-master/googlemock/include/gmock/gmock-actions.h
-CMakeFiles/machineOfState.dir/main.cpp.obj: ../lib/googletest-master/googlemock/include/gmock/gmock-cardinalities.h
-CMakeFiles/machineOfState.dir/main.cpp.obj: ../lib/googletest-master/googlemock/include/gmock/gmock-function-mocker.h
-CMakeFiles/machineOfState.dir/main.cpp.obj: ../lib/googletest-master/googlemock/include/gmock/gmock-generated-actions.h
-CMakeFiles/machineOfState.dir/main.cpp.obj: ../lib/googletest-master/googlemock/include/gmock/gmock-matchers.h
-CMakeFiles/machineOfState.dir/main.cpp.obj: ../lib/googletest-master/googlemock/include/gmock/gmock-more-matchers.h
-CMakeFiles/machineOfState.dir/main.cpp.obj: ../lib/googletest-master/googlemock/include/gmock/gmock-nice-strict.h
-CMakeFiles/machineOfState.dir/main.cpp.obj: ../lib/googletest-master/googlemock/include/gmock/gmock-spec-builders.h
-CMakeFiles/machineOfState.dir/main.cpp.obj: ../lib/googletest-master/googlemock/include/gmock/gmock.h
-CMakeFiles/machineOfState.dir/main.cpp.obj: ../lib/googletest-master/googlemock/include/gmock/internal/custom/gmock-generated-actions.h
-CMakeFiles/machineOfState.dir/main.cpp.obj: ../lib/googletest-master/googlemock/include/gmock/internal/custom/gmock-matchers.h
-CMakeFiles/machineOfState.dir/main.cpp.obj: ../lib/googletest-master/googlemock/include/gmock/internal/custom/gmock-port.h
-CMakeFiles/machineOfState.dir/main.cpp.obj: ../lib/googletest-master/googlemock/include/gmock/internal/gmock-internal-utils.h
-CMakeFiles/machineOfState.dir/main.cpp.obj: ../lib/googletest-master/googlemock/include/gmock/internal/gmock-port.h
-CMakeFiles/machineOfState.dir/main.cpp.obj: ../lib/googletest-master/googlemock/include/gmock/internal/gmock-pp.h
 CMakeFiles/machineOfState.dir/main.cpp.obj: ../lib/googletest-master/googletest/include/gtest/gtest-death-test.h
 CMakeFiles/machineOfState.dir/main.cpp.obj: ../lib/googletest-master/googletest/include/gtest/gtest-matchers.h
 CMakeFiles/machineOfState.dir/main.cpp.obj: ../lib/googletest-master/googletest/include/gtest/gtest-message.h
@@ -437,7 +443,6 @@ CMakeFiles/machineOfState.dir/main.cpp.obj: ../lib/googletest-master/googletest/
 CMakeFiles/machineOfState.dir/main.cpp.obj: ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
 CMakeFiles/machineOfState.dir/main.cpp.obj: ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
 CMakeFiles/machineOfState.dir/main.cpp.obj: ../Application.h
-CMakeFiles/machineOfState.dir/main.cpp.obj: ../BagpackManager.h
 CMakeFiles/machineOfState.dir/main.cpp.obj: ../Bill.h
 CMakeFiles/machineOfState.dir/main.cpp.obj: ../BookManager.h
 CMakeFiles/machineOfState.dir/main.cpp.obj: ../ConcreteBagpack.h
@@ -446,6 +451,8 @@ CMakeFiles/machineOfState.dir/main.cpp.obj: ../ConcreteNotepad.h
 CMakeFiles/machineOfState.dir/main.cpp.obj: ../ConcreteSchoolSupply.h
 CMakeFiles/machineOfState.dir/main.cpp.obj: ../Library/ClientInLibrary.h
 CMakeFiles/machineOfState.dir/main.cpp.obj: ../Library/Library.h
+CMakeFiles/machineOfState.dir/main.cpp.obj: ../Library/TimeOfBorrowing.h
+CMakeFiles/machineOfState.dir/main.cpp.obj: ../Managers/BagpackManager.h
 CMakeFiles/machineOfState.dir/main.cpp.obj: ../NotepadManager.h
 CMakeFiles/machineOfState.dir/main.cpp.obj: ../ReadCsvTsv.h
 CMakeFiles/machineOfState.dir/main.cpp.obj: ../SchoolSuppliesManager.h

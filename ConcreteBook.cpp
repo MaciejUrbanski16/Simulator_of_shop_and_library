@@ -28,3 +28,7 @@ void shop::ConcreteBook::setPrice(shop::ware_t price) {
 bool shop::ConcreteBook::operator==(ConcreteBook &c) {
     return this->getPairOfTitleAndAuthorBook() == c.getPairOfTitleAndAuthorBook();
 }
+
+std::ostream &shop::operator<<(std::ostream &out, shop::ConcreteBook &book) {
+    return out<<book._book.first<<"  "<<book._book.second;
+}

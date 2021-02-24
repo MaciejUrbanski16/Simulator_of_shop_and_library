@@ -9,32 +9,38 @@
 #include "Application.h"
 #include "BookManager.h"
 #include "NotepadManager.h"
-#include "BagpackManager.h"
+#include "Managers/BagpackManager.h"
 #include "SchoolSuppliesManager.h"
 
 #include "Library/Library.h"
+#include "Library/TimeOfBorrowing.h"
 
 #include "Bill.h"
 
 #include <gtest/gtest.h>
-#include <gmock/gmock.h>
+
 
 #include <map>
 #include <ctime>
+#include <chrono>
 
 using namespace std;
 
 int main(int argc, char *argv[]) {
 
-    srand(time(nullptr));
 
-    //instance of class which includes config of program
-    Application application;
+    library::TimeOfBorrowing t1;
+
+    library::TimeLeft t2(t1);
 
     //start tests
     testing::InitGoogleTest(&argc,argv);
 
 
+    srand(time(nullptr));
+
+    //instance of class which includes config of program
+    Application application;
 
     shop::Ware purchases(application);
 
@@ -311,6 +317,10 @@ int main(int argc, char *argv[]) {
             library::Library library(books);
             library.readUsersFromFile();
 
+            library::TimeOfBorrowing time1;
+            std::string timePrev = time1.getCurrentTimeAsString();
+            std::cout<<"AsString: "<<timePrev<<std::endl;
+
 
             std::cout << "You are at library. Please enter your ID number to login " << std::endl;
             std::cin >> library.enterIDtoLogin;
@@ -365,43 +375,90 @@ int main(int argc, char *argv[]) {
 
             //check if process of login was successful
             if (library.validLogin) {
+
+                //if client wants to borrow a book
                 if (static_cast<int>(Application::kindOfService::LIBRARY_BORROW) == application.kindOfService_ ) {
 
                     ///process of borrowing book from library
 
-                    if (books.searchingBook() == books.FOUND) {
+                    int indexOfActualClient = library.getIndexOfClientWithGivenID();
 
-                        purchases.indexOfChoosenThing = books.chooseOfSearchedBook();
+                    std::vector<library::ClientInLibrary> tempClients = library.getClients();
 
-                        if (purchases.indexOfChoosenThing == books.getSizeOfCurrentSearchings()) {
-                            cout << "You do not choose any book to borrow! " << endl;
-                        } else {
+                    //get current time to compare with deadlines
+                    library::TimeOfBorrowing currentTime;
 
-                            books.choosenTitle = books.getTitleOfSearchedBook(purchases.indexOfChoosenThing - 1);
+                    //check if client has not any overdue books
+                    ///TODO how to get deadline of concrete borrowed book
 
-                            purchases.position = books.checkIfBookExist(
-                                    books.choosenTitle);   //check if chosen book exists in list and return position
+                    library::TimeLeft firstDeadline,actualTime(currentTime);
+                    std::pair<int, library::TimeLeft> theShortestDealdine;
+                    if(!tempClients[indexOfActualClient].getBorrowedByClient().empty()) {
 
-                            if (books.checkAmountofBookInShop(
-                                    purchases)) {                        //and check if there is available one book witth chosen title at least
+                        //take the shortest term of book to give back
+                        //index of this term is associated with this term
+                        theShortestDealdine = tempClients[indexOfActualClient].getTheShortestDeadline();
+                    }
 
-                                //borrow book
-                                std::string tempTitle = books.choosenTitle;
-                                library.borrowBook(purchases.position, tempTitle);
 
-                                std::cout << "You borrow " << books.tempAuthor << "   " << tempTitle << std::endl;
+                    //compare the actual time with the shortest time (deadline)
+                    if(actualTime > theShortestDealdine.second) {
+                        
+                        //there is time yet
+                        std::cout << "There is time yet: " << actualTime - firstDeadline << std::endl;
+                        
+                        //search chosen book by client
+                        if (books.searchingBook() == books.FOUND) {
 
-                                library.setManageBooks(books); //refresh actual state of book in library
+                            purchases.indexOfChoosenThing = books.chooseOfSearchedBook();
 
+                            if (purchases.indexOfChoosenThing == books.getSizeOfCurrentSearchings()) {
+                                cout << "You did not choose any book to borrow! " << endl;
+                            } else {
+
+                                books.choosenTitle = books.getTitleOfSearchedBook(purchases.indexOfChoosenThing - 1);
+
+                                purchases.position = books.checkIfBookExist(books.choosenTitle);   //check if chosen book exists in list and return position
+
+                                if (books.checkAmountofBookInShop(purchases)) {                        //and check if there is available one book witth chosen title at least
+
+                                    //borrow book
+                                    std::string tempTitle = books.choosenTitle;
+                                    library.borrowBook(purchases.position, tempTitle);
+
+                                    std::cout << "You borrow " << books.tempAuthor << "   " << tempTitle << std::endl;
+
+
+                                    //*TODO when user borrow i need to remeber the data of his borrowing
+                                    //and set  deadline of giving back and save this deadline wuth borrowed book
+                                    //and when user would like to borrow another book i have to check if he has not any broken deadline
+                                    //TODO i have to read
+
+
+
+                                    std::cout << library.currentIDloggedIn << std::endl;
+
+                                    library.setManageBooks(books); //refresh actual state of book in library
+
+                                }
                             }
+                        } else {
+                            std::cout << "There are no more books with given title! " << std::endl;
                         }
-                    } else {
-                        std::cout << "There are no more books with given title! " << std::endl;
+                    }
+                    else{
+                        //the time was expired
+
+                        //show book which time was expired
+                        std::cout << "The time of borrowing was expired! Until you give back your book "
+                                  << tempClients[indexOfActualClient].getBorrowedByClient()[theShortestDealdine.first] <<
+                                  " you can not borrow another! " << std::endl;
                     }
                 }
 
 
                     ///process of giving back book to library
+                    //if client wants to give back a book
                 else if (static_cast<int>(Application::kindOfService::LIBRARY_GIVE_BACK) == application.kindOfService_) {
 
                     library.showBorrowedBooksByUser();
@@ -443,8 +500,6 @@ int main(int argc, char *argv[]) {
                     library.setClients(tempClients);
                     library.setManageBooks(books);
 
-
-
                 }
             }
 
@@ -456,7 +511,6 @@ int main(int argc, char *argv[]) {
         }
 
     }
-
 
 
    /// show bill after shopping
@@ -472,7 +526,7 @@ int main(int argc, char *argv[]) {
        bill.printBill(toPay);
    }
 
-    return 0;//RUN_ALL_TESTS();
+    return 0; //RUN_ALL_TESTS();
 }
 
 

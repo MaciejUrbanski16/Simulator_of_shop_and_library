@@ -25,6 +25,7 @@ namespace shop {
         void setPrice(ware_t price);
 
         bool operator == (ConcreteBook &c);
+        friend std::ostream & operator << (std::ostream &out, ConcreteBook &book);
 
     private:
         std::pair<std::string, std::string> _book;  //storages key:AUTHOR with value:TITLE

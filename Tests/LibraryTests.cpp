@@ -5,6 +5,7 @@
 #include <gtest/gtest.h>
 
 #include "../Library/Library.h"
+#include "../Library/TimeOfBorrowing.h"
 #include "../BookManager.h"
 #include "../Application.h"
 
@@ -50,3 +51,105 @@ TEST_F(LibraryTests, readBooksToLibrbary2)
     //THEN
     ASSERT_EQ(library.getManageBooks().amounts_.size(),library.getManageBooks().books_.size());
 }
+
+TEST_F(LibraryTests, generateID)
+{
+    //GIVEN
+    shop::BookManager books;
+    books.readItemsFromFile();
+    library::Library library(books);
+
+    //WHEN
+    std::string newID = library.generateIDofNewClient();
+
+    //THEN
+    ASSERT_EQ(newID.length(), 5);
+}
+
+TEST_F(LibraryTests, convertingTimeFromStringToTimeLeftAfterBorrowingType)
+{
+    //GIVEN
+    shop::BookManager books;
+    books.readItemsFromFile();
+    library::Library library(books);
+    library::TimeOfBorrowing time;
+
+
+    //WHEN
+    library::TimeLeft t1(time);
+    library::TimeLeft t2(time);
+
+
+    //THEN
+    ASSERT_EQ(1,1);
+}
+
+TEST_F(LibraryTests, compareTimes)
+{
+    //GIVEN
+    shop::BookManager books;
+    books.readItemsFromFile();
+    library::Library library(books);
+    library::TimeLeft time1 ("22.03.2021");
+    library::TimeLeft time2 ("22.02.2021");
+
+    bool equal = false;
+
+
+    //WHEN
+    if(time1 == time2){
+        equal = true;
+    }
+
+    //THEN
+    ASSERT_TRUE(!equal);
+}
+
+TEST_F(LibraryTests, compareTimes2)
+{
+    //GIVEN
+    shop::BookManager books;
+    books.readItemsFromFile();
+    library::Library library(books);
+    library::TimeLeft time1 ("22.03.2021");
+    library::TimeLeft time2 ("22.03.2021");
+
+    bool equal = false;
+
+
+    //WHEN
+    if(time1 == time2){
+        equal = true;
+    }
+
+    //THEN
+    ASSERT_TRUE(equal);
+}
+
+TEST_F(LibraryTests, theShortestTerm)
+{
+    //GIVEN
+    shop::BookManager books;
+    books.readItemsFromFile();
+    library::Library library(books);
+    library::TimeLeft time1 ("22.03.2021");
+    library::TimeLeft time2 ("22.03.2021");
+
+    library.readUsersFromFile();
+
+    std::vector<library::ClientInLibrary> clients = library.getClients();
+
+
+    bool equal = false;
+
+
+    //WHEN
+    if(time1 == time2){
+        equal = true;
+    }
+
+    //THEN
+    ASSERT_TRUE(equal);
+}
+
+

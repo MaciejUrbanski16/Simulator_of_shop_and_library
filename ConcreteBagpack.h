@@ -5,7 +5,7 @@
 #ifndef MACHINEOFSTATE_CONCRETEBAGPACK_H
 #define MACHINEOFSTATE_CONCRETEBAGPACK_H
 
-#include "BagpackManager.h"
+#include "Managers/BagpackManager.h"
 
 #include <string>
 namespace shop {

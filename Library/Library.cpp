@@ -31,8 +31,9 @@ void library::Library::setManageBooks(const shop::BookManager &manageBooks) {
 
 void library::Library::readUsersFromFile() {
 
-
+    //to avoid strange bugs
     this->clients_.clear();
+
 
     base::ReadCsvTsv read("users.tsv");
     read.readFromFile( this->clients_ );
@@ -43,13 +44,13 @@ void library::Library::saveUsersToFile() {
     base::WriteCsvTsv write("users.tsv");
 
     //preparing header for file
-    std::vector<std::string>header{"NAME", "SURNAME", "ID",  "AUTHOR",	"TITLE", "//NEXT BORROWED BOOKS ------>"};
+    std::vector<std::string>header{"NAME", "SURNAME", "ID",  "AUTHOR",	"TITLE","LEFT_TIME ", "//NEXT BORROWED BOOKS ------>"};
     write.addHeader(header);
 
     std::vector<std::string> dataToTsv;
     std::string readyData;
 
-    int i = 0 ;
+
     for(auto & cl : clients_)
     {
         //saving data of client
@@ -61,12 +62,18 @@ void library::Library::saveUsersToFile() {
         //saving borrowed books by client
         std::vector<shop::ConcreteBook> tempBooks = cl.getBorrowedByClient();
 
+        int i = 0 ;
         for(shop::ConcreteBook &book : tempBooks){
+            //assert(tempBooks.size() == cl.termToGiveBackBorrowedBooks.size());
             dataToTsv.push_back(book.getPairOfTitleAndAuthorBook().first);
             dataToTsv.push_back(book.getPairOfTitleAndAuthorBook().second);
+
+            dataToTsv.push_back(cl.termToGiveBackBorrowedBooks[i]);
+
+            i++;
         }
 
-        i++;
+
 
         write.writeToFile(dataToTsv);
         dataToTsv.clear();
@@ -136,11 +143,18 @@ bool library::Library::loginToLibrary(int introYourID) {
 
 void library::Library::borrowBook(int position,const std::string &title) {
 
+    //get time when user has to give back book
+    TimeOfBorrowing time;  //actual time
+    TimeLeft timeLeft(time);
+
     //decrements amount of available books
     this->getManageBooks().amounts_[position] --;
 
     //add chosen book to container with borrowed book of this particular client
     this->clients_[getIndexOfClientWithGivenID()].borrowedByClient.push_back(this->manageBooks_.getBook(position));
+
+    //save term of borrowing book
+    this->clients_[getIndexOfClientWithGivenID()].termToGiveBackBorrowedBooks.push_back(timeLeft.getTimeToGiveBack());
 }
 
 int library::Library::getIndexOfClientWithGivenID() {
@@ -179,7 +193,7 @@ void library::Library::showBorrowedBooksByUser() {
     int i = 0;
     for(shop::ConcreteBook  borrowed : this->clients_[getIndexOfClientWithGivenID()].borrowedByClient){
 
-        std::cout<<i+1<<" ."<<borrowed.getPairOfTitleAndAuthorBook().second<<std::endl;
+        std::cout<<i+1<<". "<<borrowed.getPairOfTitleAndAuthorBook().second<<std::endl;
         i++;
     }
 }
@@ -192,18 +206,17 @@ std::vector<shop::ConcreteBook> library::Library::giveBackBook(int choose, libra
         if(book == client.borrowedByClient[choose]){
 
 
-
-            std::cout<<std::endl<<"Before: "<<client.borrowedByClient.size()<<std::endl;
-
             //remove book with given index
             client.borrowedByClient.erase(client.borrowedByClient.begin() + choose);
 
-            //here is ok
-            std::cout<<std::endl<<"After: "<<client.borrowedByClient.size()<<std::endl;
+            //remove term of this particular book
+            client.termToGiveBackBorrowedBooks.erase(client.termToGiveBackBorrowedBooks.begin() + choose);
+
 
             //return given back book to library
             int currIndexOfGivenBackBook = getIndexOfGivenBackBook(book.getPairOfTitleAndAuthorBook().second);
             this->manageBooks_.amounts_[currIndexOfGivenBackBook]++;
+
             break;
         }
     }
@@ -221,6 +234,7 @@ int library::Library::getIndexOfGivenBackBook(const std::string &title) {
             return i;
         }
     }
+    return -1;
 }
 
 void library::Library::removeClient(std::string &clientID) {

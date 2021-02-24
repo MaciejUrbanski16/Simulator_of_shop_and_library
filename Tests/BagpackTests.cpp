@@ -3,7 +3,7 @@
 //
 
 #include <gtest/gtest.h>
-#include "../BagpackManager.h"
+#include "../Managers/BagpackManager.h"
 
 
 #include "../tests.h"

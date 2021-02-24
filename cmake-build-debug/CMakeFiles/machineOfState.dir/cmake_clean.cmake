@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/machineOfState.dir/Application.cpp.obj"
-  "CMakeFiles/machineOfState.dir/BagpackManager.cpp.obj"
   "CMakeFiles/machineOfState.dir/Bill.cpp.obj"
   "CMakeFiles/machineOfState.dir/BookManager.cpp.obj"
   "CMakeFiles/machineOfState.dir/ConcreteBagpack.cpp.obj"
@@ -9,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/machineOfState.dir/ConcreteSchoolSupply.cpp.obj"
   "CMakeFiles/machineOfState.dir/Library/ClientInLibrary.cpp.obj"
   "CMakeFiles/machineOfState.dir/Library/Library.cpp.obj"
+  "CMakeFiles/machineOfState.dir/Library/TimeOfBorrowing.cpp.obj"
+  "CMakeFiles/machineOfState.dir/Managers/BagpackManager.cpp.obj"
   "CMakeFiles/machineOfState.dir/NotepadManager.cpp.obj"
   "CMakeFiles/machineOfState.dir/ReadCsvTsv.cpp.obj"
   "CMakeFiles/machineOfState.dir/SchoolSuppliesManager.cpp.obj"

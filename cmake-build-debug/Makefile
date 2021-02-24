@@ -247,33 +247,6 @@ Application.cpp.s:
 	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Application.cpp.s
 .PHONY : Application.cpp.s
 
-BagpackManager.obj: BagpackManager.cpp.obj
-
-.PHONY : BagpackManager.obj
-
-# target to build an object file
-BagpackManager.cpp.obj:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/BagpackManager.cpp.obj
-.PHONY : BagpackManager.cpp.obj
-
-BagpackManager.i: BagpackManager.cpp.i
-
-.PHONY : BagpackManager.i
-
-# target to preprocess a source file
-BagpackManager.cpp.i:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/BagpackManager.cpp.i
-.PHONY : BagpackManager.cpp.i
-
-BagpackManager.s: BagpackManager.cpp.s
-
-.PHONY : BagpackManager.s
-
-# target to generate assembly for a file
-BagpackManager.cpp.s:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/BagpackManager.cpp.s
-.PHONY : BagpackManager.cpp.s
-
 Bill.obj: Bill.cpp.obj
 
 .PHONY : Bill.obj
@@ -489,6 +462,60 @@ Library/Library.s: Library/Library.cpp.s
 Library/Library.cpp.s:
 	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Library/Library.cpp.s
 .PHONY : Library/Library.cpp.s
+
+Library/TimeOfBorrowing.obj: Library/TimeOfBorrowing.cpp.obj
+
+.PHONY : Library/TimeOfBorrowing.obj
+
+# target to build an object file
+Library/TimeOfBorrowing.cpp.obj:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Library/TimeOfBorrowing.cpp.obj
+.PHONY : Library/TimeOfBorrowing.cpp.obj
+
+Library/TimeOfBorrowing.i: Library/TimeOfBorrowing.cpp.i
+
+.PHONY : Library/TimeOfBorrowing.i
+
+# target to preprocess a source file
+Library/TimeOfBorrowing.cpp.i:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Library/TimeOfBorrowing.cpp.i
+.PHONY : Library/TimeOfBorrowing.cpp.i
+
+Library/TimeOfBorrowing.s: Library/TimeOfBorrowing.cpp.s
+
+.PHONY : Library/TimeOfBorrowing.s
+
+# target to generate assembly for a file
+Library/TimeOfBorrowing.cpp.s:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Library/TimeOfBorrowing.cpp.s
+.PHONY : Library/TimeOfBorrowing.cpp.s
+
+Managers/BagpackManager.obj: Managers/BagpackManager.cpp.obj
+
+.PHONY : Managers/BagpackManager.obj
+
+# target to build an object file
+Managers/BagpackManager.cpp.obj:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Managers/BagpackManager.cpp.obj
+.PHONY : Managers/BagpackManager.cpp.obj
+
+Managers/BagpackManager.i: Managers/BagpackManager.cpp.i
+
+.PHONY : Managers/BagpackManager.i
+
+# target to preprocess a source file
+Managers/BagpackManager.cpp.i:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Managers/BagpackManager.cpp.i
+.PHONY : Managers/BagpackManager.cpp.i
+
+Managers/BagpackManager.s: Managers/BagpackManager.cpp.s
+
+.PHONY : Managers/BagpackManager.s
+
+# target to generate assembly for a file
+Managers/BagpackManager.cpp.s:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Managers/BagpackManager.cpp.s
+.PHONY : Managers/BagpackManager.cpp.s
 
 NotepadManager.obj: NotepadManager.cpp.obj
 
@@ -942,9 +969,6 @@ help:
 	@echo ... Application.obj
 	@echo ... Application.i
 	@echo ... Application.s
-	@echo ... BagpackManager.obj
-	@echo ... BagpackManager.i
-	@echo ... BagpackManager.s
 	@echo ... Bill.obj
 	@echo ... Bill.i
 	@echo ... Bill.s
@@ -969,6 +993,12 @@ help:
 	@echo ... Library/Library.obj
 	@echo ... Library/Library.i
 	@echo ... Library/Library.s
+	@echo ... Library/TimeOfBorrowing.obj
+	@echo ... Library/TimeOfBorrowing.i
+	@echo ... Library/TimeOfBorrowing.s
+	@echo ... Managers/BagpackManager.obj
+	@echo ... Managers/BagpackManager.i
+	@echo ... Managers/BagpackManager.s
 	@echo ... NotepadManager.obj
 	@echo ... NotepadManager.i
 	@echo ... NotepadManager.s

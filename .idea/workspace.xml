@@ -6,8 +6,8 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="machineOfState" targetName="gmock_main" />
-      <config projectName="machineOfState" targetName="gtest" />
       <config projectName="machineOfState" targetName="gtest_main" />
+      <config projectName="machineOfState" targetName="gtest" />
       <config projectName="machineOfState" targetName="machineOfState" />
       <config projectName="machineOfState" targetName="gmock" />
     </generated>
@@ -19,18 +19,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a417d592-79c6-4910-a3f3-8b98fcb03eae" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Library/TimeOfBorrowing.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/TimeOfBorrowing.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/BookManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/BookManager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BagpackManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Managers/BagpackManager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BagpackManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Managers/BagpackManager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConcreteBagpack.h" beforeDir="false" afterPath="$PROJECT_DIR$/ConcreteBagpack.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConcreteBook.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ConcreteBook.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConcreteBook.h" beforeDir="false" afterPath="$PROJECT_DIR$/ConcreteBook.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ClientInLibrary.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ClientInLibrary.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ClientInLibrary.h" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ClientInLibrary.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Library.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Library.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Library.h" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Library.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReadCsvTsv.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ReadCsvTsv.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/BagpackTests.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/BagpackTests.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/LibraryTests.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/LibraryTests.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/Bill.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/Bill.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/ReadCsvTsv.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/ReadCsvTsv.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/generalFunctions.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/generalFunctions.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/objects1.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/tests/NotepadTests.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/tests/NotepadTests.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/bags.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/bags.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/book.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/book.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/machineOfState.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/machineOfState.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/machineOfState.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/machineOfState.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/notes.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/notes.tsv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,6 +116,7 @@
     <property name="cf.advertisement.text.has.clang-format" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="ObjectiveC" />
     <property name="last_opened_file_path" value="$USER_HOME$/CLionProjects/SettingUpGoogleTests/main.cpp" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
@@ -285,7 +312,10 @@
       <workItem from="1613910618787" duration="861000" />
       <workItem from="1613928854485" duration="16555000" />
       <workItem from="1613981380276" duration="6920000" />
-      <workItem from="1614017603865" duration="5137000" />
+      <workItem from="1614017603865" duration="11216000" />
+      <workItem from="1614099742262" duration="17965000" />
+      <workItem from="1614157410307" duration="4451000" />
+      <workItem from="1614192679725" duration="13096000" />
     </task>
     <task id="LOCAL-00001" summary="All features of special things work properly">
       <created>1606246468089</created>
@@ -338,54 +368,54 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="585" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1612893315670" />
-    <state width="938" height="295" key="GridCell.Tab.0.bottom" timestamp="1614022507869">
+    <state width="938" height="295" key="GridCell.Tab.0.bottom" timestamp="1614205817995">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1614022507869" />
-    <state width="938" height="295" key="GridCell.Tab.0.center" timestamp="1614022507868">
+    <state width="938" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1614205817995" />
+    <state width="938" height="295" key="GridCell.Tab.0.center" timestamp="1614205817994">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="295" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1614022507868" />
-    <state width="938" height="295" key="GridCell.Tab.0.left" timestamp="1614022507868">
+    <state width="938" height="295" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1614205817994" />
+    <state width="938" height="295" key="GridCell.Tab.0.left" timestamp="1614205817994">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="295" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1614022507868" />
-    <state width="938" height="295" key="GridCell.Tab.0.right" timestamp="1614022507869">
+    <state width="938" height="295" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1614205817994" />
+    <state width="938" height="295" key="GridCell.Tab.0.right" timestamp="1614205817994">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="295" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1614022507869" />
-    <state width="1877" height="259" key="GridCell.Tab.1.bottom" timestamp="1614019458322">
+    <state width="938" height="295" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1614205817994" />
+    <state width="938" height="259" key="GridCell.Tab.1.bottom" timestamp="1614202311662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="259" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1614019458322" />
-    <state width="1877" height="259" key="GridCell.Tab.1.center" timestamp="1614019458322">
+    <state width="938" height="259" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1614202311662" />
+    <state width="938" height="259" key="GridCell.Tab.1.center" timestamp="1614202311662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="259" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1614019458322" />
-    <state width="1877" height="259" key="GridCell.Tab.1.left" timestamp="1614019458322">
+    <state width="938" height="259" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1614202311662" />
+    <state width="938" height="259" key="GridCell.Tab.1.left" timestamp="1614202311662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="259" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1614019458322" />
-    <state width="1877" height="259" key="GridCell.Tab.1.right" timestamp="1614019458322">
+    <state width="938" height="259" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1614202311662" />
+    <state width="938" height="259" key="GridCell.Tab.1.right" timestamp="1614202311662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="259" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1614019458322" />
+    <state width="938" height="259" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1614202311662" />
     <state x="732" y="231" key="RollbackChangesDialog" timestamp="1613158677907">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="732" y="231" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1613158677907" />
-    <state x="533" y="269" key="com.intellij.ide.util.TipDialog" timestamp="1614017638607">
+    <state x="533" y="269" key="com.intellij.ide.util.TipDialog" timestamp="1614192684070">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="533" y="269" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1614017638607" />
+    <state x="533" y="269" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1614192684070" />
     <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609880418847">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609880418847" />
-    <state x="701" y="163" key="refactoring.ChangeSignatureDialog" timestamp="1614018574186">
+    <state x="701" y="163" key="refactoring.ChangeSignatureDialog" timestamp="1614194720889">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="701" y="163" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1614018574186" />
+    <state x="701" y="163" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1614194720889" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1613331265103">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

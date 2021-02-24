@@ -9,8 +9,8 @@
 109.99 Red 10 Nike k
 109.99 Red 18 Olg2 k
 254.99 Green 998 Bob_ k
-23.78 gtrr 10007 Gtttttt k
-167.99 red 131 MyCoin k
+23.78 gtrr 10006 Gtttttt k
+167.99 red 130 MyCoin k
 356.99 Blue 93 Adidas k
 359.99 Purple 949 Adidas2 k
 598.99 Violet 23 IBM _

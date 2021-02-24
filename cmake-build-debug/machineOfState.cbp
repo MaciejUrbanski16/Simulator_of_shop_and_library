@@ -324,12 +324,6 @@
 		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h">
 			<Option target="machineOfState"/>
 		</Unit>
-		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/BagpackManager.cpp">
-			<Option target="machineOfState"/>
-		</Unit>
-		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/BagpackManager.h">
-			<Option target="machineOfState"/>
-		</Unit>
 		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Bill.cpp">
 			<Option target="machineOfState"/>
 		</Unit>
@@ -376,6 +370,18 @@
 			<Option target="machineOfState"/>
 		</Unit>
 		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/Library.h">
+			<Option target="machineOfState"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/TimeOfBorrowing.cpp">
+			<Option target="machineOfState"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/TimeOfBorrowing.h">
+			<Option target="machineOfState"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/BagpackManager.cpp">
+			<Option target="machineOfState"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/BagpackManager.h">
 			<Option target="machineOfState"/>
 		</Unit>
 		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/NotepadManager.cpp">

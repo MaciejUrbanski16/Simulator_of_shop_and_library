@@ -197,7 +197,8 @@ void ReadCsvTsv::readFromFile(std::vector<library::ClientInLibrary> &clients) {
                 //read[3]  --> author
                 //read[4]  --> title
                 //read[5]  --> author
-                //read[6]  --> title
+                //read[6]  --> date to give back
+                //read[7]  --> title
                 //.
                 //.
                 //.
@@ -208,9 +209,11 @@ void ReadCsvTsv::readFromFile(std::vector<library::ClientInLibrary> &clients) {
 
                 shop::ConcreteBook tempBook;
                 std::vector<shop::ConcreteBook> tempBorrowed;
-                clients.push_back(tempClient);
+                std::vector<std::string> tempTermsToGiveBack;
 
-                for(int i1 = 3; i1<read.size(); i1 = i1 +2){
+
+
+                for(int i1 = 3; i1<read.size(); i1 = i1 + 3){
 
                     std::pair<std::string, std::string> tempPair(read[i1],read[i1+1]);
                     tempBook.setPairOfTitleAndAuthorBook(tempPair);
@@ -218,10 +221,20 @@ void ReadCsvTsv::readFromFile(std::vector<library::ClientInLibrary> &clients) {
 
                     tempBorrowed.push_back(tempBook);
 
+                    tempTermsToGiveBack.push_back(read[i1+2]);
+                    //library::TimeLeft tempTime();
+                    //library::TimeOfBorrowing temp( library::TimeOfBorrowing::getTime(read[i1+2]));
 
+                    //tempClient.terms.emplace_back( library::TimeOfBorrowing::getTime(read[i1+2]));
                 }
 
-                clients.back().setBorrowedByClient(tempBorrowed);
+                //setting parameters of particular client after read from file
+                tempClient.setBorrowedByClient(tempBorrowed);
+                tempClient.setTermToGiveBack(tempTermsToGiveBack);
+
+                clients.push_back(tempClient);
+
+                //clients.back().setBorrowedByClient(tempBorrowed);
 
             }
             i++;

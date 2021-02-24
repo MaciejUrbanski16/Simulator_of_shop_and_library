@@ -5,7 +5,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.cpp" "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/cmake-build-debug/CMakeFiles/machineOfState.dir/Application.cpp.obj"
-  "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/BagpackManager.cpp" "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/cmake-build-debug/CMakeFiles/machineOfState.dir/BagpackManager.cpp.obj"
   "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Bill.cpp" "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/cmake-build-debug/CMakeFiles/machineOfState.dir/Bill.cpp.obj"
   "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/BookManager.cpp" "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/cmake-build-debug/CMakeFiles/machineOfState.dir/BookManager.cpp.obj"
   "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBagpack.cpp" "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/cmake-build-debug/CMakeFiles/machineOfState.dir/ConcreteBagpack.cpp.obj"
@@ -14,6 +13,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteSchoolSupply.cpp" "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/cmake-build-debug/CMakeFiles/machineOfState.dir/ConcreteSchoolSupply.cpp.obj"
   "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/ClientInLibrary.cpp" "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/cmake-build-debug/CMakeFiles/machineOfState.dir/Library/ClientInLibrary.cpp.obj"
   "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/Library.cpp" "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/cmake-build-debug/CMakeFiles/machineOfState.dir/Library/Library.cpp.obj"
+  "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/TimeOfBorrowing.cpp" "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/cmake-build-debug/CMakeFiles/machineOfState.dir/Library/TimeOfBorrowing.cpp.obj"
+  "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/BagpackManager.cpp" "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/cmake-build-debug/CMakeFiles/machineOfState.dir/Managers/BagpackManager.cpp.obj"
   "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/NotepadManager.cpp" "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/cmake-build-debug/CMakeFiles/machineOfState.dir/NotepadManager.cpp.obj"
   "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.cpp" "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/cmake-build-debug/CMakeFiles/machineOfState.dir/ReadCsvTsv.cpp.obj"
   "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/SchoolSuppliesManager.cpp" "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/cmake-build-debug/CMakeFiles/machineOfState.dir/SchoolSuppliesManager.cpp.obj"

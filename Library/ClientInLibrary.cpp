@@ -73,5 +73,51 @@ int library::ClientInLibrary::getIndexOfBorrowedBookWithTitle(const std::string 
     return ret;
 }
 
+void library::ClientInLibrary::setTermToGiveBack(std::vector<std::string> &termsToGiveBack) {
+    this->termToGiveBackBorrowedBooks = termsToGiveBack;
+}
+
+std::pair<int, library::TimeLeft> library::ClientInLibrary::getTheShortestDeadline() {
+
+    exchangeTerms();
+
+    std::vector<int> indexes;
+
+    for(int i = 0; i <terms.size(); i++){
+        indexes.push_back(i);
+    }
+
+
+    for(int i = 0 ; i < this->terms.size(); i++){
+        for(int j = 0 ; j < this->terms.size()-1; j++){
+            if(terms[j] > terms[j + 1]){
+                auto temp = terms[j+1];
+                terms[j+1] = terms[j];
+                terms[j] = temp;
+                int tempIndex = indexes[j+1];
+                indexes[j+1] = indexes[j];
+                indexes[j] = tempIndex;
+            }
+            else{
+                int p = 0;
+                p++;
+            }
+        }
+    }
+
+    std::pair<int, library::TimeLeft> deadline(indexes.back(),terms.back());
+    return deadline;
+}
+
+void library::ClientInLibrary::exchangeTerms() {
+
+    for(int i = 0 ; i < this->termToGiveBackBorrowedBooks.size(); i++){
+
+        this->terms.emplace_back(termToGiveBackBorrowedBooks[i]);
+    }
+
+}
+
+
 
 

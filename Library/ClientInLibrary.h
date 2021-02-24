@@ -8,6 +8,7 @@
 #include <string>
 #include <vector>
 #include "../ConcreteBook.h"
+#include "TimeOfBorrowing.h"
 
 
 
@@ -45,7 +46,19 @@ namespace library {
         //every client has his own list of borrowed books
         std::vector<shop::ConcreteBook> borrowedByClient;
 
+        std::vector<std::string> termToGiveBackBorrowedBooks;
+
+       // int findOfIndexNotGivenBackBook(const TimeLeft &time);
+
+        //to compare with deadline
+        std::vector<library::TimeLeft> terms;
+        void exchangeTerms();
+
+        std::pair<int, library::TimeLeft> getTheShortestDeadline();
+
         virtual ~ClientInLibrary();
+
+        void setTermToGiveBack(std::vector<std::string> &termsToGiveBack);
 
     private:
         std::string nameOfClient_;
