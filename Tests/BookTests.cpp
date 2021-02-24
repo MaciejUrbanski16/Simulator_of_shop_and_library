@@ -4,7 +4,7 @@
 
 #include <gtest/gtest.h>
 
-#include "../BookManager.h"
+#include "../Managers/BookManager.h"
 #include "../Application.h"
 
 class BookTests : public testing::Test

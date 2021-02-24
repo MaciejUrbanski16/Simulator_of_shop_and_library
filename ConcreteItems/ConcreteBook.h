@@ -5,7 +5,7 @@
 #ifndef MACHINEOFSTATE_CONCRETEBOOK_H
 #define MACHINEOFSTATE_CONCRETEBOOK_H
 
-#include "BookManager.h"
+#include "../Managers/BookManager.h"
 
 #include <map>
 

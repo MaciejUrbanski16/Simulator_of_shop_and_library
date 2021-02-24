@@ -5,8 +5,8 @@
 #ifndef MACHINEOFSTATE_BAGPACKMANAGER_H
 #define MACHINEOFSTATE_BAGPACKMANAGER_H
 
-#include "../BookManager.h"
-#include "../ConcreteBagpack.h"
+#include "BookManager.h"
+#include "../ConcreteItems/ConcreteBagpack.h"
 
 #include <string>
 #include <map>

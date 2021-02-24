@@ -274,140 +274,113 @@ Bill.cpp.s:
 	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Bill.cpp.s
 .PHONY : Bill.cpp.s
 
-BookManager.obj: BookManager.cpp.obj
+ConcreteItems/ConcreteBagpack.obj: ConcreteItems/ConcreteBagpack.cpp.obj
 
-.PHONY : BookManager.obj
-
-# target to build an object file
-BookManager.cpp.obj:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/BookManager.cpp.obj
-.PHONY : BookManager.cpp.obj
-
-BookManager.i: BookManager.cpp.i
-
-.PHONY : BookManager.i
-
-# target to preprocess a source file
-BookManager.cpp.i:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/BookManager.cpp.i
-.PHONY : BookManager.cpp.i
-
-BookManager.s: BookManager.cpp.s
-
-.PHONY : BookManager.s
-
-# target to generate assembly for a file
-BookManager.cpp.s:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/BookManager.cpp.s
-.PHONY : BookManager.cpp.s
-
-ConcreteBagpack.obj: ConcreteBagpack.cpp.obj
-
-.PHONY : ConcreteBagpack.obj
+.PHONY : ConcreteItems/ConcreteBagpack.obj
 
 # target to build an object file
-ConcreteBagpack.cpp.obj:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteBagpack.cpp.obj
-.PHONY : ConcreteBagpack.cpp.obj
+ConcreteItems/ConcreteBagpack.cpp.obj:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteItems/ConcreteBagpack.cpp.obj
+.PHONY : ConcreteItems/ConcreteBagpack.cpp.obj
 
-ConcreteBagpack.i: ConcreteBagpack.cpp.i
+ConcreteItems/ConcreteBagpack.i: ConcreteItems/ConcreteBagpack.cpp.i
 
-.PHONY : ConcreteBagpack.i
+.PHONY : ConcreteItems/ConcreteBagpack.i
 
 # target to preprocess a source file
-ConcreteBagpack.cpp.i:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteBagpack.cpp.i
-.PHONY : ConcreteBagpack.cpp.i
+ConcreteItems/ConcreteBagpack.cpp.i:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteItems/ConcreteBagpack.cpp.i
+.PHONY : ConcreteItems/ConcreteBagpack.cpp.i
 
-ConcreteBagpack.s: ConcreteBagpack.cpp.s
+ConcreteItems/ConcreteBagpack.s: ConcreteItems/ConcreteBagpack.cpp.s
 
-.PHONY : ConcreteBagpack.s
+.PHONY : ConcreteItems/ConcreteBagpack.s
 
 # target to generate assembly for a file
-ConcreteBagpack.cpp.s:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteBagpack.cpp.s
-.PHONY : ConcreteBagpack.cpp.s
+ConcreteItems/ConcreteBagpack.cpp.s:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteItems/ConcreteBagpack.cpp.s
+.PHONY : ConcreteItems/ConcreteBagpack.cpp.s
 
-ConcreteBook.obj: ConcreteBook.cpp.obj
+ConcreteItems/ConcreteBook.obj: ConcreteItems/ConcreteBook.cpp.obj
 
-.PHONY : ConcreteBook.obj
+.PHONY : ConcreteItems/ConcreteBook.obj
 
 # target to build an object file
-ConcreteBook.cpp.obj:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteBook.cpp.obj
-.PHONY : ConcreteBook.cpp.obj
+ConcreteItems/ConcreteBook.cpp.obj:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteItems/ConcreteBook.cpp.obj
+.PHONY : ConcreteItems/ConcreteBook.cpp.obj
 
-ConcreteBook.i: ConcreteBook.cpp.i
+ConcreteItems/ConcreteBook.i: ConcreteItems/ConcreteBook.cpp.i
 
-.PHONY : ConcreteBook.i
+.PHONY : ConcreteItems/ConcreteBook.i
 
 # target to preprocess a source file
-ConcreteBook.cpp.i:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteBook.cpp.i
-.PHONY : ConcreteBook.cpp.i
+ConcreteItems/ConcreteBook.cpp.i:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteItems/ConcreteBook.cpp.i
+.PHONY : ConcreteItems/ConcreteBook.cpp.i
 
-ConcreteBook.s: ConcreteBook.cpp.s
+ConcreteItems/ConcreteBook.s: ConcreteItems/ConcreteBook.cpp.s
 
-.PHONY : ConcreteBook.s
+.PHONY : ConcreteItems/ConcreteBook.s
 
 # target to generate assembly for a file
-ConcreteBook.cpp.s:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteBook.cpp.s
-.PHONY : ConcreteBook.cpp.s
+ConcreteItems/ConcreteBook.cpp.s:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteItems/ConcreteBook.cpp.s
+.PHONY : ConcreteItems/ConcreteBook.cpp.s
 
-ConcreteNotepad.obj: ConcreteNotepad.cpp.obj
+ConcreteItems/ConcreteNotepad.obj: ConcreteItems/ConcreteNotepad.cpp.obj
 
-.PHONY : ConcreteNotepad.obj
+.PHONY : ConcreteItems/ConcreteNotepad.obj
 
 # target to build an object file
-ConcreteNotepad.cpp.obj:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteNotepad.cpp.obj
-.PHONY : ConcreteNotepad.cpp.obj
+ConcreteItems/ConcreteNotepad.cpp.obj:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteItems/ConcreteNotepad.cpp.obj
+.PHONY : ConcreteItems/ConcreteNotepad.cpp.obj
 
-ConcreteNotepad.i: ConcreteNotepad.cpp.i
+ConcreteItems/ConcreteNotepad.i: ConcreteItems/ConcreteNotepad.cpp.i
 
-.PHONY : ConcreteNotepad.i
+.PHONY : ConcreteItems/ConcreteNotepad.i
 
 # target to preprocess a source file
-ConcreteNotepad.cpp.i:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteNotepad.cpp.i
-.PHONY : ConcreteNotepad.cpp.i
+ConcreteItems/ConcreteNotepad.cpp.i:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteItems/ConcreteNotepad.cpp.i
+.PHONY : ConcreteItems/ConcreteNotepad.cpp.i
 
-ConcreteNotepad.s: ConcreteNotepad.cpp.s
+ConcreteItems/ConcreteNotepad.s: ConcreteItems/ConcreteNotepad.cpp.s
 
-.PHONY : ConcreteNotepad.s
+.PHONY : ConcreteItems/ConcreteNotepad.s
 
 # target to generate assembly for a file
-ConcreteNotepad.cpp.s:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteNotepad.cpp.s
-.PHONY : ConcreteNotepad.cpp.s
+ConcreteItems/ConcreteNotepad.cpp.s:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteItems/ConcreteNotepad.cpp.s
+.PHONY : ConcreteItems/ConcreteNotepad.cpp.s
 
-ConcreteSchoolSupply.obj: ConcreteSchoolSupply.cpp.obj
+ConcreteItems/ConcreteSchoolSupply.obj: ConcreteItems/ConcreteSchoolSupply.cpp.obj
 
-.PHONY : ConcreteSchoolSupply.obj
+.PHONY : ConcreteItems/ConcreteSchoolSupply.obj
 
 # target to build an object file
-ConcreteSchoolSupply.cpp.obj:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteSchoolSupply.cpp.obj
-.PHONY : ConcreteSchoolSupply.cpp.obj
+ConcreteItems/ConcreteSchoolSupply.cpp.obj:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteItems/ConcreteSchoolSupply.cpp.obj
+.PHONY : ConcreteItems/ConcreteSchoolSupply.cpp.obj
 
-ConcreteSchoolSupply.i: ConcreteSchoolSupply.cpp.i
+ConcreteItems/ConcreteSchoolSupply.i: ConcreteItems/ConcreteSchoolSupply.cpp.i
 
-.PHONY : ConcreteSchoolSupply.i
+.PHONY : ConcreteItems/ConcreteSchoolSupply.i
 
 # target to preprocess a source file
-ConcreteSchoolSupply.cpp.i:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteSchoolSupply.cpp.i
-.PHONY : ConcreteSchoolSupply.cpp.i
+ConcreteItems/ConcreteSchoolSupply.cpp.i:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteItems/ConcreteSchoolSupply.cpp.i
+.PHONY : ConcreteItems/ConcreteSchoolSupply.cpp.i
 
-ConcreteSchoolSupply.s: ConcreteSchoolSupply.cpp.s
+ConcreteItems/ConcreteSchoolSupply.s: ConcreteItems/ConcreteSchoolSupply.cpp.s
 
-.PHONY : ConcreteSchoolSupply.s
+.PHONY : ConcreteItems/ConcreteSchoolSupply.s
 
 # target to generate assembly for a file
-ConcreteSchoolSupply.cpp.s:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteSchoolSupply.cpp.s
-.PHONY : ConcreteSchoolSupply.cpp.s
+ConcreteItems/ConcreteSchoolSupply.cpp.s:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ConcreteItems/ConcreteSchoolSupply.cpp.s
+.PHONY : ConcreteItems/ConcreteSchoolSupply.cpp.s
 
 Library/ClientInLibrary.obj: Library/ClientInLibrary.cpp.obj
 
@@ -517,32 +490,86 @@ Managers/BagpackManager.cpp.s:
 	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Managers/BagpackManager.cpp.s
 .PHONY : Managers/BagpackManager.cpp.s
 
-NotepadManager.obj: NotepadManager.cpp.obj
+Managers/BookManager.obj: Managers/BookManager.cpp.obj
 
-.PHONY : NotepadManager.obj
+.PHONY : Managers/BookManager.obj
 
 # target to build an object file
-NotepadManager.cpp.obj:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/NotepadManager.cpp.obj
-.PHONY : NotepadManager.cpp.obj
+Managers/BookManager.cpp.obj:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Managers/BookManager.cpp.obj
+.PHONY : Managers/BookManager.cpp.obj
 
-NotepadManager.i: NotepadManager.cpp.i
+Managers/BookManager.i: Managers/BookManager.cpp.i
 
-.PHONY : NotepadManager.i
+.PHONY : Managers/BookManager.i
 
 # target to preprocess a source file
-NotepadManager.cpp.i:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/NotepadManager.cpp.i
-.PHONY : NotepadManager.cpp.i
+Managers/BookManager.cpp.i:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Managers/BookManager.cpp.i
+.PHONY : Managers/BookManager.cpp.i
 
-NotepadManager.s: NotepadManager.cpp.s
+Managers/BookManager.s: Managers/BookManager.cpp.s
 
-.PHONY : NotepadManager.s
+.PHONY : Managers/BookManager.s
 
 # target to generate assembly for a file
-NotepadManager.cpp.s:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/NotepadManager.cpp.s
-.PHONY : NotepadManager.cpp.s
+Managers/BookManager.cpp.s:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Managers/BookManager.cpp.s
+.PHONY : Managers/BookManager.cpp.s
+
+Managers/NotepadManager.obj: Managers/NotepadManager.cpp.obj
+
+.PHONY : Managers/NotepadManager.obj
+
+# target to build an object file
+Managers/NotepadManager.cpp.obj:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Managers/NotepadManager.cpp.obj
+.PHONY : Managers/NotepadManager.cpp.obj
+
+Managers/NotepadManager.i: Managers/NotepadManager.cpp.i
+
+.PHONY : Managers/NotepadManager.i
+
+# target to preprocess a source file
+Managers/NotepadManager.cpp.i:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Managers/NotepadManager.cpp.i
+.PHONY : Managers/NotepadManager.cpp.i
+
+Managers/NotepadManager.s: Managers/NotepadManager.cpp.s
+
+.PHONY : Managers/NotepadManager.s
+
+# target to generate assembly for a file
+Managers/NotepadManager.cpp.s:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Managers/NotepadManager.cpp.s
+.PHONY : Managers/NotepadManager.cpp.s
+
+Managers/SchoolSuppliesManager.obj: Managers/SchoolSuppliesManager.cpp.obj
+
+.PHONY : Managers/SchoolSuppliesManager.obj
+
+# target to build an object file
+Managers/SchoolSuppliesManager.cpp.obj:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Managers/SchoolSuppliesManager.cpp.obj
+.PHONY : Managers/SchoolSuppliesManager.cpp.obj
+
+Managers/SchoolSuppliesManager.i: Managers/SchoolSuppliesManager.cpp.i
+
+.PHONY : Managers/SchoolSuppliesManager.i
+
+# target to preprocess a source file
+Managers/SchoolSuppliesManager.cpp.i:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Managers/SchoolSuppliesManager.cpp.i
+.PHONY : Managers/SchoolSuppliesManager.cpp.i
+
+Managers/SchoolSuppliesManager.s: Managers/SchoolSuppliesManager.cpp.s
+
+.PHONY : Managers/SchoolSuppliesManager.s
+
+# target to generate assembly for a file
+Managers/SchoolSuppliesManager.cpp.s:
+	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/Managers/SchoolSuppliesManager.cpp.s
+.PHONY : Managers/SchoolSuppliesManager.cpp.s
 
 ReadCsvTsv.obj: ReadCsvTsv.cpp.obj
 
@@ -570,33 +597,6 @@ ReadCsvTsv.s: ReadCsvTsv.cpp.s
 ReadCsvTsv.cpp.s:
 	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/ReadCsvTsv.cpp.s
 .PHONY : ReadCsvTsv.cpp.s
-
-SchoolSuppliesManager.obj: SchoolSuppliesManager.cpp.obj
-
-.PHONY : SchoolSuppliesManager.obj
-
-# target to build an object file
-SchoolSuppliesManager.cpp.obj:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/SchoolSuppliesManager.cpp.obj
-.PHONY : SchoolSuppliesManager.cpp.obj
-
-SchoolSuppliesManager.i: SchoolSuppliesManager.cpp.i
-
-.PHONY : SchoolSuppliesManager.i
-
-# target to preprocess a source file
-SchoolSuppliesManager.cpp.i:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/SchoolSuppliesManager.cpp.i
-.PHONY : SchoolSuppliesManager.cpp.i
-
-SchoolSuppliesManager.s: SchoolSuppliesManager.cpp.s
-
-.PHONY : SchoolSuppliesManager.s
-
-# target to generate assembly for a file
-SchoolSuppliesManager.cpp.s:
-	$(MAKE) -f CMakeFiles\machineOfState.dir\build.make CMakeFiles/machineOfState.dir/SchoolSuppliesManager.cpp.s
-.PHONY : SchoolSuppliesManager.cpp.s
 
 ServiceCsvTsv.obj: ServiceCsvTsv.cpp.obj
 
@@ -972,21 +972,18 @@ help:
 	@echo ... Bill.obj
 	@echo ... Bill.i
 	@echo ... Bill.s
-	@echo ... BookManager.obj
-	@echo ... BookManager.i
-	@echo ... BookManager.s
-	@echo ... ConcreteBagpack.obj
-	@echo ... ConcreteBagpack.i
-	@echo ... ConcreteBagpack.s
-	@echo ... ConcreteBook.obj
-	@echo ... ConcreteBook.i
-	@echo ... ConcreteBook.s
-	@echo ... ConcreteNotepad.obj
-	@echo ... ConcreteNotepad.i
-	@echo ... ConcreteNotepad.s
-	@echo ... ConcreteSchoolSupply.obj
-	@echo ... ConcreteSchoolSupply.i
-	@echo ... ConcreteSchoolSupply.s
+	@echo ... ConcreteItems/ConcreteBagpack.obj
+	@echo ... ConcreteItems/ConcreteBagpack.i
+	@echo ... ConcreteItems/ConcreteBagpack.s
+	@echo ... ConcreteItems/ConcreteBook.obj
+	@echo ... ConcreteItems/ConcreteBook.i
+	@echo ... ConcreteItems/ConcreteBook.s
+	@echo ... ConcreteItems/ConcreteNotepad.obj
+	@echo ... ConcreteItems/ConcreteNotepad.i
+	@echo ... ConcreteItems/ConcreteNotepad.s
+	@echo ... ConcreteItems/ConcreteSchoolSupply.obj
+	@echo ... ConcreteItems/ConcreteSchoolSupply.i
+	@echo ... ConcreteItems/ConcreteSchoolSupply.s
 	@echo ... Library/ClientInLibrary.obj
 	@echo ... Library/ClientInLibrary.i
 	@echo ... Library/ClientInLibrary.s
@@ -999,15 +996,18 @@ help:
 	@echo ... Managers/BagpackManager.obj
 	@echo ... Managers/BagpackManager.i
 	@echo ... Managers/BagpackManager.s
-	@echo ... NotepadManager.obj
-	@echo ... NotepadManager.i
-	@echo ... NotepadManager.s
+	@echo ... Managers/BookManager.obj
+	@echo ... Managers/BookManager.i
+	@echo ... Managers/BookManager.s
+	@echo ... Managers/NotepadManager.obj
+	@echo ... Managers/NotepadManager.i
+	@echo ... Managers/NotepadManager.s
+	@echo ... Managers/SchoolSuppliesManager.obj
+	@echo ... Managers/SchoolSuppliesManager.i
+	@echo ... Managers/SchoolSuppliesManager.s
 	@echo ... ReadCsvTsv.obj
 	@echo ... ReadCsvTsv.i
 	@echo ... ReadCsvTsv.s
-	@echo ... SchoolSuppliesManager.obj
-	@echo ... SchoolSuppliesManager.i
-	@echo ... SchoolSuppliesManager.s
 	@echo ... ServiceCsvTsv.obj
 	@echo ... ServiceCsvTsv.i
 	@echo ... ServiceCsvTsv.s

@@ -2,7 +2,7 @@
 // Created by Admin on 26.01.2021.
 //
 #include <gtest/gtest.h>
-#include "../NotepadManager.h"
+#include "../Managers/NotepadManager.h"
 
 #include "../tests.h"
 #define TESTING

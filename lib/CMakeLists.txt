@@ -1,4 +1,4 @@
-add_executable(Catch_tests_run ConverterTests.cpp AbsoluteDateTest.cpp)
+add_executable(Catch_tests_run ConverterTests.cpp)
 target_link_libraries(Catch_tests_run DateConverter_lib)
 
 add_subdirectory (Catch_tests)

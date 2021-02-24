@@ -46,21 +46,6 @@ namespace library {
         return mday + "." + mon + "." + year + "  " + hour + ":" + min + ":" + sec;
     }
 
-    const std::string TimeOfBorrowing::getTimeToGiveBack() {
-
-        this->now_->tm_mon += 2;
-
-        if (this->now_->tm_mon == 11) {
-            this->now_->tm_year++;
-            this->now_->tm_mon = 1;
-        } else if (this->now_->tm_mon == 12) {
-            this->now_->tm_year++;
-            this->now_->tm_mon = 2;
-        }
-
-        return getCurrentTimeAsString();
-    }
-
 
     TimeOfBorrowing::TimeOfBorrowing(const TimeOfBorrowing &t) {
         this->now_ = t.now_;
@@ -91,10 +76,8 @@ namespace library {
         this->secs_ = tempTime[5];
     }
 
+    TimeLeft::TimeLeft(std::string timeAsStrings) {
 
-    void TimeLeft::convertTimeFromStringToInts(const std::string &timeAsStrings) {
-
-        //converting time from string to TimeOfBorrowing type
         if(timeAsStrings.size() == 20){
 
             std::string temp;
@@ -231,57 +214,6 @@ namespace library {
         return this->getCurrentTimeAsString();
     }
 
-    TimeLeft::TimeLeft(std::string timeAsStrings) {
 
-        if(timeAsStrings.size() == 20){
-
-            std::string temp;
-
-            temp.push_back(char(timeAsStrings[0]));
-            temp.push_back(char(timeAsStrings[1]));
-
-
-            this->days_ = std::stoi(temp);
-
-            temp.clear();
-
-            temp.push_back(char(timeAsStrings[3]));
-            temp.push_back(char(timeAsStrings[4]));
-
-            this->mons_ = std::stoi(temp);
-
-            temp.clear();
-
-            temp.push_back(char(timeAsStrings[6]));
-            temp.push_back(char(timeAsStrings[7]));
-            temp.push_back(char(timeAsStrings[8]));
-            temp.push_back(char(timeAsStrings[9]));
-
-            this->years_ = std::stoi(temp);
-
-            temp.clear();
-
-            temp.push_back(char(timeAsStrings[12]));
-            temp.push_back(char(timeAsStrings[13]));
-
-            this->hours_ = std::stoi(temp);
-            temp.clear();
-
-            temp.push_back(char(timeAsStrings[15]));
-            temp.push_back(char(timeAsStrings[16]));
-
-            this->mins_ = std::stoi(temp);
-
-            temp.clear();
-
-            temp.push_back(char(timeAsStrings[18]));
-            temp.push_back(char(timeAsStrings[19]));
-
-            this->secs_ = std::stoi(temp);
-
-            temp.clear();
-
-        }
-    }
 
 }//end namespace library

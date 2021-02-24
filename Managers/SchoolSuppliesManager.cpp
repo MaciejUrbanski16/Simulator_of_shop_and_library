@@ -3,9 +3,9 @@
 //
 
 #include "SchoolSuppliesManager.h"
-#include "ReadCsvTsv.h"
-#include "WriteCsvTsv.h"
-#include "tests.h"
+#include "../ReadCsvTsv.h"
+#include "../WriteCsvTsv.h"
+#include "../tests.h"
 
 
 

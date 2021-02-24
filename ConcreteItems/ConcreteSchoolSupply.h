@@ -5,8 +5,8 @@
 #ifndef MACHINEOFSTATE_CONCRETESCHOOLSUPPLY_H
 #define MACHINEOFSTATE_CONCRETESCHOOLSUPPLY_H
 
-#include "SchoolSuppliesManager.h"
-#include "BookManager.h"
+#include "../Managers/SchoolSuppliesManager.h"
+#include "../Managers/BookManager.h"
 
 #include <string>
 

@@ -3,8 +3,8 @@
 //
 
 #include "NotepadManager.h"
-#include "WriteCsvTsv.h"
-#include "ReadCsvTsv.h"
+#include "../WriteCsvTsv.h"
+#include "../ReadCsvTsv.h"
 
 using namespace std;
 using namespace shop;

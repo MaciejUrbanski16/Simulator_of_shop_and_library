@@ -5,7 +5,7 @@
 #ifndef MACHINEOFSTATE_CONCRETENOTEPAD_H
 #define MACHINEOFSTATE_CONCRETENOTEPAD_H
 
-#include "NotepadManager.h"
+#include "../Managers/NotepadManager.h"
 
 namespace shop {
 

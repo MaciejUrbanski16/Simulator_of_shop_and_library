@@ -7,10 +7,10 @@
 #include "tests.h"
 
 #include "Application.h"
-#include "BookManager.h"
-#include "NotepadManager.h"
+#include "Managers/BookManager.h"
+#include "Managers/NotepadManager.h"
 #include "Managers/BagpackManager.h"
-#include "SchoolSuppliesManager.h"
+#include "Managers/SchoolSuppliesManager.h"
 
 #include "Library/Library.h"
 #include "Library/TimeOfBorrowing.h"

@@ -5,10 +5,10 @@
 #ifndef MACHINEOFSTATE_BOOKMANAGER_H
 #define MACHINEOFSTATE_BOOKMANAGER_H
 
-#include "ShopWare.h"
-#include "ConcreteBook.h"
-#include "WriteCsvTsv.h"
-#include "ReadCsvTsv.h"
+#include "../ShopWare.h"
+#include "../ConcreteItems/ConcreteBook.h"
+#include "../WriteCsvTsv.h"
+#include "../ReadCsvTsv.h"
 
 #include <string>
 #include <utility>

@@ -3,7 +3,7 @@
 //
 
 #include <gtest/gtest.h>
-#include "../SchoolSuppliesManager.h"
+#include "../Managers/SchoolSuppliesManager.h"
 
 
 #include "../tests.h"

@@ -6,7 +6,7 @@
 #define MACHINEOFSTATE_SCHOOLSUPPLIESMANAGER_H
 
 
-#include "ConcreteSchoolSupply.h"
+#include "../ConcreteItems/ConcreteSchoolSupply.h"
 #include "BookManager.h"
 
 namespace shop

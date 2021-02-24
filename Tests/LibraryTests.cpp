@@ -6,7 +6,7 @@
 
 #include "../Library/Library.h"
 #include "../Library/TimeOfBorrowing.h"
-#include "../BookManager.h"
+#include "../Managers/BookManager.h"
 #include "../Application.h"
 
 class LibraryTests : public testing::Test

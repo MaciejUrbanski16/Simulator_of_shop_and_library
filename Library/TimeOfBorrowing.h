@@ -16,14 +16,11 @@ namespace library {
 
     public:
         TimeLeft() = default;
-        TimeLeft(TimeOfBorrowing &t);
-        TimeLeft(std::string timeAsString);
-
+        explicit TimeLeft(TimeOfBorrowing &t);
+        explicit TimeLeft(std::string timeAsString);
 
 
         int operator-(const TimeLeft &time1);
-
-        //int operator -(const TimeOfBorrowing &time1);
 
         //to compare with deadline
         bool operator>(const TimeLeft &time1);
@@ -35,7 +32,6 @@ namespace library {
         std::string getTimeToGiveBack();
 
     private:
-        void convertTimeFromStringToInts(const std::string &timeAsStrings);
         int days_,mons_,years_,hours_,mins_,secs_;
     };
 
@@ -47,22 +43,11 @@ namespace library {
         TimeOfBorrowing();
         TimeOfBorrowing(const TimeOfBorrowing &t);
 
-       // int operator-(const TimeOfBorrowing &time1);
-
-        //int operator -(const TimeOfBorrowing &time1);
-
-        //to compare with deadline
-        //bool operator>(const TimeOfBorrowing &time1);
-       // bool operator<(const TimeOfBorrowing &time1);
-
         friend std::ostream &operator<<(std::ostream &out, const TimeOfBorrowing &time);
 
         std::string mday, mon, year, hour, min, sec;
 
         const std::string getCurrentTimeAsString();
-
-        const std::string getTimeToGiveBack();
-
 
         std::vector<int> getTimeAsInts();
 

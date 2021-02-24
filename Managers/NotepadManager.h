@@ -11,7 +11,7 @@
 #include <fstream>
 
 #include "BookManager.h"
-#include "ConcreteNotepad.h"
+#include "../ConcreteItems/ConcreteNotepad.h"
 //#include "Application.h"
 
 namespace shop

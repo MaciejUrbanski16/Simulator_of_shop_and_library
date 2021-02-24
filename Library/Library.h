@@ -5,7 +5,7 @@
 #ifndef MACHINEOFSTATE_LIBRARY_H
 #define MACHINEOFSTATE_LIBRARY_H
 
-#include "../BookManager.h"
+#include "../Managers/BookManager.h"
 #include "ClientInLibrary.h"
 
 #include "../ReadCsvTsv.h"

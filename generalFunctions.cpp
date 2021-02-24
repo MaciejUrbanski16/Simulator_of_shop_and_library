@@ -2,7 +2,7 @@
 // Created by Admin on 12.09.2020.
 //
 #include "generalFunctions.h"
-#include "ConcreteBook.h"
+#include "ConcreteItems/ConcreteBook.h"
 
 
 void  remove(std::vector<std::string> &removedThings, std::vector<std::string> &dimensions,std::vector<int>&amount)

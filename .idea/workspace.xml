@@ -19,24 +19,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a417d592-79c6-4910-a3f3-8b98fcb03eae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Library/TimeOfBorrowing.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/TimeOfBorrowing.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BagpackManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Managers/BagpackManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BagpackManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Managers/BagpackManager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bill.h" beforeDir="false" afterPath="$PROJECT_DIR$/Bill.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Managers/BookManager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Managers/BookManager.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConcreteBagpack.h" beforeDir="false" afterPath="$PROJECT_DIR$/ConcreteBagpack.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConcreteBook.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ConcreteBook.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConcreteBook.h" beforeDir="false" afterPath="$PROJECT_DIR$/ConcreteBook.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ClientInLibrary.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ClientInLibrary.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConcreteBagpack.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ConcreteItems/ConcreteBagpack.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConcreteBagpack.h" beforeDir="false" afterPath="$PROJECT_DIR$/ConcreteItems/ConcreteBagpack.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConcreteBook.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ConcreteItems/ConcreteBook.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConcreteBook.h" beforeDir="false" afterPath="$PROJECT_DIR$/ConcreteItems/ConcreteBook.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConcreteNotepad.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ConcreteItems/ConcreteNotepad.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConcreteNotepad.h" beforeDir="false" afterPath="$PROJECT_DIR$/ConcreteItems/ConcreteNotepad.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConcreteSchoolSupply.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ConcreteItems/ConcreteSchoolSupply.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConcreteSchoolSupply.h" beforeDir="false" afterPath="$PROJECT_DIR$/ConcreteItems/ConcreteSchoolSupply.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ClientInLibrary.h" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ClientInLibrary.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Library.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Library.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Library.h" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Library.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReadCsvTsv.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ReadCsvTsv.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/BagpackTests.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/BagpackTests.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/TimeOfBorrowing.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/TimeOfBorrowing.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/TimeOfBorrowing.h" beforeDir="false" afterPath="$PROJECT_DIR$/Library/TimeOfBorrowing.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Managers/BagpackManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Managers/BagpackManager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NotepadManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Managers/NotepadManager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NotepadManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Managers/NotepadManager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReadCsvTsv.h" beforeDir="false" afterPath="$PROJECT_DIR$/ReadCsvTsv.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolSuppliesManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Managers/SchoolSuppliesManager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchoolSuppliesManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Managers/SchoolSuppliesManager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/BookTests.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/BookTests.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/LibraryTests.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/LibraryTests.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/NotepadTests.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/NotepadTests.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/SchoolSuppliesTests.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/SchoolSuppliesTests.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/Bill.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/Bill.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/ReadCsvTsv.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/ReadCsvTsv.cpp.obj" afterDir="false" />
@@ -48,15 +57,17 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/objects1.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/tests/NotepadTests.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/machineOfState.dir/tests/NotepadTests.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/bags.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/bags.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/book.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/book.tsv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/machineOfState.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/machineOfState.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/machineOfState.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/machineOfState.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/notes.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/notes.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generalFunctions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/generalFunctions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generalFunctions.h" beforeDir="false" afterPath="$PROJECT_DIR$/generalFunctions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/AbsoluteDateTest.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ConverterTests.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/catch.hpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -120,10 +131,12 @@
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\Desktop\CLionProjects\machineOfState" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\ConcreteItems" />
+      <recent name="C:\Users\Admin\Desktop\Projekt\Simulator_of_shop\Managers" />
       <recent name="C:\Users\Admin\Desktop\CLionProjects\machineOfState" />
     </key>
   </component>
@@ -315,7 +328,7 @@
       <workItem from="1614017603865" duration="11216000" />
       <workItem from="1614099742262" duration="17965000" />
       <workItem from="1614157410307" duration="4451000" />
-      <workItem from="1614192679725" duration="13096000" />
+      <workItem from="1614192679725" duration="14023000" />
     </task>
     <task id="LOCAL-00001" summary="All features of special things work properly">
       <created>1606246468089</created>
@@ -360,30 +373,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1613064800540" />
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1612978655670">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1614206664403">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612978655670" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1614206664403" />
     <state x="585" y="113" key="CommitChangelistDialog2" timestamp="1612893315670">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="585" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1612893315670" />
-    <state width="938" height="295" key="GridCell.Tab.0.bottom" timestamp="1614205817995">
+    <state width="938" height="295" key="GridCell.Tab.0.bottom" timestamp="1614206669286">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1614205817995" />
-    <state width="938" height="295" key="GridCell.Tab.0.center" timestamp="1614205817994">
+    <state width="938" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1614206669286" />
+    <state width="938" height="295" key="GridCell.Tab.0.center" timestamp="1614206669285">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="295" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1614205817994" />
-    <state width="938" height="295" key="GridCell.Tab.0.left" timestamp="1614205817994">
+    <state width="938" height="295" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1614206669285" />
+    <state width="938" height="295" key="GridCell.Tab.0.left" timestamp="1614206669285">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="295" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1614205817994" />
-    <state width="938" height="295" key="GridCell.Tab.0.right" timestamp="1614205817994">
+    <state width="938" height="295" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1614206669285" />
+    <state width="938" height="295" key="GridCell.Tab.0.right" timestamp="1614206669286">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="295" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1614205817994" />
+    <state width="938" height="295" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1614206669286" />
     <state width="938" height="259" key="GridCell.Tab.1.bottom" timestamp="1614202311662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -430,7 +443,7 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/BookManager.cpp</url>
+          <url>file://$PROJECT_DIR$/Managers/BookManager.cpp</url>
           <line>341</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>

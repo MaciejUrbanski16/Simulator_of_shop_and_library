@@ -10,108 +10,95 @@ CMakeFiles/machineOfState.dir/Bill.cpp.obj
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Bill.cpp
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Bill.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/BookManager.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBook.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteNotepad.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteBook.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteNotepad.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/ClientInLibrary.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/TimeOfBorrowing.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/NotepadManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/BookManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/NotepadManager.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/WriteCsvTsv.h
-CMakeFiles/machineOfState.dir/BookManager.cpp.obj
+CMakeFiles/machineOfState.dir/ConcreteItems/ConcreteBagpack.cpp.obj
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/BookManager.cpp
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/BookManager.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBook.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteNotepad.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/ClientInLibrary.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/TimeOfBorrowing.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/NotepadManager.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/WriteCsvTsv.h
-CMakeFiles/machineOfState.dir/ConcreteBagpack.cpp.obj
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/BookManager.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBagpack.cpp
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBagpack.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBook.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteNotepad.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteBagpack.cpp
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteBagpack.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteBook.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteNotepad.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/ClientInLibrary.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/TimeOfBorrowing.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/BagpackManager.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/NotepadManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/BookManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/NotepadManager.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/WriteCsvTsv.h
-CMakeFiles/machineOfState.dir/ConcreteBook.cpp.obj
+CMakeFiles/machineOfState.dir/ConcreteItems/ConcreteBook.cpp.obj
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/BookManager.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBook.cpp
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBook.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteNotepad.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteBook.cpp
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteBook.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteNotepad.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/ClientInLibrary.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/TimeOfBorrowing.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/NotepadManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/BookManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/NotepadManager.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/WriteCsvTsv.h
-CMakeFiles/machineOfState.dir/ConcreteNotepad.cpp.obj
+CMakeFiles/machineOfState.dir/ConcreteItems/ConcreteNotepad.cpp.obj
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/BookManager.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBook.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteNotepad.cpp
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteNotepad.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteBook.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteNotepad.cpp
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteNotepad.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/ClientInLibrary.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/TimeOfBorrowing.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/NotepadManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/BookManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/NotepadManager.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/WriteCsvTsv.h
-CMakeFiles/machineOfState.dir/ConcreteSchoolSupply.cpp.obj
+CMakeFiles/machineOfState.dir/ConcreteItems/ConcreteSchoolSupply.cpp.obj
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/BookManager.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBook.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteNotepad.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteSchoolSupply.cpp
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteSchoolSupply.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteBook.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteNotepad.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteSchoolSupply.cpp
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteSchoolSupply.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/ClientInLibrary.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/TimeOfBorrowing.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/NotepadManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/BookManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/NotepadManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/SchoolSuppliesManager.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/SchoolSuppliesManager.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/WriteCsvTsv.h
 CMakeFiles/machineOfState.dir/Library/ClientInLibrary.cpp.obj
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/BookManager.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBook.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteNotepad.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteBook.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteNotepad.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/ClientInLibrary.cpp
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/ClientInLibrary.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/TimeOfBorrowing.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/NotepadManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/BookManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/NotepadManager.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/WriteCsvTsv.h
 CMakeFiles/machineOfState.dir/Library/Library.cpp.obj
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/BookManager.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBook.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteNotepad.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteBook.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteNotepad.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/ClientInLibrary.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/Library.cpp
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/Library.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/TimeOfBorrowing.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/NotepadManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/BookManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/NotepadManager.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
@@ -121,61 +108,74 @@ CMakeFiles/machineOfState.dir/Library/TimeOfBorrowing.cpp.obj
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/TimeOfBorrowing.h
 CMakeFiles/machineOfState.dir/Managers/BagpackManager.cpp.obj
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/BookManager.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBagpack.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBook.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteNotepad.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteBagpack.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteBook.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteNotepad.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/ClientInLibrary.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/TimeOfBorrowing.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/BagpackManager.cpp
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/BagpackManager.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/NotepadManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/BookManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/NotepadManager.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/WriteCsvTsv.h
-CMakeFiles/machineOfState.dir/NotepadManager.cpp.obj
+CMakeFiles/machineOfState.dir/Managers/BookManager.cpp.obj
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/BookManager.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBook.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteNotepad.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteBook.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteNotepad.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/ClientInLibrary.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/TimeOfBorrowing.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/NotepadManager.cpp
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/NotepadManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/BookManager.cpp
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/BookManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/NotepadManager.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/WriteCsvTsv.h
+CMakeFiles/machineOfState.dir/Managers/NotepadManager.cpp.obj
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteBook.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteNotepad.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/ClientInLibrary.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/TimeOfBorrowing.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/BookManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/NotepadManager.cpp
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/NotepadManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/WriteCsvTsv.h
+CMakeFiles/machineOfState.dir/Managers/SchoolSuppliesManager.cpp.obj
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteBook.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteNotepad.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteSchoolSupply.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/ClientInLibrary.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/TimeOfBorrowing.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/BookManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/NotepadManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/SchoolSuppliesManager.cpp
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/SchoolSuppliesManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/WriteCsvTsv.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/tests.h
 CMakeFiles/machineOfState.dir/ReadCsvTsv.cpp.obj
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/BookManager.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBook.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteNotepad.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteBook.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteNotepad.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/ClientInLibrary.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/TimeOfBorrowing.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/NotepadManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/BookManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/NotepadManager.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.cpp
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/WriteCsvTsv.h
-CMakeFiles/machineOfState.dir/SchoolSuppliesManager.cpp.obj
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/BookManager.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBook.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteNotepad.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteSchoolSupply.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/ClientInLibrary.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/TimeOfBorrowing.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/NotepadManager.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/SchoolSuppliesManager.cpp
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/SchoolSuppliesManager.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/WriteCsvTsv.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/tests.h
 CMakeFiles/machineOfState.dir/ServiceCsvTsv.cpp.obj
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.cpp
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
@@ -205,14 +205,14 @@ CMakeFiles/machineOfState.dir/Tests/BagpackTests.cpp.obj
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/BookManager.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBagpack.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBook.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteNotepad.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteBagpack.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteBook.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteNotepad.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/ClientInLibrary.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/TimeOfBorrowing.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/BagpackManager.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/NotepadManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/BookManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/NotepadManager.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
@@ -241,12 +241,12 @@ CMakeFiles/machineOfState.dir/Tests/BookTests.cpp.obj
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/BookManager.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBook.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteNotepad.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteBook.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteNotepad.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/ClientInLibrary.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/TimeOfBorrowing.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/NotepadManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/BookManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/NotepadManager.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
@@ -274,13 +274,13 @@ CMakeFiles/machineOfState.dir/Tests/LibraryTests.cpp.obj
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/BookManager.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBook.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteNotepad.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteBook.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteNotepad.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/ClientInLibrary.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/Library.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/TimeOfBorrowing.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/NotepadManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/BookManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/NotepadManager.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
@@ -308,12 +308,12 @@ CMakeFiles/machineOfState.dir/Tests/NotepadTests.cpp.obj
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/BookManager.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBook.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteNotepad.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteBook.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteNotepad.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/ClientInLibrary.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/TimeOfBorrowing.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/NotepadManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/BookManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/NotepadManager.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
@@ -342,15 +342,15 @@ CMakeFiles/machineOfState.dir/Tests/SchoolSuppliesTests.cpp.obj
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/BookManager.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBook.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteNotepad.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteSchoolSupply.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteBook.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteNotepad.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteSchoolSupply.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/ClientInLibrary.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/TimeOfBorrowing.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/NotepadManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/BookManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/NotepadManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/SchoolSuppliesManager.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/SchoolSuppliesManager.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Tests/SchoolSuppliesTests.cpp
@@ -410,12 +410,12 @@ CMakeFiles/machineOfState.dir/WriteCsvTsv.cpp.obj
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/WriteCsvTsv.h
 CMakeFiles/machineOfState.dir/generalFunctions.cpp.obj
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/BookManager.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBook.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteNotepad.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteBook.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteNotepad.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/ClientInLibrary.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/TimeOfBorrowing.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/NotepadManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/BookManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/NotepadManager.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
@@ -445,18 +445,18 @@ CMakeFiles/machineOfState.dir/main.cpp.obj
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Bill.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/BookManager.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBagpack.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteBook.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteNotepad.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteSchoolSupply.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteBagpack.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteBook.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteNotepad.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteSchoolSupply.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/ClientInLibrary.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/Library.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/TimeOfBorrowing.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/BagpackManager.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/NotepadManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/BookManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/NotepadManager.h
+ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/SchoolSuppliesManager.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/SchoolSuppliesManager.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/WriteCsvTsv.h

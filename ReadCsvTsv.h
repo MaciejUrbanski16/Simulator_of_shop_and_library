@@ -6,8 +6,8 @@
 #define MACHINEOFSTATE_READCSVTSV_H
 
 #include "ServiceCsvTsv.h"
-#include "ConcreteBook.h"
-#include "ConcreteNotepad.h"
+#include "ConcreteItems/ConcreteBook.h"
+#include "ConcreteItems/ConcreteNotepad.h"
 
 #include "Library/ClientInLibrary.h"
 
