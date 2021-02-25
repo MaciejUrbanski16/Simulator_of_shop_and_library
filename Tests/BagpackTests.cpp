@@ -5,8 +5,6 @@
 #include <gtest/gtest.h>
 #include "../Managers/BagpackManager.h"
 
-
-#include "../tests.h"
 #define TESTING 11
 
 using testing::Eq;

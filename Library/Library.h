@@ -74,6 +74,7 @@ namespace library {
         void addNewClient(const ClientInLibrary& client);
 
 
+        bool canBorrow = true;
         void borrowBook(int position, const std::string &title);
         void giveBackBook(const std::string &title, ClientInLibrary &client);
         std::vector<shop::ConcreteBook> giveBackBook(int choose, ClientInLibrary &client);

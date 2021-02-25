@@ -4,14 +4,14 @@
 
 #include "Application.h"
 #include "ShopWare.h"
-#include "tests.h"
+
 
 bool Application::enterToShop()
 {
     bool pushButton;
-    cout<<"If you want to go into shop press 'y', or if you want to go into librbary press 'g'(give back book) or 'b'(borrow book)"<<endl;
+    std::cout<<"If you want to go into shop press 'y', or if you want to go into librbary press 'g'(give back book) or 'b'(borrow book)"<<std::endl;
 
-    cin >> enteredChar;
+    std::cin >> enteredChar;
 
     if(enteredChar == 'y') {
         pushButton = enteredChar == 'Y' || enteredChar == 'y';
@@ -33,26 +33,26 @@ void Application :: presentationOfServices()
 
     if(mode == CLIENT_MODE)
     {
-        std::cout<<"MOZLIWY WYBOR USLUG: "<<std::endl;
+        std::cout<<"AVAILABLE TO CHOOSE: "<<std::endl;
         std::cout<<"---------------------"<<std::endl;
-        std::cout<<"1. Ksiazki"<<std::endl;
-        std::cout<<"2. Zeszyty"<<std::endl;
-        std::cout<<"3. Tornistry"<<std::endl;
-        std::cout<<"4. Przybory"<<std::endl;
-        std::cout<<"5. USUNIECIE PRZEDMIOTU Z KOSZYKA"<<std::endl;
-        std::cout<<"6. ZMIANA TRYBU - Obecny tryb CLIENT_MODE "<<std::endl;
-        std::cout<<"7. Wyjscie"<<std::endl;
+        std::cout<<"1. Books"<<std::endl;
+        std::cout<<"2. Notepads"<<std::endl;
+        std::cout<<"3. Bagpacks"<<std::endl;
+        std::cout<<"4. School supplies"<<std::endl;
+        std::cout<<"5. REMOVE ITEM FROM BASKET"<<std::endl;
+        std::cout<<"6. CHANGE MODE - current mode: CLIENT_MODE "<<std::endl;
+        std::cout<<"7. Exit"<<std::endl;
         std::cout<<"---------------------"<<std::endl;
         std::cout<<std::endl;
 
     }
     else if(mode == SELLER_MODE)
     {
-        std::cout<<"1. Edycja ksiazek"<<std::endl;
-        std::cout<<"2. Edycja zeszytow"<<std::endl;
-        std::cout<<"3. Edycja tornistrow"<<std::endl;
-        std::cout<<"4. Edycja przyborow"<<std::endl;
-        std::cout<<"5. ZMIANA TRYBU - Obecny tryb SELLER_MODE "<<std::endl;
+        std::cout<<"1. Edition of books"<<std::endl;
+        std::cout<<"2. Eition of notes"<<std::endl;
+        std::cout<<"3. Edition of backpacks"<<std::endl;
+        std::cout<<"4. Edition of school supplies"<<std::endl;
+        std::cout<<"5. CHANGE MODE - current mode: SELLER_MODE "<<std::endl;
     }
 }
 
@@ -121,7 +121,40 @@ void Application::setKindOfService() {
         }
     }
     else{
-        cout<<"Invalid input: "<<endl;
+        std::cout<<"Invalid input: "<<std::endl;
         exit(0);
     }
+}
+
+int Application::enteringTheNumber(int minValue, int maxValue) {
+
+        int howMuch = 0;
+        if(minValue > maxValue)
+        {
+            int temp = maxValue;
+            minValue = maxValue;
+            maxValue = temp;
+        }
+
+        int where = -1;
+
+        std::cout<<"Give number in range "<<minValue<<" - "<<maxValue<<" to choose service"<<std::endl;
+
+        where = 4;
+
+        bool good1,bad1;
+
+
+        do{
+
+            std::cin>>where;
+
+            good1 = std::cin.good();
+            bad1 = std::cin.bad();
+            std::cin.clear();
+            std::cin.sync();
+        }while((where<minValue||where>maxValue)||(good1==0||bad1==1));
+
+        return where;
+
 }

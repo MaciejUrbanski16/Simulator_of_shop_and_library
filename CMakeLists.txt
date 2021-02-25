@@ -10,7 +10,7 @@ include_directories(lib/googletest-master/googletest/include)
 include_directories(lib/googletest-master/googlemock/include)
 
 add_executable(machineOfState main.cpp ShopWare.h ShopWare.cpp Managers/BookManager.cpp Managers/BookManager.h
-        Managers/NotepadManager.cpp Managers/NotepadManager.h Tests/NotepadTests.cpp tests.cpp Managers/BagpackManager.cpp
+        Managers/NotepadManager.cpp Managers/NotepadManager.h Tests/NotepadTests.cpp Managers/BagpackManager.cpp
         Managers/BagpackManager.h generalFunctions.cpp generalFunctions.h Managers/SchoolSuppliesManager.cpp Managers/SchoolSuppliesManager.h
         Bill.cpp Bill.h Tests/TowarTests.cpp Application.cpp Application.h ServiceCsvTsv.cpp ServiceCsvTsv.h
         WriteCsvTsv.cpp WriteCsvTsv.h Tests/WritingReadingCsvTsvTests.cpp ReadCsvTsv.cpp ReadCsvTsv.h

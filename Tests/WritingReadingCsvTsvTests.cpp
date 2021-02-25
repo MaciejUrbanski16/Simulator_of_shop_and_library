@@ -5,18 +5,16 @@
 #include <gtest/gtest.h>
 #include "../ServiceCsvTsv.h"
 
-#include "../tests.h"
+
 
 using testing::Eq;
-
-using namespace base;
 
 namespace
 {
     class TsvCsvTest : public ::testing::Test
     {
     public:
-        ServiceCsvTsv s1;
+        base::ServiceCsvTsv s1;
         TsvCsvTest()
         {
             s1;

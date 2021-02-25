@@ -6,46 +6,46 @@
 #include "../WriteCsvTsv.h"
 #include "../ReadCsvTsv.h"
 
-using namespace std;
-using namespace shop;
-using namespace base;
 
 
-int NotepadManager::chooseOfDimension()
+
+
+
+int shop::NotepadManager::chooseOfDimension()
 {
     for(int i=0;i<notepads.size();i++)
     {
-        cout<<i+1<<". "<<notepads[i].getFormat()<<endl;
+        std::cout<<i+1<<". "<<notepads[i].getFormat()<<std::endl;
     }
-    cout<<"Podaj cyfre 1-"<<notepads.size()<< ", aby wybrac rozmiar zeszytu"<<endl;
-    cout<<"------------------"<<endl;
+    std::cout<<"Podaj cyfre 1-"<<notepads.size()<< ", aby wybrac rozmiar zeszytu"<<std::endl;
+    std::cout<<"------------------"<<std::endl;
 
 
     bool good,bad;
 
     do{
-        cin>>choose;
-        good = cin.good();
-        bad = cin.bad();
-        cin.clear();
-        cin.sync();
+        std::cin>>choose;
+        good = std::cin.good();
+        bad = std::cin.bad();
+        std::cin.clear();
+        std::cin.sync();
     }while(((choose<=0 )||choose>notepads.size()) || (good==0||bad==1));
 
     return choose;
 }
 
-int NotepadManager :: chooseOfColor()
+int shop::NotepadManager :: chooseOfColor()
 {
     int choose = 0;
 
-    cout<<"Kolory okladek"<<endl;
-    cout<<"--------------"<<endl;
-    cout<<"1.Czerwona"<<endl;
-    cout<<"2.Niebieska"<<endl;
-    cout<<"3.Zolta"<<endl;
+    std::cout<<"Kolory okladek"<<std::endl;
+    std::cout<<"--------------"<<std::endl;
+    std::cout<<"1.Czerwona"<<std::endl;
+    std::cout<<"2.Niebieska"<<std::endl;
+    std:: cout<<"3.Zolta"<<std::endl;
 
 
-    cin>>choose;
+    std::cin>>choose;
     if(choose==1||choose==2||choose==3)
     {
         return choose;
@@ -53,14 +53,14 @@ int NotepadManager :: chooseOfColor()
     else return 0;
 }
 
-void NotepadManager::saveItemsToFile()
+void shop::NotepadManager::saveItemsToFile()
 {
 
     std::vector<std::string>headerOfNotes = {"SIZE","PRICE","AMOUNT","AMOUNT_OF_CARDS"};
     std::vector<std::string>dataToTsv;
     std::string readyData;
 
-    WriteCsvTsv writeNotes("notes.tsv");
+    base::WriteCsvTsv writeNotes("notes.tsv");
     writeNotes.addHeader(headerOfNotes);
 
 
@@ -69,13 +69,13 @@ void NotepadManager::saveItemsToFile()
         //save actual state of notes to file with .tsv extension
         dataToTsv.push_back(notepads[i].getFormat());
 
-        readyData = to_string(notepads[i].getPrice());
+        readyData = std::to_string(notepads[i].getPrice());
         dataToTsv.push_back(readyData);
 
-        readyData = to_string(amounts[i]);
+        readyData = std::to_string(amounts[i]);
         dataToTsv.push_back(readyData);
 
-        readyData = to_string(notepads[i].getNumberOfCards());
+        readyData = std::to_string(notepads[i].getNumberOfCards());
         dataToTsv.push_back(readyData);
 
         writeNotes.writeToFile(dataToTsv);
@@ -86,54 +86,54 @@ void NotepadManager::saveItemsToFile()
 }
 
 
-void NotepadManager::readItemsFromFile()
+void shop::NotepadManager::readItemsFromFile()
 {
 
     notepads.clear();
     amounts.clear();
 
 
-    ReadCsvTsv readNotes("notes.tsv");
+    base::ReadCsvTsv readNotes("notes.tsv");
     readNotes.readFromFile(notepads,amounts);
 
 }
 
-bool NotepadManager::checkIfNoteIsAvailable(int noteChoose)
+bool shop::NotepadManager::checkIfNoteIsAvailable(int noteChoose)
 {
     return amounts[noteChoose-1]>0;                      //return true if there is available any notepad of given format
 }
 
 ///--------------------------------------------------------------------------------------------------------------------
 
-void NotepadManager :: addNotesToShop(int mode, int howMuch, int where)
+void shop::NotepadManager :: addNotesToShop(int mode, int howMuch, int where)
 {
     if(mode == CLIENT_MODE)
     {
-        cout<<"CLIENT_MODE do not allow to edit state of shop "<<endl;
+        std::cout<<"CLIENT_MODE do not allow to edit state of shop "<<std::endl;
     }
     else if(mode == SELLER_MODE)
     {
         amounts[where-1] = amounts[where-1] + howMuch;
     }
 }
-void NotepadManager ::showResourcesOfNotes()
+void shop::NotepadManager ::showResourcesOfNotes()
 {
-    cout<<"The notepads that are available: "<<endl;
+    std::cout<<"The notepads that are available: "<<std::endl;
     for(int i = 0;i<notepads.size();i++)
     {
-        cout<<i+1<<". "<<notepads[i].getFormat()<<endl;
+        std::cout<<i+1<<". "<<notepads[i].getFormat()<<std::endl;
     }
 
 }
 
-void NotepadManager ::addingByOwnerNewNote()
+void shop::NotepadManager ::addingByOwnerNewNote()
 {
     if(application_.mode == SELLER_MODE)
     {
         int howMuch = 0, where =-1;
         showResourcesOfNotes();
 
-        cout<<"Choose note from list and give amount to change its amount "<<endl;
+        std::cout<<"Choose note from list and give amount to change its amount "<<std::endl;
 
         where = enteringTheNumber(1,notepads.size());
 
@@ -143,8 +143,8 @@ void NotepadManager ::addingByOwnerNewNote()
     }
     else if(application_.mode == CLIENT_MODE)
     {
-        cout<<"There is not allowed to edit state of shop in CLIENT_MODE "<<endl;
-        cout<<"If you want you can now change mode to SELLER_MODE"<<endl;
+        std::cout<<"There is not allowed to edit state of shop in CLIENT_MODE "<<std::endl;
+        std::cout<<"If you want you can now change mode to SELLER_MODE"<<std::endl;
 
         changeModeToSellerMode("password",application_.mode);
 
@@ -153,10 +153,10 @@ void NotepadManager ::addingByOwnerNewNote()
 }
 
 
-void NotepadManager::editionStateOfNotes()
+void shop::NotepadManager::editionStateOfNotes()
 {
-    cout<<"1. Add notes to shop "<<endl;
-    cout<<"2. Remove note from shop "<<endl;
+    std::cout<<"1. Add notes to shop "<<std::endl;
+    std::cout<<"2. Remove note from shop "<<std::endl;
 
     int choose = enteringTheNumber(1,2);
 
@@ -175,7 +175,7 @@ void NotepadManager::editionStateOfNotes()
     }
 }
 
-void NotepadManager::removeByOwnerNote()
+void shop::NotepadManager::removeByOwnerNote()
 {
     showResourcesOfNotes();
     int choose = enteringTheNumber(1, dimensions.size());
@@ -184,11 +184,11 @@ void NotepadManager::removeByOwnerNote()
     notepads.erase(notepads.begin() + choose - 1);
     amounts.erase(amounts.begin() + choose - 1 );
 
-    cout<<"The notepad with "<< removedN <<"size was removed successfully!" <<endl;
+    std::cout<<"The notepad with "<< removedN <<"size was removed successfully!" <<std::endl;
 
 }
 
-std::vector<std::string> NotepadManager::getFormats() {
+std::vector<std::string> shop::NotepadManager::getFormats() {
     std::vector<std::string> formats;
     for(const auto & n : notepads)
     {

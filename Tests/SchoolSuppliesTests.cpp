@@ -5,8 +5,6 @@
 #include <gtest/gtest.h>
 #include "../Managers/SchoolSuppliesManager.h"
 
-
-#include "../tests.h"
 #define TESTING 11
 
 using testing::Eq;

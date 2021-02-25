@@ -326,6 +326,12 @@ cxxabi.h
 acxx_demangle.h
 -
 
+C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.cpp
+Application.h
+C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
+ShopWare.h
+C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
+
 C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
 vector
 -
@@ -499,8 +505,6 @@ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/SchoolSuppliesManager.
 C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ReadCsvTsv.h
 ../WriteCsvTsv.h
 C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/WriteCsvTsv.h
-../tests.h
-C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/tests.h
 
 C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/SchoolSuppliesManager.h
 ../ConcreteItems/ConcreteSchoolSupply.h
@@ -522,6 +526,14 @@ C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteNotepad.h
 Library/ClientInLibrary.h
 C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Library/ClientInLibrary.h
 
+C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.cpp
+ServiceCsvTsv.h
+C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
+vector
+-
+string
+-
+
 C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
 vector
 -
@@ -529,6 +541,10 @@ string
 -
 fstream
 -
+
+C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.cpp
+ShopWare.h
+C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
 
 C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
 Application.h
@@ -551,8 +567,6 @@ gtest/gtest.h
 -
 ../Managers/BagpackManager.h
 C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/BagpackManager.h
-../tests.h
-C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/tests.h
 
 C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Tests/BookTests.cpp
 gtest/gtest.h
@@ -579,16 +593,28 @@ gtest/gtest.h
 -
 ../Managers/NotepadManager.h
 C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/NotepadManager.h
-../tests.h
-C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/tests.h
 
 C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Tests/SchoolSuppliesTests.cpp
 gtest/gtest.h
 -
 ../Managers/SchoolSuppliesManager.h
 C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Managers/SchoolSuppliesManager.h
-../tests.h
-C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/tests.h
+
+C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Tests/TowarTests.cpp
+gtest/gtest.h
+-
+../ShopWare.h
+C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
+
+C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Tests/WritingReadingCsvTsvTests.cpp
+gtest/gtest.h
+-
+../ServiceCsvTsv.h
+C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
+
+C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/WriteCsvTsv.cpp
+WriteCsvTsv.h
+C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/WriteCsvTsv.h
 
 C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/WriteCsvTsv.h
 ServiceCsvTsv.h
@@ -609,16 +635,8 @@ ConcreteItems/ConcreteBook.h
 C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteBook.h
 
 C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/main.cpp
-iostream
--
 generalFunctions.h
 C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/generalFunctions.h
-cassert
--
-vector
--
-tests.h
-C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/tests.h
 Application.h
 C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
 Managers/BookManager.h
@@ -637,18 +655,16 @@ Bill.h
 C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Bill.h
 gtest/gtest.h
 -
+iostream
+-
+cassert
+-
+vector
+-
 map
 -
 ctime
 -
 chrono
--
-
-C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/tests.h
-iostream
--
-vector
--
-conio.h
 -
 

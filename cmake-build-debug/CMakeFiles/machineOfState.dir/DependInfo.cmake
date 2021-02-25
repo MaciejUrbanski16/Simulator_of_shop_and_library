@@ -30,7 +30,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/WriteCsvTsv.cpp" "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/cmake-build-debug/CMakeFiles/machineOfState.dir/WriteCsvTsv.cpp.obj"
   "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/generalFunctions.cpp" "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/cmake-build-debug/CMakeFiles/machineOfState.dir/generalFunctions.cpp.obj"
   "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/main.cpp" "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/cmake-build-debug/CMakeFiles/machineOfState.dir/main.cpp.obj"
-  "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/tests.cpp" "C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/cmake-build-debug/CMakeFiles/machineOfState.dir/tests.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -1,12 +1,8 @@
-#include <iostream>
 
 #include "generalFunctions.h"
 
-#include <cassert>
-#include <vector>
-#include "tests.h"
-
 #include "Application.h"
+
 #include "Managers/BookManager.h"
 #include "Managers/NotepadManager.h"
 #include "Managers/BagpackManager.h"
@@ -19,19 +15,15 @@
 
 #include <gtest/gtest.h>
 
-
+#include <iostream>
+#include <cassert>
+#include <vector>
 #include <map>
 #include <ctime>
 #include <chrono>
 
-using namespace std;
 
 int main(int argc, char *argv[]) {
-
-
-    library::TimeOfBorrowing t1;
-
-    library::TimeLeft t2(t1);
 
     //start tests
     testing::InitGoogleTest(&argc,argv);
@@ -45,7 +37,7 @@ int main(int argc, char *argv[]) {
     shop::Ware purchases(application);
 
     //initializing objects to storage data of library and its books
-    BookManager bookManager;
+    shop::BookManager bookManager;
     library::Library lib(bookManager);
     lib.readUsersFromFile();
 
@@ -84,7 +76,7 @@ int main(int argc, char *argv[]) {
                     purchases.indexOfChoosenThing = books.chooseOfSearchedBook();
 
                         if (purchases.indexOfChoosenThing == books.getSizeOfCurrentSearchings()) {
-                            cout << "You do not choose any book! " << endl;
+                            std::cout << "You do not choose any book! " << std::endl;
                         } else {
 
                             books.choosenTitle = books.getTitleOfSearchedBook(purchases.indexOfChoosenThing - 1);
@@ -130,7 +122,7 @@ int main(int argc, char *argv[]) {
                 notes.readItemsFromFile(); // load data about notepads
                 application.readRemovedFromFile(); // load removed
 
-                cout << "Size dimension notes: " << notes.notepads.size() << endl;
+                std::cout << "Size dimension notes: " << notes.notepads.size() << std::endl;
 
                 assert(notes.notepads.size() == notes.amounts.size()); //control assert
 
@@ -150,7 +142,7 @@ int main(int argc, char *argv[]) {
                     purchases.addToPurchases();
                     purchases.showOrderedPurchases();
                 } else {
-                    cout << "There are no notes with chosen format " << purchases.name << endl;
+                    std::cout << "There are no notes with chosen format " << purchases.name << std::endl;
                     purchases.showOrderedPurchases();
                 }
 
@@ -220,7 +212,7 @@ int main(int argc, char *argv[]) {
                 application.removedThings.push_back(purchases.removeThingFromPurchases());
 
                 for (const auto & removedThing : application.removedThings) {
-                    cout << "Removed: " << removedThing << endl;
+                    std::cout << "Removed: " << removedThing << std::endl;
                 }
 
                 //save all removed things to file
@@ -251,59 +243,53 @@ int main(int argc, char *argv[]) {
                 static_cast<int>(Application::kindOfService::SHOP) == application.kindOfService_)
         {
             application.presentationOfServices();
-            {
 
-                auto *bookEdition = new shop::BookManager;
-                auto *noteEdition = new shop::NotepadManager;
-                auto *bagEdition = new shop::BagpackManager();
-                auto *suppliesEdition = new shop::SchoolSuppliesManager;
-                int chooseOfEdition = enteringTheNumber(1, 5);
+
+            int chooseOfEdition = application.enteringTheNumber(1, 5);
 
                 //edition of chosen list of things (only in SELLER_MODE)
-                switch (chooseOfEdition) {
-                    case 1:
-                        bookEdition->readItemsFromFile();
-                        bookEdition->editionStateOfBooks();
-                        bookEdition->saveItemsToFile();
+                if (chooseOfEdition == 1) {
 
-                        delete bookEdition;
+                    auto *bookEdition = new shop::BookManager;
+                    bookEdition->readItemsFromFile();
+                    bookEdition->editionStateOfBooks();
+                    bookEdition->saveItemsToFile();
 
-                        break;
+                    delete bookEdition;
 
-                    case 2:
-                        noteEdition->readItemsFromFile();
-                        noteEdition->editionStateOfNotes();
-                        noteEdition->saveItemsToFile();
-
-                        delete noteEdition;
-
-                        break;
-
-                    case 3:
-                        bagEdition->readItemsFromFile();
-                        bagEdition->editionStateOfBags();
-                        bagEdition->saveItemsToFile();
-
-                        delete bagEdition;
-                        break;
-
-                    case 4:
-                        suppliesEdition->readItemsFromFile();
-                        suppliesEdition->editionState();
-                        suppliesEdition->saveItemsToFile();
-
-                        delete suppliesEdition;
-                        break;
-
-                    case 5:
-                        application.mode = purchases.changeModeToSellerMode("password", application.mode);
-                        break;
-
-                    default:
-                        break;
                 }
 
-            }
+                else if(chooseOfEdition == 2) {
+                    auto *noteEdition = new shop::NotepadManager;
+                    noteEdition->readItemsFromFile();
+                    noteEdition->editionStateOfNotes();
+                    noteEdition->saveItemsToFile();
+
+                    delete noteEdition;
+
+                }
+                else if(chooseOfEdition == 3) {
+                    auto *bagEdition = new shop::BagpackManager();
+                    bagEdition->readItemsFromFile();
+                    bagEdition->editionStateOfBags();
+                    bagEdition->saveItemsToFile();
+
+                    delete bagEdition;
+                }
+
+                else if(chooseOfEdition == 4) {
+                    auto *suppliesEdition = new shop::SchoolSuppliesManager;
+                    suppliesEdition->readItemsFromFile();
+                    suppliesEdition->editionState();
+                    suppliesEdition->saveItemsToFile();
+
+                    delete suppliesEdition;
+                }
+
+                else if(chooseOfEdition == 5) {
+                    application.mode = purchases.changeModeToSellerMode("password", application.mode);
+                }
+
 
         }
 
@@ -311,7 +297,7 @@ int main(int argc, char *argv[]) {
                 static_cast<int>(Application::kindOfService::LIBRARY_GIVE_BACK) == application.kindOfService_) {
             //implementation of library's behaviour
 
-            BookManager books;
+            shop::BookManager books;
             books.readItemsFromFile();
 
             library::Library library(books);
@@ -391,18 +377,27 @@ int main(int argc, char *argv[]) {
                     //check if client has not any overdue books
                     ///TODO how to get deadline of concrete borrowed book
 
+                    //bool canBorrow = true;
+
                     library::TimeLeft firstDeadline,actualTime(currentTime);
-                    std::pair<int, library::TimeLeft> theShortestDealdine;
+                    std::pair<int, library::TimeLeft> theShortestDeadline;
+
                     if(!tempClients[indexOfActualClient].getBorrowedByClient().empty()) {
 
                         //take the shortest term of book to give back
                         //index of this term is associated with this term
-                        theShortestDealdine = tempClients[indexOfActualClient].getTheShortestDeadline();
+                        theShortestDeadline = tempClients[indexOfActualClient].getTheShortestDeadline();
+
+                        if(actualTime > theShortestDeadline.second){
+                            library.canBorrow = true;
+                        } else{
+                            library.canBorrow = false;
+                        }
                     }
 
 
                     //compare the actual time with the shortest time (deadline)
-                    if(actualTime > theShortestDealdine.second) {
+                    if(library.canBorrow) {
                         
                         //there is time yet
                         std::cout << "There is time yet: " << actualTime - firstDeadline << std::endl;
@@ -413,7 +408,7 @@ int main(int argc, char *argv[]) {
                             purchases.indexOfChoosenThing = books.chooseOfSearchedBook();
 
                             if (purchases.indexOfChoosenThing == books.getSizeOfCurrentSearchings()) {
-                                cout << "You did not choose any book to borrow! " << endl;
+                                std::cout << "You did not choose any book to borrow! " << std::endl;
                             } else {
 
                                 books.choosenTitle = books.getTitleOfSearchedBook(purchases.indexOfChoosenThing - 1);
@@ -428,16 +423,6 @@ int main(int argc, char *argv[]) {
 
                                     std::cout << "You borrow " << books.tempAuthor << "   " << tempTitle << std::endl;
 
-
-                                    //*TODO when user borrow i need to remeber the data of his borrowing
-                                    //and set  deadline of giving back and save this deadline wuth borrowed book
-                                    //and when user would like to borrow another book i have to check if he has not any broken deadline
-                                    //TODO i have to read
-
-
-
-                                    std::cout << library.currentIDloggedIn << std::endl;
-
                                     library.setManageBooks(books); //refresh actual state of book in library
 
                                 }
@@ -450,9 +435,12 @@ int main(int argc, char *argv[]) {
                         //the time was expired
 
                         //show book which time was expired
-                        std::cout << "The time of borrowing was expired! Until you give back your book "
-                                  << tempClients[indexOfActualClient].getBorrowedByClient()[theShortestDealdine.first] <<
-                                  " you can not borrow another! " << std::endl;
+                        if(!tempClients[indexOfActualClient].getBorrowedByClient().empty()) {
+                            std::cout << "The time of borrowing was expired! Until you give back your book "
+                                      << tempClients[indexOfActualClient].getBorrowedByClient()[theShortestDeadline.first]
+                                      <<
+                                      " you can not borrow another! " << std::endl;
+                        }
                     }
                 }
 
@@ -478,7 +466,7 @@ int main(int argc, char *argv[]) {
 
 
                         //here should be object of ConcreteBook
-                        ConcreteBook bookToGiveBack = tempClients[indexOfActualClient].borrowedByClient[choose - 1];
+                        shop::ConcreteBook bookToGiveBack = tempClients[indexOfActualClient].borrowedByClient[choose - 1];
 
                         books.incrementAmountOfBook(bookToGiveBack);
 
@@ -488,12 +476,8 @@ int main(int argc, char *argv[]) {
                         tempClients[indexOfActualClient].setBorrowedByClient(actualStateOfBorrowedBooks);
                     }
                     else{
-                        char toBorrow;
-                        std::cout<<"You do not have any borrowed books! You can borrow [y/n] ";
-                        std::cin>>toBorrow;
-                        if(toBorrow == 'y'){
-                            //
-                        }
+                        std::cout<< "You do not have any borrowed book "<<std::endl;
+                        //application.stage = CONFIRM;
                     }
 
                     //refresh these instances
@@ -526,7 +510,7 @@ int main(int argc, char *argv[]) {
        bill.printBill(toPay);
    }
 
-    return 0; //RUN_ALL_TESTS();
+    return 0;//RUN_ALL_TESTS();
 }
 
 

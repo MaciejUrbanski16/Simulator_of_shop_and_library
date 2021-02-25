@@ -25,7 +25,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/machineOfState.dir/WriteCsvTsv.cpp.obj"
   "CMakeFiles/machineOfState.dir/generalFunctions.cpp.obj"
   "CMakeFiles/machineOfState.dir/main.cpp.obj"
-  "CMakeFiles/machineOfState.dir/tests.cpp.obj"
   "libmachineOfState.dll.a"
   "machineOfState.exe"
   "machineOfState.exe.manifest"

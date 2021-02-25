@@ -132,24 +132,33 @@ TEST_F(LibraryTests, theShortestTerm)
     shop::BookManager books;
     books.readItemsFromFile();
     library::Library library(books);
-    library::TimeLeft time1 ("22.03.2021");
-    library::TimeLeft time2 ("22.03.2021");
+
+    std::string currentShortestDeadline = "24.03.2021  10:59:49";
+    std::string timeS;
 
     library.readUsersFromFile();
 
     std::vector<library::ClientInLibrary> clients = library.getClients();
+
+    if(clients.empty()){
+        ASSERT_TRUE(1 != 0);
+    }
+    else{
+        library::TimeLeft timeLeft = clients[0].getTheShortestDeadline().second;
+        timeS = timeLeft.getCurrentTimeAsString();
+    }
 
 
     bool equal = false;
 
 
     //WHEN
-    if(time1 == time2){
+    if(timeS == currentShortestDeadline){
         equal = true;
     }
 
     //THEN
-    ASSERT_TRUE(equal);
+    EXPECT_TRUE(equal);
 }
 
 

@@ -24,7 +24,7 @@ void Bill::printBill(shop::ware_t toPay)
     time_t timeO; //give actual time
     time(&timeO);
 
-    std::cout<<"PARAGON FISKALNY       "<<ctime(&timeO)<<std::endl;
+    std::cout<<"SUM UP:      "<<ctime(&timeO)<<std::endl;
 
     for(int i = 0 ; i< 56; i++)
     {
@@ -56,7 +56,7 @@ void Bill::printBill(shop::ware_t toPay)
             }
             std::cout<<std::endl;
 
-            std::cout<<"SUMA:";
+            std::cout<<"SUM:";
             for(int j=0;j<41;j++)
             {
                 std::cout<<' ';

@@ -8,9 +8,6 @@
 #include "Managers/BookManager.h"
 #include "ctime"
 
-using namespace shop;
-
-
 class Bill : public shop::Ware {
 public:
     Bill() = default;

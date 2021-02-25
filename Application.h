@@ -9,7 +9,7 @@
 #include <string>
 #include <fstream>
 #include <iostream>
-//#include "ConcreteBagpack.h"
+
 
 ///KLASA DO PRZECHOWYWANIA KONFIGURACJI SYMULATORA
 class Application {
@@ -32,6 +32,8 @@ public:
     void presentationOfServices();
 
     int chooseOfService();
+
+    int enteringTheNumber(int minValue, int maxValue);
 
     bool enterToShop();
     char enteredChar;

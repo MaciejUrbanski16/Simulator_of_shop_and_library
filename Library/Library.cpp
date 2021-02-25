@@ -6,13 +6,8 @@
 
 library::Library::Library(shop::BookManager &manageBooks) : manageBooks_(manageBooks) {
 
+    //to generate id of new client
     srand(time(nullptr));
-
-    ClientInLibrary c("Maciej","Urbanski","12345");
-    std::pair<std::string, std::string> p ("Jan","Book");
-    shop::ConcreteBook c1(p,12.87);
-    this->borrowedBooks_.push_back(c1);
-    clientAndBorrowedBook[c] = borrowedBooks_;
 }
 
 library::Library::~Library() {

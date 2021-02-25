@@ -4,7 +4,6 @@
 CMakeFiles/machineOfState.dir/Application.cpp.obj: ../Application.cpp
 CMakeFiles/machineOfState.dir/Application.cpp.obj: ../Application.h
 CMakeFiles/machineOfState.dir/Application.cpp.obj: ../ShopWare.h
-CMakeFiles/machineOfState.dir/Application.cpp.obj: ../tests.h
 
 CMakeFiles/machineOfState.dir/Bill.cpp.obj: ../Application.h
 CMakeFiles/machineOfState.dir/Bill.cpp.obj: ../Bill.cpp
@@ -161,7 +160,6 @@ CMakeFiles/machineOfState.dir/Managers/SchoolSuppliesManager.cpp.obj: ../ReadCsv
 CMakeFiles/machineOfState.dir/Managers/SchoolSuppliesManager.cpp.obj: ../ServiceCsvTsv.h
 CMakeFiles/machineOfState.dir/Managers/SchoolSuppliesManager.cpp.obj: ../ShopWare.h
 CMakeFiles/machineOfState.dir/Managers/SchoolSuppliesManager.cpp.obj: ../WriteCsvTsv.h
-CMakeFiles/machineOfState.dir/Managers/SchoolSuppliesManager.cpp.obj: ../tests.h
 
 CMakeFiles/machineOfState.dir/ReadCsvTsv.cpp.obj: ../Application.h
 CMakeFiles/machineOfState.dir/ReadCsvTsv.cpp.obj: ../ConcreteItems/ConcreteBook.h
@@ -217,7 +215,6 @@ CMakeFiles/machineOfState.dir/Tests/BagpackTests.cpp.obj: ../ServiceCsvTsv.h
 CMakeFiles/machineOfState.dir/Tests/BagpackTests.cpp.obj: ../ShopWare.h
 CMakeFiles/machineOfState.dir/Tests/BagpackTests.cpp.obj: ../Tests/BagpackTests.cpp
 CMakeFiles/machineOfState.dir/Tests/BagpackTests.cpp.obj: ../WriteCsvTsv.h
-CMakeFiles/machineOfState.dir/Tests/BagpackTests.cpp.obj: ../tests.h
 
 CMakeFiles/machineOfState.dir/Tests/BookTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/gtest-death-test.h
 CMakeFiles/machineOfState.dir/Tests/BookTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/gtest-matchers.h
@@ -318,7 +315,6 @@ CMakeFiles/machineOfState.dir/Tests/NotepadTests.cpp.obj: ../ServiceCsvTsv.h
 CMakeFiles/machineOfState.dir/Tests/NotepadTests.cpp.obj: ../ShopWare.h
 CMakeFiles/machineOfState.dir/Tests/NotepadTests.cpp.obj: ../Tests/NotepadTests.cpp
 CMakeFiles/machineOfState.dir/Tests/NotepadTests.cpp.obj: ../WriteCsvTsv.h
-CMakeFiles/machineOfState.dir/Tests/NotepadTests.cpp.obj: ../tests.h
 
 CMakeFiles/machineOfState.dir/Tests/SchoolSuppliesTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/gtest-death-test.h
 CMakeFiles/machineOfState.dir/Tests/SchoolSuppliesTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/gtest-matchers.h
@@ -354,7 +350,6 @@ CMakeFiles/machineOfState.dir/Tests/SchoolSuppliesTests.cpp.obj: ../ServiceCsvTs
 CMakeFiles/machineOfState.dir/Tests/SchoolSuppliesTests.cpp.obj: ../ShopWare.h
 CMakeFiles/machineOfState.dir/Tests/SchoolSuppliesTests.cpp.obj: ../Tests/SchoolSuppliesTests.cpp
 CMakeFiles/machineOfState.dir/Tests/SchoolSuppliesTests.cpp.obj: ../WriteCsvTsv.h
-CMakeFiles/machineOfState.dir/Tests/SchoolSuppliesTests.cpp.obj: ../tests.h
 
 CMakeFiles/machineOfState.dir/Tests/TowarTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/gtest-death-test.h
 CMakeFiles/machineOfState.dir/Tests/TowarTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/gtest-matchers.h
@@ -402,7 +397,6 @@ CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj: ../lib/go
 CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj: ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
 CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj: ../ServiceCsvTsv.h
 CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj: ../Tests/WritingReadingCsvTsvTests.cpp
-CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj: ../tests.h
 
 CMakeFiles/machineOfState.dir/WriteCsvTsv.cpp.obj: ../ServiceCsvTsv.h
 CMakeFiles/machineOfState.dir/WriteCsvTsv.cpp.obj: ../WriteCsvTsv.cpp
@@ -461,8 +455,4 @@ CMakeFiles/machineOfState.dir/main.cpp.obj: ../ShopWare.h
 CMakeFiles/machineOfState.dir/main.cpp.obj: ../WriteCsvTsv.h
 CMakeFiles/machineOfState.dir/main.cpp.obj: ../generalFunctions.h
 CMakeFiles/machineOfState.dir/main.cpp.obj: ../main.cpp
-CMakeFiles/machineOfState.dir/main.cpp.obj: ../tests.h
-
-CMakeFiles/machineOfState.dir/tests.cpp.obj: ../tests.cpp
-CMakeFiles/machineOfState.dir/tests.cpp.obj: ../tests.h
 

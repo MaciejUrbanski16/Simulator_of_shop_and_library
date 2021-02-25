@@ -5,8 +5,6 @@
 #include "SchoolSuppliesManager.h"
 #include "../ReadCsvTsv.h"
 #include "../WriteCsvTsv.h"
-#include "../tests.h"
-
 
 
 void shop::SchoolSuppliesManager::readItemsFromFile()
@@ -80,7 +78,7 @@ dateType shop::SchoolSuppliesManager::getDate(int &it, std::string line1) {
 
 void shop::SchoolSuppliesManager::presentationOfSupplies()
 {
-    cout<<"List of available school supplies: "<<endl;
+    std::cout<<"List of available school supplies: "<<std::endl;
 
     for(int i=0;i<schoolSupplies.size(); i++)
     {
@@ -156,9 +154,9 @@ void shop::SchoolSuppliesManager::remSuplies()
 void shop::SchoolSuppliesManager::addSuplies()
 {
     std::cout<<"Enter name, price, amount of concrete school supply"<<std::endl;
-    cin>>name_ADD;
-    cin>>price_ADD;
-    cin>>amount_ADD;
+    std::cin>>name_ADD;
+    std::cin>>price_ADD;
+    std::cin>>amount_ADD;
 
     ConcreteSchoolSupply s;
     s.setPrice(price_ADD);

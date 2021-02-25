@@ -6,26 +6,25 @@
 
 #include<string>
 
-using namespace std;
-using namespace shop;
-using namespace base;
 
-void BookManager :: readItemsFromFile()
+
+
+void shop::BookManager :: readItemsFromFile()
 {
 
     books_.clear();
     amounts_.clear();
 
 
-    ReadCsvTsv read("book.tsv");
+    base::ReadCsvTsv read("book.tsv");
     read.readFromFile(books_, amounts_);
 
 }
 
-void BookManager:: saveItemsToFile()
+void shop::BookManager:: saveItemsToFile()
 {
 
-    WriteCsvTsv write("book.tsv");
+    base::WriteCsvTsv write("book.tsv");
 
     std::vector<std::string>header{"AUTHOR","TITLE","PRICE","AMOUNT"};
     write.addHeader(header);
@@ -55,11 +54,11 @@ void BookManager:: saveItemsToFile()
 
 ///----------------------------------------------------------------------------------------------------------------------
 
-void BookManager::editionStateOfBooks()
+void shop::BookManager::editionStateOfBooks()
 {
-    cout<<"CHOOSE: "<<endl;
-    cout<<"1. Add new book to shop"<<endl;
-    cout<<"2. Remove chosen book from shop"<<endl;
+    std::cout<<"CHOOSE: "<<std::endl;
+    std::cout<<"1. Add new book to shop"<<std::endl;
+    std::cout<<"2. Remove chosen book from shop"<<std::endl;
 
     int choose = enteringTheNumber(1,2);
     switch(choose)
@@ -75,14 +74,13 @@ void BookManager::editionStateOfBooks()
     }
 
 }
-int BookManager::searchingBook()
+int shop::BookManager::searchingBook()
 {
 
-    cout<<"Enter letter that a title of book begin"<<endl;
+    std::cout<<"Enter letter that a title of book begin"<<std::endl;
 
-    cin>>letter;                //searching titles after presses button
+    std::cin>>letter;                //searching titles after presses button
 
-    cout<<"Letter: "<<letter<<endl;
 
     toUpper();                              //change letter to capital
 
@@ -99,16 +97,15 @@ int BookManager::searchingBook()
         return NOT_FOUND;
     } else
     {
-        std::cout<<"Rozmiar tu: "<<this->currentSearchings.size();
         return FOUND;
     }
 }
 
 //----------------------------------------------------------------------------------------------------------------------
 
-int BookManager :: chooseOfSearchedBook()
+int shop::BookManager :: chooseOfSearchedBook()
 {
-    cout<<"Choose the book you are looking for: "<<endl;
+    std::cout<<"Choose the book you are looking for: "<<std::endl;
     choose = -1;
     choose = enteringTheNumber(1,this->currentSearchings.size());
 
@@ -117,12 +114,12 @@ int BookManager :: chooseOfSearchedBook()
 
 //----------------------------------------------------------------------------------------------------------------------
 
-int BookManager::getSizeOfCurrentSearchings()
+int shop::BookManager::getSizeOfCurrentSearchings()
 {
     return currentSearchings.size();
 }
 
-void BookManager::addSearchedBooks(char letter_)
+void shop::BookManager::addSearchedBooks(char letter_)
 {
     for(ConcreteBook  b : this->books_)
     {
@@ -132,27 +129,27 @@ void BookManager::addSearchedBooks(char letter_)
         }
     }
 }
-int BookManager :: showSearchedBooks(std::vector<std::string>&searchedBooks)
+int shop::BookManager :: showSearchedBooks(std::vector<std::string>&searchedBooks)
 {
     if(searchedBooks.empty()||searchedBooks[0]=="NONE OF THE ABOVE")
     {
-        cout<<"There is no title which begin entered letter! "<<endl;
+        std::cout<<"There is no title which begin entered letter! "<<std::endl;
 
        return NOT_FOUND;
     }
     else
     {
-        cout<<"Found books in shop: "<<endl;
+        std::cout<<"Found books in shop: "<<std::endl;
 
         for(int i = 0 ; i<searchedBooks.size();i++)
         {
-            cout<<i+1<<". "<<searchedBooks[i]<<endl;
+            std::cout<<i+1<<". "<<searchedBooks[i]<<std::endl;
         }
         return FOUND;
     }
 }
 
-bool BookManager ::checkAmountofBookInShop(const Ware &purchases)
+bool shop::BookManager ::checkAmountofBookInShop(const Ware &purchases)
 {
     bool p;
 
@@ -166,8 +163,8 @@ bool BookManager ::checkAmountofBookInShop(const Ware &purchases)
     }
     else
     {
-        cout << "There is no book with this title currently!" <<
-             this->books_[purchases.position].getPairOfTitleAndAuthorBook().second << endl;
+        std::cout << "There is no book with this title currently!" <<
+             this->books_[purchases.position].getPairOfTitleAndAuthorBook().second << std::endl;
         p = false;
     }
 
@@ -177,7 +174,7 @@ bool BookManager ::checkAmountofBookInShop(const Ware &purchases)
 
 //----------------------------------------------------------------------------------------------------------------------
 
- int BookManager ::checkIfBookExist(std::string &title)
+ int shop::BookManager ::checkIfBookExist(std::string &title)
 {
     int position = -1;
     for(int i =0; i<this->amounts_.size(); i++)
@@ -192,14 +189,14 @@ bool BookManager ::checkAmountofBookInShop(const Ware &purchases)
     return position;
 }
 
-std::string BookManager::getTitleOfSearchedBook(int t)
+std::string shop::BookManager::getTitleOfSearchedBook(int t)
 {
     return currentSearchings[t];
 }
 
 //----------------------------------------------------------------------------------------------------------------------
 
-void BookManager::addBookToShop(std::string &authorOfNewBook,std::string &titleOfNewBook, ware_t &praisesOfNewBook, int amountOfNewBook)
+void shop::BookManager::addBookToShop(std::string &authorOfNewBook,std::string &titleOfNewBook, ware_t &praisesOfNewBook, int amountOfNewBook)
 {
     //automatic adding new resources of books to shop
     std::pair<std::string, std::string> authorAnTitleToAdd(authorOfNewBook,titleOfNewBook);
@@ -211,23 +208,23 @@ void BookManager::addBookToShop(std::string &authorOfNewBook,std::string &titleO
 
 //----------------------------------------------------------------------------------------------------------------------
 
-void BookManager:: addThingToShop()
+void shop::BookManager:: addThingToShop()
 {
     if(Ware::application_.mode == CLIENT_MODE)
     {
-        cout<<"You are not owner of shop - you can not edit state of shop!"<<endl;
+        std::cout<<"You are not owner of shop - you can not edit state of shop!"<<std::endl;
     }
     else if(Ware::application_.mode == SELLER_MODE)
     {
-        cout<<"Enter: author, title, price, amount in this order ";
+        std::cout<<"Enter: author, title, price, amount in this order ";
         std::string authorToAdd;
         std::string titleToAdd;
         ware_t  priceToAdd;
         int amountToAdd;
-        cin>>authorToAdd;
-        cin>>titleToAdd;
-        cin>>priceToAdd;
-        cin>>amountToAdd;
+        std::cin>>authorToAdd;
+        std::cin>>titleToAdd;
+        std::cin>>priceToAdd;
+        std::cin>>amountToAdd;
         this->addBookToShop(authorToAdd,titleToAdd, priceToAdd,amountToAdd);
 
     }
@@ -235,17 +232,17 @@ void BookManager:: addThingToShop()
 
 ///----------------------------------------------------------------------------------------------------------------------
 
-void BookManager ::removeThingFromShop()
+void shop::BookManager ::removeThingFromShop()
 {
 
     if(Ware::application_.mode == CLIENT_MODE)
     {
-        cout<<"You are not owner of shop - you can not edit state of shop!"<<endl;
+        std::cout<<"You are not owner of shop - you can not edit state of shop!"<<std::endl;
     }
     else if(Ware::application_.mode == SELLER_MODE)
     {
-        cout<<"Enter title of book you want to incrementAmountOfReturnedItem from shop: "<<endl;
-        cin>>titleToRemove;
+        std::cout<<"Enter title of book you want to incrementAmountOfReturnedItem from shop: "<<std::endl;
+        std::cin>>titleToRemove;
         position_b = checkIfBookExist(titleToRemove);
 
         if(position_b>=0)
@@ -256,14 +253,14 @@ void BookManager ::removeThingFromShop()
         }
         else
         {
-            cout<<"The book to incrementAmountOfReturnedItem was not found!"<<endl;
+            std::cout<<"The book to incrementAmountOfReturnedItem was not found!"<<std::endl;
         }
     }
 }
 
 //----------------------------------------------------------------------------------------------------------------------
 
-void BookManager::toUpper()
+void shop::BookManager::toUpper()
 {
     if(letter>95)
     {
@@ -272,7 +269,7 @@ void BookManager::toUpper()
 }
 
 
-void BookManager::toLower()
+void shop::BookManager::toLower()
 {
     if(letter<95)
     {
@@ -280,7 +277,7 @@ void BookManager::toLower()
     }
 }
 
-void BookManager::searchInRemoved(Application &app)
+void shop::BookManager::searchInRemoved(Application &app)
 {
     for(int i=0;i<app.removedThings.size();i++)
     {
@@ -301,7 +298,7 @@ void BookManager::searchInRemoved(Application &app)
 
 }
 
-std::vector<std::string> BookManager::returnBookFromBasketToShop(std::vector<std::string> removed)
+std::vector<std::string> shop::BookManager::returnBookFromBasketToShop(std::vector<std::string> removed)
 {
     for(int i=0;i<removed.size();i++)
     {
@@ -317,27 +314,27 @@ std::vector<std::string> BookManager::returnBookFromBasketToShop(std::vector<std
     return removed;
 }
 
-ConcreteBook BookManager::getBook(int index) {
+shop::ConcreteBook shop::BookManager::getBook(int index) {
     return books_[index];
 }
 
-std::vector<shop::ConcreteBook> BookManager::getBooks() {
+std::vector<shop::ConcreteBook> shop::BookManager::getBooks() {
     return this->books_;
 }
 
-std::string BookManager::getTitleOfConcreteBook(int index) {
+std::string shop::BookManager::getTitleOfConcreteBook(int index) {
     return getBook(index).getPairOfTitleAndAuthorBook().second;
 }
 
-int BookManager::getCurrentSearchingSize() {
+int shop::BookManager::getCurrentSearchingSize() {
     return this->currentSearchings.size();
 }
 
-BookManager::~BookManager() {
+shop::BookManager::~BookManager() {
     //this->saveItemsToFile();
 }
 
-void BookManager::incrementAmountOfBook( ConcreteBook &book) {
+void shop::BookManager::incrementAmountOfBook( ConcreteBook &book) {
 
     for(int i = 0 ; i < this->books_.size(); i++){
 

@@ -4,72 +4,68 @@
 
 #include "WriteCsvTsv.h"
 
-using namespace base;
 
-WriteCsvTsv::WriteCsvTsv(std::string path) {
+namespace  base {
 
-    std::string ending = ".csv";
+    WriteCsvTsv::WriteCsvTsv(std::string path) {
 
-    for(int i =path.length()-4;i <= path.length()-1;i++){
-        this->extensionOfFile +=path[i];
-    }
+        std::string ending = ".csv";
 
-    if(this->extensionOfFile == ".csv"){
-        csvFormat = true;
-        this->path = path;
-    }
-    else if(this->extensionOfFile == ".tsv"){
-        csvFormat = false;
-        this->path = path;
-    }
-    else{
-        throw std::exception();
-    }
-}
-
-void WriteCsvTsv::writeToFile(std::vector<std::string> &data) {
-    outToFile.open(path,std::ios::app);
-
-    if(csvFormat){
-
-        if(outToFile.is_open()) {
-            toFile = join(data,",");
-            outToFile << toFile <<std::endl;
+        for (int i = path.length() - 4; i <= path.length() - 1; i++) {
+            this->extensionOfFile += path[i];
         }
-        else{
+
+        if (this->extensionOfFile == ".csv") {
+            csvFormat = true;
+            this->path = path;
+        } else if (this->extensionOfFile == ".tsv") {
+            csvFormat = false;
+            this->path = path;
+        } else {
             throw std::exception();
         }
+    }
+
+    void WriteCsvTsv::writeToFile(std::vector<std::string> &data) {
+        outToFile.open(path, std::ios::app);
+
+        if (csvFormat) {
+
+            if (outToFile.is_open()) {
+                toFile = join(data, ",");
+                outToFile << toFile << std::endl;
+            } else {
+                throw std::exception();
+            }
+            outToFile.close();
+        } else if (!csvFormat) {
+
+            if (outToFile.is_open()) {
+
+                toFile = join(data, "\t");
+                outToFile << toFile << std::endl;
+            } else {
+                throw
+                        std::exception();
+            }
+            outToFile.close();
+
+        }
+
+    }
+
+    void WriteCsvTsv::addHeader(std::vector<std::string> &data) {
+
+        outToFile.open(path);
+        if (csvFormat) {
+            if (outToFile.is_open()) {
+                outToFile << join(data, ",") << std::endl;
+            }
+        } else if (!csvFormat) {
+            if (outToFile.is_open()) {
+                outToFile << join(data, "\t") << std::endl;
+            }
+        }
         outToFile.close();
     }
-    else if (!csvFormat){
-
-        if(outToFile.is_open()){
-
-            toFile = join(data,"\t");
-            outToFile << toFile <<std::endl;
-        }
-        else {
-            throw
-                    std::exception();
-        }
-        outToFile.close();
-
-    }
-
-}
-
-void WriteCsvTsv::addHeader(std::vector<std::string> &data) {
-
-    outToFile.open(path);
-    if(csvFormat){
-        if(outToFile.is_open()){
-            outToFile << join(data,",")<<std::endl;
-        }
-    }
-    else if(!csvFormat){
-        if(outToFile.is_open()){
-            outToFile << join(data,"\t")<<std::endl;
-        }
-    }
-    outToFile.close();
-}
+}//end namespace base

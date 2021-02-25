@@ -5,7 +5,6 @@ CMakeFiles/machineOfState.dir/Application.cpp.obj
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.cpp
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/tests.h
 CMakeFiles/machineOfState.dir/Bill.cpp.obj
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Bill.cpp
@@ -162,7 +161,6 @@ CMakeFiles/machineOfState.dir/Managers/SchoolSuppliesManager.cpp.obj
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/WriteCsvTsv.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/tests.h
 CMakeFiles/machineOfState.dir/ReadCsvTsv.cpp.obj
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Application.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ConcreteItems/ConcreteBook.h
@@ -218,7 +216,6 @@ CMakeFiles/machineOfState.dir/Tests/BagpackTests.cpp.obj
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Tests/BagpackTests.cpp
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/WriteCsvTsv.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/tests.h
 CMakeFiles/machineOfState.dir/Tests/BookTests.cpp.obj
  ../lib/googletest-master/googletest/include/gtest/gtest-death-test.h
  ../lib/googletest-master/googletest/include/gtest/gtest-matchers.h
@@ -319,7 +316,6 @@ CMakeFiles/machineOfState.dir/Tests/NotepadTests.cpp.obj
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Tests/NotepadTests.cpp
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/WriteCsvTsv.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/tests.h
 CMakeFiles/machineOfState.dir/Tests/SchoolSuppliesTests.cpp.obj
  ../lib/googletest-master/googletest/include/gtest/gtest-death-test.h
  ../lib/googletest-master/googletest/include/gtest/gtest-matchers.h
@@ -355,7 +351,6 @@ CMakeFiles/machineOfState.dir/Tests/SchoolSuppliesTests.cpp.obj
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ShopWare.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Tests/SchoolSuppliesTests.cpp
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/WriteCsvTsv.h
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/tests.h
 CMakeFiles/machineOfState.dir/Tests/TowarTests.cpp.obj
  ../lib/googletest-master/googletest/include/gtest/gtest-death-test.h
  ../lib/googletest-master/googletest/include/gtest/gtest-matchers.h
@@ -403,7 +398,6 @@ CMakeFiles/machineOfState.dir/Tests/WritingReadingCsvTsvTests.cpp.obj
  ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/Tests/WritingReadingCsvTsvTests.cpp
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/tests.h
 CMakeFiles/machineOfState.dir/WriteCsvTsv.cpp.obj
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/ServiceCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/WriteCsvTsv.cpp
@@ -462,7 +456,3 @@ CMakeFiles/machineOfState.dir/main.cpp.obj
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/WriteCsvTsv.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/generalFunctions.h
  C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/main.cpp
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/tests.h
-CMakeFiles/machineOfState.dir/tests.cpp.obj
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/tests.cpp
- C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/tests.h

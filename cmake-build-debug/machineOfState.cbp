@@ -462,12 +462,6 @@
 		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/main.cpp">
 			<Option target="machineOfState"/>
 		</Unit>
-		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/tests.cpp">
-			<Option target="machineOfState"/>
-		</Unit>
-		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/tests.h">
-			<Option target="machineOfState"/>
-		</Unit>
 		<Unit filename="C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
