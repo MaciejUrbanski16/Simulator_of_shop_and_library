@@ -1,2 +1,0 @@
-C:\Users\Admin\Desktop\MACIEK~1\mingw64\bin\ar.exe qc ..\..\libgmock_maind.a  CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj
-C:\Users\Admin\Desktop\MACIEK~1\mingw64\bin\ranlib.exe ..\..\libgmock_maind.a

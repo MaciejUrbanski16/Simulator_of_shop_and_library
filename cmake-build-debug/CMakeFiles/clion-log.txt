@@ -1,5 +1,0 @@
-"C:\Users\Admin\Desktop\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\Admin\Desktop\Projekt\Simulator_of_shop
--- Could NOT find PythonInterp (missing: PYTHON_EXECUTABLE) 
--- Configuring done
--- Generating done
--- Build files have been written to: C:/Users/Admin/Desktop/Projekt/Simulator_of_shop/cmake-build-debug
