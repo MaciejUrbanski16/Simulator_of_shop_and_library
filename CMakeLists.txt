@@ -15,6 +15,6 @@ add_executable(machineOfState main.cpp ShopWare.h ShopWare.cpp Managers/BookMana
         Bill.cpp Bill.h Tests/TowarTests.cpp Application.cpp Application.h ServiceCsvTsv.cpp ServiceCsvTsv.h
         WriteCsvTsv.cpp WriteCsvTsv.h Tests/WritingReadingCsvTsvTests.cpp ReadCsvTsv.cpp ReadCsvTsv.h
         Tests/BookTests.cpp ConcreteItems/ConcreteBagpack.cpp ConcreteItems/ConcreteBagpack.h Tests/BagpackTests.cpp ConcreteItems/ConcreteBook.cpp ConcreteItems/ConcreteBook.h
-        ConcreteItems/ConcreteSchoolSupply.cpp ConcreteItems/ConcreteSchoolSupply.h ConcreteItems/ConcreteNotepad.cpp ConcreteItems/ConcreteNotepad.h Tests/SchoolSuppliesTests.cpp Library/Library.cpp Library/Library.h Library/ClientInLibrary.cpp Library/ClientInLibrary.h Tests/LibraryTests.cpp Library/TimeOfBorrowing.cpp Library/TimeOfBorrowing.h)
+        ConcreteItems/ConcreteSchoolSupply.cpp ConcreteItems/ConcreteSchoolSupply.h ConcreteItems/ConcreteNotepad.cpp ConcreteItems/ConcreteNotepad.h Tests/SchoolSuppliesTests.cpp Library/Library.cpp Library/Library.h Library/ClientInLibrary.cpp Library/ClientInLibrary.h Tests/LibraryTests.cpp Library/TimeOfBorrowing.cpp Library/TimeOfBorrowing.h InputOutputOperations/Inputter.cpp InputOutputOperations/Inputter.h InputOutputOperations/Outputter.cpp InputOutputOperations/Outputter.h)
 
 target_link_libraries(machineOfState gtest gtest_main)

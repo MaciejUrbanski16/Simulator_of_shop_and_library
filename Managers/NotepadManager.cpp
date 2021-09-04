@@ -5,10 +5,7 @@
 #include "NotepadManager.h"
 #include "../WriteCsvTsv.h"
 #include "../ReadCsvTsv.h"
-
-
-
-
+#include "../InputOutputOperations/Inputter.h"
 
 
 int shop::NotepadManager::chooseOfDimension()
@@ -20,18 +17,7 @@ int shop::NotepadManager::chooseOfDimension()
     std::cout<<"Podaj cyfre 1-"<<notepads.size()<< ", aby wybrac rozmiar zeszytu"<<std::endl;
     std::cout<<"------------------"<<std::endl;
 
-
-    bool good,bad;
-
-    do{
-        std::cin>>choose;
-        good = std::cin.good();
-        bad = std::cin.bad();
-        std::cin.clear();
-        std::cin.sync();
-    }while(((choose<=0 )||choose>notepads.size()) || (good==0||bad==1));
-
-    return choose;
+    return Inputter::chooseConcreteItem(notepads);
 }
 
 int shop::NotepadManager :: chooseOfColor()
