@@ -6,6 +6,7 @@
 #include "../WriteCsvTsv.h"
 #include "../ReadCsvTsv.h"
 #include "../InputOutputOperations/Inputter.h"
+#include "../InputOutputOperations/Outputter.h"
 
 
 int shop::NotepadManager::chooseOfDimension()
@@ -17,7 +18,7 @@ int shop::NotepadManager::chooseOfDimension()
     std::cout<<"Podaj cyfre 1-"<<notepads.size()<< ", aby wybrac rozmiar zeszytu"<<std::endl;
     std::cout<<"------------------"<<std::endl;
 
-    return Inputter::chooseConcreteItem(notepads);
+    return Inputter::inputNoToChooseConcreteItem(notepads);
 }
 
 int shop::NotepadManager :: chooseOfColor()
@@ -95,7 +96,7 @@ void shop::NotepadManager :: addNotesToShop(int mode, int howMuch, int where)
 {
     if(mode == CLIENT_MODE)
     {
-        std::cout<<"CLIENT_MODE do not allow to edit state of shop "<<std::endl;
+        Outputter::logWarningIfClientWantsToChangeStateOfShop();
     }
     else if(mode == SELLER_MODE)
     {
@@ -104,12 +105,7 @@ void shop::NotepadManager :: addNotesToShop(int mode, int howMuch, int where)
 }
 void shop::NotepadManager ::showResourcesOfNotes()
 {
-    std::cout<<"The notepads that are available: "<<std::endl;
-    for(int i = 0;i<notepads.size();i++)
-    {
-        std::cout<<i+1<<". "<<notepads[i].getFormat()<<std::endl;
-    }
-
+    Outputter::logConcreteItems(notepads);
 }
 
 void shop::NotepadManager ::addingByOwnerNewNote()
@@ -119,7 +115,7 @@ void shop::NotepadManager ::addingByOwnerNewNote()
         int howMuch = 0, where =-1;
         showResourcesOfNotes();
 
-        std::cout<<"Choose note from list and give amount to change its amount "<<std::endl;
+        Outputter::logInfoAboutChoosingItemFromList();
 
         where = enteringTheNumber(1,notepads.size());
 
@@ -129,11 +125,8 @@ void shop::NotepadManager ::addingByOwnerNewNote()
     }
     else if(application_.mode == CLIENT_MODE)
     {
-        std::cout<<"There is not allowed to edit state of shop in CLIENT_MODE "<<std::endl;
-        std::cout<<"If you want you can now change mode to SELLER_MODE"<<std::endl;
-
+        Outputter::logWarningIfClientWantsToChangeStateOfShop();
         changeModeToSellerMode("password",application_.mode);
-
     }
 
 }
@@ -141,8 +134,7 @@ void shop::NotepadManager ::addingByOwnerNewNote()
 
 void shop::NotepadManager::editionStateOfNotes()
 {
-    std::cout<<"1. Add notes to shop "<<std::endl;
-    std::cout<<"2. Remove note from shop "<<std::endl;
+    Outputter::logChooseOfPerformanceInItems();
 
     int choose = enteringTheNumber(1,2);
 
@@ -170,7 +162,7 @@ void shop::NotepadManager::removeByOwnerNote()
     notepads.erase(notepads.begin() + choose - 1);
     amounts.erase(amounts.begin() + choose - 1 );
 
-    std::cout<<"The notepad with "<< removedN <<"size was removed successfully!" <<std::endl;
+    Outputter::logRemovingOfItem(removedN);
 
 }
 

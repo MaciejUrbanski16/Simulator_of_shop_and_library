@@ -14,18 +14,16 @@
   </component>
   <component name="CMakeSettings">
     <configurations>
-      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" BUILD_OPTIONS="-- -j 10" />
     </configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a417d592-79c6-4910-a3f3-8b98fcb03eae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/InputOutputOperations/Inputter.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InputOutputOperations/Inputter.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InputOutputOperations/Outputter.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InputOutputOperations/Outputter.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InputOutputOperations/Inputter.h" beforeDir="false" afterPath="$PROJECT_DIR$/InputOutputOperations/Inputter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InputOutputOperations/Outputter.h" beforeDir="false" afterPath="$PROJECT_DIR$/InputOutputOperations/Outputter.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Managers/NotepadManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Managers/NotepadManager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Managers/NotepadManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Managers/NotepadManager.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +83,7 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="ObjectiveC" />
     <property name="last_opened_file_path" value="$USER_HOME$/CLionProjects/SettingUpGoogleTests/main.cpp" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -319,22 +317,30 @@
     <option name="LAST_COMMIT_MESSAGE" value="All features of special things work properly" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="938" height="295" key="GridCell.Tab.0.bottom" timestamp="1630782481826">
+    <state width="938" height="295" key="GridCell.Tab.0.bottom" timestamp="1630783290720">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1630782481826" />
-    <state width="938" height="295" key="GridCell.Tab.0.center" timestamp="1630782481825">
+    <state width="938" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1630783290720" />
+    <state width="938" height="295" key="GridCell.Tab.0.center" timestamp="1630783290719">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="295" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1630782481825" />
-    <state width="938" height="295" key="GridCell.Tab.0.left" timestamp="1630782481825">
+    <state width="938" height="295" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1630783290719" />
+    <state width="938" height="295" key="GridCell.Tab.0.left" timestamp="1630783290719">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="295" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1630782481825" />
-    <state width="938" height="295" key="GridCell.Tab.0.right" timestamp="1630782481826">
+    <state width="938" height="295" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1630783290719" />
+    <state width="938" height="295" key="GridCell.Tab.0.right" timestamp="1630783290720">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="295" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1630782481826" />
+    <state width="938" height="295" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1630783290720" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1630783285118">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1630783285118" />
+    <state x="701" y="163" key="refactoring.ChangeSignatureDialog" timestamp="1630784367138">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="701" y="163" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1630784367138" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

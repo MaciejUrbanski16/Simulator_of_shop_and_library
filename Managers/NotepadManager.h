@@ -54,7 +54,7 @@ namespace shop
 
     private:
 
-        int choose;
+        //int choose;
 
         void showResourcesOfNotes(); //show actual state of notes
 
